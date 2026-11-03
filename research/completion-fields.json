@@ -1,0 +1,133 @@
+{
+  "checked_at": "2026-11-03T21:54:47.021237+00:00",
+  "primary_sources": {
+    "clarity_client": "https://results.enr.clarityelections.com/AL/Madison/127483/web.345435/main.2ea4cb41df122bbb.js",
+    "clarity_status": "https://results.enr.clarityelections.com/AL/Madison/127483/382270/json/status.json",
+    "clarity_summary": "https://results.enr.clarityelections.com/AL/Madison/127483/382270/json/en/summary.json",
+    "civic_docs": "https://www.computernewb.com/wiki/CivicAPI_Documentation",
+    "civic_county_feed": "https://civicapi.org/api/v2/race/86904"
+  },
+  "clarity": {
+    "election_id": "127483",
+    "revision": "382270",
+    "status_payload_arrays": {
+      "P": 82,
+      "S": 82,
+      "R": 82,
+      "B": 82,
+      "C": 82,
+      "CONTEST": 82
+    },
+    "status_codes": {
+      "0": "Certified",
+      "1": "NotReported",
+      "2": "PartiallyReported",
+      "3": "Participating",
+      "4": "CompletelyReported",
+      "8": "NotParticipating",
+      "16": "Hidden",
+      "32": "Cumulative",
+      "64": "ElectionCompleted"
+    },
+    "completion_rule": {
+      "status_source": "status.json.S aligned with status.json.P",
+      "accepted_values": [
+        4,
+        64
+      ],
+      "comparison": "exact equality, not bitwise",
+      "certification_separate": "status.json.C is certification indicator; not accepted as a new completion shortcut"
+    },
+    "observed_status_counts": {
+      "1": 80,
+      "32": 2
+    },
+    "observed_certification_counts": {
+      "0": 82
+    },
+    "detail_unique_names": 82,
+    "status_unique_names": 82,
+    "details_without_status": [],
+    "scope": "Electionwide precinct status; details.P constrains per-contest membership. No election identity fields within status.json.",
+    "settings_map_warning": "settings.precinctsreporting is not status.S: ordinary setup0 vs S1; never apply this enum to settings map.",
+    "client_evidence": {
+      "sn[sn.Certified=0]": {
+        "offset": 4640987,
+        "excerpt": "sn[sn.Certified=0]=\"Certified\",sn[sn.NotReported=1]=\"NotReported\",sn[sn.PartiallyReported=2]=\"PartiallyReported\",sn[sn.Participating=3]=\"Participating\",sn[sn.CompletelyReported=4]=\"CompletelyReported\",sn[sn.NotParticipating=8]=\"NotParticipating\",sn[sn.Hidden=16]=\"Hidden\",sn[sn.Cumulative=32]=\"Cumulative\",sn[sn.ElectionCompleted=64]=\"ElectionCompleted\",sn.Tie=\"\",sn}(U||{}),j=function(sn){return sn.Certified=\"certified\",sn.NotReported=\"notreported\",sn.PartiallyReported=\"partiallyreported\",sn.Participating=\"participating\",sn.CompletelyReported=\"completelyreported\",sn.NotParticipating=\"notparticipating\",sn.Hidden=\"hidden\",sn.Cumulative=\"cumulative\",sn.ElectionCompleted=\"electioncompleted\",sn.Tie"
+      },
+      "allCompletelyReported(){": {
+        "offset": 4687219,
+        "excerpt": "allCompletelyReported(){return this.getS().filter(qe=>qe===U.CompletelyReported).length+this.getS().filter(qe=>qe===U.ElectionCompleted).length}PartiallyReportedPercent(){return 0===this.total()?0:100*this.PartiallyReported()/this.total()}PartiallyReported(){return this.getReporting(U.PartiallyReported)}notParticipating(){return this.getReporting(U.NotParticipating)}cumulative(){return this.getReporting(U.Cumulative)}hidden(){return this.getReporting(U.Hidden)}notReportedPercent(){return 0===this.total()?0:100*this.notReported()/this.total()}notReported(){return this.getReporting(U.NotReported)}certifiedReportedPercent(){return 0===this.total()?0:100*this.certified()/this.total()}certified()"
+      },
+      "PrecinctIndex(qe){": {
+        "offset": 4685581,
+        "excerpt": "PrecinctIndex(qe){return this.status.P.indexOf(qe)}PrecinctReportingStatus(qe){let pt=0;if((pt=this.PrecinctIndex(qe))>=0)return this.status.S[pt]}PrecinctReportingStatusCertified(qe){const pt=this.PrecinctIndex(qe),An=this.status.C[pt];return 0===An?U.CompletelyReported:1===An?U.Certified:U.NotParticipating}getPrecinctReportingStatusString(qe,pt=!1){return Bn(pt?this.PrecinctReportingStatusCertified(qe):this.PrecinctReportingStatus(qe))}PrecinctBallotsCast(qe){const pt=this.PrecinctIndex(qe);return this.status.B[pt]||0}PrecinctRegisteredVoters(qe){let pt=0;return(pt=this.PrecinctIndex(qe))>=0?this.status.R[pt]:0}PrecinctVoterTurnout(qe){const pt=this.PrecinctIndex(qe);if(-1===pt)return-1;if"
+      },
+      "PrecinctReportingStatusCertified(qe){": {
+        "offset": 4685728,
+        "excerpt": "PrecinctReportingStatusCertified(qe){const pt=this.PrecinctIndex(qe),An=this.status.C[pt];return 0===An?U.CompletelyReported:1===An?U.Certified:U.NotParticipating}getPrecinctReportingStatusString(qe,pt=!1){return Bn(pt?this.PrecinctReportingStatusCertified(qe):this.PrecinctReportingStatus(qe))}PrecinctBallotsCast(qe){const pt=this.PrecinctIndex(qe);return this.status.B[pt]||0}PrecinctRegisteredVoters(qe){let pt=0;return(pt=this.PrecinctIndex(qe))>=0?this.status.R[pt]:0}PrecinctVoterTurnout(qe){const pt=this.PrecinctIndex(qe);if(-1===pt)return-1;if(0===this.status.R[pt])return 0;const An=0===this.status.B[pt]?0:100*this.status.B[pt]/this.status.R[pt];return isNaN(An)||An<=0?0:An}PrecinctVoter"
+      },
+      "getPrecinctRegistered(){": {
+        "offset": 4653836,
+        "excerpt": "getPrecinctRegistered(){return this._additionalData.PR}getTotalPrecincts(){return this._additionalData.TP}getRegisteredVoters(){return this._additionalData.regvoters}getBallotCast(){return 0===Math.abs(this.voteFor)?0:0===this.ballotsCast?Number(this._additionalData.BC)/this.voteFor:this.ballotsCast}getVoterTurnoutPercentage(){return Number(this._additionalData.regvoters)?Number(this.voteFor)?Number(this.voteFor)?this.getBallotCast()/this._additionalData.regvoters*100:void 0:this.getBallotCast()/this._additionalData.regvoters:0}getPercentagePrecincts(){return it.PercentOf(this.getPrecinctRegistered(),this.getTotalPrecincts())}getContestNameWithoutHTML(){return it.HTMLtoText(this.name)}isProt"
+      },
+      "get(qe,pt,An,$n){const Ut=this.getUri(qe,pt,An,$n,F.Status)": {
+        "offset": 4685236,
+        "excerpt": "get(qe,pt,An,$n){const Ut=this.getUri(qe,pt,An,$n,F.Status);return this.apiService.get(Ut,{source:\"FILE\"}).pipe((0,l.M)(ot=>this.status=ot),(0,l.M)(ot=>this.precinctStatus=me.modelTransform(ot,mn)))}getReporting(qe){return this.getS().filter((pt,An)=>pt===qe&&1!==this.status.C[An]).length}getTotalReporting(qe){return qe.reduce((pt,An)=>pt+An)}PrecinctIndex(qe){return this.status.P.indexOf(qe)}PrecinctReportingStatus(qe){let pt=0;if((pt=this.PrecinctIndex(qe))>=0)return this.status.S[pt]}PrecinctReportingStatusCertified(qe){const pt=this.PrecinctIndex(qe),An=this.status.C[pt];return 0===An?U.CompletelyReported:1===An?U.Certified:U.NotParticipating}getPrecinctReportingStatusString(qe,pt=!1){re"
+      }
+    }
+  },
+  "civic": {
+    "documented_meaning": "Estimated percentage reporting",
+    "completion_rule": "region_results[region].percent_reporting exactly100; not race-level percent_reporting",
+    "classification": "Publisher reports estimated100% reporting; not certified final results.",
+    "observed_counties": {
+      "Jackson": {
+        "fips": "01071",
+        "percent_reporting": 0
+      },
+      "Lauderdale": {
+        "fips": "01077",
+        "percent_reporting": 0
+      },
+      "Lawrence": {
+        "fips": "01079",
+        "percent_reporting": 0
+      },
+      "Limestone": {
+        "fips": "01083",
+        "percent_reporting": 0
+      },
+      "Madison": {
+        "fips": "01089",
+        "percent_reporting": 0
+      },
+      "Morgan": {
+        "fips": "01103",
+        "percent_reporting": 0
+      }
+    }
+  },
+  "artifacts": {
+    ".firecrawl/completion-clarity-main.js": {
+      "sha256": "6b3ed613774a6b38fd89068e57c96e5c1e616546f103c38cad44908105012c98",
+      "bytes": 5496497
+    },
+    ".firecrawl/completion-clarity-status.json": {
+      "sha256": "132d82b6b95b41d7b395dfe92fc843bbcbe8fb7a656de82e4eca94d6d0353f17",
+      "bytes": 3309
+    },
+    ".firecrawl/completion-clarity-en-summary.json": {
+      "sha256": "5143764e4350d7644cdd585449cd72005a8ee951b166da4f324ca829c105e1a0",
+      "bytes": 40575
+    },
+    ".firecrawl/completion-civic-docs.html": {
+      "sha256": "ea36d482ad3bc48c4178e4fdf85f54897874a0b92d599d48cb44e8738681dbf5",
+      "bytes": 23569
+    },
+    ".firecrawl/completion-civic-cd5.json": {
+      "sha256": "e7affefe3582923c3de8717df8872f335a35ad002eb338eff735a958c89e6959",
+      "bytes": 3500
+    }
+  }
+}

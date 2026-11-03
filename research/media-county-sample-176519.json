@@ -1,0 +1,74 @@
+{
+  "date": "2026-11-03",
+  "checkedAt": "2026-11-03T20:55:21.808Z",
+  "status": "ready",
+  "races": [
+    {
+      "id": "176519",
+      "name": "Alabama State House 20",
+      "group": "Legislature",
+      "office": "State House",
+      "regions": [
+        {
+          "id": "madison",
+          "fips": "01089",
+          "name": "Madison",
+          "reporting": 0,
+          "candidates": [
+            {
+              "id": "0-James Linderholm",
+              "name": "James Linderholm",
+              "party": "Democratic",
+              "votes": 0,
+              "winner": false,
+              "percent": 0
+            },
+            {
+              "id": "1-James Lomax",
+              "name": "James Lomax",
+              "party": "Republican",
+              "votes": 0,
+              "winner": false,
+              "percent": 0
+            }
+          ]
+        }
+      ],
+      "summary": false,
+      "disputed": false,
+      "district": "AL-HD-020",
+      "reporting": 0,
+      "updatedAt": "2026-10-30T18:52:48.944Z",
+      "candidates": [
+        {
+          "id": "21566660",
+          "name": "James Linderholm",
+          "party": "Democratic",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        },
+        {
+          "id": "21566661",
+          "name": "James Lomax",
+          "party": "Republican",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    }
+  ],
+  "featuredIds": [
+    "176519"
+  ],
+  "historical": false,
+  "electionKey": "2026",
+  "electionLabel": "2026",
+  "query": "",
+  "resultsHref": "/election-results",
+  "refreshFailed": false,
+  "publicRaceIds": [
+    "176519"
+  ]
+}

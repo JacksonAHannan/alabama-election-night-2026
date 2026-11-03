@@ -1,0 +1,9 @@
+/target/
+/runtime/
+/.firecrawl/
+
+/site/
+/TASK.md
+
+__pycache__/
+*.pyc

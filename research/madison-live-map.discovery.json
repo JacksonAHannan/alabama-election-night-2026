@@ -1,0 +1,20 @@
+{
+  "retrieved_at": "2026-11-03T20:46:47.890404+00:00",
+  "index_url": "https://results.enr.clarityelections.com/AL/Madison/127483/web.345435/",
+  "index_sha256": "b0053d37c7d663139638303a9ef574cc5cc92899da69dde1543615e710b1c9dc",
+  "javascript_url": "https://results.enr.clarityelections.com/AL/Madison/127483/web.345435/main.2ea4cb41df122bbb.js",
+  "javascript_sha256": "6b3ed613774a6b38fd89068e57c96e5c1e616546f103c38cad44908105012c98",
+  "javascript_excerpts": {
+    "getUri": "getUri(Bt,nr,qe,pt,An,$n){return`/${Bt}${nr&&\"\"!==nr?`/${nr}`:\"\"}/${qe}/${pt}/json${$n?`/${$n}`:\"\"}/${An}`}getUriReports(Bt,nr,qe,pt,An,$n){return`${Bt}/${nr}${",
+    "getKmlMap": "getKmlMap(qe,pt,An,$n){const Ut=this.getKmlMapFileName();return new Promise(ot=>{\"\"!==Ut?this.apiService.get(this.getUri(qe,pt,An,$n,Ut),{source:\"FILE\"}).pipe((0,l.M)(Ft=>this.kml=Ft)).subscribe(Ft=>ot(Ft),()=>ot(!1)):ot(!1)})}getKmlFile(qe,pt,An,$n){const Ut=this.getKmlMapFileName();return Ut?this.apiSe",
+    "OldDecode": "OldDecode(I,k=Yf.GoogleMap){return this.OldDecodeLine(I.replace(/\\\\\\\\/g,\"\\\\\")).map(rt=>k===Yf.GoogleMap?new google.maps.LatLng(Number(rt[0]),Number(rt[1])):[parseFloat(rt[0]),parseFloat(rt[1])])}OldDecodeLine(I){const k=I.length,$=[];let rt=0,Jt=0,In=0;for(;rt<k;){let fr,Sr=0,Wr=0;do{fr=I.charCodeAt(rt++)-63,Wr|=(31&fr)<<Sr,Sr+=5}while(fr>=32);Jt+=1&Wr?~(Wr>>1):Wr>>1,Sr=0,Wr=0;do{fr=I.charCodeAt(rt++)-63,Wr|=(31&fr)<<Sr,Sr+=5}while(fr>=32);In+=1&Wr?~(Wr>>1):Wr>>1,$.push([1e-5*Jt,1e-5*In])}return $}static#e=C=()=>(this.\\u0275fac=function(k){return new(k||P)(B.KVO(u.HB))},this.\\u0275prov=B.jDH({token:P,factory:P.\\u0275fac}))}return C(),P})();function Uf(C,P){if(1&C&&e.nrm(0,\"enr-editor\",25),2&C){const E=e.XpG(3);"
+  },
+  "settings_file": "madison-settings.json",
+  "settings_sha256": "30a02b6d44ded8bcdc93b42a16b59ab0b0b905d5479aeb1c119d44ef69f7c030",
+  "details_file": "madison-details.json",
+  "details_sha256": "11e04046e61e37da6deadc91fbed9710ac0982c432e73fd8a8d4b123b9644fa2",
+  "map_url": "https://results.enr.clarityelections.com/AL/Madison/127483/382270/json/78711aa6-2e06-4898-914d-beee88029fcc.json",
+  "raw_file": "madison-live-map.raw.json",
+  "raw_sha256": "7b6cddb163d7518aac9f107fea083d9f6889810c56b7f36d6c888d81fc86ce2d",
+  "http_status": 200
+}

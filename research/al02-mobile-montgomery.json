@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-11-03T21:43:54.402242+00:00",
+  "election_id": "2026-11-03",
+  "district": "AL-CD-2",
+  "retrieval": "Public web retrieval/search plus ordinary direct HTTP; prior Firecrawl HTTP402; no challenge bypass",
+  "counties": [
+    {
+      "county": "Montgomery",
+      "county_fips": "01101",
+      "official_page": "https://www.montgomeryvotesal.gov/elections-information/election-results",
+      "status": "access-limited-current-precinct-feed-unverified",
+      "http_status": 403,
+      "eligible_precinct_source": null,
+      "ballot_url": "https://www.sos.alabama.gov/sites/default/files/sample-ballots/2026/gen/Montgomery-Sample.pdf",
+      "ballot_confirms": "CD2 Shomari C. Figures / Rhett Marques"
+    },
+    {
+      "county": "Houston",
+      "county_fips": "01069",
+      "official_page": "https://houstoncountyal.gov/probate/election_results/",
+      "status": "historical-precinct-only-current-feed-not-found",
+      "http_status": 200,
+      "latest_published_election": "2026-08-11 Special Primary Congressional District 2",
+      "historical_precinct_report": "https://houstoncountyal.gov/files/election_results/primary_election_congressional_district_2_2026_08_11_68552.pdf",
+      "eligible_precinct_source": null,
+      "ballot_url": "https://www.sos.alabama.gov/sites/default/files/sample-ballots/2026/gen/Houston-Sample.pdf",
+      "ballot_confirms": "CD2 Shomari C. Figures / Rhett Marques"
+    },
+    {
+      "county": "Elmore",
+      "county_fips": "01051",
+      "official_page": "https://www.elmoreco.org/elmore-county-elections",
+      "status": "current-precinct-feed-not-found",
+      "http_status": 403,
+      "web_tool_page_readable": true,
+      "eligible_precinct_source": null,
+      "ballot_url": "https://www.sos.alabama.gov/sites/default/files/sample-ballots/2026/gen/Elmore-Sample.pdf",
+      "ballot_confirms": "CD2 Shomari C. Figures / Rhett Marques"
+    },
+    {
+      "county": "Mobile",
+      "county_fips": "01097",
+      "official_page": "https://probate.mobilecountyal.gov/elections/election-information",
+      "status": "outside-current-CD2",
+      "http_status": 200,
+      "result_index": "https://benchmark.probate.mobilecountyal.gov/uploads/eResults/ElectionResults.pdf",
+      "latest_published_election": "2026-08-11 Special Primary",
+      "eligible_precinct_source": null,
+      "ballot_url": "https://www.sos.alabama.gov/sites/default/files/sample-ballots/2026/gen/Mobile-Sample.pdf",
+      "ballot_confirms": "CD1 Clyde Jones / Jerry Carl"
+    }
+  ],
+  "state_index": {
+    "url": "https://www2.alabamavotes.gov/electionnight/chooseCounty.aspx?ecode=1001015",
+    "observed": "Montgomery, Houston, Elmore labels gray and unlinked",
+    "election_identity_warning": "Do not infer current election identity from this URL code alone"
+  },
+  "evidence_manifest": ".firecrawl/al02-large-downloads.json",
+  "limitations": "Not found on inspected pages/searches, not proof no later precinct publication. No current rows/maps available to reconcile/hash."
+}

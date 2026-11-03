@@ -1,0 +1,393 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-11-03T20:29:59Z",
+  "election_id": "2026-11-03",
+  "scope": "CD5 counties other than Madison; Madison researched separately",
+  "retrieval": {
+    "firecrawl": "Attempted search; HTTP402 insufficient credits. Used public web search/open plus ordinary direct HTTP requests; no challenge bypass.",
+    "limitations": "No live non-Madison precinct returns verified before polls close. Absence means not found in inspected official pages and targeted searches, not proof none can appear later."
+  },
+  "district": {
+    "id": "AL-CD-5",
+    "counties": [
+      "Jackson",
+      "Lauderdale",
+      "Lawrence",
+      "Limestone",
+      "Madison",
+      "Morgan"
+    ],
+    "partial_counties": [
+      "Lauderdale"
+    ],
+    "primary_source": "https://strong.house.gov/about/our-district",
+    "map_index": "https://www.sos.alabama.gov/alabama-votes/state-district-maps",
+    "map_url": "https://www.sos.alabama.gov/sites/default/files/06-03-2026/2023%20Congressional%20Plan_Map.pdf",
+    "legal_description_url": "https://www.sos.alabama.gov/sites/default/files/06-03-2026/2023_Congressional%20Plan_BILL%20TEXT.pdf",
+    "certification_url": "https://www.sos.alabama.gov/sites/default/files/2023_Congressional_Plan_CERTIFICATION_Jun_10_2026.pdf",
+    "evidence": [
+      {
+        "url": "https://strong.house.gov/about/our-district",
+        "final_url": "https://strong.house.gov/about/our-district",
+        "status": 200,
+        "path": ".firecrawl/cd5-strong-district.html",
+        "iframes": [
+          "https://www.googletagmanager.com/ns.html?id=GTM-TQX94K2"
+        ],
+        "sha256": "87d9cc2856f421cf5890c40b735f88fe2c1eac31ae9ae110e13045a6e7bca2e2",
+        "checked_at": "2026-11-03T20:29:59Z"
+      },
+      {
+        "url": "https://www.sos.alabama.gov/alabama-votes/state-district-maps",
+        "final_url": "https://www.sos.alabama.gov/alabama-votes/state-district-maps",
+        "status": 200,
+        "path": ".firecrawl/cd5-state-maps.html",
+        "iframes": [],
+        "sha256": "957c73b78fd05d3e72b183586a611e7d0028a9fdfd95e025f9b4bd9b911c64af",
+        "checked_at": "2026-11-03T20:29:59Z"
+      }
+    ]
+  },
+  "counties": [
+    {
+      "county": "Jackson",
+      "county_fips": "01071",
+      "cd5_extent": "whole_county",
+      "official_url": "https://jacksoncountyal.gov/243/Probate-Office",
+      "readiness": "no_current_precinct_feed_found",
+      "endpoint": null,
+      "format": null,
+      "live_verified": false,
+      "precinct_returns_verified": false,
+      "notes": [
+        "Official Probate Office indexed page has registration/forms/contact only; no election-results link found.",
+        "Direct homepage and Probate Office requests returned HTTP404; web retrieval of the official indexed Probate Office page succeeded. An accessible indexed page is not proof of a current feed."
+      ],
+      "evidence": [
+        {
+          "url": "https://jacksoncountyal.gov/",
+          "final_url": "https://jacksoncountyal.gov/",
+          "status": 404,
+          "path": ".firecrawl/cd5-jackson-home.html",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "checked_at": "2026-11-03T20:29:59Z"
+        },
+        {
+          "url": "https://jacksoncountyal.gov/243/Probate-Office",
+          "final_url": "https://jacksoncountyal.gov/243/Probate-Office",
+          "status": 404,
+          "path": ".firecrawl/cd5-jackson-probate.html",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "checked_at": "2026-11-03T20:29:59Z"
+        }
+      ],
+      "history_archive": "https://www.sos.alabama.gov/alabama-votes/voter/election-data"
+    },
+    {
+      "county": "Lauderdale",
+      "county_fips": "01077",
+      "cd5_extent": "eastern_portion",
+      "official_url": "https://www.lauderdalecountyal.gov/home/departments/probate-office/",
+      "readiness": "no_current_precinct_feed_found",
+      "endpoint": null,
+      "format": null,
+      "live_verified": false,
+      "precinct_returns_verified": false,
+      "notes": [
+        "Official Probate Office and county homepage point to sample ballots, absentee voting, and Alabama SOS; no current results link found.",
+        "The official sample-ballot page links November 3,2026 general ballot, but a ballot is not a results feed.",
+        "Do not include western Lauderdale CD4 returns in CD5."
+      ],
+      "evidence": [
+        {
+          "url": "https://www.lauderdalecountyal.gov/",
+          "final_url": "https://www.lauderdalecountyal.gov/",
+          "status": 200,
+          "path": ".firecrawl/cd5-lauderdale-al.html",
+          "sha256": "53d84830076948b4d58c4fdd09ca7222bcb4490810e91cc7b490b3ccdb0181ed",
+          "checked_at": "2026-11-03T20:29:59Z"
+        },
+        {
+          "url": "https://www.lauderdalecountyal.gov/home/departments/probate-office/",
+          "final_url": "https://www.lauderdalecountyal.gov/home/departments/probate-office/",
+          "status": 200,
+          "path": ".firecrawl/cd5-lauderdale-probate.html",
+          "sha256": "5f810755c3edb0d363673e4ab9076732a0bfd0b17ef4313b8a3b4be4dd42f45e",
+          "checked_at": "2026-11-03T20:29:59Z"
+        },
+        {
+          "url": "https://www.lauderdalecountyal.gov/home/departments/probate-office/sample-ballot/",
+          "final_url": "https://www.lauderdalecountyal.gov/home/departments/probate-office/sample-ballot/",
+          "status": 200,
+          "path": ".firecrawl/cd5-lauderdale-ballots.html",
+          "sha256": "08f87b85266655a6b24212e91b2b5b00d6c4f882113f812def23429eb5534354",
+          "checked_at": "2026-11-03T20:29:59Z"
+        }
+      ],
+      "history_archive": "https://www.sos.alabama.gov/alabama-votes/voter/election-data"
+    },
+    {
+      "county": "Lawrence",
+      "county_fips": "01079",
+      "cd5_extent": "whole_county",
+      "official_url": "https://lawrencecountyal.org/",
+      "readiness": "no_current_precinct_feed_found",
+      "endpoint": null,
+      "format": null,
+      "live_verified": false,
+      "precinct_returns_verified": false,
+      "notes": [
+        "County homepage retrieved; no result-reporting endpoint found.",
+        "Probate/Board-of-Registrars direct requests returned HTTP403; indexed official Probate Judge page lists contact/document resources without results."
+      ],
+      "evidence": [
+        {
+          "url": "https://www.lawrencecountyal.org/",
+          "final_url": "https://lawrencecountyal.org/",
+          "status": 200,
+          "path": ".firecrawl/cd5-lawrence.html",
+          "iframes": [],
+          "sha256": "26999b824c34e0dd9d2bafe45c09ff6aae4f8fc8efa869475dfaa5c43027f487",
+          "checked_at": "2026-11-03T20:29:59Z"
+        },
+        {
+          "url": "https://lawrencecountyal.org/probate-judge/",
+          "final_url": "https://lawrencecountyal.org/probate-judge/",
+          "status": 403,
+          "path": ".firecrawl/cd5-lawrence-probate.html",
+          "sha256": "889403e5cfbb7981f7a26aced0d7492524e5397d6996f7fccd67562d2a4a71a3",
+          "checked_at": "2026-11-03T20:29:59Z"
+        },
+        {
+          "url": "https://lawrencecountyal.org/board-of-registrars/",
+          "final_url": "https://lawrencecountyal.org/board-of-registrars/",
+          "status": 403,
+          "path": ".firecrawl/cd5-lawrence-registrars.html",
+          "sha256": "889403e5cfbb7981f7a26aced0d7492524e5397d6996f7fccd67562d2a4a71a3",
+          "checked_at": "2026-11-03T20:29:59Z"
+        }
+      ],
+      "history_archive": "https://www.sos.alabama.gov/alabama-votes/voter/election-data"
+    },
+    {
+      "county": "Limestone",
+      "county_fips": "01083",
+      "cd5_extent": "whole_county",
+      "official_url": "https://www.limestonecounty-al.gov/Departments/Elections",
+      "readiness": "official_video_only_no_precinct_machine_feed_found",
+      "endpoint": null,
+      "format": null,
+      "live_verified": false,
+      "precinct_returns_verified": false,
+      "viewer_url": "https://limestone.viebit.com/player_live.php?hash=a1077d99-c0f2-4e05-a1a1-fac8dd0f9b14",
+      "viewer_format": "video_livestream",
+      "notes": [
+        "Official Elections page advertises Live Election Results through a Viebit livestream. Video endpoint returned200 and embeds an HLS video source.",
+        "No precinct CSV, JSON, XML, HTML return table, or download was found on inspected official Elections page. Livestream remains an operator reference, not an automatic data collector."
+      ],
+      "evidence": [
+        {
+          "url": "https://www.limestonecounty-al.gov/Departments/Elections",
+          "final_url": "https://www.limestonecounty-al.gov/Departments/Elections",
+          "status": 200,
+          "path": ".firecrawl/cd5-limestone.html",
+          "iframes": [],
+          "sha256": "f7a988457760695b065ccfc51e842ba9e3678cba7db957ce18b92f8d4c525dbd",
+          "checked_at": "2026-11-03T20:29:59Z"
+        },
+        {
+          "url": "https://limestone.viebit.com/player_live.php?hash=a1077d99-c0f2-4e05-a1a1-fac8dd0f9b14",
+          "final_url": "https://limestone.viebit.com/livestream?hash=a1077d99-c0f2-4e05-a1a1-fac8dd0f9b14",
+          "status": 200,
+          "path": ".firecrawl/cd5-limestone-video.html",
+          "sha256": "b0eb3a6c05e34cede5ad7165e754e41e3147017902c77c8fdc4deccb59bc1faf",
+          "checked_at": "2026-11-03T20:29:59Z"
+        }
+      ],
+      "history_archive": "https://www.sos.alabama.gov/alabama-votes/voter/election-data"
+    },
+    {
+      "county": "Morgan",
+      "county_fips": "01103",
+      "cd5_extent": "whole_county",
+      "official_url": "http://www.morgancountyprobate.com/elections.aspx",
+      "readiness": "current_general_test_endpoint_quarantined",
+      "endpoint": "http://www.morgancountyprobate.com/temp/el30.htm",
+      "format": "html_pre_fixed_width_el30",
+      "live_verified": false,
+      "precinct_returns_verified": false,
+      "test": true,
+      "date_verified": "2026-11-03",
+      "source_run_date": "2026-11-02",
+      "source_run_time": "11:07 AM",
+      "report_label": "MORGAN COUNTY UNOFFICIAL REPORT / 2026 GENERAL ELECTION / NOVEMBER3,2026",
+      "authority_page_label": "November 3,2026 - GENERAL ELECTION TEST RESULTS",
+      "enabled": false,
+      "schema": {
+        "unit_count": 41,
+        "polling_place_rows": 39,
+        "special_units": [
+          {
+            "id": "0040",
+            "name": "ABSENTEE"
+          },
+          {
+            "id": "0041",
+            "name": "PROVISIONAL"
+          }
+        ],
+        "contest_name": "UNITED STATES REPRESENTATIVE, 5TH CONGRESSIONAL DISTRICT",
+        "candidates": [
+          {
+            "name": "ANDREW SNEED",
+            "party": "DEM"
+          },
+          {
+            "name": "DALE W. STRONG",
+            "party": "REP"
+          },
+          {
+            "name": "WRITE-IN",
+            "party": null
+          }
+        ],
+        "fields": [
+          "four_digit_precinct_id",
+          "precinct_name",
+          "registered_voters",
+          "ballots_cast",
+          "contest_name",
+          "candidate_name",
+          "candidate_party",
+          "candidate_votes",
+          "candidate_percent_when_nonzero",
+          "overvotes",
+          "undervotes"
+        ],
+        "summary_endpoint": "http://www.morgancountyprobate.com/temp/el45.htm",
+        "canvass_endpoint": "http://www.morgancountyprobate.com/temp/el111.lst.txt",
+        "all_ballot_totals_zero": true
+      },
+      "notes": [
+        "Active official election-results tab explicitly labels this current general endpoint TEST RESULTS. The report itself does not contain the word TEST. Check both the authority page and body before activation.",
+        "HTTP works; HTTPS www and non-www probate requests timed out. Dedicated morgancountyelections.com redirects/serves the same official probate page.",
+        "EL30 has a single PRE element, header metadata, four-digit precinct block headers, contest titles, and dotted fixed-width candidate/overvote/undervote rows. No separate JSON endpoint was identified.",
+        "Archived 2026 primary and 2024 general EL30 reports are separate history, not current returns."
+      ],
+      "evidence": [
+        {
+          "url": "https://morgancounty-al.gov/",
+          "final_url": "https://morgancounty-al.gov/",
+          "status": 200,
+          "path": ".firecrawl/cd5-morgan.html",
+          "iframes": [],
+          "sha256": "4e4b5dc231c005365731fe8f08937e0685c720ff7566b24e6114e8c20002767f",
+          "checked_at": "2026-11-03T20:29:59Z"
+        },
+        {
+          "url": "http://www.morgancountyprobate.com/elections.aspx",
+          "final_url": "http://www.morgancountyprobate.com/elections.aspx",
+          "status": 200,
+          "path": ".firecrawl/cd5-morgan-http.html",
+          "sha256": "c41d07eacb63daa8044aa4bcfe9d4e76ead38aa5709a7c98a453dffa1101a5bd",
+          "checked_at": "2026-11-03T20:29:59Z"
+        },
+        {
+          "url": "http://www.morgancountyprobate.com/temp/el30.htm",
+          "final_url": "http://www.morgancountyprobate.com/temp/el30.htm",
+          "status": 200,
+          "path": ".firecrawl/cd5-morgan-live.html",
+          "sha256": "4b2fea91f8a80805b19024c609892d7afba94bc9d3f129e5569092d89474692b",
+          "checked_at": "2026-11-03T20:29:59Z"
+        },
+        {
+          "url": "https://www.morgancountyprobate.com/elections.aspx",
+          "error": "HTTPSConnectionPool(host='www.morgancountyprobate.com', port=443): Max retries exceeded with url: /elections.aspx (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.morgancountyprobate.com', port=443) at 0x7fa8f6af0910>, 'Connection to www.morgancountyprobate.com timed out. (connect timeout=35)'))",
+          "checked_at": "2026-11-03T20:29:59Z"
+        },
+        {
+          "url": "http://www.morgancountyprobate.com/media/157084/el30.htm",
+          "final_url": "http://www.morgancountyprobate.com/media/157084/el30.htm",
+          "status": 200,
+          "path": ".firecrawl/cd5-morgan-primary.html",
+          "sha256": "aedea62eb83e3e58dd97b3dad3fed769d265412e6de7d3ac4f325e27cb8c1606",
+          "checked_at": "2026-11-03T20:29:59Z"
+        },
+        {
+          "url": "http://www.morgancountyprobate.com/media/129748/el30-precinct-report.htm",
+          "final_url": "http://www.morgancountyprobate.com/media/129748/el30-precinct-report.htm",
+          "status": 200,
+          "path": ".firecrawl/cd5-morgan-2024.html",
+          "sha256": "4c5101d872c1922fe472cf2333775dd9e306e4d804216435b5b3d4eb1fd4eb48",
+          "checked_at": "2026-11-03T20:29:59Z"
+        }
+      ],
+      "history_archive": "https://www.sos.alabama.gov/alabama-votes/voter/election-data",
+      "historical_precinct_urls": [
+        "http://www.morgancountyprobate.com/media/129748/el30-precinct-report.htm",
+        "http://www.morgancountyprobate.com/media/157084/el30.htm"
+      ],
+      "inspection_script": ".firecrawl/cd5-inspect-morgan.py",
+      "inspection_output": ".firecrawl/cd5-morgan-schema.json",
+      "sample_path": ".firecrawl/cd5-morgan-sample.txt"
+    }
+  ],
+  "state_fallback": {
+    "official_url": "https://www.sos.alabama.gov/alabama-votes/voter/election-information/2026",
+    "endpoint_2026": null,
+    "notes": [
+      "Current2026 information page includes ballots/candidate certifications but no November general election-night returns endpoint.",
+      "Legacy ecode 1001285 and electionnight root were tested but do not establish current 2026 returns or precinct coverage."
+    ],
+    "evidence": [
+      {
+        "url": "https://www.sos.alabama.gov/alabama-votes/voter/election-information/2026",
+        "final_url": "https://www.sos.alabama.gov/alabama-votes/voter/election-information/2026",
+        "status": 200,
+        "path": ".firecrawl/cd5-state2026.html",
+        "sha256": "2000677a3a9a152e782da93b2cd1db95cc0023fd7859bfe6ba2b7407a8bc5b12",
+        "checked_at": "2026-11-03T20:29:59Z"
+      },
+      {
+        "url": "https://www2.alabamavotes.gov/electionNight/chooseCounty.aspx?ecode=1001285",
+        "final_url": "https://www2.alabamavotes.gov/electionNight/chooseCounty.aspx?ecode=1001285",
+        "status": 200,
+        "path": ".firecrawl/cd5-state-old.html",
+        "sha256": "422df99d42a2be56f984aa6f5c7473f11dcf21da0db9abf49a4a6dc9f6895e47",
+        "checked_at": "2026-11-03T20:29:59Z"
+      },
+      {
+        "url": "https://www2.alabamavotes.gov/electionnight/",
+        "final_url": "https://www2.alabamavotes.gov/electionnight/",
+        "status": 200,
+        "path": ".firecrawl/cd5-state-night.html",
+        "sha256": "83016dae17acb85a46803ede90afa1f52f776209b5b06ab48809b708bf49e260",
+        "checked_at": "2026-11-03T20:29:59Z"
+      }
+    ]
+  },
+  "historical": {
+    "official_archive": "https://www.sos.alabama.gov/alabama-votes/voter/election-data",
+    "general_2024_precinct_zip": "https://www.sos.alabama.gov/sites/default/files/election-data/2024-12/2024-General%20Precinct%20Level%20Results.zip",
+    "general_2022_precinct_zip": "https://www.sos.alabama.gov/sites/default/files/election-data/2022-11/2022%20General%20Precinct%20Level%20Results.zip",
+    "evidence": {
+      "url": "https://www.sos.alabama.gov/alabama-votes/voter/election-data",
+      "final_url": "https://www.sos.alabama.gov/alabama-votes/voter/election-data",
+      "status": 200,
+      "path": ".firecrawl/cd5-state-history.html",
+      "sha256": "9497efddbc47a588aba6b6ba9b9d51c169f5a94f5db9c70d49d2c07bc4d1c6b8",
+      "checked_at": "2026-11-03T20:29:59Z"
+    },
+    "status": "Archive links verified on official index; ZIP contents not inspected in this subtask. Post-election archive is not election-night feed."
+  },
+  "rejected_discoveries": [
+    {
+      "url": "https://www.lauderdalecounty.org/election-results/",
+      "reason": "Not verified as Alabama authority; stale 2019 runoff, excluded in favor of verified Lauderdale Alabama .gov site."
+    },
+    {
+      "url": "https://jacksoncountytn.gov/election-commission/current-election-results",
+      "reason": "Wrong state (Tennessee)."
+    }
+  ]
+}

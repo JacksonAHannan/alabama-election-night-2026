@@ -1,0 +1,6058 @@
+{
+  "checked_at": "2026-11-03T21:31:01.931528+00:00",
+  "publisher": "civicAPI",
+  "publisher_is_election_authority": false,
+  "attribution_required": true,
+  "attribution_url": "https://civicapi.org/",
+  "documentation": "https://civicapi.org/api-documentation",
+  "discovery": [
+    {
+      "url": "https://www.alreporter.com/api/election-results",
+      "cached_path": ".firecrawl/fallback-counties-apr-all.json",
+      "role": "Publisher mirror index supplies discovered race IDs, not guessed",
+      "sha256": "5974f1587932b3fe2d8c687a50b9106cad6372d9fe66ae50f7d0a1e7a4ee1126"
+    },
+    {
+      "url": "https://civicapi.org/api/v2/race/search?province=AL&district=null&startDate=2026-11-03&endDate=2026-11-03&limit=1000",
+      "cached_path": ".firecrawl/statewide-civic-index.json",
+      "role": "First-party full null-district Alabama date inventory: 14 records, 12 individual statewide contests plus 2 chamber aggregates",
+      "sha256": "caaefc22b8746d6d019b71d069a03e620a0ad83f652f4f72c23ba981d1be16c6"
+    },
+    {
+      "url": "https://civicapi.org/api/v2/race/search?province=AL&startDate=2026-11-03&endDate=2026-11-03&limit=1000",
+      "cached_path": ".firecrawl/statewide-civic-all-al-index.json",
+      "role": "Full AL date inventory:161 records, no PSC or judiciary feed discovered",
+      "sha256": "df926d7602300eb06c70fca690daf4540fd3ac95689635dc4c79517855673db2"
+    }
+  ],
+  "records": [
+    {
+      "contest_id": "us-senate",
+      "provider_race_id": "86907",
+      "url": "https://civicapi.org/api/v2/race/86907",
+      "raw_path": ".firecrawl/statewide-civic-86907.json",
+      "fixture_path": "tests/fixtures/civic-statewide-us-senate-2026-setup.json",
+      "sha256": "c48e16dc019681720caa454cfe704d670a322316e494b7bcfb68e0e1933110e8",
+      "election_name": "Alabama US Senate",
+      "office": "US Senate",
+      "election_scope": "General",
+      "district": null,
+      "election_date": "2026-11-03T05:00:00.000Z",
+      "test_data": false,
+      "is_disputed": false,
+      "last_updated": "2026-10-30T18:52:47.073Z",
+      "county_count": 67,
+      "county_fips_complete": true,
+      "status": "setup_zeros",
+      "candidates": [
+        {
+          "id": "219738",
+          "source_name": "Barry Moore",
+          "source_party": "Republican",
+          "name": "Barry Moore",
+          "party": "REP"
+        },
+        {
+          "id": "219739",
+          "source_name": "Everett Wess",
+          "source_party": "Democratic",
+          "name": "Everett Wess",
+          "party": "DEM"
+        }
+      ],
+      "candidate_total_reconciliation": [
+        {
+          "candidate_id": "219738",
+          "name": "Barry Moore",
+          "top_level_votes": 0,
+          "county_sum": 0,
+          "matches": true
+        },
+        {
+          "candidate_id": "219739",
+          "name": "Everett Wess",
+          "top_level_votes": 0,
+          "county_sum": 0,
+          "matches": true
+        }
+      ]
+    },
+    {
+      "contest_id": "governor",
+      "provider_race_id": "86908",
+      "url": "https://civicapi.org/api/v2/race/86908",
+      "raw_path": ".firecrawl/statewide-civic-86908.json",
+      "fixture_path": "tests/fixtures/civic-statewide-governor-2026-setup.json",
+      "sha256": "e92502744ea07504c4935ffc62c599772d1ca16ea66ea49092dd7368e3d1f9eb",
+      "election_name": "Alabama Governor",
+      "office": "Governor",
+      "election_scope": "Statewide",
+      "district": null,
+      "election_date": "2026-11-03T05:00:00.000Z",
+      "test_data": false,
+      "is_disputed": false,
+      "last_updated": "2026-10-30T18:52:47.153Z",
+      "county_count": 67,
+      "county_fips_complete": true,
+      "status": "setup_zeros",
+      "candidates": [
+        {
+          "id": "219740",
+          "source_name": "Tommy Tuberville",
+          "source_party": "Republican",
+          "name": "Tommy Tuberville",
+          "party": "REP"
+        },
+        {
+          "id": "219741",
+          "source_name": "Doug Jones",
+          "source_party": "Democratic",
+          "name": "Doug Jones",
+          "party": "DEM"
+        }
+      ],
+      "candidate_total_reconciliation": [
+        {
+          "candidate_id": "219740",
+          "name": "Tommy Tuberville",
+          "top_level_votes": 0,
+          "county_sum": 0,
+          "matches": true
+        },
+        {
+          "candidate_id": "219741",
+          "name": "Doug Jones",
+          "top_level_votes": 0,
+          "county_sum": 0,
+          "matches": true
+        }
+      ]
+    },
+    {
+      "contest_id": "lieutenant-governor",
+      "provider_race_id": "86909",
+      "url": "https://civicapi.org/api/v2/race/86909",
+      "raw_path": ".firecrawl/statewide-civic-86909.json",
+      "fixture_path": "tests/fixtures/civic-statewide-lieutenant-governor-2026-setup.json",
+      "sha256": "64ad610a659a21f86ba820740553f5336216fbb55180663cadf29ed4f1a068d1",
+      "election_name": "Alabama Lieutenant Governor",
+      "office": "Lieutenant Governor",
+      "election_scope": "Statewide",
+      "district": null,
+      "election_date": "2026-11-03T05:00:00.000Z",
+      "test_data": false,
+      "is_disputed": false,
+      "last_updated": "2026-10-30T18:52:47.215Z",
+      "county_count": 67,
+      "county_fips_complete": true,
+      "status": "setup_zeros",
+      "candidates": [
+        {
+          "id": "219742",
+          "source_name": "John Wahl",
+          "source_party": "Republican",
+          "name": "John Wahl",
+          "party": "REP"
+        },
+        {
+          "id": "219743",
+          "source_name": "Phillip Ensler",
+          "source_party": "Democratic",
+          "name": "Phillip Ensler",
+          "party": "DEM"
+        }
+      ],
+      "candidate_total_reconciliation": [
+        {
+          "candidate_id": "219742",
+          "name": "John Wahl",
+          "top_level_votes": 0,
+          "county_sum": 0,
+          "matches": true
+        },
+        {
+          "candidate_id": "219743",
+          "name": "Phillip Ensler",
+          "top_level_votes": 0,
+          "county_sum": 0,
+          "matches": true
+        }
+      ]
+    },
+    {
+      "contest_id": "attorney-general",
+      "provider_race_id": "86910",
+      "url": "https://civicapi.org/api/v2/race/86910",
+      "raw_path": ".firecrawl/statewide-civic-86910.json",
+      "fixture_path": "tests/fixtures/civic-statewide-attorney-general-2026-setup.json",
+      "sha256": "84561583746935abc8ab7ef9f4e0e1c0b17a696439b9fb75b164e9cf5cc31f95",
+      "election_name": "Alabama Attorney General",
+      "office": "Attorney General",
+      "election_scope": "Statewide",
+      "district": null,
+      "election_date": "2026-11-03T05:00:00.000Z",
+      "test_data": false,
+      "is_disputed": false,
+      "last_updated": "2026-10-30T18:52:47.282Z",
+      "county_count": 67,
+      "county_fips_complete": true,
+      "status": "setup_zeros",
+      "candidates": [
+        {
+          "id": "219744",
+          "source_name": "Katherine Robertson",
+          "source_party": "Republican",
+          "name": "Katherine Robertson",
+          "party": "REP"
+        },
+        {
+          "id": "219745",
+          "source_name": "Jeff McLaughlin",
+          "source_party": "Democratic",
+          "name": "Jeff McLaughlin",
+          "party": "DEM"
+        }
+      ],
+      "candidate_total_reconciliation": [
+        {
+          "candidate_id": "219744",
+          "name": "Katherine Robertson",
+          "top_level_votes": 0,
+          "county_sum": 0,
+          "matches": true
+        },
+        {
+          "candidate_id": "219745",
+          "name": "Jeff McLaughlin",
+          "top_level_votes": 0,
+          "county_sum": 0,
+          "matches": true
+        }
+      ]
+    },
+    {
+      "contest_id": "secretary-of-state",
+      "provider_race_id": "86911",
+      "url": "https://civicapi.org/api/v2/race/86911",
+      "raw_path": ".firecrawl/statewide-civic-86911.json",
+      "fixture_path": "tests/fixtures/civic-statewide-secretary-of-state-2026-setup.json",
+      "sha256": "a04ebe02fb86edd8f789fb853ff7dc75dffd64fba9aa188d3b11ed58b5632724",
+      "election_name": "Alabama Secretary of State",
+      "office": "Secretary of State",
+      "election_scope": "Statewide",
+      "district": null,
+      "election_date": "2026-11-03T05:00:00.000Z",
+      "test_data": false,
+      "is_disputed": false,
+      "last_updated": "2026-10-30T18:52:47.359Z",
+      "county_count": 67,
+      "county_fips_complete": true,
+      "status": "setup_zeros",
+      "candidates": [
+        {
+          "id": "219746",
+          "source_name": "Caroleene Dobson",
+          "source_party": "Republican",
+          "name": "Caroleene Dobson",
+          "party": "REP"
+        },
+        {
+          "id": "219747",
+          "source_name": "Wayne Rogers",
+          "source_party": "Democratic",
+          "name": "Wayne Rogers",
+          "party": "DEM"
+        }
+      ],
+      "candidate_total_reconciliation": [
+        {
+          "candidate_id": "219746",
+          "name": "Caroleene Dobson",
+          "top_level_votes": 0,
+          "county_sum": 0,
+          "matches": true
+        },
+        {
+          "candidate_id": "219747",
+          "name": "Wayne Rogers",
+          "top_level_votes": 0,
+          "county_sum": 0,
+          "matches": true
+        }
+      ]
+    },
+    {
+      "contest_id": "treasurer",
+      "provider_race_id": "86912",
+      "url": "https://civicapi.org/api/v2/race/86912",
+      "raw_path": ".firecrawl/statewide-civic-86912.json",
+      "fixture_path": "tests/fixtures/civic-statewide-treasurer-2026-setup.json",
+      "sha256": "5c60c08d0e070d8a782d8d6b8022662e5bfdb468067bff2fd9c2833eaea7e095",
+      "election_name": "Alabama State Treasurer",
+      "office": "State Treasurer",
+      "election_scope": "Statewide",
+      "district": null,
+      "election_date": "2026-11-03T05:00:00.000Z",
+      "test_data": false,
+      "is_disputed": false,
+      "last_updated": "2026-10-30T18:52:47.443Z",
+      "county_count": 67,
+      "county_fips_complete": true,
+      "status": "setup_zeros",
+      "candidates": [
+        {
+          "id": "219748",
+          "source_name": "Young Boozer",
+          "source_party": "Republican",
+          "name": "Young Boozer",
+          "party": "REP"
+        },
+        {
+          "id": "219749",
+          "source_name": "Rosilyn Houston",
+          "source_party": "Democratic",
+          "name": "Rosilyn Houston",
+          "party": "DEM"
+        }
+      ],
+      "candidate_total_reconciliation": [
+        {
+          "candidate_id": "219748",
+          "name": "Young Boozer",
+          "top_level_votes": 0,
+          "county_sum": 0,
+          "matches": true
+        },
+        {
+          "candidate_id": "219749",
+          "name": "Rosilyn Houston",
+          "top_level_votes": 0,
+          "county_sum": 0,
+          "matches": true
+        }
+      ]
+    },
+    {
+      "contest_id": "auditor",
+      "provider_race_id": "86913",
+      "url": "https://civicapi.org/api/v2/race/86913",
+      "raw_path": ".firecrawl/statewide-civic-86913.json",
+      "fixture_path": "tests/fixtures/civic-statewide-auditor-2026-setup.json",
+      "sha256": "40d75cee45e9d42ab36c9459ec674847ccc6a83a34b8e892249933b05885eb8d",
+      "election_name": "Alabama State Auditor",
+      "office": "State Auditor",
+      "election_scope": "Statewide",
+      "district": null,
+      "election_date": "2026-11-03T05:00:00.000Z",
+      "test_data": false,
+      "is_disputed": false,
+      "last_updated": "2026-10-30T18:52:47.519Z",
+      "county_count": 67,
+      "county_fips_complete": true,
+      "status": "setup_zeros",
+      "candidates": [
+        {
+          "id": "219750",
+          "source_name": "Andrew Sorrell",
+          "source_party": "Republican",
+          "name": "Andrew Sorrell",
+          "party": "REP"
+        },
+        {
+          "id": "219751",
+          "source_name": "Violet Edwards",
+          "source_party": "Democratic",
+          "name": "Violet Edwards",
+          "party": "DEM"
+        }
+      ],
+      "candidate_total_reconciliation": [
+        {
+          "candidate_id": "219750",
+          "name": "Andrew Sorrell",
+          "top_level_votes": 0,
+          "county_sum": 0,
+          "matches": true
+        },
+        {
+          "candidate_id": "219751",
+          "name": "Violet Edwards",
+          "top_level_votes": 0,
+          "county_sum": 0,
+          "matches": true
+        }
+      ]
+    },
+    {
+      "contest_id": "agriculture",
+      "provider_race_id": "86914",
+      "url": "https://civicapi.org/api/v2/race/86914",
+      "raw_path": ".firecrawl/statewide-civic-86914.json",
+      "fixture_path": "tests/fixtures/civic-statewide-agriculture-2026-setup.json",
+      "sha256": "989969e4a24cfbd50bfd567ece0e0e7d11853be81eece350d50b3bbfdca856a7",
+      "election_name": "Alabama Commissioner of Agriculture and Industries",
+      "office": "Commissioner of Agriculture and Industries",
+      "election_scope": "Statewide",
+      "district": null,
+      "election_date": "2026-11-03T05:00:00.000Z",
+      "test_data": false,
+      "is_disputed": false,
+      "last_updated": "2026-10-30T18:52:47.605Z",
+      "county_count": 67,
+      "county_fips_complete": true,
+      "status": "setup_zeros",
+      "candidates": [
+        {
+          "id": "219752",
+          "source_name": "Corey Hill",
+          "source_party": "Republican",
+          "name": "Corey Hill",
+          "party": "REP"
+        },
+        {
+          "id": "219753",
+          "source_name": "Ron Sparks",
+          "source_party": "Democratic",
+          "name": "Ron Sparks",
+          "party": "DEM"
+        }
+      ],
+      "candidate_total_reconciliation": [
+        {
+          "candidate_id": "219752",
+          "name": "Corey Hill",
+          "top_level_votes": 0,
+          "county_sum": 0,
+          "matches": true
+        },
+        {
+          "candidate_id": "219753",
+          "name": "Ron Sparks",
+          "top_level_votes": 0,
+          "county_sum": 0,
+          "matches": true
+        }
+      ]
+    },
+    {
+      "contest_id": "amendment-1",
+      "provider_race_id": "179834",
+      "url": "https://civicapi.org/api/v2/race/179834",
+      "raw_path": ".firecrawl/statewide-civic-179834.json",
+      "fixture_path": "tests/fixtures/civic-statewide-amendment-1-2026-setup.json",
+      "sha256": "d9342c0489a6daa7e9edf5cd4cc92d261780b0d452c7c0667cce0fd8eefd9935",
+      "election_name": "Alabama Amendment 1 - Fill Lieutenant Governor Vacancies by Election",
+      "office": "Referendum",
+      "election_scope": "Statewide",
+      "district": null,
+      "election_date": "2026-11-03T05:00:00.000Z",
+      "test_data": false,
+      "is_disputed": false,
+      "last_updated": "2026-10-31T00:12:47.016Z",
+      "county_count": 67,
+      "county_fips_complete": true,
+      "status": "setup_zeros",
+      "candidates": [
+        {
+          "id": "22719328",
+          "source_name": "Yes",
+          "source_party": "Nonpartisan",
+          "name": "Yes",
+          "party": "YES"
+        },
+        {
+          "id": "22719329",
+          "source_name": "No",
+          "source_party": "Nonpartisan",
+          "name": "No",
+          "party": "NO"
+        }
+      ],
+      "candidate_total_reconciliation": [
+        {
+          "candidate_id": "22719328",
+          "name": "Yes",
+          "top_level_votes": 0,
+          "county_sum": 0,
+          "matches": true
+        },
+        {
+          "candidate_id": "22719329",
+          "name": "No",
+          "top_level_votes": 0,
+          "county_sum": 0,
+          "matches": true
+        }
+      ]
+    },
+    {
+      "contest_id": "amendment-2",
+      "provider_race_id": "179835",
+      "url": "https://civicapi.org/api/v2/race/179835",
+      "raw_path": ".firecrawl/statewide-civic-179835.json",
+      "fixture_path": "tests/fixtures/civic-statewide-amendment-2-2026-setup.json",
+      "sha256": "cb826735d288ae4faedaad3992acbca093fab0c4fe713e58a7161d3e798c932f",
+      "election_name": "Alabama Amendment 2 - School District Consolidation Process",
+      "office": "Referendum",
+      "election_scope": "Statewide",
+      "district": null,
+      "election_date": "2026-11-03T05:00:00.000Z",
+      "test_data": false,
+      "is_disputed": false,
+      "last_updated": "2026-10-31T00:12:47.270Z",
+      "county_count": 67,
+      "county_fips_complete": true,
+      "status": "setup_zeros",
+      "candidates": [
+        {
+          "id": "22719365",
+          "source_name": "Yes",
+          "source_party": "Nonpartisan",
+          "name": "Yes",
+          "party": "YES"
+        },
+        {
+          "id": "22719366",
+          "source_name": "No",
+          "source_party": "Nonpartisan",
+          "name": "No",
+          "party": "NO"
+        }
+      ],
+      "candidate_total_reconciliation": [
+        {
+          "candidate_id": "22719365",
+          "name": "Yes",
+          "top_level_votes": 0,
+          "county_sum": 0,
+          "matches": true
+        },
+        {
+          "candidate_id": "22719366",
+          "name": "No",
+          "top_level_votes": 0,
+          "county_sum": 0,
+          "matches": true
+        }
+      ]
+    },
+    {
+      "contest_id": "amendment-3",
+      "provider_race_id": "179836",
+      "url": "https://civicapi.org/api/v2/race/179836",
+      "raw_path": ".firecrawl/statewide-civic-179836.json",
+      "fixture_path": "tests/fixtures/civic-statewide-amendment-3-2026-setup.json",
+      "sha256": "b3f4d2d737a8657a996bb6bed169bfc9568b0bf18682aacf25c4d892ddae3ab8",
+      "election_name": "Alabama Amendment 3 - Pledge of Allegiance and Student-Led Prayer in Public Schools",
+      "office": "Referendum",
+      "election_scope": "Statewide",
+      "district": null,
+      "election_date": "2026-11-03T05:00:00.000Z",
+      "test_data": false,
+      "is_disputed": false,
+      "last_updated": "2026-10-31T00:12:47.343Z",
+      "county_count": 67,
+      "county_fips_complete": true,
+      "status": "setup_zeros",
+      "candidates": [
+        {
+          "id": "22719367",
+          "source_name": "Yes",
+          "source_party": "Nonpartisan",
+          "name": "Yes",
+          "party": "YES"
+        },
+        {
+          "id": "22719368",
+          "source_name": "No",
+          "source_party": "Nonpartisan",
+          "name": "No",
+          "party": "NO"
+        }
+      ],
+      "candidate_total_reconciliation": [
+        {
+          "candidate_id": "22719367",
+          "name": "Yes",
+          "top_level_votes": 0,
+          "county_sum": 0,
+          "matches": true
+        },
+        {
+          "candidate_id": "22719368",
+          "name": "No",
+          "top_level_votes": 0,
+          "county_sum": 0,
+          "matches": true
+        }
+      ]
+    },
+    {
+      "contest_id": "amendment-4",
+      "provider_race_id": "179837",
+      "url": "https://civicapi.org/api/v2/race/179837",
+      "raw_path": ".firecrawl/statewide-civic-179837.json",
+      "fixture_path": "tests/fixtures/civic-statewide-amendment-4-2026-setup.json",
+      "sha256": "dfab7eb23cf95947f541fd49004a201418740e5a51c07d8fcbcdbaa845c85f60",
+      "election_name": "Alabama Amendment 4 - Star-Spangled Banner in Public Schools",
+      "office": "Referendum",
+      "election_scope": "Statewide",
+      "district": null,
+      "election_date": "2026-11-03T05:00:00.000Z",
+      "test_data": false,
+      "is_disputed": false,
+      "last_updated": "2026-10-31T00:12:47.433Z",
+      "county_count": 67,
+      "county_fips_complete": true,
+      "status": "setup_zeros",
+      "candidates": [
+        {
+          "id": "22719369",
+          "source_name": "Yes",
+          "source_party": "Nonpartisan",
+          "name": "Yes",
+          "party": "YES"
+        },
+        {
+          "id": "22719370",
+          "source_name": "No",
+          "source_party": "Nonpartisan",
+          "name": "No",
+          "party": "NO"
+        }
+      ],
+      "candidate_total_reconciliation": [
+        {
+          "candidate_id": "22719369",
+          "name": "Yes",
+          "top_level_votes": 0,
+          "county_sum": 0,
+          "matches": true
+        },
+        {
+          "candidate_id": "22719370",
+          "name": "No",
+          "top_level_votes": 0,
+          "county_sum": 0,
+          "matches": true
+        }
+      ]
+    }
+  ],
+  "source_entries": [
+    {
+      "id": "civic-statewide-us-senate",
+      "county": "Alabama statewide county feed",
+      "county_id": "AL",
+      "url": "https://civicapi.org/results/elections/86907",
+      "endpoint": "https://civicapi.org/api/v2/race/86907",
+      "election_id": "86907",
+      "enabled": true,
+      "format": "civic_county",
+      "priority": 100,
+      "status": "civicAPI statewide county totals; setup zeros",
+      "note": "Public publisher feed attributed to civicAPI. All 67 county totals; no precinct breakdown. Named candidates are supplied; write-ins are not supplied for candidate races. Reporting percentage is an estimate, not an exact precinct count.",
+      "interval_seconds": 120,
+      "contest_map": {
+        "86907": "us-senate"
+      },
+      "expected": {
+        "name": "Alabama US Senate",
+        "district": null,
+        "office": "US Senate",
+        "election_scope": "General",
+        "counties": [
+          {
+            "id": "autauga",
+            "name": "Autauga",
+            "type": "County",
+            "fips": "01001"
+          },
+          {
+            "id": "baldwin",
+            "name": "Baldwin",
+            "type": "County",
+            "fips": "01003"
+          },
+          {
+            "id": "barbour",
+            "name": "Barbour",
+            "type": "County",
+            "fips": "01005"
+          },
+          {
+            "id": "bibb",
+            "name": "Bibb",
+            "type": "County",
+            "fips": "01007"
+          },
+          {
+            "id": "blount",
+            "name": "Blount",
+            "type": "County",
+            "fips": "01009"
+          },
+          {
+            "id": "bullock",
+            "name": "Bullock",
+            "type": "County",
+            "fips": "01011"
+          },
+          {
+            "id": "butler",
+            "name": "Butler",
+            "type": "County",
+            "fips": "01013"
+          },
+          {
+            "id": "calhoun",
+            "name": "Calhoun",
+            "type": "County",
+            "fips": "01015"
+          },
+          {
+            "id": "chambers",
+            "name": "Chambers",
+            "type": "County",
+            "fips": "01017"
+          },
+          {
+            "id": "cherokee",
+            "name": "Cherokee",
+            "type": "County",
+            "fips": "01019"
+          },
+          {
+            "id": "chilton",
+            "name": "Chilton",
+            "type": "County",
+            "fips": "01021"
+          },
+          {
+            "id": "choctaw",
+            "name": "Choctaw",
+            "type": "County",
+            "fips": "01023"
+          },
+          {
+            "id": "clarke",
+            "name": "Clarke",
+            "type": "County",
+            "fips": "01025"
+          },
+          {
+            "id": "clay",
+            "name": "Clay",
+            "type": "County",
+            "fips": "01027"
+          },
+          {
+            "id": "cleburne",
+            "name": "Cleburne",
+            "type": "County",
+            "fips": "01029"
+          },
+          {
+            "id": "coffee",
+            "name": "Coffee",
+            "type": "County",
+            "fips": "01031"
+          },
+          {
+            "id": "colbert",
+            "name": "Colbert",
+            "type": "County",
+            "fips": "01033"
+          },
+          {
+            "id": "conecuh",
+            "name": "Conecuh",
+            "type": "County",
+            "fips": "01035"
+          },
+          {
+            "id": "coosa",
+            "name": "Coosa",
+            "type": "County",
+            "fips": "01037"
+          },
+          {
+            "id": "covington",
+            "name": "Covington",
+            "type": "County",
+            "fips": "01039"
+          },
+          {
+            "id": "crenshaw",
+            "name": "Crenshaw",
+            "type": "County",
+            "fips": "01041"
+          },
+          {
+            "id": "cullman",
+            "name": "Cullman",
+            "type": "County",
+            "fips": "01043"
+          },
+          {
+            "id": "dale",
+            "name": "Dale",
+            "type": "County",
+            "fips": "01045"
+          },
+          {
+            "id": "dallas",
+            "name": "Dallas",
+            "type": "County",
+            "fips": "01047"
+          },
+          {
+            "id": "dekalb",
+            "name": "DeKalb",
+            "type": "County",
+            "fips": "01049"
+          },
+          {
+            "id": "elmore",
+            "name": "Elmore",
+            "type": "County",
+            "fips": "01051"
+          },
+          {
+            "id": "escambia",
+            "name": "Escambia",
+            "type": "County",
+            "fips": "01053"
+          },
+          {
+            "id": "etowah",
+            "name": "Etowah",
+            "type": "County",
+            "fips": "01055"
+          },
+          {
+            "id": "fayette",
+            "name": "Fayette",
+            "type": "County",
+            "fips": "01057"
+          },
+          {
+            "id": "franklin",
+            "name": "Franklin",
+            "type": "County",
+            "fips": "01059"
+          },
+          {
+            "id": "geneva",
+            "name": "Geneva",
+            "type": "County",
+            "fips": "01061"
+          },
+          {
+            "id": "greene",
+            "name": "Greene",
+            "type": "County",
+            "fips": "01063"
+          },
+          {
+            "id": "hale",
+            "name": "Hale",
+            "type": "County",
+            "fips": "01065"
+          },
+          {
+            "id": "henry",
+            "name": "Henry",
+            "type": "County",
+            "fips": "01067"
+          },
+          {
+            "id": "houston",
+            "name": "Houston",
+            "type": "County",
+            "fips": "01069"
+          },
+          {
+            "id": "jackson",
+            "name": "Jackson",
+            "type": "County",
+            "fips": "01071"
+          },
+          {
+            "id": "jefferson",
+            "name": "Jefferson",
+            "type": "County",
+            "fips": "01073"
+          },
+          {
+            "id": "lamar",
+            "name": "Lamar",
+            "type": "County",
+            "fips": "01075"
+          },
+          {
+            "id": "lauderdale",
+            "name": "Lauderdale",
+            "type": "County",
+            "fips": "01077"
+          },
+          {
+            "id": "lawrence",
+            "name": "Lawrence",
+            "type": "County",
+            "fips": "01079"
+          },
+          {
+            "id": "lee",
+            "name": "Lee",
+            "type": "County",
+            "fips": "01081"
+          },
+          {
+            "id": "limestone",
+            "name": "Limestone",
+            "type": "County",
+            "fips": "01083"
+          },
+          {
+            "id": "lowndes",
+            "name": "Lowndes",
+            "type": "County",
+            "fips": "01085"
+          },
+          {
+            "id": "macon",
+            "name": "Macon",
+            "type": "County",
+            "fips": "01087"
+          },
+          {
+            "id": "madison",
+            "name": "Madison",
+            "type": "County",
+            "fips": "01089"
+          },
+          {
+            "id": "marengo",
+            "name": "Marengo",
+            "type": "County",
+            "fips": "01091"
+          },
+          {
+            "id": "marion",
+            "name": "Marion",
+            "type": "County",
+            "fips": "01093"
+          },
+          {
+            "id": "marshall",
+            "name": "Marshall",
+            "type": "County",
+            "fips": "01095"
+          },
+          {
+            "id": "mobile",
+            "name": "Mobile",
+            "type": "County",
+            "fips": "01097"
+          },
+          {
+            "id": "monroe",
+            "name": "Monroe",
+            "type": "County",
+            "fips": "01099"
+          },
+          {
+            "id": "montgomery",
+            "name": "Montgomery",
+            "type": "County",
+            "fips": "01101"
+          },
+          {
+            "id": "morgan",
+            "name": "Morgan",
+            "type": "County",
+            "fips": "01103"
+          },
+          {
+            "id": "perry",
+            "name": "Perry",
+            "type": "County",
+            "fips": "01105"
+          },
+          {
+            "id": "pickens",
+            "name": "Pickens",
+            "type": "County",
+            "fips": "01107"
+          },
+          {
+            "id": "pike",
+            "name": "Pike",
+            "type": "County",
+            "fips": "01109"
+          },
+          {
+            "id": "randolph",
+            "name": "Randolph",
+            "type": "County",
+            "fips": "01111"
+          },
+          {
+            "id": "russell",
+            "name": "Russell",
+            "type": "County",
+            "fips": "01113"
+          },
+          {
+            "id": "st_clair",
+            "name": "St. Clair",
+            "type": "County",
+            "fips": "01115"
+          },
+          {
+            "id": "shelby",
+            "name": "Shelby",
+            "type": "County",
+            "fips": "01117"
+          },
+          {
+            "id": "sumter",
+            "name": "Sumter",
+            "type": "County",
+            "fips": "01119"
+          },
+          {
+            "id": "talladega",
+            "name": "Talladega",
+            "type": "County",
+            "fips": "01121"
+          },
+          {
+            "id": "tallapoosa",
+            "name": "Tallapoosa",
+            "type": "County",
+            "fips": "01123"
+          },
+          {
+            "id": "tuscaloosa",
+            "name": "Tuscaloosa",
+            "type": "County",
+            "fips": "01125"
+          },
+          {
+            "id": "walker",
+            "name": "Walker",
+            "type": "County",
+            "fips": "01127"
+          },
+          {
+            "id": "washington",
+            "name": "Washington",
+            "type": "County",
+            "fips": "01129"
+          },
+          {
+            "id": "wilcox",
+            "name": "Wilcox",
+            "type": "County",
+            "fips": "01131"
+          },
+          {
+            "id": "winston",
+            "name": "Winston",
+            "type": "County",
+            "fips": "01133"
+          }
+        ],
+        "candidates": [
+          {
+            "id": "219738",
+            "source_name": "Barry Moore",
+            "source_party": "Republican",
+            "name": "Barry Moore",
+            "party": "REP"
+          },
+          {
+            "id": "219739",
+            "source_name": "Everett Wess",
+            "source_party": "Democratic",
+            "name": "Everett Wess",
+            "party": "DEM"
+          }
+        ]
+      }
+    },
+    {
+      "id": "civic-statewide-governor",
+      "county": "Alabama statewide county feed",
+      "county_id": "AL",
+      "url": "https://civicapi.org/results/elections/86908",
+      "endpoint": "https://civicapi.org/api/v2/race/86908",
+      "election_id": "86908",
+      "enabled": true,
+      "format": "civic_county",
+      "priority": 100,
+      "status": "civicAPI statewide county totals; setup zeros",
+      "note": "Public publisher feed attributed to civicAPI. All 67 county totals; no precinct breakdown. Named candidates are supplied; write-ins are not supplied for candidate races. Reporting percentage is an estimate, not an exact precinct count.",
+      "interval_seconds": 120,
+      "contest_map": {
+        "86908": "governor"
+      },
+      "expected": {
+        "name": "Alabama Governor",
+        "district": null,
+        "office": "Governor",
+        "election_scope": "Statewide",
+        "counties": [
+          {
+            "id": "autauga",
+            "name": "Autauga",
+            "type": "County",
+            "fips": "01001"
+          },
+          {
+            "id": "baldwin",
+            "name": "Baldwin",
+            "type": "County",
+            "fips": "01003"
+          },
+          {
+            "id": "barbour",
+            "name": "Barbour",
+            "type": "County",
+            "fips": "01005"
+          },
+          {
+            "id": "bibb",
+            "name": "Bibb",
+            "type": "County",
+            "fips": "01007"
+          },
+          {
+            "id": "blount",
+            "name": "Blount",
+            "type": "County",
+            "fips": "01009"
+          },
+          {
+            "id": "bullock",
+            "name": "Bullock",
+            "type": "County",
+            "fips": "01011"
+          },
+          {
+            "id": "butler",
+            "name": "Butler",
+            "type": "County",
+            "fips": "01013"
+          },
+          {
+            "id": "calhoun",
+            "name": "Calhoun",
+            "type": "County",
+            "fips": "01015"
+          },
+          {
+            "id": "chambers",
+            "name": "Chambers",
+            "type": "County",
+            "fips": "01017"
+          },
+          {
+            "id": "cherokee",
+            "name": "Cherokee",
+            "type": "County",
+            "fips": "01019"
+          },
+          {
+            "id": "chilton",
+            "name": "Chilton",
+            "type": "County",
+            "fips": "01021"
+          },
+          {
+            "id": "choctaw",
+            "name": "Choctaw",
+            "type": "County",
+            "fips": "01023"
+          },
+          {
+            "id": "clarke",
+            "name": "Clarke",
+            "type": "County",
+            "fips": "01025"
+          },
+          {
+            "id": "clay",
+            "name": "Clay",
+            "type": "County",
+            "fips": "01027"
+          },
+          {
+            "id": "cleburne",
+            "name": "Cleburne",
+            "type": "County",
+            "fips": "01029"
+          },
+          {
+            "id": "coffee",
+            "name": "Coffee",
+            "type": "County",
+            "fips": "01031"
+          },
+          {
+            "id": "colbert",
+            "name": "Colbert",
+            "type": "County",
+            "fips": "01033"
+          },
+          {
+            "id": "conecuh",
+            "name": "Conecuh",
+            "type": "County",
+            "fips": "01035"
+          },
+          {
+            "id": "coosa",
+            "name": "Coosa",
+            "type": "County",
+            "fips": "01037"
+          },
+          {
+            "id": "covington",
+            "name": "Covington",
+            "type": "County",
+            "fips": "01039"
+          },
+          {
+            "id": "crenshaw",
+            "name": "Crenshaw",
+            "type": "County",
+            "fips": "01041"
+          },
+          {
+            "id": "cullman",
+            "name": "Cullman",
+            "type": "County",
+            "fips": "01043"
+          },
+          {
+            "id": "dale",
+            "name": "Dale",
+            "type": "County",
+            "fips": "01045"
+          },
+          {
+            "id": "dallas",
+            "name": "Dallas",
+            "type": "County",
+            "fips": "01047"
+          },
+          {
+            "id": "dekalb",
+            "name": "DeKalb",
+            "type": "County",
+            "fips": "01049"
+          },
+          {
+            "id": "elmore",
+            "name": "Elmore",
+            "type": "County",
+            "fips": "01051"
+          },
+          {
+            "id": "escambia",
+            "name": "Escambia",
+            "type": "County",
+            "fips": "01053"
+          },
+          {
+            "id": "etowah",
+            "name": "Etowah",
+            "type": "County",
+            "fips": "01055"
+          },
+          {
+            "id": "fayette",
+            "name": "Fayette",
+            "type": "County",
+            "fips": "01057"
+          },
+          {
+            "id": "franklin",
+            "name": "Franklin",
+            "type": "County",
+            "fips": "01059"
+          },
+          {
+            "id": "geneva",
+            "name": "Geneva",
+            "type": "County",
+            "fips": "01061"
+          },
+          {
+            "id": "greene",
+            "name": "Greene",
+            "type": "County",
+            "fips": "01063"
+          },
+          {
+            "id": "hale",
+            "name": "Hale",
+            "type": "County",
+            "fips": "01065"
+          },
+          {
+            "id": "henry",
+            "name": "Henry",
+            "type": "County",
+            "fips": "01067"
+          },
+          {
+            "id": "houston",
+            "name": "Houston",
+            "type": "County",
+            "fips": "01069"
+          },
+          {
+            "id": "jackson",
+            "name": "Jackson",
+            "type": "County",
+            "fips": "01071"
+          },
+          {
+            "id": "jefferson",
+            "name": "Jefferson",
+            "type": "County",
+            "fips": "01073"
+          },
+          {
+            "id": "lamar",
+            "name": "Lamar",
+            "type": "County",
+            "fips": "01075"
+          },
+          {
+            "id": "lauderdale",
+            "name": "Lauderdale",
+            "type": "County",
+            "fips": "01077"
+          },
+          {
+            "id": "lawrence",
+            "name": "Lawrence",
+            "type": "County",
+            "fips": "01079"
+          },
+          {
+            "id": "lee",
+            "name": "Lee",
+            "type": "County",
+            "fips": "01081"
+          },
+          {
+            "id": "limestone",
+            "name": "Limestone",
+            "type": "County",
+            "fips": "01083"
+          },
+          {
+            "id": "lowndes",
+            "name": "Lowndes",
+            "type": "County",
+            "fips": "01085"
+          },
+          {
+            "id": "macon",
+            "name": "Macon",
+            "type": "County",
+            "fips": "01087"
+          },
+          {
+            "id": "madison",
+            "name": "Madison",
+            "type": "County",
+            "fips": "01089"
+          },
+          {
+            "id": "marengo",
+            "name": "Marengo",
+            "type": "County",
+            "fips": "01091"
+          },
+          {
+            "id": "marion",
+            "name": "Marion",
+            "type": "County",
+            "fips": "01093"
+          },
+          {
+            "id": "marshall",
+            "name": "Marshall",
+            "type": "County",
+            "fips": "01095"
+          },
+          {
+            "id": "mobile",
+            "name": "Mobile",
+            "type": "County",
+            "fips": "01097"
+          },
+          {
+            "id": "monroe",
+            "name": "Monroe",
+            "type": "County",
+            "fips": "01099"
+          },
+          {
+            "id": "montgomery",
+            "name": "Montgomery",
+            "type": "County",
+            "fips": "01101"
+          },
+          {
+            "id": "morgan",
+            "name": "Morgan",
+            "type": "County",
+            "fips": "01103"
+          },
+          {
+            "id": "perry",
+            "name": "Perry",
+            "type": "County",
+            "fips": "01105"
+          },
+          {
+            "id": "pickens",
+            "name": "Pickens",
+            "type": "County",
+            "fips": "01107"
+          },
+          {
+            "id": "pike",
+            "name": "Pike",
+            "type": "County",
+            "fips": "01109"
+          },
+          {
+            "id": "randolph",
+            "name": "Randolph",
+            "type": "County",
+            "fips": "01111"
+          },
+          {
+            "id": "russell",
+            "name": "Russell",
+            "type": "County",
+            "fips": "01113"
+          },
+          {
+            "id": "st_clair",
+            "name": "St. Clair",
+            "type": "County",
+            "fips": "01115"
+          },
+          {
+            "id": "shelby",
+            "name": "Shelby",
+            "type": "County",
+            "fips": "01117"
+          },
+          {
+            "id": "sumter",
+            "name": "Sumter",
+            "type": "County",
+            "fips": "01119"
+          },
+          {
+            "id": "talladega",
+            "name": "Talladega",
+            "type": "County",
+            "fips": "01121"
+          },
+          {
+            "id": "tallapoosa",
+            "name": "Tallapoosa",
+            "type": "County",
+            "fips": "01123"
+          },
+          {
+            "id": "tuscaloosa",
+            "name": "Tuscaloosa",
+            "type": "County",
+            "fips": "01125"
+          },
+          {
+            "id": "walker",
+            "name": "Walker",
+            "type": "County",
+            "fips": "01127"
+          },
+          {
+            "id": "washington",
+            "name": "Washington",
+            "type": "County",
+            "fips": "01129"
+          },
+          {
+            "id": "wilcox",
+            "name": "Wilcox",
+            "type": "County",
+            "fips": "01131"
+          },
+          {
+            "id": "winston",
+            "name": "Winston",
+            "type": "County",
+            "fips": "01133"
+          }
+        ],
+        "candidates": [
+          {
+            "id": "219740",
+            "source_name": "Tommy Tuberville",
+            "source_party": "Republican",
+            "name": "Tommy Tuberville",
+            "party": "REP"
+          },
+          {
+            "id": "219741",
+            "source_name": "Doug Jones",
+            "source_party": "Democratic",
+            "name": "Doug Jones",
+            "party": "DEM"
+          }
+        ]
+      }
+    },
+    {
+      "id": "civic-statewide-lieutenant-governor",
+      "county": "Alabama statewide county feed",
+      "county_id": "AL",
+      "url": "https://civicapi.org/results/elections/86909",
+      "endpoint": "https://civicapi.org/api/v2/race/86909",
+      "election_id": "86909",
+      "enabled": true,
+      "format": "civic_county",
+      "priority": 100,
+      "status": "civicAPI statewide county totals; setup zeros",
+      "note": "Public publisher feed attributed to civicAPI. All 67 county totals; no precinct breakdown. Named candidates are supplied; write-ins are not supplied for candidate races. Reporting percentage is an estimate, not an exact precinct count.",
+      "interval_seconds": 120,
+      "contest_map": {
+        "86909": "lieutenant-governor"
+      },
+      "expected": {
+        "name": "Alabama Lieutenant Governor",
+        "district": null,
+        "office": "Lieutenant Governor",
+        "election_scope": "Statewide",
+        "counties": [
+          {
+            "id": "autauga",
+            "name": "Autauga",
+            "type": "County",
+            "fips": "01001"
+          },
+          {
+            "id": "baldwin",
+            "name": "Baldwin",
+            "type": "County",
+            "fips": "01003"
+          },
+          {
+            "id": "barbour",
+            "name": "Barbour",
+            "type": "County",
+            "fips": "01005"
+          },
+          {
+            "id": "bibb",
+            "name": "Bibb",
+            "type": "County",
+            "fips": "01007"
+          },
+          {
+            "id": "blount",
+            "name": "Blount",
+            "type": "County",
+            "fips": "01009"
+          },
+          {
+            "id": "bullock",
+            "name": "Bullock",
+            "type": "County",
+            "fips": "01011"
+          },
+          {
+            "id": "butler",
+            "name": "Butler",
+            "type": "County",
+            "fips": "01013"
+          },
+          {
+            "id": "calhoun",
+            "name": "Calhoun",
+            "type": "County",
+            "fips": "01015"
+          },
+          {
+            "id": "chambers",
+            "name": "Chambers",
+            "type": "County",
+            "fips": "01017"
+          },
+          {
+            "id": "cherokee",
+            "name": "Cherokee",
+            "type": "County",
+            "fips": "01019"
+          },
+          {
+            "id": "chilton",
+            "name": "Chilton",
+            "type": "County",
+            "fips": "01021"
+          },
+          {
+            "id": "choctaw",
+            "name": "Choctaw",
+            "type": "County",
+            "fips": "01023"
+          },
+          {
+            "id": "clarke",
+            "name": "Clarke",
+            "type": "County",
+            "fips": "01025"
+          },
+          {
+            "id": "clay",
+            "name": "Clay",
+            "type": "County",
+            "fips": "01027"
+          },
+          {
+            "id": "cleburne",
+            "name": "Cleburne",
+            "type": "County",
+            "fips": "01029"
+          },
+          {
+            "id": "coffee",
+            "name": "Coffee",
+            "type": "County",
+            "fips": "01031"
+          },
+          {
+            "id": "colbert",
+            "name": "Colbert",
+            "type": "County",
+            "fips": "01033"
+          },
+          {
+            "id": "conecuh",
+            "name": "Conecuh",
+            "type": "County",
+            "fips": "01035"
+          },
+          {
+            "id": "coosa",
+            "name": "Coosa",
+            "type": "County",
+            "fips": "01037"
+          },
+          {
+            "id": "covington",
+            "name": "Covington",
+            "type": "County",
+            "fips": "01039"
+          },
+          {
+            "id": "crenshaw",
+            "name": "Crenshaw",
+            "type": "County",
+            "fips": "01041"
+          },
+          {
+            "id": "cullman",
+            "name": "Cullman",
+            "type": "County",
+            "fips": "01043"
+          },
+          {
+            "id": "dale",
+            "name": "Dale",
+            "type": "County",
+            "fips": "01045"
+          },
+          {
+            "id": "dallas",
+            "name": "Dallas",
+            "type": "County",
+            "fips": "01047"
+          },
+          {
+            "id": "dekalb",
+            "name": "DeKalb",
+            "type": "County",
+            "fips": "01049"
+          },
+          {
+            "id": "elmore",
+            "name": "Elmore",
+            "type": "County",
+            "fips": "01051"
+          },
+          {
+            "id": "escambia",
+            "name": "Escambia",
+            "type": "County",
+            "fips": "01053"
+          },
+          {
+            "id": "etowah",
+            "name": "Etowah",
+            "type": "County",
+            "fips": "01055"
+          },
+          {
+            "id": "fayette",
+            "name": "Fayette",
+            "type": "County",
+            "fips": "01057"
+          },
+          {
+            "id": "franklin",
+            "name": "Franklin",
+            "type": "County",
+            "fips": "01059"
+          },
+          {
+            "id": "geneva",
+            "name": "Geneva",
+            "type": "County",
+            "fips": "01061"
+          },
+          {
+            "id": "greene",
+            "name": "Greene",
+            "type": "County",
+            "fips": "01063"
+          },
+          {
+            "id": "hale",
+            "name": "Hale",
+            "type": "County",
+            "fips": "01065"
+          },
+          {
+            "id": "henry",
+            "name": "Henry",
+            "type": "County",
+            "fips": "01067"
+          },
+          {
+            "id": "houston",
+            "name": "Houston",
+            "type": "County",
+            "fips": "01069"
+          },
+          {
+            "id": "jackson",
+            "name": "Jackson",
+            "type": "County",
+            "fips": "01071"
+          },
+          {
+            "id": "jefferson",
+            "name": "Jefferson",
+            "type": "County",
+            "fips": "01073"
+          },
+          {
+            "id": "lamar",
+            "name": "Lamar",
+            "type": "County",
+            "fips": "01075"
+          },
+          {
+            "id": "lauderdale",
+            "name": "Lauderdale",
+            "type": "County",
+            "fips": "01077"
+          },
+          {
+            "id": "lawrence",
+            "name": "Lawrence",
+            "type": "County",
+            "fips": "01079"
+          },
+          {
+            "id": "lee",
+            "name": "Lee",
+            "type": "County",
+            "fips": "01081"
+          },
+          {
+            "id": "limestone",
+            "name": "Limestone",
+            "type": "County",
+            "fips": "01083"
+          },
+          {
+            "id": "lowndes",
+            "name": "Lowndes",
+            "type": "County",
+            "fips": "01085"
+          },
+          {
+            "id": "macon",
+            "name": "Macon",
+            "type": "County",
+            "fips": "01087"
+          },
+          {
+            "id": "madison",
+            "name": "Madison",
+            "type": "County",
+            "fips": "01089"
+          },
+          {
+            "id": "marengo",
+            "name": "Marengo",
+            "type": "County",
+            "fips": "01091"
+          },
+          {
+            "id": "marion",
+            "name": "Marion",
+            "type": "County",
+            "fips": "01093"
+          },
+          {
+            "id": "marshall",
+            "name": "Marshall",
+            "type": "County",
+            "fips": "01095"
+          },
+          {
+            "id": "mobile",
+            "name": "Mobile",
+            "type": "County",
+            "fips": "01097"
+          },
+          {
+            "id": "monroe",
+            "name": "Monroe",
+            "type": "County",
+            "fips": "01099"
+          },
+          {
+            "id": "montgomery",
+            "name": "Montgomery",
+            "type": "County",
+            "fips": "01101"
+          },
+          {
+            "id": "morgan",
+            "name": "Morgan",
+            "type": "County",
+            "fips": "01103"
+          },
+          {
+            "id": "perry",
+            "name": "Perry",
+            "type": "County",
+            "fips": "01105"
+          },
+          {
+            "id": "pickens",
+            "name": "Pickens",
+            "type": "County",
+            "fips": "01107"
+          },
+          {
+            "id": "pike",
+            "name": "Pike",
+            "type": "County",
+            "fips": "01109"
+          },
+          {
+            "id": "randolph",
+            "name": "Randolph",
+            "type": "County",
+            "fips": "01111"
+          },
+          {
+            "id": "russell",
+            "name": "Russell",
+            "type": "County",
+            "fips": "01113"
+          },
+          {
+            "id": "st_clair",
+            "name": "St. Clair",
+            "type": "County",
+            "fips": "01115"
+          },
+          {
+            "id": "shelby",
+            "name": "Shelby",
+            "type": "County",
+            "fips": "01117"
+          },
+          {
+            "id": "sumter",
+            "name": "Sumter",
+            "type": "County",
+            "fips": "01119"
+          },
+          {
+            "id": "talladega",
+            "name": "Talladega",
+            "type": "County",
+            "fips": "01121"
+          },
+          {
+            "id": "tallapoosa",
+            "name": "Tallapoosa",
+            "type": "County",
+            "fips": "01123"
+          },
+          {
+            "id": "tuscaloosa",
+            "name": "Tuscaloosa",
+            "type": "County",
+            "fips": "01125"
+          },
+          {
+            "id": "walker",
+            "name": "Walker",
+            "type": "County",
+            "fips": "01127"
+          },
+          {
+            "id": "washington",
+            "name": "Washington",
+            "type": "County",
+            "fips": "01129"
+          },
+          {
+            "id": "wilcox",
+            "name": "Wilcox",
+            "type": "County",
+            "fips": "01131"
+          },
+          {
+            "id": "winston",
+            "name": "Winston",
+            "type": "County",
+            "fips": "01133"
+          }
+        ],
+        "candidates": [
+          {
+            "id": "219742",
+            "source_name": "John Wahl",
+            "source_party": "Republican",
+            "name": "John Wahl",
+            "party": "REP"
+          },
+          {
+            "id": "219743",
+            "source_name": "Phillip Ensler",
+            "source_party": "Democratic",
+            "name": "Phillip Ensler",
+            "party": "DEM"
+          }
+        ]
+      }
+    },
+    {
+      "id": "civic-statewide-attorney-general",
+      "county": "Alabama statewide county feed",
+      "county_id": "AL",
+      "url": "https://civicapi.org/results/elections/86910",
+      "endpoint": "https://civicapi.org/api/v2/race/86910",
+      "election_id": "86910",
+      "enabled": true,
+      "format": "civic_county",
+      "priority": 100,
+      "status": "civicAPI statewide county totals; setup zeros",
+      "note": "Public publisher feed attributed to civicAPI. All 67 county totals; no precinct breakdown. Named candidates are supplied; write-ins are not supplied for candidate races. Reporting percentage is an estimate, not an exact precinct count.",
+      "interval_seconds": 120,
+      "contest_map": {
+        "86910": "attorney-general"
+      },
+      "expected": {
+        "name": "Alabama Attorney General",
+        "district": null,
+        "office": "Attorney General",
+        "election_scope": "Statewide",
+        "counties": [
+          {
+            "id": "autauga",
+            "name": "Autauga",
+            "type": "County",
+            "fips": "01001"
+          },
+          {
+            "id": "baldwin",
+            "name": "Baldwin",
+            "type": "County",
+            "fips": "01003"
+          },
+          {
+            "id": "barbour",
+            "name": "Barbour",
+            "type": "County",
+            "fips": "01005"
+          },
+          {
+            "id": "bibb",
+            "name": "Bibb",
+            "type": "County",
+            "fips": "01007"
+          },
+          {
+            "id": "blount",
+            "name": "Blount",
+            "type": "County",
+            "fips": "01009"
+          },
+          {
+            "id": "bullock",
+            "name": "Bullock",
+            "type": "County",
+            "fips": "01011"
+          },
+          {
+            "id": "butler",
+            "name": "Butler",
+            "type": "County",
+            "fips": "01013"
+          },
+          {
+            "id": "calhoun",
+            "name": "Calhoun",
+            "type": "County",
+            "fips": "01015"
+          },
+          {
+            "id": "chambers",
+            "name": "Chambers",
+            "type": "County",
+            "fips": "01017"
+          },
+          {
+            "id": "cherokee",
+            "name": "Cherokee",
+            "type": "County",
+            "fips": "01019"
+          },
+          {
+            "id": "chilton",
+            "name": "Chilton",
+            "type": "County",
+            "fips": "01021"
+          },
+          {
+            "id": "choctaw",
+            "name": "Choctaw",
+            "type": "County",
+            "fips": "01023"
+          },
+          {
+            "id": "clarke",
+            "name": "Clarke",
+            "type": "County",
+            "fips": "01025"
+          },
+          {
+            "id": "clay",
+            "name": "Clay",
+            "type": "County",
+            "fips": "01027"
+          },
+          {
+            "id": "cleburne",
+            "name": "Cleburne",
+            "type": "County",
+            "fips": "01029"
+          },
+          {
+            "id": "coffee",
+            "name": "Coffee",
+            "type": "County",
+            "fips": "01031"
+          },
+          {
+            "id": "colbert",
+            "name": "Colbert",
+            "type": "County",
+            "fips": "01033"
+          },
+          {
+            "id": "conecuh",
+            "name": "Conecuh",
+            "type": "County",
+            "fips": "01035"
+          },
+          {
+            "id": "coosa",
+            "name": "Coosa",
+            "type": "County",
+            "fips": "01037"
+          },
+          {
+            "id": "covington",
+            "name": "Covington",
+            "type": "County",
+            "fips": "01039"
+          },
+          {
+            "id": "crenshaw",
+            "name": "Crenshaw",
+            "type": "County",
+            "fips": "01041"
+          },
+          {
+            "id": "cullman",
+            "name": "Cullman",
+            "type": "County",
+            "fips": "01043"
+          },
+          {
+            "id": "dale",
+            "name": "Dale",
+            "type": "County",
+            "fips": "01045"
+          },
+          {
+            "id": "dallas",
+            "name": "Dallas",
+            "type": "County",
+            "fips": "01047"
+          },
+          {
+            "id": "dekalb",
+            "name": "DeKalb",
+            "type": "County",
+            "fips": "01049"
+          },
+          {
+            "id": "elmore",
+            "name": "Elmore",
+            "type": "County",
+            "fips": "01051"
+          },
+          {
+            "id": "escambia",
+            "name": "Escambia",
+            "type": "County",
+            "fips": "01053"
+          },
+          {
+            "id": "etowah",
+            "name": "Etowah",
+            "type": "County",
+            "fips": "01055"
+          },
+          {
+            "id": "fayette",
+            "name": "Fayette",
+            "type": "County",
+            "fips": "01057"
+          },
+          {
+            "id": "franklin",
+            "name": "Franklin",
+            "type": "County",
+            "fips": "01059"
+          },
+          {
+            "id": "geneva",
+            "name": "Geneva",
+            "type": "County",
+            "fips": "01061"
+          },
+          {
+            "id": "greene",
+            "name": "Greene",
+            "type": "County",
+            "fips": "01063"
+          },
+          {
+            "id": "hale",
+            "name": "Hale",
+            "type": "County",
+            "fips": "01065"
+          },
+          {
+            "id": "henry",
+            "name": "Henry",
+            "type": "County",
+            "fips": "01067"
+          },
+          {
+            "id": "houston",
+            "name": "Houston",
+            "type": "County",
+            "fips": "01069"
+          },
+          {
+            "id": "jackson",
+            "name": "Jackson",
+            "type": "County",
+            "fips": "01071"
+          },
+          {
+            "id": "jefferson",
+            "name": "Jefferson",
+            "type": "County",
+            "fips": "01073"
+          },
+          {
+            "id": "lamar",
+            "name": "Lamar",
+            "type": "County",
+            "fips": "01075"
+          },
+          {
+            "id": "lauderdale",
+            "name": "Lauderdale",
+            "type": "County",
+            "fips": "01077"
+          },
+          {
+            "id": "lawrence",
+            "name": "Lawrence",
+            "type": "County",
+            "fips": "01079"
+          },
+          {
+            "id": "lee",
+            "name": "Lee",
+            "type": "County",
+            "fips": "01081"
+          },
+          {
+            "id": "limestone",
+            "name": "Limestone",
+            "type": "County",
+            "fips": "01083"
+          },
+          {
+            "id": "lowndes",
+            "name": "Lowndes",
+            "type": "County",
+            "fips": "01085"
+          },
+          {
+            "id": "macon",
+            "name": "Macon",
+            "type": "County",
+            "fips": "01087"
+          },
+          {
+            "id": "madison",
+            "name": "Madison",
+            "type": "County",
+            "fips": "01089"
+          },
+          {
+            "id": "marengo",
+            "name": "Marengo",
+            "type": "County",
+            "fips": "01091"
+          },
+          {
+            "id": "marion",
+            "name": "Marion",
+            "type": "County",
+            "fips": "01093"
+          },
+          {
+            "id": "marshall",
+            "name": "Marshall",
+            "type": "County",
+            "fips": "01095"
+          },
+          {
+            "id": "mobile",
+            "name": "Mobile",
+            "type": "County",
+            "fips": "01097"
+          },
+          {
+            "id": "monroe",
+            "name": "Monroe",
+            "type": "County",
+            "fips": "01099"
+          },
+          {
+            "id": "montgomery",
+            "name": "Montgomery",
+            "type": "County",
+            "fips": "01101"
+          },
+          {
+            "id": "morgan",
+            "name": "Morgan",
+            "type": "County",
+            "fips": "01103"
+          },
+          {
+            "id": "perry",
+            "name": "Perry",
+            "type": "County",
+            "fips": "01105"
+          },
+          {
+            "id": "pickens",
+            "name": "Pickens",
+            "type": "County",
+            "fips": "01107"
+          },
+          {
+            "id": "pike",
+            "name": "Pike",
+            "type": "County",
+            "fips": "01109"
+          },
+          {
+            "id": "randolph",
+            "name": "Randolph",
+            "type": "County",
+            "fips": "01111"
+          },
+          {
+            "id": "russell",
+            "name": "Russell",
+            "type": "County",
+            "fips": "01113"
+          },
+          {
+            "id": "st_clair",
+            "name": "St. Clair",
+            "type": "County",
+            "fips": "01115"
+          },
+          {
+            "id": "shelby",
+            "name": "Shelby",
+            "type": "County",
+            "fips": "01117"
+          },
+          {
+            "id": "sumter",
+            "name": "Sumter",
+            "type": "County",
+            "fips": "01119"
+          },
+          {
+            "id": "talladega",
+            "name": "Talladega",
+            "type": "County",
+            "fips": "01121"
+          },
+          {
+            "id": "tallapoosa",
+            "name": "Tallapoosa",
+            "type": "County",
+            "fips": "01123"
+          },
+          {
+            "id": "tuscaloosa",
+            "name": "Tuscaloosa",
+            "type": "County",
+            "fips": "01125"
+          },
+          {
+            "id": "walker",
+            "name": "Walker",
+            "type": "County",
+            "fips": "01127"
+          },
+          {
+            "id": "washington",
+            "name": "Washington",
+            "type": "County",
+            "fips": "01129"
+          },
+          {
+            "id": "wilcox",
+            "name": "Wilcox",
+            "type": "County",
+            "fips": "01131"
+          },
+          {
+            "id": "winston",
+            "name": "Winston",
+            "type": "County",
+            "fips": "01133"
+          }
+        ],
+        "candidates": [
+          {
+            "id": "219744",
+            "source_name": "Katherine Robertson",
+            "source_party": "Republican",
+            "name": "Katherine Robertson",
+            "party": "REP"
+          },
+          {
+            "id": "219745",
+            "source_name": "Jeff McLaughlin",
+            "source_party": "Democratic",
+            "name": "Jeff McLaughlin",
+            "party": "DEM"
+          }
+        ]
+      }
+    },
+    {
+      "id": "civic-statewide-secretary-of-state",
+      "county": "Alabama statewide county feed",
+      "county_id": "AL",
+      "url": "https://civicapi.org/results/elections/86911",
+      "endpoint": "https://civicapi.org/api/v2/race/86911",
+      "election_id": "86911",
+      "enabled": true,
+      "format": "civic_county",
+      "priority": 100,
+      "status": "civicAPI statewide county totals; setup zeros",
+      "note": "Public publisher feed attributed to civicAPI. All 67 county totals; no precinct breakdown. Named candidates are supplied; write-ins are not supplied for candidate races. Reporting percentage is an estimate, not an exact precinct count.",
+      "interval_seconds": 120,
+      "contest_map": {
+        "86911": "secretary-of-state"
+      },
+      "expected": {
+        "name": "Alabama Secretary of State",
+        "district": null,
+        "office": "Secretary of State",
+        "election_scope": "Statewide",
+        "counties": [
+          {
+            "id": "autauga",
+            "name": "Autauga",
+            "type": "County",
+            "fips": "01001"
+          },
+          {
+            "id": "baldwin",
+            "name": "Baldwin",
+            "type": "County",
+            "fips": "01003"
+          },
+          {
+            "id": "barbour",
+            "name": "Barbour",
+            "type": "County",
+            "fips": "01005"
+          },
+          {
+            "id": "bibb",
+            "name": "Bibb",
+            "type": "County",
+            "fips": "01007"
+          },
+          {
+            "id": "blount",
+            "name": "Blount",
+            "type": "County",
+            "fips": "01009"
+          },
+          {
+            "id": "bullock",
+            "name": "Bullock",
+            "type": "County",
+            "fips": "01011"
+          },
+          {
+            "id": "butler",
+            "name": "Butler",
+            "type": "County",
+            "fips": "01013"
+          },
+          {
+            "id": "calhoun",
+            "name": "Calhoun",
+            "type": "County",
+            "fips": "01015"
+          },
+          {
+            "id": "chambers",
+            "name": "Chambers",
+            "type": "County",
+            "fips": "01017"
+          },
+          {
+            "id": "cherokee",
+            "name": "Cherokee",
+            "type": "County",
+            "fips": "01019"
+          },
+          {
+            "id": "chilton",
+            "name": "Chilton",
+            "type": "County",
+            "fips": "01021"
+          },
+          {
+            "id": "choctaw",
+            "name": "Choctaw",
+            "type": "County",
+            "fips": "01023"
+          },
+          {
+            "id": "clarke",
+            "name": "Clarke",
+            "type": "County",
+            "fips": "01025"
+          },
+          {
+            "id": "clay",
+            "name": "Clay",
+            "type": "County",
+            "fips": "01027"
+          },
+          {
+            "id": "cleburne",
+            "name": "Cleburne",
+            "type": "County",
+            "fips": "01029"
+          },
+          {
+            "id": "coffee",
+            "name": "Coffee",
+            "type": "County",
+            "fips": "01031"
+          },
+          {
+            "id": "colbert",
+            "name": "Colbert",
+            "type": "County",
+            "fips": "01033"
+          },
+          {
+            "id": "conecuh",
+            "name": "Conecuh",
+            "type": "County",
+            "fips": "01035"
+          },
+          {
+            "id": "coosa",
+            "name": "Coosa",
+            "type": "County",
+            "fips": "01037"
+          },
+          {
+            "id": "covington",
+            "name": "Covington",
+            "type": "County",
+            "fips": "01039"
+          },
+          {
+            "id": "crenshaw",
+            "name": "Crenshaw",
+            "type": "County",
+            "fips": "01041"
+          },
+          {
+            "id": "cullman",
+            "name": "Cullman",
+            "type": "County",
+            "fips": "01043"
+          },
+          {
+            "id": "dale",
+            "name": "Dale",
+            "type": "County",
+            "fips": "01045"
+          },
+          {
+            "id": "dallas",
+            "name": "Dallas",
+            "type": "County",
+            "fips": "01047"
+          },
+          {
+            "id": "dekalb",
+            "name": "DeKalb",
+            "type": "County",
+            "fips": "01049"
+          },
+          {
+            "id": "elmore",
+            "name": "Elmore",
+            "type": "County",
+            "fips": "01051"
+          },
+          {
+            "id": "escambia",
+            "name": "Escambia",
+            "type": "County",
+            "fips": "01053"
+          },
+          {
+            "id": "etowah",
+            "name": "Etowah",
+            "type": "County",
+            "fips": "01055"
+          },
+          {
+            "id": "fayette",
+            "name": "Fayette",
+            "type": "County",
+            "fips": "01057"
+          },
+          {
+            "id": "franklin",
+            "name": "Franklin",
+            "type": "County",
+            "fips": "01059"
+          },
+          {
+            "id": "geneva",
+            "name": "Geneva",
+            "type": "County",
+            "fips": "01061"
+          },
+          {
+            "id": "greene",
+            "name": "Greene",
+            "type": "County",
+            "fips": "01063"
+          },
+          {
+            "id": "hale",
+            "name": "Hale",
+            "type": "County",
+            "fips": "01065"
+          },
+          {
+            "id": "henry",
+            "name": "Henry",
+            "type": "County",
+            "fips": "01067"
+          },
+          {
+            "id": "houston",
+            "name": "Houston",
+            "type": "County",
+            "fips": "01069"
+          },
+          {
+            "id": "jackson",
+            "name": "Jackson",
+            "type": "County",
+            "fips": "01071"
+          },
+          {
+            "id": "jefferson",
+            "name": "Jefferson",
+            "type": "County",
+            "fips": "01073"
+          },
+          {
+            "id": "lamar",
+            "name": "Lamar",
+            "type": "County",
+            "fips": "01075"
+          },
+          {
+            "id": "lauderdale",
+            "name": "Lauderdale",
+            "type": "County",
+            "fips": "01077"
+          },
+          {
+            "id": "lawrence",
+            "name": "Lawrence",
+            "type": "County",
+            "fips": "01079"
+          },
+          {
+            "id": "lee",
+            "name": "Lee",
+            "type": "County",
+            "fips": "01081"
+          },
+          {
+            "id": "limestone",
+            "name": "Limestone",
+            "type": "County",
+            "fips": "01083"
+          },
+          {
+            "id": "lowndes",
+            "name": "Lowndes",
+            "type": "County",
+            "fips": "01085"
+          },
+          {
+            "id": "macon",
+            "name": "Macon",
+            "type": "County",
+            "fips": "01087"
+          },
+          {
+            "id": "madison",
+            "name": "Madison",
+            "type": "County",
+            "fips": "01089"
+          },
+          {
+            "id": "marengo",
+            "name": "Marengo",
+            "type": "County",
+            "fips": "01091"
+          },
+          {
+            "id": "marion",
+            "name": "Marion",
+            "type": "County",
+            "fips": "01093"
+          },
+          {
+            "id": "marshall",
+            "name": "Marshall",
+            "type": "County",
+            "fips": "01095"
+          },
+          {
+            "id": "mobile",
+            "name": "Mobile",
+            "type": "County",
+            "fips": "01097"
+          },
+          {
+            "id": "monroe",
+            "name": "Monroe",
+            "type": "County",
+            "fips": "01099"
+          },
+          {
+            "id": "montgomery",
+            "name": "Montgomery",
+            "type": "County",
+            "fips": "01101"
+          },
+          {
+            "id": "morgan",
+            "name": "Morgan",
+            "type": "County",
+            "fips": "01103"
+          },
+          {
+            "id": "perry",
+            "name": "Perry",
+            "type": "County",
+            "fips": "01105"
+          },
+          {
+            "id": "pickens",
+            "name": "Pickens",
+            "type": "County",
+            "fips": "01107"
+          },
+          {
+            "id": "pike",
+            "name": "Pike",
+            "type": "County",
+            "fips": "01109"
+          },
+          {
+            "id": "randolph",
+            "name": "Randolph",
+            "type": "County",
+            "fips": "01111"
+          },
+          {
+            "id": "russell",
+            "name": "Russell",
+            "type": "County",
+            "fips": "01113"
+          },
+          {
+            "id": "st_clair",
+            "name": "St. Clair",
+            "type": "County",
+            "fips": "01115"
+          },
+          {
+            "id": "shelby",
+            "name": "Shelby",
+            "type": "County",
+            "fips": "01117"
+          },
+          {
+            "id": "sumter",
+            "name": "Sumter",
+            "type": "County",
+            "fips": "01119"
+          },
+          {
+            "id": "talladega",
+            "name": "Talladega",
+            "type": "County",
+            "fips": "01121"
+          },
+          {
+            "id": "tallapoosa",
+            "name": "Tallapoosa",
+            "type": "County",
+            "fips": "01123"
+          },
+          {
+            "id": "tuscaloosa",
+            "name": "Tuscaloosa",
+            "type": "County",
+            "fips": "01125"
+          },
+          {
+            "id": "walker",
+            "name": "Walker",
+            "type": "County",
+            "fips": "01127"
+          },
+          {
+            "id": "washington",
+            "name": "Washington",
+            "type": "County",
+            "fips": "01129"
+          },
+          {
+            "id": "wilcox",
+            "name": "Wilcox",
+            "type": "County",
+            "fips": "01131"
+          },
+          {
+            "id": "winston",
+            "name": "Winston",
+            "type": "County",
+            "fips": "01133"
+          }
+        ],
+        "candidates": [
+          {
+            "id": "219746",
+            "source_name": "Caroleene Dobson",
+            "source_party": "Republican",
+            "name": "Caroleene Dobson",
+            "party": "REP"
+          },
+          {
+            "id": "219747",
+            "source_name": "Wayne Rogers",
+            "source_party": "Democratic",
+            "name": "Wayne Rogers",
+            "party": "DEM"
+          }
+        ]
+      }
+    },
+    {
+      "id": "civic-statewide-treasurer",
+      "county": "Alabama statewide county feed",
+      "county_id": "AL",
+      "url": "https://civicapi.org/results/elections/86912",
+      "endpoint": "https://civicapi.org/api/v2/race/86912",
+      "election_id": "86912",
+      "enabled": true,
+      "format": "civic_county",
+      "priority": 100,
+      "status": "civicAPI statewide county totals; setup zeros",
+      "note": "Public publisher feed attributed to civicAPI. All 67 county totals; no precinct breakdown. Named candidates are supplied; write-ins are not supplied for candidate races. Reporting percentage is an estimate, not an exact precinct count.",
+      "interval_seconds": 120,
+      "contest_map": {
+        "86912": "treasurer"
+      },
+      "expected": {
+        "name": "Alabama State Treasurer",
+        "district": null,
+        "office": "State Treasurer",
+        "election_scope": "Statewide",
+        "counties": [
+          {
+            "id": "autauga",
+            "name": "Autauga",
+            "type": "County",
+            "fips": "01001"
+          },
+          {
+            "id": "baldwin",
+            "name": "Baldwin",
+            "type": "County",
+            "fips": "01003"
+          },
+          {
+            "id": "barbour",
+            "name": "Barbour",
+            "type": "County",
+            "fips": "01005"
+          },
+          {
+            "id": "bibb",
+            "name": "Bibb",
+            "type": "County",
+            "fips": "01007"
+          },
+          {
+            "id": "blount",
+            "name": "Blount",
+            "type": "County",
+            "fips": "01009"
+          },
+          {
+            "id": "bullock",
+            "name": "Bullock",
+            "type": "County",
+            "fips": "01011"
+          },
+          {
+            "id": "butler",
+            "name": "Butler",
+            "type": "County",
+            "fips": "01013"
+          },
+          {
+            "id": "calhoun",
+            "name": "Calhoun",
+            "type": "County",
+            "fips": "01015"
+          },
+          {
+            "id": "chambers",
+            "name": "Chambers",
+            "type": "County",
+            "fips": "01017"
+          },
+          {
+            "id": "cherokee",
+            "name": "Cherokee",
+            "type": "County",
+            "fips": "01019"
+          },
+          {
+            "id": "chilton",
+            "name": "Chilton",
+            "type": "County",
+            "fips": "01021"
+          },
+          {
+            "id": "choctaw",
+            "name": "Choctaw",
+            "type": "County",
+            "fips": "01023"
+          },
+          {
+            "id": "clarke",
+            "name": "Clarke",
+            "type": "County",
+            "fips": "01025"
+          },
+          {
+            "id": "clay",
+            "name": "Clay",
+            "type": "County",
+            "fips": "01027"
+          },
+          {
+            "id": "cleburne",
+            "name": "Cleburne",
+            "type": "County",
+            "fips": "01029"
+          },
+          {
+            "id": "coffee",
+            "name": "Coffee",
+            "type": "County",
+            "fips": "01031"
+          },
+          {
+            "id": "colbert",
+            "name": "Colbert",
+            "type": "County",
+            "fips": "01033"
+          },
+          {
+            "id": "conecuh",
+            "name": "Conecuh",
+            "type": "County",
+            "fips": "01035"
+          },
+          {
+            "id": "coosa",
+            "name": "Coosa",
+            "type": "County",
+            "fips": "01037"
+          },
+          {
+            "id": "covington",
+            "name": "Covington",
+            "type": "County",
+            "fips": "01039"
+          },
+          {
+            "id": "crenshaw",
+            "name": "Crenshaw",
+            "type": "County",
+            "fips": "01041"
+          },
+          {
+            "id": "cullman",
+            "name": "Cullman",
+            "type": "County",
+            "fips": "01043"
+          },
+          {
+            "id": "dale",
+            "name": "Dale",
+            "type": "County",
+            "fips": "01045"
+          },
+          {
+            "id": "dallas",
+            "name": "Dallas",
+            "type": "County",
+            "fips": "01047"
+          },
+          {
+            "id": "dekalb",
+            "name": "DeKalb",
+            "type": "County",
+            "fips": "01049"
+          },
+          {
+            "id": "elmore",
+            "name": "Elmore",
+            "type": "County",
+            "fips": "01051"
+          },
+          {
+            "id": "escambia",
+            "name": "Escambia",
+            "type": "County",
+            "fips": "01053"
+          },
+          {
+            "id": "etowah",
+            "name": "Etowah",
+            "type": "County",
+            "fips": "01055"
+          },
+          {
+            "id": "fayette",
+            "name": "Fayette",
+            "type": "County",
+            "fips": "01057"
+          },
+          {
+            "id": "franklin",
+            "name": "Franklin",
+            "type": "County",
+            "fips": "01059"
+          },
+          {
+            "id": "geneva",
+            "name": "Geneva",
+            "type": "County",
+            "fips": "01061"
+          },
+          {
+            "id": "greene",
+            "name": "Greene",
+            "type": "County",
+            "fips": "01063"
+          },
+          {
+            "id": "hale",
+            "name": "Hale",
+            "type": "County",
+            "fips": "01065"
+          },
+          {
+            "id": "henry",
+            "name": "Henry",
+            "type": "County",
+            "fips": "01067"
+          },
+          {
+            "id": "houston",
+            "name": "Houston",
+            "type": "County",
+            "fips": "01069"
+          },
+          {
+            "id": "jackson",
+            "name": "Jackson",
+            "type": "County",
+            "fips": "01071"
+          },
+          {
+            "id": "jefferson",
+            "name": "Jefferson",
+            "type": "County",
+            "fips": "01073"
+          },
+          {
+            "id": "lamar",
+            "name": "Lamar",
+            "type": "County",
+            "fips": "01075"
+          },
+          {
+            "id": "lauderdale",
+            "name": "Lauderdale",
+            "type": "County",
+            "fips": "01077"
+          },
+          {
+            "id": "lawrence",
+            "name": "Lawrence",
+            "type": "County",
+            "fips": "01079"
+          },
+          {
+            "id": "lee",
+            "name": "Lee",
+            "type": "County",
+            "fips": "01081"
+          },
+          {
+            "id": "limestone",
+            "name": "Limestone",
+            "type": "County",
+            "fips": "01083"
+          },
+          {
+            "id": "lowndes",
+            "name": "Lowndes",
+            "type": "County",
+            "fips": "01085"
+          },
+          {
+            "id": "macon",
+            "name": "Macon",
+            "type": "County",
+            "fips": "01087"
+          },
+          {
+            "id": "madison",
+            "name": "Madison",
+            "type": "County",
+            "fips": "01089"
+          },
+          {
+            "id": "marengo",
+            "name": "Marengo",
+            "type": "County",
+            "fips": "01091"
+          },
+          {
+            "id": "marion",
+            "name": "Marion",
+            "type": "County",
+            "fips": "01093"
+          },
+          {
+            "id": "marshall",
+            "name": "Marshall",
+            "type": "County",
+            "fips": "01095"
+          },
+          {
+            "id": "mobile",
+            "name": "Mobile",
+            "type": "County",
+            "fips": "01097"
+          },
+          {
+            "id": "monroe",
+            "name": "Monroe",
+            "type": "County",
+            "fips": "01099"
+          },
+          {
+            "id": "montgomery",
+            "name": "Montgomery",
+            "type": "County",
+            "fips": "01101"
+          },
+          {
+            "id": "morgan",
+            "name": "Morgan",
+            "type": "County",
+            "fips": "01103"
+          },
+          {
+            "id": "perry",
+            "name": "Perry",
+            "type": "County",
+            "fips": "01105"
+          },
+          {
+            "id": "pickens",
+            "name": "Pickens",
+            "type": "County",
+            "fips": "01107"
+          },
+          {
+            "id": "pike",
+            "name": "Pike",
+            "type": "County",
+            "fips": "01109"
+          },
+          {
+            "id": "randolph",
+            "name": "Randolph",
+            "type": "County",
+            "fips": "01111"
+          },
+          {
+            "id": "russell",
+            "name": "Russell",
+            "type": "County",
+            "fips": "01113"
+          },
+          {
+            "id": "st_clair",
+            "name": "St. Clair",
+            "type": "County",
+            "fips": "01115"
+          },
+          {
+            "id": "shelby",
+            "name": "Shelby",
+            "type": "County",
+            "fips": "01117"
+          },
+          {
+            "id": "sumter",
+            "name": "Sumter",
+            "type": "County",
+            "fips": "01119"
+          },
+          {
+            "id": "talladega",
+            "name": "Talladega",
+            "type": "County",
+            "fips": "01121"
+          },
+          {
+            "id": "tallapoosa",
+            "name": "Tallapoosa",
+            "type": "County",
+            "fips": "01123"
+          },
+          {
+            "id": "tuscaloosa",
+            "name": "Tuscaloosa",
+            "type": "County",
+            "fips": "01125"
+          },
+          {
+            "id": "walker",
+            "name": "Walker",
+            "type": "County",
+            "fips": "01127"
+          },
+          {
+            "id": "washington",
+            "name": "Washington",
+            "type": "County",
+            "fips": "01129"
+          },
+          {
+            "id": "wilcox",
+            "name": "Wilcox",
+            "type": "County",
+            "fips": "01131"
+          },
+          {
+            "id": "winston",
+            "name": "Winston",
+            "type": "County",
+            "fips": "01133"
+          }
+        ],
+        "candidates": [
+          {
+            "id": "219748",
+            "source_name": "Young Boozer",
+            "source_party": "Republican",
+            "name": "Young Boozer",
+            "party": "REP"
+          },
+          {
+            "id": "219749",
+            "source_name": "Rosilyn Houston",
+            "source_party": "Democratic",
+            "name": "Rosilyn Houston",
+            "party": "DEM"
+          }
+        ]
+      }
+    },
+    {
+      "id": "civic-statewide-auditor",
+      "county": "Alabama statewide county feed",
+      "county_id": "AL",
+      "url": "https://civicapi.org/results/elections/86913",
+      "endpoint": "https://civicapi.org/api/v2/race/86913",
+      "election_id": "86913",
+      "enabled": true,
+      "format": "civic_county",
+      "priority": 100,
+      "status": "civicAPI statewide county totals; setup zeros",
+      "note": "Public publisher feed attributed to civicAPI. All 67 county totals; no precinct breakdown. Named candidates are supplied; write-ins are not supplied for candidate races. Reporting percentage is an estimate, not an exact precinct count.",
+      "interval_seconds": 120,
+      "contest_map": {
+        "86913": "auditor"
+      },
+      "expected": {
+        "name": "Alabama State Auditor",
+        "district": null,
+        "office": "State Auditor",
+        "election_scope": "Statewide",
+        "counties": [
+          {
+            "id": "autauga",
+            "name": "Autauga",
+            "type": "County",
+            "fips": "01001"
+          },
+          {
+            "id": "baldwin",
+            "name": "Baldwin",
+            "type": "County",
+            "fips": "01003"
+          },
+          {
+            "id": "barbour",
+            "name": "Barbour",
+            "type": "County",
+            "fips": "01005"
+          },
+          {
+            "id": "bibb",
+            "name": "Bibb",
+            "type": "County",
+            "fips": "01007"
+          },
+          {
+            "id": "blount",
+            "name": "Blount",
+            "type": "County",
+            "fips": "01009"
+          },
+          {
+            "id": "bullock",
+            "name": "Bullock",
+            "type": "County",
+            "fips": "01011"
+          },
+          {
+            "id": "butler",
+            "name": "Butler",
+            "type": "County",
+            "fips": "01013"
+          },
+          {
+            "id": "calhoun",
+            "name": "Calhoun",
+            "type": "County",
+            "fips": "01015"
+          },
+          {
+            "id": "chambers",
+            "name": "Chambers",
+            "type": "County",
+            "fips": "01017"
+          },
+          {
+            "id": "cherokee",
+            "name": "Cherokee",
+            "type": "County",
+            "fips": "01019"
+          },
+          {
+            "id": "chilton",
+            "name": "Chilton",
+            "type": "County",
+            "fips": "01021"
+          },
+          {
+            "id": "choctaw",
+            "name": "Choctaw",
+            "type": "County",
+            "fips": "01023"
+          },
+          {
+            "id": "clarke",
+            "name": "Clarke",
+            "type": "County",
+            "fips": "01025"
+          },
+          {
+            "id": "clay",
+            "name": "Clay",
+            "type": "County",
+            "fips": "01027"
+          },
+          {
+            "id": "cleburne",
+            "name": "Cleburne",
+            "type": "County",
+            "fips": "01029"
+          },
+          {
+            "id": "coffee",
+            "name": "Coffee",
+            "type": "County",
+            "fips": "01031"
+          },
+          {
+            "id": "colbert",
+            "name": "Colbert",
+            "type": "County",
+            "fips": "01033"
+          },
+          {
+            "id": "conecuh",
+            "name": "Conecuh",
+            "type": "County",
+            "fips": "01035"
+          },
+          {
+            "id": "coosa",
+            "name": "Coosa",
+            "type": "County",
+            "fips": "01037"
+          },
+          {
+            "id": "covington",
+            "name": "Covington",
+            "type": "County",
+            "fips": "01039"
+          },
+          {
+            "id": "crenshaw",
+            "name": "Crenshaw",
+            "type": "County",
+            "fips": "01041"
+          },
+          {
+            "id": "cullman",
+            "name": "Cullman",
+            "type": "County",
+            "fips": "01043"
+          },
+          {
+            "id": "dale",
+            "name": "Dale",
+            "type": "County",
+            "fips": "01045"
+          },
+          {
+            "id": "dallas",
+            "name": "Dallas",
+            "type": "County",
+            "fips": "01047"
+          },
+          {
+            "id": "dekalb",
+            "name": "DeKalb",
+            "type": "County",
+            "fips": "01049"
+          },
+          {
+            "id": "elmore",
+            "name": "Elmore",
+            "type": "County",
+            "fips": "01051"
+          },
+          {
+            "id": "escambia",
+            "name": "Escambia",
+            "type": "County",
+            "fips": "01053"
+          },
+          {
+            "id": "etowah",
+            "name": "Etowah",
+            "type": "County",
+            "fips": "01055"
+          },
+          {
+            "id": "fayette",
+            "name": "Fayette",
+            "type": "County",
+            "fips": "01057"
+          },
+          {
+            "id": "franklin",
+            "name": "Franklin",
+            "type": "County",
+            "fips": "01059"
+          },
+          {
+            "id": "geneva",
+            "name": "Geneva",
+            "type": "County",
+            "fips": "01061"
+          },
+          {
+            "id": "greene",
+            "name": "Greene",
+            "type": "County",
+            "fips": "01063"
+          },
+          {
+            "id": "hale",
+            "name": "Hale",
+            "type": "County",
+            "fips": "01065"
+          },
+          {
+            "id": "henry",
+            "name": "Henry",
+            "type": "County",
+            "fips": "01067"
+          },
+          {
+            "id": "houston",
+            "name": "Houston",
+            "type": "County",
+            "fips": "01069"
+          },
+          {
+            "id": "jackson",
+            "name": "Jackson",
+            "type": "County",
+            "fips": "01071"
+          },
+          {
+            "id": "jefferson",
+            "name": "Jefferson",
+            "type": "County",
+            "fips": "01073"
+          },
+          {
+            "id": "lamar",
+            "name": "Lamar",
+            "type": "County",
+            "fips": "01075"
+          },
+          {
+            "id": "lauderdale",
+            "name": "Lauderdale",
+            "type": "County",
+            "fips": "01077"
+          },
+          {
+            "id": "lawrence",
+            "name": "Lawrence",
+            "type": "County",
+            "fips": "01079"
+          },
+          {
+            "id": "lee",
+            "name": "Lee",
+            "type": "County",
+            "fips": "01081"
+          },
+          {
+            "id": "limestone",
+            "name": "Limestone",
+            "type": "County",
+            "fips": "01083"
+          },
+          {
+            "id": "lowndes",
+            "name": "Lowndes",
+            "type": "County",
+            "fips": "01085"
+          },
+          {
+            "id": "macon",
+            "name": "Macon",
+            "type": "County",
+            "fips": "01087"
+          },
+          {
+            "id": "madison",
+            "name": "Madison",
+            "type": "County",
+            "fips": "01089"
+          },
+          {
+            "id": "marengo",
+            "name": "Marengo",
+            "type": "County",
+            "fips": "01091"
+          },
+          {
+            "id": "marion",
+            "name": "Marion",
+            "type": "County",
+            "fips": "01093"
+          },
+          {
+            "id": "marshall",
+            "name": "Marshall",
+            "type": "County",
+            "fips": "01095"
+          },
+          {
+            "id": "mobile",
+            "name": "Mobile",
+            "type": "County",
+            "fips": "01097"
+          },
+          {
+            "id": "monroe",
+            "name": "Monroe",
+            "type": "County",
+            "fips": "01099"
+          },
+          {
+            "id": "montgomery",
+            "name": "Montgomery",
+            "type": "County",
+            "fips": "01101"
+          },
+          {
+            "id": "morgan",
+            "name": "Morgan",
+            "type": "County",
+            "fips": "01103"
+          },
+          {
+            "id": "perry",
+            "name": "Perry",
+            "type": "County",
+            "fips": "01105"
+          },
+          {
+            "id": "pickens",
+            "name": "Pickens",
+            "type": "County",
+            "fips": "01107"
+          },
+          {
+            "id": "pike",
+            "name": "Pike",
+            "type": "County",
+            "fips": "01109"
+          },
+          {
+            "id": "randolph",
+            "name": "Randolph",
+            "type": "County",
+            "fips": "01111"
+          },
+          {
+            "id": "russell",
+            "name": "Russell",
+            "type": "County",
+            "fips": "01113"
+          },
+          {
+            "id": "st_clair",
+            "name": "St. Clair",
+            "type": "County",
+            "fips": "01115"
+          },
+          {
+            "id": "shelby",
+            "name": "Shelby",
+            "type": "County",
+            "fips": "01117"
+          },
+          {
+            "id": "sumter",
+            "name": "Sumter",
+            "type": "County",
+            "fips": "01119"
+          },
+          {
+            "id": "talladega",
+            "name": "Talladega",
+            "type": "County",
+            "fips": "01121"
+          },
+          {
+            "id": "tallapoosa",
+            "name": "Tallapoosa",
+            "type": "County",
+            "fips": "01123"
+          },
+          {
+            "id": "tuscaloosa",
+            "name": "Tuscaloosa",
+            "type": "County",
+            "fips": "01125"
+          },
+          {
+            "id": "walker",
+            "name": "Walker",
+            "type": "County",
+            "fips": "01127"
+          },
+          {
+            "id": "washington",
+            "name": "Washington",
+            "type": "County",
+            "fips": "01129"
+          },
+          {
+            "id": "wilcox",
+            "name": "Wilcox",
+            "type": "County",
+            "fips": "01131"
+          },
+          {
+            "id": "winston",
+            "name": "Winston",
+            "type": "County",
+            "fips": "01133"
+          }
+        ],
+        "candidates": [
+          {
+            "id": "219750",
+            "source_name": "Andrew Sorrell",
+            "source_party": "Republican",
+            "name": "Andrew Sorrell",
+            "party": "REP"
+          },
+          {
+            "id": "219751",
+            "source_name": "Violet Edwards",
+            "source_party": "Democratic",
+            "name": "Violet Edwards",
+            "party": "DEM"
+          }
+        ]
+      }
+    },
+    {
+      "id": "civic-statewide-agriculture",
+      "county": "Alabama statewide county feed",
+      "county_id": "AL",
+      "url": "https://civicapi.org/results/elections/86914",
+      "endpoint": "https://civicapi.org/api/v2/race/86914",
+      "election_id": "86914",
+      "enabled": true,
+      "format": "civic_county",
+      "priority": 100,
+      "status": "civicAPI statewide county totals; setup zeros",
+      "note": "Public publisher feed attributed to civicAPI. All 67 county totals; no precinct breakdown. Named candidates are supplied; write-ins are not supplied for candidate races. Reporting percentage is an estimate, not an exact precinct count.",
+      "interval_seconds": 120,
+      "contest_map": {
+        "86914": "agriculture"
+      },
+      "expected": {
+        "name": "Alabama Commissioner of Agriculture and Industries",
+        "district": null,
+        "office": "Commissioner of Agriculture and Industries",
+        "election_scope": "Statewide",
+        "counties": [
+          {
+            "id": "autauga",
+            "name": "Autauga",
+            "type": "County",
+            "fips": "01001"
+          },
+          {
+            "id": "baldwin",
+            "name": "Baldwin",
+            "type": "County",
+            "fips": "01003"
+          },
+          {
+            "id": "barbour",
+            "name": "Barbour",
+            "type": "County",
+            "fips": "01005"
+          },
+          {
+            "id": "bibb",
+            "name": "Bibb",
+            "type": "County",
+            "fips": "01007"
+          },
+          {
+            "id": "blount",
+            "name": "Blount",
+            "type": "County",
+            "fips": "01009"
+          },
+          {
+            "id": "bullock",
+            "name": "Bullock",
+            "type": "County",
+            "fips": "01011"
+          },
+          {
+            "id": "butler",
+            "name": "Butler",
+            "type": "County",
+            "fips": "01013"
+          },
+          {
+            "id": "calhoun",
+            "name": "Calhoun",
+            "type": "County",
+            "fips": "01015"
+          },
+          {
+            "id": "chambers",
+            "name": "Chambers",
+            "type": "County",
+            "fips": "01017"
+          },
+          {
+            "id": "cherokee",
+            "name": "Cherokee",
+            "type": "County",
+            "fips": "01019"
+          },
+          {
+            "id": "chilton",
+            "name": "Chilton",
+            "type": "County",
+            "fips": "01021"
+          },
+          {
+            "id": "choctaw",
+            "name": "Choctaw",
+            "type": "County",
+            "fips": "01023"
+          },
+          {
+            "id": "clarke",
+            "name": "Clarke",
+            "type": "County",
+            "fips": "01025"
+          },
+          {
+            "id": "clay",
+            "name": "Clay",
+            "type": "County",
+            "fips": "01027"
+          },
+          {
+            "id": "cleburne",
+            "name": "Cleburne",
+            "type": "County",
+            "fips": "01029"
+          },
+          {
+            "id": "coffee",
+            "name": "Coffee",
+            "type": "County",
+            "fips": "01031"
+          },
+          {
+            "id": "colbert",
+            "name": "Colbert",
+            "type": "County",
+            "fips": "01033"
+          },
+          {
+            "id": "conecuh",
+            "name": "Conecuh",
+            "type": "County",
+            "fips": "01035"
+          },
+          {
+            "id": "coosa",
+            "name": "Coosa",
+            "type": "County",
+            "fips": "01037"
+          },
+          {
+            "id": "covington",
+            "name": "Covington",
+            "type": "County",
+            "fips": "01039"
+          },
+          {
+            "id": "crenshaw",
+            "name": "Crenshaw",
+            "type": "County",
+            "fips": "01041"
+          },
+          {
+            "id": "cullman",
+            "name": "Cullman",
+            "type": "County",
+            "fips": "01043"
+          },
+          {
+            "id": "dale",
+            "name": "Dale",
+            "type": "County",
+            "fips": "01045"
+          },
+          {
+            "id": "dallas",
+            "name": "Dallas",
+            "type": "County",
+            "fips": "01047"
+          },
+          {
+            "id": "dekalb",
+            "name": "DeKalb",
+            "type": "County",
+            "fips": "01049"
+          },
+          {
+            "id": "elmore",
+            "name": "Elmore",
+            "type": "County",
+            "fips": "01051"
+          },
+          {
+            "id": "escambia",
+            "name": "Escambia",
+            "type": "County",
+            "fips": "01053"
+          },
+          {
+            "id": "etowah",
+            "name": "Etowah",
+            "type": "County",
+            "fips": "01055"
+          },
+          {
+            "id": "fayette",
+            "name": "Fayette",
+            "type": "County",
+            "fips": "01057"
+          },
+          {
+            "id": "franklin",
+            "name": "Franklin",
+            "type": "County",
+            "fips": "01059"
+          },
+          {
+            "id": "geneva",
+            "name": "Geneva",
+            "type": "County",
+            "fips": "01061"
+          },
+          {
+            "id": "greene",
+            "name": "Greene",
+            "type": "County",
+            "fips": "01063"
+          },
+          {
+            "id": "hale",
+            "name": "Hale",
+            "type": "County",
+            "fips": "01065"
+          },
+          {
+            "id": "henry",
+            "name": "Henry",
+            "type": "County",
+            "fips": "01067"
+          },
+          {
+            "id": "houston",
+            "name": "Houston",
+            "type": "County",
+            "fips": "01069"
+          },
+          {
+            "id": "jackson",
+            "name": "Jackson",
+            "type": "County",
+            "fips": "01071"
+          },
+          {
+            "id": "jefferson",
+            "name": "Jefferson",
+            "type": "County",
+            "fips": "01073"
+          },
+          {
+            "id": "lamar",
+            "name": "Lamar",
+            "type": "County",
+            "fips": "01075"
+          },
+          {
+            "id": "lauderdale",
+            "name": "Lauderdale",
+            "type": "County",
+            "fips": "01077"
+          },
+          {
+            "id": "lawrence",
+            "name": "Lawrence",
+            "type": "County",
+            "fips": "01079"
+          },
+          {
+            "id": "lee",
+            "name": "Lee",
+            "type": "County",
+            "fips": "01081"
+          },
+          {
+            "id": "limestone",
+            "name": "Limestone",
+            "type": "County",
+            "fips": "01083"
+          },
+          {
+            "id": "lowndes",
+            "name": "Lowndes",
+            "type": "County",
+            "fips": "01085"
+          },
+          {
+            "id": "macon",
+            "name": "Macon",
+            "type": "County",
+            "fips": "01087"
+          },
+          {
+            "id": "madison",
+            "name": "Madison",
+            "type": "County",
+            "fips": "01089"
+          },
+          {
+            "id": "marengo",
+            "name": "Marengo",
+            "type": "County",
+            "fips": "01091"
+          },
+          {
+            "id": "marion",
+            "name": "Marion",
+            "type": "County",
+            "fips": "01093"
+          },
+          {
+            "id": "marshall",
+            "name": "Marshall",
+            "type": "County",
+            "fips": "01095"
+          },
+          {
+            "id": "mobile",
+            "name": "Mobile",
+            "type": "County",
+            "fips": "01097"
+          },
+          {
+            "id": "monroe",
+            "name": "Monroe",
+            "type": "County",
+            "fips": "01099"
+          },
+          {
+            "id": "montgomery",
+            "name": "Montgomery",
+            "type": "County",
+            "fips": "01101"
+          },
+          {
+            "id": "morgan",
+            "name": "Morgan",
+            "type": "County",
+            "fips": "01103"
+          },
+          {
+            "id": "perry",
+            "name": "Perry",
+            "type": "County",
+            "fips": "01105"
+          },
+          {
+            "id": "pickens",
+            "name": "Pickens",
+            "type": "County",
+            "fips": "01107"
+          },
+          {
+            "id": "pike",
+            "name": "Pike",
+            "type": "County",
+            "fips": "01109"
+          },
+          {
+            "id": "randolph",
+            "name": "Randolph",
+            "type": "County",
+            "fips": "01111"
+          },
+          {
+            "id": "russell",
+            "name": "Russell",
+            "type": "County",
+            "fips": "01113"
+          },
+          {
+            "id": "st_clair",
+            "name": "St. Clair",
+            "type": "County",
+            "fips": "01115"
+          },
+          {
+            "id": "shelby",
+            "name": "Shelby",
+            "type": "County",
+            "fips": "01117"
+          },
+          {
+            "id": "sumter",
+            "name": "Sumter",
+            "type": "County",
+            "fips": "01119"
+          },
+          {
+            "id": "talladega",
+            "name": "Talladega",
+            "type": "County",
+            "fips": "01121"
+          },
+          {
+            "id": "tallapoosa",
+            "name": "Tallapoosa",
+            "type": "County",
+            "fips": "01123"
+          },
+          {
+            "id": "tuscaloosa",
+            "name": "Tuscaloosa",
+            "type": "County",
+            "fips": "01125"
+          },
+          {
+            "id": "walker",
+            "name": "Walker",
+            "type": "County",
+            "fips": "01127"
+          },
+          {
+            "id": "washington",
+            "name": "Washington",
+            "type": "County",
+            "fips": "01129"
+          },
+          {
+            "id": "wilcox",
+            "name": "Wilcox",
+            "type": "County",
+            "fips": "01131"
+          },
+          {
+            "id": "winston",
+            "name": "Winston",
+            "type": "County",
+            "fips": "01133"
+          }
+        ],
+        "candidates": [
+          {
+            "id": "219752",
+            "source_name": "Corey Hill",
+            "source_party": "Republican",
+            "name": "Corey Hill",
+            "party": "REP"
+          },
+          {
+            "id": "219753",
+            "source_name": "Ron Sparks",
+            "source_party": "Democratic",
+            "name": "Ron Sparks",
+            "party": "DEM"
+          }
+        ]
+      }
+    },
+    {
+      "id": "civic-statewide-amendment-1",
+      "county": "Alabama statewide county feed",
+      "county_id": "AL",
+      "url": "https://civicapi.org/results/elections/179834",
+      "endpoint": "https://civicapi.org/api/v2/race/179834",
+      "election_id": "179834",
+      "enabled": true,
+      "format": "civic_county",
+      "priority": 100,
+      "status": "civicAPI statewide county totals; setup zeros",
+      "note": "Public publisher feed attributed to civicAPI. All 67 county totals; no precinct breakdown. Named candidates are supplied; write-ins are not supplied for candidate races. Reporting percentage is an estimate, not an exact precinct count.",
+      "interval_seconds": 120,
+      "contest_map": {
+        "179834": "amendment-1"
+      },
+      "expected": {
+        "name": "Alabama Amendment 1 - Fill Lieutenant Governor Vacancies by Election",
+        "district": null,
+        "office": "Referendum",
+        "election_scope": "Statewide",
+        "counties": [
+          {
+            "id": "autauga",
+            "name": "Autauga",
+            "type": "County",
+            "fips": "01001"
+          },
+          {
+            "id": "baldwin",
+            "name": "Baldwin",
+            "type": "County",
+            "fips": "01003"
+          },
+          {
+            "id": "barbour",
+            "name": "Barbour",
+            "type": "County",
+            "fips": "01005"
+          },
+          {
+            "id": "bibb",
+            "name": "Bibb",
+            "type": "County",
+            "fips": "01007"
+          },
+          {
+            "id": "blount",
+            "name": "Blount",
+            "type": "County",
+            "fips": "01009"
+          },
+          {
+            "id": "bullock",
+            "name": "Bullock",
+            "type": "County",
+            "fips": "01011"
+          },
+          {
+            "id": "butler",
+            "name": "Butler",
+            "type": "County",
+            "fips": "01013"
+          },
+          {
+            "id": "calhoun",
+            "name": "Calhoun",
+            "type": "County",
+            "fips": "01015"
+          },
+          {
+            "id": "chambers",
+            "name": "Chambers",
+            "type": "County",
+            "fips": "01017"
+          },
+          {
+            "id": "cherokee",
+            "name": "Cherokee",
+            "type": "County",
+            "fips": "01019"
+          },
+          {
+            "id": "chilton",
+            "name": "Chilton",
+            "type": "County",
+            "fips": "01021"
+          },
+          {
+            "id": "choctaw",
+            "name": "Choctaw",
+            "type": "County",
+            "fips": "01023"
+          },
+          {
+            "id": "clarke",
+            "name": "Clarke",
+            "type": "County",
+            "fips": "01025"
+          },
+          {
+            "id": "clay",
+            "name": "Clay",
+            "type": "County",
+            "fips": "01027"
+          },
+          {
+            "id": "cleburne",
+            "name": "Cleburne",
+            "type": "County",
+            "fips": "01029"
+          },
+          {
+            "id": "coffee",
+            "name": "Coffee",
+            "type": "County",
+            "fips": "01031"
+          },
+          {
+            "id": "colbert",
+            "name": "Colbert",
+            "type": "County",
+            "fips": "01033"
+          },
+          {
+            "id": "conecuh",
+            "name": "Conecuh",
+            "type": "County",
+            "fips": "01035"
+          },
+          {
+            "id": "coosa",
+            "name": "Coosa",
+            "type": "County",
+            "fips": "01037"
+          },
+          {
+            "id": "covington",
+            "name": "Covington",
+            "type": "County",
+            "fips": "01039"
+          },
+          {
+            "id": "crenshaw",
+            "name": "Crenshaw",
+            "type": "County",
+            "fips": "01041"
+          },
+          {
+            "id": "cullman",
+            "name": "Cullman",
+            "type": "County",
+            "fips": "01043"
+          },
+          {
+            "id": "dale",
+            "name": "Dale",
+            "type": "County",
+            "fips": "01045"
+          },
+          {
+            "id": "dallas",
+            "name": "Dallas",
+            "type": "County",
+            "fips": "01047"
+          },
+          {
+            "id": "dekalb",
+            "name": "DeKalb",
+            "type": "County",
+            "fips": "01049"
+          },
+          {
+            "id": "elmore",
+            "name": "Elmore",
+            "type": "County",
+            "fips": "01051"
+          },
+          {
+            "id": "escambia",
+            "name": "Escambia",
+            "type": "County",
+            "fips": "01053"
+          },
+          {
+            "id": "etowah",
+            "name": "Etowah",
+            "type": "County",
+            "fips": "01055"
+          },
+          {
+            "id": "fayette",
+            "name": "Fayette",
+            "type": "County",
+            "fips": "01057"
+          },
+          {
+            "id": "franklin",
+            "name": "Franklin",
+            "type": "County",
+            "fips": "01059"
+          },
+          {
+            "id": "geneva",
+            "name": "Geneva",
+            "type": "County",
+            "fips": "01061"
+          },
+          {
+            "id": "greene",
+            "name": "Greene",
+            "type": "County",
+            "fips": "01063"
+          },
+          {
+            "id": "hale",
+            "name": "Hale",
+            "type": "County",
+            "fips": "01065"
+          },
+          {
+            "id": "henry",
+            "name": "Henry",
+            "type": "County",
+            "fips": "01067"
+          },
+          {
+            "id": "houston",
+            "name": "Houston",
+            "type": "County",
+            "fips": "01069"
+          },
+          {
+            "id": "jackson",
+            "name": "Jackson",
+            "type": "County",
+            "fips": "01071"
+          },
+          {
+            "id": "jefferson",
+            "name": "Jefferson",
+            "type": "County",
+            "fips": "01073"
+          },
+          {
+            "id": "lamar",
+            "name": "Lamar",
+            "type": "County",
+            "fips": "01075"
+          },
+          {
+            "id": "lauderdale",
+            "name": "Lauderdale",
+            "type": "County",
+            "fips": "01077"
+          },
+          {
+            "id": "lawrence",
+            "name": "Lawrence",
+            "type": "County",
+            "fips": "01079"
+          },
+          {
+            "id": "lee",
+            "name": "Lee",
+            "type": "County",
+            "fips": "01081"
+          },
+          {
+            "id": "limestone",
+            "name": "Limestone",
+            "type": "County",
+            "fips": "01083"
+          },
+          {
+            "id": "lowndes",
+            "name": "Lowndes",
+            "type": "County",
+            "fips": "01085"
+          },
+          {
+            "id": "macon",
+            "name": "Macon",
+            "type": "County",
+            "fips": "01087"
+          },
+          {
+            "id": "madison",
+            "name": "Madison",
+            "type": "County",
+            "fips": "01089"
+          },
+          {
+            "id": "marengo",
+            "name": "Marengo",
+            "type": "County",
+            "fips": "01091"
+          },
+          {
+            "id": "marion",
+            "name": "Marion",
+            "type": "County",
+            "fips": "01093"
+          },
+          {
+            "id": "marshall",
+            "name": "Marshall",
+            "type": "County",
+            "fips": "01095"
+          },
+          {
+            "id": "mobile",
+            "name": "Mobile",
+            "type": "County",
+            "fips": "01097"
+          },
+          {
+            "id": "monroe",
+            "name": "Monroe",
+            "type": "County",
+            "fips": "01099"
+          },
+          {
+            "id": "montgomery",
+            "name": "Montgomery",
+            "type": "County",
+            "fips": "01101"
+          },
+          {
+            "id": "morgan",
+            "name": "Morgan",
+            "type": "County",
+            "fips": "01103"
+          },
+          {
+            "id": "perry",
+            "name": "Perry",
+            "type": "County",
+            "fips": "01105"
+          },
+          {
+            "id": "pickens",
+            "name": "Pickens",
+            "type": "County",
+            "fips": "01107"
+          },
+          {
+            "id": "pike",
+            "name": "Pike",
+            "type": "County",
+            "fips": "01109"
+          },
+          {
+            "id": "randolph",
+            "name": "Randolph",
+            "type": "County",
+            "fips": "01111"
+          },
+          {
+            "id": "russell",
+            "name": "Russell",
+            "type": "County",
+            "fips": "01113"
+          },
+          {
+            "id": "st_clair",
+            "name": "St. Clair",
+            "type": "County",
+            "fips": "01115"
+          },
+          {
+            "id": "shelby",
+            "name": "Shelby",
+            "type": "County",
+            "fips": "01117"
+          },
+          {
+            "id": "sumter",
+            "name": "Sumter",
+            "type": "County",
+            "fips": "01119"
+          },
+          {
+            "id": "talladega",
+            "name": "Talladega",
+            "type": "County",
+            "fips": "01121"
+          },
+          {
+            "id": "tallapoosa",
+            "name": "Tallapoosa",
+            "type": "County",
+            "fips": "01123"
+          },
+          {
+            "id": "tuscaloosa",
+            "name": "Tuscaloosa",
+            "type": "County",
+            "fips": "01125"
+          },
+          {
+            "id": "walker",
+            "name": "Walker",
+            "type": "County",
+            "fips": "01127"
+          },
+          {
+            "id": "washington",
+            "name": "Washington",
+            "type": "County",
+            "fips": "01129"
+          },
+          {
+            "id": "wilcox",
+            "name": "Wilcox",
+            "type": "County",
+            "fips": "01131"
+          },
+          {
+            "id": "winston",
+            "name": "Winston",
+            "type": "County",
+            "fips": "01133"
+          }
+        ],
+        "candidates": [
+          {
+            "id": "22719328",
+            "source_name": "Yes",
+            "source_party": "Nonpartisan",
+            "name": "Yes",
+            "party": "YES"
+          },
+          {
+            "id": "22719329",
+            "source_name": "No",
+            "source_party": "Nonpartisan",
+            "name": "No",
+            "party": "NO"
+          }
+        ]
+      }
+    },
+    {
+      "id": "civic-statewide-amendment-2",
+      "county": "Alabama statewide county feed",
+      "county_id": "AL",
+      "url": "https://civicapi.org/results/elections/179835",
+      "endpoint": "https://civicapi.org/api/v2/race/179835",
+      "election_id": "179835",
+      "enabled": true,
+      "format": "civic_county",
+      "priority": 100,
+      "status": "civicAPI statewide county totals; setup zeros",
+      "note": "Public publisher feed attributed to civicAPI. All 67 county totals; no precinct breakdown. Named candidates are supplied; write-ins are not supplied for candidate races. Reporting percentage is an estimate, not an exact precinct count.",
+      "interval_seconds": 120,
+      "contest_map": {
+        "179835": "amendment-2"
+      },
+      "expected": {
+        "name": "Alabama Amendment 2 - School District Consolidation Process",
+        "district": null,
+        "office": "Referendum",
+        "election_scope": "Statewide",
+        "counties": [
+          {
+            "id": "autauga",
+            "name": "Autauga",
+            "type": "County",
+            "fips": "01001"
+          },
+          {
+            "id": "baldwin",
+            "name": "Baldwin",
+            "type": "County",
+            "fips": "01003"
+          },
+          {
+            "id": "barbour",
+            "name": "Barbour",
+            "type": "County",
+            "fips": "01005"
+          },
+          {
+            "id": "bibb",
+            "name": "Bibb",
+            "type": "County",
+            "fips": "01007"
+          },
+          {
+            "id": "blount",
+            "name": "Blount",
+            "type": "County",
+            "fips": "01009"
+          },
+          {
+            "id": "bullock",
+            "name": "Bullock",
+            "type": "County",
+            "fips": "01011"
+          },
+          {
+            "id": "butler",
+            "name": "Butler",
+            "type": "County",
+            "fips": "01013"
+          },
+          {
+            "id": "calhoun",
+            "name": "Calhoun",
+            "type": "County",
+            "fips": "01015"
+          },
+          {
+            "id": "chambers",
+            "name": "Chambers",
+            "type": "County",
+            "fips": "01017"
+          },
+          {
+            "id": "cherokee",
+            "name": "Cherokee",
+            "type": "County",
+            "fips": "01019"
+          },
+          {
+            "id": "chilton",
+            "name": "Chilton",
+            "type": "County",
+            "fips": "01021"
+          },
+          {
+            "id": "choctaw",
+            "name": "Choctaw",
+            "type": "County",
+            "fips": "01023"
+          },
+          {
+            "id": "clarke",
+            "name": "Clarke",
+            "type": "County",
+            "fips": "01025"
+          },
+          {
+            "id": "clay",
+            "name": "Clay",
+            "type": "County",
+            "fips": "01027"
+          },
+          {
+            "id": "cleburne",
+            "name": "Cleburne",
+            "type": "County",
+            "fips": "01029"
+          },
+          {
+            "id": "coffee",
+            "name": "Coffee",
+            "type": "County",
+            "fips": "01031"
+          },
+          {
+            "id": "colbert",
+            "name": "Colbert",
+            "type": "County",
+            "fips": "01033"
+          },
+          {
+            "id": "conecuh",
+            "name": "Conecuh",
+            "type": "County",
+            "fips": "01035"
+          },
+          {
+            "id": "coosa",
+            "name": "Coosa",
+            "type": "County",
+            "fips": "01037"
+          },
+          {
+            "id": "covington",
+            "name": "Covington",
+            "type": "County",
+            "fips": "01039"
+          },
+          {
+            "id": "crenshaw",
+            "name": "Crenshaw",
+            "type": "County",
+            "fips": "01041"
+          },
+          {
+            "id": "cullman",
+            "name": "Cullman",
+            "type": "County",
+            "fips": "01043"
+          },
+          {
+            "id": "dale",
+            "name": "Dale",
+            "type": "County",
+            "fips": "01045"
+          },
+          {
+            "id": "dallas",
+            "name": "Dallas",
+            "type": "County",
+            "fips": "01047"
+          },
+          {
+            "id": "dekalb",
+            "name": "DeKalb",
+            "type": "County",
+            "fips": "01049"
+          },
+          {
+            "id": "elmore",
+            "name": "Elmore",
+            "type": "County",
+            "fips": "01051"
+          },
+          {
+            "id": "escambia",
+            "name": "Escambia",
+            "type": "County",
+            "fips": "01053"
+          },
+          {
+            "id": "etowah",
+            "name": "Etowah",
+            "type": "County",
+            "fips": "01055"
+          },
+          {
+            "id": "fayette",
+            "name": "Fayette",
+            "type": "County",
+            "fips": "01057"
+          },
+          {
+            "id": "franklin",
+            "name": "Franklin",
+            "type": "County",
+            "fips": "01059"
+          },
+          {
+            "id": "geneva",
+            "name": "Geneva",
+            "type": "County",
+            "fips": "01061"
+          },
+          {
+            "id": "greene",
+            "name": "Greene",
+            "type": "County",
+            "fips": "01063"
+          },
+          {
+            "id": "hale",
+            "name": "Hale",
+            "type": "County",
+            "fips": "01065"
+          },
+          {
+            "id": "henry",
+            "name": "Henry",
+            "type": "County",
+            "fips": "01067"
+          },
+          {
+            "id": "houston",
+            "name": "Houston",
+            "type": "County",
+            "fips": "01069"
+          },
+          {
+            "id": "jackson",
+            "name": "Jackson",
+            "type": "County",
+            "fips": "01071"
+          },
+          {
+            "id": "jefferson",
+            "name": "Jefferson",
+            "type": "County",
+            "fips": "01073"
+          },
+          {
+            "id": "lamar",
+            "name": "Lamar",
+            "type": "County",
+            "fips": "01075"
+          },
+          {
+            "id": "lauderdale",
+            "name": "Lauderdale",
+            "type": "County",
+            "fips": "01077"
+          },
+          {
+            "id": "lawrence",
+            "name": "Lawrence",
+            "type": "County",
+            "fips": "01079"
+          },
+          {
+            "id": "lee",
+            "name": "Lee",
+            "type": "County",
+            "fips": "01081"
+          },
+          {
+            "id": "limestone",
+            "name": "Limestone",
+            "type": "County",
+            "fips": "01083"
+          },
+          {
+            "id": "lowndes",
+            "name": "Lowndes",
+            "type": "County",
+            "fips": "01085"
+          },
+          {
+            "id": "macon",
+            "name": "Macon",
+            "type": "County",
+            "fips": "01087"
+          },
+          {
+            "id": "madison",
+            "name": "Madison",
+            "type": "County",
+            "fips": "01089"
+          },
+          {
+            "id": "marengo",
+            "name": "Marengo",
+            "type": "County",
+            "fips": "01091"
+          },
+          {
+            "id": "marion",
+            "name": "Marion",
+            "type": "County",
+            "fips": "01093"
+          },
+          {
+            "id": "marshall",
+            "name": "Marshall",
+            "type": "County",
+            "fips": "01095"
+          },
+          {
+            "id": "mobile",
+            "name": "Mobile",
+            "type": "County",
+            "fips": "01097"
+          },
+          {
+            "id": "monroe",
+            "name": "Monroe",
+            "type": "County",
+            "fips": "01099"
+          },
+          {
+            "id": "montgomery",
+            "name": "Montgomery",
+            "type": "County",
+            "fips": "01101"
+          },
+          {
+            "id": "morgan",
+            "name": "Morgan",
+            "type": "County",
+            "fips": "01103"
+          },
+          {
+            "id": "perry",
+            "name": "Perry",
+            "type": "County",
+            "fips": "01105"
+          },
+          {
+            "id": "pickens",
+            "name": "Pickens",
+            "type": "County",
+            "fips": "01107"
+          },
+          {
+            "id": "pike",
+            "name": "Pike",
+            "type": "County",
+            "fips": "01109"
+          },
+          {
+            "id": "randolph",
+            "name": "Randolph",
+            "type": "County",
+            "fips": "01111"
+          },
+          {
+            "id": "russell",
+            "name": "Russell",
+            "type": "County",
+            "fips": "01113"
+          },
+          {
+            "id": "st_clair",
+            "name": "St. Clair",
+            "type": "County",
+            "fips": "01115"
+          },
+          {
+            "id": "shelby",
+            "name": "Shelby",
+            "type": "County",
+            "fips": "01117"
+          },
+          {
+            "id": "sumter",
+            "name": "Sumter",
+            "type": "County",
+            "fips": "01119"
+          },
+          {
+            "id": "talladega",
+            "name": "Talladega",
+            "type": "County",
+            "fips": "01121"
+          },
+          {
+            "id": "tallapoosa",
+            "name": "Tallapoosa",
+            "type": "County",
+            "fips": "01123"
+          },
+          {
+            "id": "tuscaloosa",
+            "name": "Tuscaloosa",
+            "type": "County",
+            "fips": "01125"
+          },
+          {
+            "id": "walker",
+            "name": "Walker",
+            "type": "County",
+            "fips": "01127"
+          },
+          {
+            "id": "washington",
+            "name": "Washington",
+            "type": "County",
+            "fips": "01129"
+          },
+          {
+            "id": "wilcox",
+            "name": "Wilcox",
+            "type": "County",
+            "fips": "01131"
+          },
+          {
+            "id": "winston",
+            "name": "Winston",
+            "type": "County",
+            "fips": "01133"
+          }
+        ],
+        "candidates": [
+          {
+            "id": "22719365",
+            "source_name": "Yes",
+            "source_party": "Nonpartisan",
+            "name": "Yes",
+            "party": "YES"
+          },
+          {
+            "id": "22719366",
+            "source_name": "No",
+            "source_party": "Nonpartisan",
+            "name": "No",
+            "party": "NO"
+          }
+        ]
+      }
+    },
+    {
+      "id": "civic-statewide-amendment-3",
+      "county": "Alabama statewide county feed",
+      "county_id": "AL",
+      "url": "https://civicapi.org/results/elections/179836",
+      "endpoint": "https://civicapi.org/api/v2/race/179836",
+      "election_id": "179836",
+      "enabled": true,
+      "format": "civic_county",
+      "priority": 100,
+      "status": "civicAPI statewide county totals; setup zeros",
+      "note": "Public publisher feed attributed to civicAPI. All 67 county totals; no precinct breakdown. Named candidates are supplied; write-ins are not supplied for candidate races. Reporting percentage is an estimate, not an exact precinct count.",
+      "interval_seconds": 120,
+      "contest_map": {
+        "179836": "amendment-3"
+      },
+      "expected": {
+        "name": "Alabama Amendment 3 - Pledge of Allegiance and Student-Led Prayer in Public Schools",
+        "district": null,
+        "office": "Referendum",
+        "election_scope": "Statewide",
+        "counties": [
+          {
+            "id": "autauga",
+            "name": "Autauga",
+            "type": "County",
+            "fips": "01001"
+          },
+          {
+            "id": "baldwin",
+            "name": "Baldwin",
+            "type": "County",
+            "fips": "01003"
+          },
+          {
+            "id": "barbour",
+            "name": "Barbour",
+            "type": "County",
+            "fips": "01005"
+          },
+          {
+            "id": "bibb",
+            "name": "Bibb",
+            "type": "County",
+            "fips": "01007"
+          },
+          {
+            "id": "blount",
+            "name": "Blount",
+            "type": "County",
+            "fips": "01009"
+          },
+          {
+            "id": "bullock",
+            "name": "Bullock",
+            "type": "County",
+            "fips": "01011"
+          },
+          {
+            "id": "butler",
+            "name": "Butler",
+            "type": "County",
+            "fips": "01013"
+          },
+          {
+            "id": "calhoun",
+            "name": "Calhoun",
+            "type": "County",
+            "fips": "01015"
+          },
+          {
+            "id": "chambers",
+            "name": "Chambers",
+            "type": "County",
+            "fips": "01017"
+          },
+          {
+            "id": "cherokee",
+            "name": "Cherokee",
+            "type": "County",
+            "fips": "01019"
+          },
+          {
+            "id": "chilton",
+            "name": "Chilton",
+            "type": "County",
+            "fips": "01021"
+          },
+          {
+            "id": "choctaw",
+            "name": "Choctaw",
+            "type": "County",
+            "fips": "01023"
+          },
+          {
+            "id": "clarke",
+            "name": "Clarke",
+            "type": "County",
+            "fips": "01025"
+          },
+          {
+            "id": "clay",
+            "name": "Clay",
+            "type": "County",
+            "fips": "01027"
+          },
+          {
+            "id": "cleburne",
+            "name": "Cleburne",
+            "type": "County",
+            "fips": "01029"
+          },
+          {
+            "id": "coffee",
+            "name": "Coffee",
+            "type": "County",
+            "fips": "01031"
+          },
+          {
+            "id": "colbert",
+            "name": "Colbert",
+            "type": "County",
+            "fips": "01033"
+          },
+          {
+            "id": "conecuh",
+            "name": "Conecuh",
+            "type": "County",
+            "fips": "01035"
+          },
+          {
+            "id": "coosa",
+            "name": "Coosa",
+            "type": "County",
+            "fips": "01037"
+          },
+          {
+            "id": "covington",
+            "name": "Covington",
+            "type": "County",
+            "fips": "01039"
+          },
+          {
+            "id": "crenshaw",
+            "name": "Crenshaw",
+            "type": "County",
+            "fips": "01041"
+          },
+          {
+            "id": "cullman",
+            "name": "Cullman",
+            "type": "County",
+            "fips": "01043"
+          },
+          {
+            "id": "dale",
+            "name": "Dale",
+            "type": "County",
+            "fips": "01045"
+          },
+          {
+            "id": "dallas",
+            "name": "Dallas",
+            "type": "County",
+            "fips": "01047"
+          },
+          {
+            "id": "dekalb",
+            "name": "DeKalb",
+            "type": "County",
+            "fips": "01049"
+          },
+          {
+            "id": "elmore",
+            "name": "Elmore",
+            "type": "County",
+            "fips": "01051"
+          },
+          {
+            "id": "escambia",
+            "name": "Escambia",
+            "type": "County",
+            "fips": "01053"
+          },
+          {
+            "id": "etowah",
+            "name": "Etowah",
+            "type": "County",
+            "fips": "01055"
+          },
+          {
+            "id": "fayette",
+            "name": "Fayette",
+            "type": "County",
+            "fips": "01057"
+          },
+          {
+            "id": "franklin",
+            "name": "Franklin",
+            "type": "County",
+            "fips": "01059"
+          },
+          {
+            "id": "geneva",
+            "name": "Geneva",
+            "type": "County",
+            "fips": "01061"
+          },
+          {
+            "id": "greene",
+            "name": "Greene",
+            "type": "County",
+            "fips": "01063"
+          },
+          {
+            "id": "hale",
+            "name": "Hale",
+            "type": "County",
+            "fips": "01065"
+          },
+          {
+            "id": "henry",
+            "name": "Henry",
+            "type": "County",
+            "fips": "01067"
+          },
+          {
+            "id": "houston",
+            "name": "Houston",
+            "type": "County",
+            "fips": "01069"
+          },
+          {
+            "id": "jackson",
+            "name": "Jackson",
+            "type": "County",
+            "fips": "01071"
+          },
+          {
+            "id": "jefferson",
+            "name": "Jefferson",
+            "type": "County",
+            "fips": "01073"
+          },
+          {
+            "id": "lamar",
+            "name": "Lamar",
+            "type": "County",
+            "fips": "01075"
+          },
+          {
+            "id": "lauderdale",
+            "name": "Lauderdale",
+            "type": "County",
+            "fips": "01077"
+          },
+          {
+            "id": "lawrence",
+            "name": "Lawrence",
+            "type": "County",
+            "fips": "01079"
+          },
+          {
+            "id": "lee",
+            "name": "Lee",
+            "type": "County",
+            "fips": "01081"
+          },
+          {
+            "id": "limestone",
+            "name": "Limestone",
+            "type": "County",
+            "fips": "01083"
+          },
+          {
+            "id": "lowndes",
+            "name": "Lowndes",
+            "type": "County",
+            "fips": "01085"
+          },
+          {
+            "id": "macon",
+            "name": "Macon",
+            "type": "County",
+            "fips": "01087"
+          },
+          {
+            "id": "madison",
+            "name": "Madison",
+            "type": "County",
+            "fips": "01089"
+          },
+          {
+            "id": "marengo",
+            "name": "Marengo",
+            "type": "County",
+            "fips": "01091"
+          },
+          {
+            "id": "marion",
+            "name": "Marion",
+            "type": "County",
+            "fips": "01093"
+          },
+          {
+            "id": "marshall",
+            "name": "Marshall",
+            "type": "County",
+            "fips": "01095"
+          },
+          {
+            "id": "mobile",
+            "name": "Mobile",
+            "type": "County",
+            "fips": "01097"
+          },
+          {
+            "id": "monroe",
+            "name": "Monroe",
+            "type": "County",
+            "fips": "01099"
+          },
+          {
+            "id": "montgomery",
+            "name": "Montgomery",
+            "type": "County",
+            "fips": "01101"
+          },
+          {
+            "id": "morgan",
+            "name": "Morgan",
+            "type": "County",
+            "fips": "01103"
+          },
+          {
+            "id": "perry",
+            "name": "Perry",
+            "type": "County",
+            "fips": "01105"
+          },
+          {
+            "id": "pickens",
+            "name": "Pickens",
+            "type": "County",
+            "fips": "01107"
+          },
+          {
+            "id": "pike",
+            "name": "Pike",
+            "type": "County",
+            "fips": "01109"
+          },
+          {
+            "id": "randolph",
+            "name": "Randolph",
+            "type": "County",
+            "fips": "01111"
+          },
+          {
+            "id": "russell",
+            "name": "Russell",
+            "type": "County",
+            "fips": "01113"
+          },
+          {
+            "id": "st_clair",
+            "name": "St. Clair",
+            "type": "County",
+            "fips": "01115"
+          },
+          {
+            "id": "shelby",
+            "name": "Shelby",
+            "type": "County",
+            "fips": "01117"
+          },
+          {
+            "id": "sumter",
+            "name": "Sumter",
+            "type": "County",
+            "fips": "01119"
+          },
+          {
+            "id": "talladega",
+            "name": "Talladega",
+            "type": "County",
+            "fips": "01121"
+          },
+          {
+            "id": "tallapoosa",
+            "name": "Tallapoosa",
+            "type": "County",
+            "fips": "01123"
+          },
+          {
+            "id": "tuscaloosa",
+            "name": "Tuscaloosa",
+            "type": "County",
+            "fips": "01125"
+          },
+          {
+            "id": "walker",
+            "name": "Walker",
+            "type": "County",
+            "fips": "01127"
+          },
+          {
+            "id": "washington",
+            "name": "Washington",
+            "type": "County",
+            "fips": "01129"
+          },
+          {
+            "id": "wilcox",
+            "name": "Wilcox",
+            "type": "County",
+            "fips": "01131"
+          },
+          {
+            "id": "winston",
+            "name": "Winston",
+            "type": "County",
+            "fips": "01133"
+          }
+        ],
+        "candidates": [
+          {
+            "id": "22719367",
+            "source_name": "Yes",
+            "source_party": "Nonpartisan",
+            "name": "Yes",
+            "party": "YES"
+          },
+          {
+            "id": "22719368",
+            "source_name": "No",
+            "source_party": "Nonpartisan",
+            "name": "No",
+            "party": "NO"
+          }
+        ]
+      }
+    },
+    {
+      "id": "civic-statewide-amendment-4",
+      "county": "Alabama statewide county feed",
+      "county_id": "AL",
+      "url": "https://civicapi.org/results/elections/179837",
+      "endpoint": "https://civicapi.org/api/v2/race/179837",
+      "election_id": "179837",
+      "enabled": true,
+      "format": "civic_county",
+      "priority": 100,
+      "status": "civicAPI statewide county totals; setup zeros",
+      "note": "Public publisher feed attributed to civicAPI. All 67 county totals; no precinct breakdown. Named candidates are supplied; write-ins are not supplied for candidate races. Reporting percentage is an estimate, not an exact precinct count.",
+      "interval_seconds": 120,
+      "contest_map": {
+        "179837": "amendment-4"
+      },
+      "expected": {
+        "name": "Alabama Amendment 4 - Star-Spangled Banner in Public Schools",
+        "district": null,
+        "office": "Referendum",
+        "election_scope": "Statewide",
+        "counties": [
+          {
+            "id": "autauga",
+            "name": "Autauga",
+            "type": "County",
+            "fips": "01001"
+          },
+          {
+            "id": "baldwin",
+            "name": "Baldwin",
+            "type": "County",
+            "fips": "01003"
+          },
+          {
+            "id": "barbour",
+            "name": "Barbour",
+            "type": "County",
+            "fips": "01005"
+          },
+          {
+            "id": "bibb",
+            "name": "Bibb",
+            "type": "County",
+            "fips": "01007"
+          },
+          {
+            "id": "blount",
+            "name": "Blount",
+            "type": "County",
+            "fips": "01009"
+          },
+          {
+            "id": "bullock",
+            "name": "Bullock",
+            "type": "County",
+            "fips": "01011"
+          },
+          {
+            "id": "butler",
+            "name": "Butler",
+            "type": "County",
+            "fips": "01013"
+          },
+          {
+            "id": "calhoun",
+            "name": "Calhoun",
+            "type": "County",
+            "fips": "01015"
+          },
+          {
+            "id": "chambers",
+            "name": "Chambers",
+            "type": "County",
+            "fips": "01017"
+          },
+          {
+            "id": "cherokee",
+            "name": "Cherokee",
+            "type": "County",
+            "fips": "01019"
+          },
+          {
+            "id": "chilton",
+            "name": "Chilton",
+            "type": "County",
+            "fips": "01021"
+          },
+          {
+            "id": "choctaw",
+            "name": "Choctaw",
+            "type": "County",
+            "fips": "01023"
+          },
+          {
+            "id": "clarke",
+            "name": "Clarke",
+            "type": "County",
+            "fips": "01025"
+          },
+          {
+            "id": "clay",
+            "name": "Clay",
+            "type": "County",
+            "fips": "01027"
+          },
+          {
+            "id": "cleburne",
+            "name": "Cleburne",
+            "type": "County",
+            "fips": "01029"
+          },
+          {
+            "id": "coffee",
+            "name": "Coffee",
+            "type": "County",
+            "fips": "01031"
+          },
+          {
+            "id": "colbert",
+            "name": "Colbert",
+            "type": "County",
+            "fips": "01033"
+          },
+          {
+            "id": "conecuh",
+            "name": "Conecuh",
+            "type": "County",
+            "fips": "01035"
+          },
+          {
+            "id": "coosa",
+            "name": "Coosa",
+            "type": "County",
+            "fips": "01037"
+          },
+          {
+            "id": "covington",
+            "name": "Covington",
+            "type": "County",
+            "fips": "01039"
+          },
+          {
+            "id": "crenshaw",
+            "name": "Crenshaw",
+            "type": "County",
+            "fips": "01041"
+          },
+          {
+            "id": "cullman",
+            "name": "Cullman",
+            "type": "County",
+            "fips": "01043"
+          },
+          {
+            "id": "dale",
+            "name": "Dale",
+            "type": "County",
+            "fips": "01045"
+          },
+          {
+            "id": "dallas",
+            "name": "Dallas",
+            "type": "County",
+            "fips": "01047"
+          },
+          {
+            "id": "dekalb",
+            "name": "DeKalb",
+            "type": "County",
+            "fips": "01049"
+          },
+          {
+            "id": "elmore",
+            "name": "Elmore",
+            "type": "County",
+            "fips": "01051"
+          },
+          {
+            "id": "escambia",
+            "name": "Escambia",
+            "type": "County",
+            "fips": "01053"
+          },
+          {
+            "id": "etowah",
+            "name": "Etowah",
+            "type": "County",
+            "fips": "01055"
+          },
+          {
+            "id": "fayette",
+            "name": "Fayette",
+            "type": "County",
+            "fips": "01057"
+          },
+          {
+            "id": "franklin",
+            "name": "Franklin",
+            "type": "County",
+            "fips": "01059"
+          },
+          {
+            "id": "geneva",
+            "name": "Geneva",
+            "type": "County",
+            "fips": "01061"
+          },
+          {
+            "id": "greene",
+            "name": "Greene",
+            "type": "County",
+            "fips": "01063"
+          },
+          {
+            "id": "hale",
+            "name": "Hale",
+            "type": "County",
+            "fips": "01065"
+          },
+          {
+            "id": "henry",
+            "name": "Henry",
+            "type": "County",
+            "fips": "01067"
+          },
+          {
+            "id": "houston",
+            "name": "Houston",
+            "type": "County",
+            "fips": "01069"
+          },
+          {
+            "id": "jackson",
+            "name": "Jackson",
+            "type": "County",
+            "fips": "01071"
+          },
+          {
+            "id": "jefferson",
+            "name": "Jefferson",
+            "type": "County",
+            "fips": "01073"
+          },
+          {
+            "id": "lamar",
+            "name": "Lamar",
+            "type": "County",
+            "fips": "01075"
+          },
+          {
+            "id": "lauderdale",
+            "name": "Lauderdale",
+            "type": "County",
+            "fips": "01077"
+          },
+          {
+            "id": "lawrence",
+            "name": "Lawrence",
+            "type": "County",
+            "fips": "01079"
+          },
+          {
+            "id": "lee",
+            "name": "Lee",
+            "type": "County",
+            "fips": "01081"
+          },
+          {
+            "id": "limestone",
+            "name": "Limestone",
+            "type": "County",
+            "fips": "01083"
+          },
+          {
+            "id": "lowndes",
+            "name": "Lowndes",
+            "type": "County",
+            "fips": "01085"
+          },
+          {
+            "id": "macon",
+            "name": "Macon",
+            "type": "County",
+            "fips": "01087"
+          },
+          {
+            "id": "madison",
+            "name": "Madison",
+            "type": "County",
+            "fips": "01089"
+          },
+          {
+            "id": "marengo",
+            "name": "Marengo",
+            "type": "County",
+            "fips": "01091"
+          },
+          {
+            "id": "marion",
+            "name": "Marion",
+            "type": "County",
+            "fips": "01093"
+          },
+          {
+            "id": "marshall",
+            "name": "Marshall",
+            "type": "County",
+            "fips": "01095"
+          },
+          {
+            "id": "mobile",
+            "name": "Mobile",
+            "type": "County",
+            "fips": "01097"
+          },
+          {
+            "id": "monroe",
+            "name": "Monroe",
+            "type": "County",
+            "fips": "01099"
+          },
+          {
+            "id": "montgomery",
+            "name": "Montgomery",
+            "type": "County",
+            "fips": "01101"
+          },
+          {
+            "id": "morgan",
+            "name": "Morgan",
+            "type": "County",
+            "fips": "01103"
+          },
+          {
+            "id": "perry",
+            "name": "Perry",
+            "type": "County",
+            "fips": "01105"
+          },
+          {
+            "id": "pickens",
+            "name": "Pickens",
+            "type": "County",
+            "fips": "01107"
+          },
+          {
+            "id": "pike",
+            "name": "Pike",
+            "type": "County",
+            "fips": "01109"
+          },
+          {
+            "id": "randolph",
+            "name": "Randolph",
+            "type": "County",
+            "fips": "01111"
+          },
+          {
+            "id": "russell",
+            "name": "Russell",
+            "type": "County",
+            "fips": "01113"
+          },
+          {
+            "id": "st_clair",
+            "name": "St. Clair",
+            "type": "County",
+            "fips": "01115"
+          },
+          {
+            "id": "shelby",
+            "name": "Shelby",
+            "type": "County",
+            "fips": "01117"
+          },
+          {
+            "id": "sumter",
+            "name": "Sumter",
+            "type": "County",
+            "fips": "01119"
+          },
+          {
+            "id": "talladega",
+            "name": "Talladega",
+            "type": "County",
+            "fips": "01121"
+          },
+          {
+            "id": "tallapoosa",
+            "name": "Tallapoosa",
+            "type": "County",
+            "fips": "01123"
+          },
+          {
+            "id": "tuscaloosa",
+            "name": "Tuscaloosa",
+            "type": "County",
+            "fips": "01125"
+          },
+          {
+            "id": "walker",
+            "name": "Walker",
+            "type": "County",
+            "fips": "01127"
+          },
+          {
+            "id": "washington",
+            "name": "Washington",
+            "type": "County",
+            "fips": "01129"
+          },
+          {
+            "id": "wilcox",
+            "name": "Wilcox",
+            "type": "County",
+            "fips": "01131"
+          },
+          {
+            "id": "winston",
+            "name": "Winston",
+            "type": "County",
+            "fips": "01133"
+          }
+        ],
+        "candidates": [
+          {
+            "id": "22719369",
+            "source_name": "Yes",
+            "source_party": "Nonpartisan",
+            "name": "Yes",
+            "party": "YES"
+          },
+          {
+            "id": "22719370",
+            "source_name": "No",
+            "source_party": "Nonpartisan",
+            "name": "No",
+            "party": "NO"
+          }
+        ]
+      }
+    }
+  ],
+  "feed_gaps": [
+    {
+      "contest_id": "psc-1",
+      "name": "Public Service Commission Place 1",
+      "status": "No statewide public civic feed in date index; retain official Madison precinct coverage only, do not imply statewide zero totals."
+    },
+    {
+      "contest_id": "psc-2",
+      "name": "Public Service Commission Place 2",
+      "status": "No statewide public civic feed in date index; retain official Madison precinct coverage only, do not imply statewide zero totals."
+    },
+    {
+      "contest_id": "supreme-court-7",
+      "name": "Associate Justice Supreme Court Place 7",
+      "status": "No statewide public civic feed in date index; retain official Madison precinct coverage only, do not imply statewide zero totals."
+    },
+    {
+      "contest_id": "supreme-court-8",
+      "name": "Associate Justice Supreme Court Place 8",
+      "status": "No statewide public civic feed in date index; retain official Madison precinct coverage only, do not imply statewide zero totals."
+    },
+    {
+      "contest_id": "civil-appeals-4",
+      "name": "Court of Civil Appeals Place 4",
+      "status": "No statewide public civic feed in date index; retain official Madison precinct coverage only, do not imply statewide zero totals."
+    },
+    {
+      "contest_id": "civil-appeals-5",
+      "name": "Court of Civil Appeals Place 5",
+      "status": "No statewide public civic feed in date index; retain official Madison precinct coverage only, do not imply statewide zero totals."
+    },
+    {
+      "contest_id": "criminal-appeals-4",
+      "name": "Court of Criminal Appeals Place 4",
+      "status": "No statewide public civic feed in date index; retain official Madison precinct coverage only, do not imply statewide zero totals."
+    },
+    {
+      "contest_id": "criminal-appeals-5",
+      "name": "Court of Criminal Appeals Place 5",
+      "status": "No statewide public civic feed in date index; retain official Madison precinct coverage only, do not imply statewide zero totals."
+    }
+  ],
+  "excluded_aggregates": [
+    {
+      "provider_race_id": "159587",
+      "name": "Alabama State House",
+      "reason": "Chamber aggregate, not a statewide ballot contest"
+    },
+    {
+      "provider_race_id": "159588",
+      "name": "Alabama State Senate",
+      "reason": "Chamber aggregate, not a statewide ballot contest"
+    }
+  ],
+  "guards": [
+    "Require test_data explicitly false, is_disputed false, country US, province AL, date 2026-11-03, exact name/office/scope and actual JSON null district.",
+    "Validate all 67 distinct AL county FIPS, configured region IDs/names and County type.",
+    "Verify candidate IDs, names, publisher parties and configured ballot identities. Preserve source_party; Nonpartisan Yes/No are ballot choices YES/NO.",
+    "Reconcile candidate county sums to top-level totals before acceptance; unavailable write-ins remain unknown, not zero.",
+    "Select a single source per race/county, preferring healthy official precinct totals; county fallback must never be added atop same county precinct totals.",
+    "Setup zeros and zero reporting are not evidence of counties reporting. Retain raw snapshots/hashes and source freshness; no live positive result latency has been established."
+  ],
+  "additional_gap_check": {
+    "checked_at": "2026-11-03T21:36:40.429684+00:00",
+    "retrievals": [
+      {
+        "url": "https://www2.alabamavotes.gov/electionnight/",
+        "status": 200,
+        "raw_path": ".firecrawl/statewide-official-enr.html",
+        "sha256": "83016dae17acb85a46803ede90afa1f52f776209b5b06ab48809b708bf49e260"
+      },
+      {
+        "url": "https://www.sos.alabama.gov/alabama-votes/voter/election-information/2026",
+        "status": 200,
+        "raw_path": ".firecrawl/statewide-official-current.html",
+        "sha256": "2000677a3a9a152e782da93b2cd1db95cc0023fd7859bfe6ba2b7407a8bc5b12"
+      },
+      {
+        "url": "https://www.sos.alabama.gov/alabama-votes/voter/election-data",
+        "status": 200,
+        "raw_path": ".firecrawl/statewide-official-data.html",
+        "sha256": "9497efddbc47a588aba6b6ba9b9d51c169f5a94f5db9c70d49d2c07bc4d1c6b8"
+      },
+      {
+        "url": "https://s3.amazonaws.com/grayfilestore-waff/electionData/WAFF_2797_Web.json",
+        "status": 200,
+        "raw_path": ".firecrawl/statewide-waff-current.json",
+        "sha256": "d3c762bc0fd36a1292ea5181be07a33672e749082104e8ff2a767291c36e23ed"
+      },
+      {
+        "url": "https://s3.amazonaws.com/grayfilestore-waff/electionData/WAFF_Menu.json",
+        "status": 200,
+        "raw_path": ".firecrawl/statewide-waff-menu.json",
+        "sha256": "70621d7d577a559a19cd8b1b0416043e9db3686343f54f108b418e8ce7cb3b23"
+      }
+    ],
+    "result": "No additional county feeds verified. Official election-night root is empty form; official pages have no Nov3 live result link. WAFF current file includes PSC1/2 and Supreme8 statewide totals only, not counties."
+  }
+}

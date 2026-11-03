@@ -1,0 +1,957 @@
+{
+  "checked_at": "2026-11-03T20:29:06.923029+00:00",
+  "jurisdiction": "Madison County, Alabama",
+  "county_fips": "01089",
+  "election_date": "2026-11-03",
+  "election_name": "GENERAL AND CONSTITUTIONAL AMENDMENT ELECTION",
+  "enabled": true,
+  "readiness": "verified_general_election_setup_zero",
+  "endpoint": "https://results.enr.clarityelections.com/AL/Madison/127483",
+  "election_id": "127483",
+  "contest_keys_verified": true,
+  "precinct_data_verified_for_current_election": true,
+  "sample_ballot": {
+    "url": "https://www.sos.alabama.gov/sites/default/files/sample-ballots/2026/gen/Madison-Sample.pdf",
+    "sha256": "5b45f5b61184ab739be5b39cd6e363acbb420fbedc56af94ab97d170e6580670",
+    "notes": "Official common ballot includes offices applicable only to some precincts; all contests below transcribed from this source, not the shorter commercial results listing. These IDs are local proposed slugs, not Clarity keys."
+  },
+  "retrieval_limitations": [
+    "Firecrawl actual search failed HTTP 402; status credits -1,000/1,000.",
+    "Madison county election website direct requests returned HTTP 403.",
+    "madisoncountyvotes.com direct requests returned HTTP 530.",
+    "Clarity county root direct request returned HTTP 403; web reader returned JavaScript verification challenge. No challenge bypass attempted.",
+    "Current official election department domain discovered as madisoncountyvotesal.gov; direct homepage and results path return HTTP 202 with zero-byte body; web reader HTTP 403."
+  ],
+  "source_candidates": [
+    {
+      "url": "https://www.madisoncountyvotesal.gov/",
+      "status": "202_empty_body_direct_or_403_web_reader",
+      "current_election_verified": false
+    },
+    {
+      "url": "https://results.enr.clarityelections.com/AL/Madison/",
+      "status": "challenge_or_403",
+      "current_election_verified": false
+    },
+    {
+      "url": "https://www.madisoncountyvotes.com/elections-information/election-results/",
+      "status": "530",
+      "current_election_verified": false
+    }
+  ],
+  "historical_schema_only": [
+    {
+      "election_id": "127070",
+      "date": "2026-08-25",
+      "base_url": "https://results.enr.clarityelections.com/AL/Madison/127070",
+      "kind": "municipal",
+      "live_eligible": false
+    },
+    {
+      "election_id": "127283",
+      "date": "2026-09-22",
+      "base_url": "https://results.enr.clarityelections.com/AL/Madison/127283",
+      "kind": "municipal_runoff",
+      "live_eligible": false
+    },
+    {
+      "election_id": "126267",
+      "date": "2026-05-19",
+      "base_url": "https://results.enr.clarityelections.com/AL/Madison/126267",
+      "kind": "primary_search_lead_only",
+      "live_eligible": false
+    }
+  ],
+  "schema": {
+    "version": "{base}/current_ver.txt numeric revision",
+    "summary": "{base}/{version}/json/en/summary.json array: K contest key; C contest name; CH candidate names; P candidate parties where present; V candidate totals; PR precincts reporting; TP total precincts; T contest total array",
+    "details": "{base}/{version}/json/details.json object Contests array; K contest key; P precinct names; V matrix [precinct][candidate]. Candidate order must follow verified corresponding summary.CH.",
+    "settings": "{base}/{version}/json/en/electionsettings.json; settings.electiondetails.electionid, electiondate, istestmode; websiteupdatedat may be nested",
+    "verification": "schema inferred from existing local Huntsville implementation and tests, not verified against November payload"
+  },
+  "polling": {
+    "published_minimum_seconds": null,
+    "suggested_seconds": 60,
+    "basis": "Conservative implementation choice, no publisher minimum or refresh SLA verified. Check revision only, fetch payloads on change; backoff failures."
+  },
+  "roster": [
+    {
+      "id": "governor",
+      "title": "Governor",
+      "source_contest_key": null,
+      "candidates": [
+        {
+          "name": "Doug Jones",
+          "party": "DEM"
+        },
+        {
+          "name": "Tommy Tuberville",
+          "party": "REP"
+        },
+        {
+          "name": "Write-in",
+          "party": "WRITEIN"
+        }
+      ]
+    },
+    {
+      "id": "lieutenant-governor",
+      "title": "Lieutenant Governor",
+      "source_contest_key": null,
+      "candidates": [
+        {
+          "name": "Phillip Ensler",
+          "party": "DEM"
+        },
+        {
+          "name": "John Wahl",
+          "party": "REP"
+        },
+        {
+          "name": "Write-in",
+          "party": "WRITEIN"
+        }
+      ]
+    },
+    {
+      "id": "us-senate",
+      "title": "U.S. Senate",
+      "source_contest_key": null,
+      "candidates": [
+        {
+          "name": "Everett Wess",
+          "party": "DEM"
+        },
+        {
+          "name": "Barry Moore",
+          "party": "REP"
+        },
+        {
+          "name": "Write-in",
+          "party": "WRITEIN"
+        }
+      ]
+    },
+    {
+      "id": "us-house-5",
+      "title": "U.S. House District 5",
+      "source_contest_key": null,
+      "candidates": [
+        {
+          "name": "Andrew Sneed",
+          "party": "DEM"
+        },
+        {
+          "name": "Dale W. Strong",
+          "party": "REP"
+        },
+        {
+          "name": "Write-in",
+          "party": "WRITEIN"
+        }
+      ]
+    },
+    {
+      "id": "attorney-general",
+      "title": "Attorney General",
+      "source_contest_key": null,
+      "candidates": [
+        {
+          "name": "Jeff McLaughlin",
+          "party": "DEM"
+        },
+        {
+          "name": "Katherine Robertson",
+          "party": "REP"
+        },
+        {
+          "name": "Write-in",
+          "party": "WRITEIN"
+        }
+      ]
+    },
+    {
+      "id": "secretary-of-state",
+      "title": "Secretary of State",
+      "source_contest_key": null,
+      "candidates": [
+        {
+          "name": "Wayne Rogers",
+          "party": "DEM"
+        },
+        {
+          "name": "Caroleene Dobson",
+          "party": "REP"
+        },
+        {
+          "name": "Write-in",
+          "party": "WRITEIN"
+        }
+      ]
+    },
+    {
+      "id": "treasurer",
+      "title": "State Treasurer",
+      "source_contest_key": null,
+      "candidates": [
+        {
+          "name": "Rosilyn Houston",
+          "party": "DEM"
+        },
+        {
+          "name": "Young Boozer",
+          "party": "REP"
+        },
+        {
+          "name": "Write-in",
+          "party": "WRITEIN"
+        }
+      ]
+    },
+    {
+      "id": "auditor",
+      "title": "State Auditor",
+      "source_contest_key": null,
+      "candidates": [
+        {
+          "name": "Violet Edwards",
+          "party": "DEM"
+        },
+        {
+          "name": "Andrew Sorrell",
+          "party": "REP"
+        },
+        {
+          "name": "Write-in",
+          "party": "WRITEIN"
+        }
+      ]
+    },
+    {
+      "id": "agriculture",
+      "title": "Commissioner of Agriculture and Industries",
+      "source_contest_key": null,
+      "candidates": [
+        {
+          "name": "Ron Sparks",
+          "party": "DEM"
+        },
+        {
+          "name": "Corey Hill",
+          "party": "REP"
+        },
+        {
+          "name": "Write-in",
+          "party": "WRITEIN"
+        }
+      ]
+    },
+    {
+      "id": "psc-1",
+      "title": "Public Service Commission Place 1",
+      "source_contest_key": null,
+      "candidates": [
+        {
+          "name": "James O. Gordon",
+          "party": "DEM"
+        },
+        {
+          "name": "Matt Gentry",
+          "party": "REP"
+        },
+        {
+          "name": "Write-in",
+          "party": "WRITEIN"
+        }
+      ]
+    },
+    {
+      "id": "psc-2",
+      "title": "Public Service Commission Place 2",
+      "source_contest_key": null,
+      "candidates": [
+        {
+          "name": "Sheila D. McNeil",
+          "party": "DEM"
+        },
+        {
+          "name": "Jim Zig Zeigler",
+          "party": "REP"
+        },
+        {
+          "name": "Write-in",
+          "party": "WRITEIN"
+        }
+      ]
+    },
+    {
+      "id": "state-senate-2",
+      "title": "State Senate District 2",
+      "source_contest_key": null,
+      "candidates": [
+        {
+          "name": "Rudolph Valentino Drake",
+          "party": "DEM"
+        },
+        {
+          "name": "John Roberts",
+          "party": "REP"
+        },
+        {
+          "name": "Write-in",
+          "party": "WRITEIN"
+        }
+      ]
+    },
+    {
+      "id": "state-senate-3",
+      "title": "State Senate District 3",
+      "source_contest_key": null,
+      "candidates": [
+        {
+          "name": "John Dickey",
+          "party": "DEM"
+        },
+        {
+          "name": "Arthur Orr",
+          "party": "REP"
+        },
+        {
+          "name": "Write-in",
+          "party": "WRITEIN"
+        }
+      ]
+    },
+    {
+      "id": "state-senate-7",
+      "title": "State Senate District 7",
+      "source_contest_key": null,
+      "candidates": [
+        {
+          "name": "Jared Sluss",
+          "party": "DEM"
+        },
+        {
+          "name": "Sam Givhan",
+          "party": "REP"
+        },
+        {
+          "name": "Write-in",
+          "party": "WRITEIN"
+        }
+      ]
+    },
+    {
+      "id": "state-senate-8",
+      "title": "State Senate District 8",
+      "source_contest_key": null,
+      "candidates": [
+        {
+          "name": "Katie Kramer",
+          "party": "DEM"
+        },
+        {
+          "name": "Steve Livingston",
+          "party": "REP"
+        },
+        {
+          "name": "Write-in",
+          "party": "WRITEIN"
+        }
+      ]
+    },
+    {
+      "id": "state-senate-9",
+      "title": "State Senate District 9",
+      "source_contest_key": null,
+      "candidates": [
+        {
+          "name": "Wes Kitchens",
+          "party": "REP"
+        },
+        {
+          "name": "Write-in",
+          "party": "WRITEIN"
+        }
+      ]
+    },
+    {
+      "id": "state-house-4",
+      "title": "State House District 4",
+      "source_contest_key": null,
+      "candidates": [
+        {
+          "name": "Hanu Karlapalem",
+          "party": "DEM"
+        },
+        {
+          "name": "Parker Duncan Moore",
+          "party": "REP"
+        },
+        {
+          "name": "Write-in",
+          "party": "WRITEIN"
+        }
+      ]
+    },
+    {
+      "id": "state-house-6",
+      "title": "State House District 6",
+      "source_contest_key": null,
+      "candidates": [
+        {
+          "name": "Andy Whitt",
+          "party": "REP"
+        },
+        {
+          "name": "Write-in",
+          "party": "WRITEIN"
+        }
+      ]
+    },
+    {
+      "id": "state-house-10",
+      "title": "State House District 10",
+      "source_contest_key": null,
+      "candidates": [
+        {
+          "name": "Marilyn Lands",
+          "party": "DEM"
+        },
+        {
+          "name": "Aaron Thomas",
+          "party": "REP"
+        },
+        {
+          "name": "Write-in",
+          "party": "WRITEIN"
+        }
+      ]
+    },
+    {
+      "id": "state-house-19",
+      "title": "State House District 19",
+      "source_contest_key": null,
+      "candidates": [
+        {
+          "name": "Laura Hall",
+          "party": "DEM"
+        },
+        {
+          "name": "Donald Barnes",
+          "party": "REP"
+        },
+        {
+          "name": "Write-in",
+          "party": "WRITEIN"
+        }
+      ]
+    },
+    {
+      "id": "state-house-20",
+      "title": "State House District 20",
+      "source_contest_key": null,
+      "candidates": [
+        {
+          "name": "James Linderholm",
+          "party": "DEM"
+        },
+        {
+          "name": "James Lomax",
+          "party": "REP"
+        },
+        {
+          "name": "Write-in",
+          "party": "WRITEIN"
+        }
+      ]
+    },
+    {
+      "id": "state-house-21",
+      "title": "State House District 21",
+      "source_contest_key": null,
+      "candidates": [
+        {
+          "name": "Forrest Satterfield",
+          "party": "DEM"
+        },
+        {
+          "name": "Rex Reynolds",
+          "party": "REP"
+        },
+        {
+          "name": "Write-in",
+          "party": "WRITEIN"
+        }
+      ]
+    },
+    {
+      "id": "state-house-22",
+      "title": "State House District 22",
+      "source_contest_key": null,
+      "candidates": [
+        {
+          "name": "Ritchie Whorton",
+          "party": "REP"
+        },
+        {
+          "name": "Write-in",
+          "party": "WRITEIN"
+        }
+      ]
+    },
+    {
+      "id": "state-house-25",
+      "title": "State House District 25",
+      "source_contest_key": null,
+      "candidates": [
+        {
+          "name": "Allison T Montgomery",
+          "party": "DEM"
+        },
+        {
+          "name": "Phillip K. Rigsby",
+          "party": "REP"
+        },
+        {
+          "name": "Write-in",
+          "party": "WRITEIN"
+        }
+      ]
+    },
+    {
+      "id": "state-house-53",
+      "title": "State House District 53",
+      "source_contest_key": null,
+      "candidates": [
+        {
+          "name": "Anthony Daniels",
+          "party": "DEM"
+        },
+        {
+          "name": "Write-in",
+          "party": "WRITEIN"
+        }
+      ]
+    },
+    {
+      "id": "supreme-court-7",
+      "title": "Associate Justice Supreme Court Place 7",
+      "source_contest_key": null,
+      "candidates": [
+        {
+          "name": "Brad Mendheim",
+          "party": "REP"
+        },
+        {
+          "name": "Write-in",
+          "party": "WRITEIN"
+        }
+      ]
+    },
+    {
+      "id": "supreme-court-8",
+      "title": "Associate Justice Supreme Court Place 8",
+      "source_contest_key": null,
+      "candidates": [
+        {
+          "name": "Ashleigh Meyer Dunham",
+          "party": "DEM"
+        },
+        {
+          "name": "Greg Shaw",
+          "party": "REP"
+        },
+        {
+          "name": "Write-in",
+          "party": "WRITEIN"
+        }
+      ]
+    },
+    {
+      "id": "civil-appeals-4",
+      "title": "Court of Civil Appeals Place 4",
+      "source_contest_key": null,
+      "candidates": [
+        {
+          "name": "Benjamin M. Bowden",
+          "party": "REP"
+        },
+        {
+          "name": "Write-in",
+          "party": "WRITEIN"
+        }
+      ]
+    },
+    {
+      "id": "civil-appeals-5",
+      "title": "Court of Civil Appeals Place 5",
+      "source_contest_key": null,
+      "candidates": [
+        {
+          "name": "Matt Fridy",
+          "party": "REP"
+        },
+        {
+          "name": "Write-in",
+          "party": "WRITEIN"
+        }
+      ]
+    },
+    {
+      "id": "criminal-appeals-4",
+      "title": "Court of Criminal Appeals Place 4",
+      "source_contest_key": null,
+      "candidates": [
+        {
+          "name": "Mary Windom",
+          "party": "REP"
+        },
+        {
+          "name": "Write-in",
+          "party": "WRITEIN"
+        }
+      ]
+    },
+    {
+      "id": "criminal-appeals-5",
+      "title": "Court of Criminal Appeals Place 5",
+      "source_contest_key": null,
+      "candidates": [
+        {
+          "name": "Riggs Walker",
+          "party": "REP"
+        },
+        {
+          "name": "Write-in",
+          "party": "WRITEIN"
+        }
+      ]
+    },
+    {
+      "id": "state-boe-8",
+      "title": "State Board of Education District 8",
+      "source_contest_key": null,
+      "candidates": [
+        {
+          "name": "Shatika Armstrong",
+          "party": "DEM"
+        },
+        {
+          "name": "Emily Jones",
+          "party": "REP"
+        },
+        {
+          "name": "Write-in",
+          "party": "WRITEIN"
+        }
+      ]
+    },
+    {
+      "id": "circuit-court-23-2",
+      "title": "Circuit Court 23rd Judicial Circuit Place 2",
+      "source_contest_key": null,
+      "candidates": [
+        {
+          "name": "Alison Strickland Austin",
+          "party": "REP"
+        },
+        {
+          "name": "Write-in",
+          "party": "WRITEIN"
+        }
+      ]
+    },
+    {
+      "id": "circuit-court-23-4",
+      "title": "Circuit Court 23rd Judicial Circuit Place 4",
+      "source_contest_key": null,
+      "candidates": [
+        {
+          "name": "Claude E. Hundley III",
+          "party": "REP"
+        },
+        {
+          "name": "Write-in",
+          "party": "WRITEIN"
+        }
+      ]
+    },
+    {
+      "id": "district-court-1",
+      "title": "Madison District Court Place 1",
+      "source_contest_key": null,
+      "candidates": [
+        {
+          "name": "Kimberly Kelley Rucker",
+          "party": "DEM"
+        },
+        {
+          "name": "Tim Douthit",
+          "party": "REP"
+        },
+        {
+          "name": "Write-in",
+          "party": "WRITEIN"
+        }
+      ]
+    },
+    {
+      "id": "district-court-4",
+      "title": "Madison District Court Place 4",
+      "source_contest_key": null,
+      "candidates": [
+        {
+          "name": "Jason M. Jones",
+          "party": "DEM"
+        },
+        {
+          "name": "John R. Allen",
+          "party": "REP"
+        },
+        {
+          "name": "Write-in",
+          "party": "WRITEIN"
+        }
+      ]
+    },
+    {
+      "id": "district-court-5",
+      "title": "Madison District Court Place 5",
+      "source_contest_key": null,
+      "candidates": [
+        {
+          "name": "Raven Beach",
+          "party": "DEM"
+        },
+        {
+          "name": "Jeanne Dowdle Rizzardi",
+          "party": "REP"
+        },
+        {
+          "name": "Write-in",
+          "party": "WRITEIN"
+        }
+      ]
+    },
+    {
+      "id": "sheriff",
+      "title": "Madison County Sheriff",
+      "source_contest_key": null,
+      "candidates": [
+        {
+          "name": "Brett Jones",
+          "party": "DEM"
+        },
+        {
+          "name": "Kevin H. Turner",
+          "party": "REP"
+        },
+        {
+          "name": "Write-in",
+          "party": "WRITEIN"
+        }
+      ]
+    },
+    {
+      "id": "tax-assessor",
+      "title": "Madison County Tax Assessor",
+      "source_contest_key": null,
+      "candidates": [
+        {
+          "name": "Cliff Mann",
+          "party": "REP"
+        },
+        {
+          "name": "Write-in",
+          "party": "WRITEIN"
+        }
+      ]
+    },
+    {
+      "id": "tax-collector",
+      "title": "Madison County Tax Collector",
+      "source_contest_key": null,
+      "candidates": [
+        {
+          "name": "Jeff Taylor",
+          "party": "DEM"
+        },
+        {
+          "name": "Valerie D. Miles",
+          "party": "REP"
+        },
+        {
+          "name": "Write-in",
+          "party": "WRITEIN"
+        }
+      ]
+    },
+    {
+      "id": "coroner",
+      "title": "Madison County Coroner",
+      "source_contest_key": null,
+      "candidates": [
+        {
+          "name": "Tyler Berryhill",
+          "party": "REP"
+        },
+        {
+          "name": "Write-in",
+          "party": "WRITEIN"
+        }
+      ]
+    },
+    {
+      "id": "license-director",
+      "title": "Madison County License Director",
+      "source_contest_key": null,
+      "candidates": [
+        {
+          "name": "Mark Craig",
+          "party": "REP"
+        },
+        {
+          "name": "Write-in",
+          "party": "WRITEIN"
+        }
+      ]
+    },
+    {
+      "id": "school-superintendent",
+      "title": "Madison County Superintendent of Education",
+      "source_contest_key": null,
+      "candidates": [
+        {
+          "name": "E. Quinn Headen",
+          "party": "DEM"
+        },
+        {
+          "name": "Keith Trawick",
+          "party": "REP"
+        },
+        {
+          "name": "Write-in",
+          "party": "WRITEIN"
+        }
+      ]
+    },
+    {
+      "id": "county-boe-3",
+      "title": "Madison County Board of Education District 3",
+      "source_contest_key": null,
+      "candidates": [
+        {
+          "name": "Austin Jones",
+          "party": "DEM"
+        },
+        {
+          "name": "Brian Brooks",
+          "party": "REP"
+        },
+        {
+          "name": "Write-in",
+          "party": "WRITEIN"
+        }
+      ]
+    },
+    {
+      "id": "amendment-1",
+      "title": "Statewide Amendment 1",
+      "source_contest_key": null,
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "YES"
+        },
+        {
+          "name": "No",
+          "party": "NO"
+        }
+      ]
+    },
+    {
+      "id": "amendment-2",
+      "title": "Statewide Amendment 2",
+      "source_contest_key": null,
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "YES"
+        },
+        {
+          "name": "No",
+          "party": "NO"
+        }
+      ]
+    },
+    {
+      "id": "amendment-3",
+      "title": "Statewide Amendment 3",
+      "source_contest_key": null,
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "YES"
+        },
+        {
+          "name": "No",
+          "party": "NO"
+        }
+      ]
+    },
+    {
+      "id": "amendment-4",
+      "title": "Statewide Amendment 4",
+      "source_contest_key": null,
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "YES"
+        },
+        {
+          "name": "No",
+          "party": "NO"
+        }
+      ]
+    },
+    {
+      "id": "madison-local-amendment",
+      "title": "Madison County Local Amendment \u2014 Private sewer systems",
+      "source_contest_key": null,
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "YES"
+        },
+        {
+          "name": "No",
+          "party": "NO"
+        }
+      ]
+    }
+  ],
+  "straight_party": {
+    "present_on_ballot": true,
+    "counted_as_race": false,
+    "choices": [
+      "Alabama Democratic Party",
+      "Alabama Republican Party"
+    ],
+    "note": "Separate ballot selection, not a candidate contest. Preserve if source publishes it; never add it to candidate votes."
+  },
+  "current_verification": {
+    "basis": "User-supplied exact official URL followed by independent HTTP settings/summary/details verification",
+    "provider_revision": "382270",
+    "settings_file": "research/madison-settings.json",
+    "summary_file": "research/madison-summary.json",
+    "details_file": "research/madison-details.json",
+    "candidate_contests": 49,
+    "straight_party_categories_excluded": 1,
+    "contest_unit_rows": 3012,
+    "positive_returns_verified": false,
+    "current_provider_map_file": "data/current-geography.json",
+    "precinct_polygons": 79,
+    "historical_geographic_matches_verified": false
+  }
+}

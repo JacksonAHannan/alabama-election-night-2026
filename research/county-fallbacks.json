@@ -1,0 +1,316 @@
+{
+  "checked_at": "2026-11-03T20:58:29.959903+00:00",
+  "publisher": "civicAPI",
+  "publisher_is_election_authority": false,
+  "provenance": "Publisher states data aggregated from Secretary of State/equivalent authorities; smaller elections can use local media. APR independently labels Alabama data SOS via civicAPI. Current payload does not disclose per-county upstream authority URL.",
+  "documentation": "https://civicapi.org/api-documentation",
+  "faq": "https://civicapi.org/faq",
+  "attribution_required": true,
+  "attribution_url": "https://civicapi.org/",
+  "records": [
+    {
+      "contest_id": "cd5",
+      "provider_race_id": "86904",
+      "url": "https://civicapi.org/api/v2/race/86904",
+      "http_status": 200,
+      "raw_path": ".firecrawl/fallback-counties-civic-race.json",
+      "sha256": "e7affefe3582923c3de8717df8872f335a35ad002eb338eff735a958c89e6959",
+      "election_name": "Alabama US House 5",
+      "election_date": "2026-11-03T05:00:00.000Z",
+      "election_scope": "General",
+      "province": "AL",
+      "district": "AL-05",
+      "test_data": false,
+      "last_updated": "2026-10-30T18:52:46.878Z",
+      "status": "setup_zeros",
+      "candidates": [
+        {
+          "name": "Dale Strong",
+          "party": "Republican",
+          "candidate_id": "219732"
+        },
+        {
+          "name": "Andrew Sneed",
+          "party": "Democratic",
+          "candidate_id": "219733"
+        }
+      ],
+      "regions": [
+        {
+          "id": "jackson",
+          "name": "Jackson",
+          "type": "County",
+          "fips": "01071"
+        },
+        {
+          "id": "lauderdale",
+          "name": "Lauderdale",
+          "type": "County",
+          "fips": "01077"
+        },
+        {
+          "id": "lawrence",
+          "name": "Lawrence",
+          "type": "County",
+          "fips": "01079"
+        },
+        {
+          "id": "limestone",
+          "name": "Limestone",
+          "type": "County",
+          "fips": "01083"
+        },
+        {
+          "id": "madison",
+          "name": "Madison",
+          "type": "County",
+          "fips": "01089"
+        },
+        {
+          "id": "morgan",
+          "name": "Morgan",
+          "type": "County",
+          "fips": "01103"
+        }
+      ]
+    },
+    {
+      "contest_id": "hd10",
+      "provider_race_id": "176509",
+      "url": "https://civicapi.org/api/v2/race/176509",
+      "http_status": 200,
+      "raw_path": ".firecrawl/fallback-counties-civic-176509.json",
+      "sha256": "d2ce3af3aac1c7235b7a7d71a90f14d46e9c0646a90d27709640400c18064740",
+      "election_name": "Alabama State House 10",
+      "election_date": "2026-11-03T05:00:00.000Z",
+      "election_scope": "Local",
+      "province": "AL",
+      "district": "AL-HD-010",
+      "test_data": false,
+      "last_updated": "2026-10-30T18:52:48.454Z",
+      "status": "setup_zeros",
+      "candidates": [
+        {
+          "name": "Marilyn Lands",
+          "party": "Democratic",
+          "candidate_id": "21566646"
+        },
+        {
+          "name": "Aaron Thomas",
+          "party": "Republican",
+          "candidate_id": "21566647"
+        }
+      ],
+      "regions": [
+        {
+          "id": "madison",
+          "name": "Madison",
+          "type": "County",
+          "fips": "01089"
+        }
+      ]
+    },
+    {
+      "contest_id": "hd20",
+      "provider_race_id": "176519",
+      "url": "https://civicapi.org/api/v2/race/176519",
+      "http_status": 200,
+      "raw_path": ".firecrawl/fallback-counties-civic-176519.json",
+      "sha256": "8ed8c9424810748b89a88e947b7f15d079e8f879bed4f63f64bf162875f51008",
+      "election_name": "Alabama State House 20",
+      "election_date": "2026-11-03T05:00:00.000Z",
+      "election_scope": "Local",
+      "province": "AL",
+      "district": "AL-HD-020",
+      "test_data": false,
+      "last_updated": "2026-10-30T18:52:48.944Z",
+      "status": "setup_zeros",
+      "candidates": [
+        {
+          "name": "James Linderholm",
+          "party": "Democratic",
+          "candidate_id": "21566660"
+        },
+        {
+          "name": "James Lomax",
+          "party": "Republican",
+          "candidate_id": "21566661"
+        }
+      ],
+      "regions": [
+        {
+          "id": "madison",
+          "name": "Madison",
+          "type": "County",
+          "fips": "01089"
+        }
+      ]
+    },
+    {
+      "contest_id": "hd21",
+      "provider_race_id": "176520",
+      "url": "https://civicapi.org/api/v2/race/176520",
+      "http_status": 200,
+      "raw_path": ".firecrawl/fallback-counties-civic-176520.json",
+      "sha256": "76a54eb27f128aef719824d52c9478d51fbf3b9bfdae72b7b98734079665e5d0",
+      "election_name": "Alabama State House 21",
+      "election_date": "2026-11-03T05:00:00.000Z",
+      "election_scope": "Local",
+      "province": "AL",
+      "district": "AL-HD-021",
+      "test_data": false,
+      "last_updated": "2026-10-30T18:52:48.991Z",
+      "status": "setup_zeros",
+      "candidates": [
+        {
+          "name": "Forrest Satterfield",
+          "party": "Democratic",
+          "candidate_id": "21566662"
+        },
+        {
+          "name": "Rex Reynolds",
+          "party": "Republican",
+          "candidate_id": "21566663"
+        }
+      ],
+      "regions": [
+        {
+          "id": "madison",
+          "name": "Madison",
+          "type": "County",
+          "fips": "01089"
+        }
+      ]
+    },
+    {
+      "contest_id": "hd25",
+      "provider_race_id": "176524",
+      "url": "https://civicapi.org/api/v2/race/176524",
+      "http_status": 200,
+      "raw_path": ".firecrawl/fallback-counties-civic-176524.json",
+      "sha256": "c0e7d63c82f7adb5111b696622c417e228628c9ceb53c876a054f14d95d8bb9a",
+      "election_name": "Alabama State House 25",
+      "election_date": "2026-11-03T05:00:00.000Z",
+      "election_scope": "Local",
+      "province": "AL",
+      "district": "AL-HD-025",
+      "test_data": false,
+      "last_updated": "2026-10-30T18:52:49.178Z",
+      "status": "setup_zeros",
+      "candidates": [
+        {
+          "name": "Allison T Montgomery",
+          "party": "Democratic",
+          "candidate_id": "21566667"
+        },
+        {
+          "name": "Phillip K. Rigsby",
+          "party": "Republican",
+          "candidate_id": "21566668"
+        }
+      ],
+      "regions": [
+        {
+          "id": "limestone",
+          "name": "Limestone",
+          "type": "County",
+          "fips": "01083"
+        },
+        {
+          "id": "madison",
+          "name": "Madison",
+          "type": "County",
+          "fips": "01089"
+        }
+      ]
+    },
+    {
+      "contest_id": "sd2",
+      "provider_race_id": "176606",
+      "url": "https://civicapi.org/api/v2/race/176606",
+      "http_status": 200,
+      "raw_path": ".firecrawl/fallback-counties-civic-176606.json",
+      "sha256": "396ac74f2f50231b9f52d7712e7787e7c8de093b5343ff4f209771945af0b91e",
+      "election_name": "Alabama State Senate 2",
+      "election_date": "2026-11-03T05:00:00.000Z",
+      "election_scope": "Local",
+      "province": "AL",
+      "district": "AL-SD-002",
+      "test_data": false,
+      "last_updated": "2026-10-30T18:52:55.830Z",
+      "status": "setup_zeros",
+      "candidates": [
+        {
+          "name": "Rudolph Valentino Drake",
+          "party": "Democratic",
+          "candidate_id": "21566774"
+        },
+        {
+          "name": "John Roberts",
+          "party": "Republican",
+          "candidate_id": "21566775"
+        }
+      ],
+      "regions": [
+        {
+          "id": "limestone",
+          "name": "Limestone",
+          "type": "County",
+          "fips": "01083"
+        },
+        {
+          "id": "madison",
+          "name": "Madison",
+          "type": "County",
+          "fips": "01089"
+        }
+      ]
+    },
+    {
+      "contest_id": "sd7",
+      "provider_race_id": "176611",
+      "url": "https://civicapi.org/api/v2/race/176611",
+      "http_status": 200,
+      "raw_path": ".firecrawl/fallback-counties-civic-176611.json",
+      "sha256": "d851f1e6cc59cb3c667d6d6740b67c861c099f768f256a104cc51607e402cda6",
+      "election_name": "Alabama State Senate 7",
+      "election_date": "2026-11-03T05:00:00.000Z",
+      "election_scope": "Local",
+      "province": "AL",
+      "district": "AL-SD-007",
+      "test_data": false,
+      "last_updated": "2026-10-30T18:52:56.171Z",
+      "status": "setup_zeros",
+      "candidates": [
+        {
+          "name": "Jared Sluss",
+          "party": "Democratic",
+          "candidate_id": "21566782"
+        },
+        {
+          "name": "Sam Givhan",
+          "party": "Republican",
+          "candidate_id": "21566783"
+        }
+      ],
+      "regions": [
+        {
+          "id": "madison",
+          "name": "Madison",
+          "type": "County",
+          "fips": "01089"
+        }
+      ]
+    }
+  ],
+  "recommended_poll_seconds": 120,
+  "guards": [
+    "Require expected race ID configured in URL, date 2026-11-03, country US, province AL, expected scope per race (General for CD5; Local for state legislature), expected district, test_data explicitly false.",
+    "Validate all required county region IDs, County type and FIPS. District-specific county rows include only that contest; do not allocate countywide votes.",
+    "Map region candidates by canonical validated name and party, since region candidates lack candidate IDs. Retain all candidates and detect unknowns.",
+    "Zero votes and zero reporting before close are setup, not reporting. percent_reporting is an estimate, not exact precinct count.",
+    "Preserve county and precinct sources separately; select one source per contest/county, prefer verified official precinct feed, never add county total atop its precinct rows.",
+    "Retain accepted raw snapshots, SHA256 and observation timestamps; preserve prior accepted values if upstream is missing, malformed, historical or test.",
+    "Do not use forecast, winner/call or historical comparisons as official results."
+  ]
+}

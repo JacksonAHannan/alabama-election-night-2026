@@ -1,0 +1,110 @@
+{
+  "date": "2026-11-03",
+  "checkedAt": "2026-11-03T20:57:19.160Z",
+  "status": "ready",
+  "races": [
+    {
+      "id": "176606",
+      "name": "Alabama State Senate 2",
+      "group": "Legislature",
+      "office": "State Senate",
+      "regions": [
+        {
+          "id": "limestone",
+          "fips": "01083",
+          "name": "Limestone",
+          "reporting": 0,
+          "candidates": [
+            {
+              "id": "0-Rudolph Valentino Drake",
+              "name": "Rudolph Valentino Drake",
+              "party": "Democratic",
+              "votes": 0,
+              "winner": false,
+              "percent": 0
+            },
+            {
+              "id": "1-John Roberts",
+              "name": "John Roberts",
+              "party": "Republican",
+              "votes": 0,
+              "winner": false,
+              "percent": 0
+            }
+          ]
+        },
+        {
+          "id": "madison",
+          "fips": "01089",
+          "name": "Madison",
+          "reporting": 0,
+          "candidates": [
+            {
+              "id": "0-Rudolph Valentino Drake",
+              "name": "Rudolph Valentino Drake",
+              "party": "Democratic",
+              "votes": 0,
+              "winner": false,
+              "percent": 0
+            },
+            {
+              "id": "1-John Roberts",
+              "name": "John Roberts",
+              "party": "Republican",
+              "votes": 0,
+              "winner": false,
+              "percent": 0
+            }
+          ]
+        }
+      ],
+      "summary": false,
+      "disputed": false,
+      "district": "AL-SD-002",
+      "reporting": 0,
+      "updatedAt": "2026-10-30T18:52:55.830Z",
+      "candidates": [
+        {
+          "id": "21566774",
+          "name": "Rudolph Valentino Drake",
+          "party": "Democratic",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        },
+        {
+          "id": "21566775",
+          "name": "John Roberts",
+          "party": "Republican",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    }
+  ],
+  "featuredIds": [
+    "176606"
+  ],
+  "historical": false,
+  "electionKey": "2026",
+  "electionLabel": "2026",
+  "query": "",
+  "resultsHref": "/election-results",
+  "refreshFailed": false,
+  "publicRaceIds": [
+    "176606"
+  ],
+  "comparisons": {
+    "176606": {
+      "raceId": "45613",
+      "label": "2022",
+      "date": "2022-11-08",
+      "margin": 11.13,
+      "regions": {
+        "limestone": 32.51,
+        "madison": 8.81
+      }
+    }
+  }
+}

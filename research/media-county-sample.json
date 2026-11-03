@@ -1,0 +1,6192 @@
+{
+  "date": "2026-11-03",
+  "checkedAt": "2026-11-03T20:56:27.317Z",
+  "status": "ready",
+  "races": [
+    {
+      "id": "179834",
+      "name": "Alabama Amendment 1 - Fill Lieutenant Governor Vacancies by Election",
+      "group": "Statewide",
+      "office": "Referendum",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": null,
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "22719328",
+          "name": "Yes",
+          "party": "Nonpartisan",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        },
+        {
+          "id": "22719329",
+          "name": "No",
+          "party": "Nonpartisan",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "179835",
+      "name": "Alabama Amendment 2 - School District Consolidation Process",
+      "group": "Statewide",
+      "office": "Referendum",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": null,
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "22719365",
+          "name": "Yes",
+          "party": "Nonpartisan",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        },
+        {
+          "id": "22719366",
+          "name": "No",
+          "party": "Nonpartisan",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "179836",
+      "name": "Alabama Amendment 3 - Pledge of Allegiance and Student-Led Prayer in Public Schools",
+      "group": "Statewide",
+      "office": "Referendum",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": null,
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "22719367",
+          "name": "Yes",
+          "party": "Nonpartisan",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        },
+        {
+          "id": "22719368",
+          "name": "No",
+          "party": "Nonpartisan",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "179837",
+      "name": "Alabama Amendment 4 - Star-Spangled Banner in Public Schools",
+      "group": "Statewide",
+      "office": "Referendum",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": null,
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "22719369",
+          "name": "Yes",
+          "party": "Nonpartisan",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        },
+        {
+          "id": "22719370",
+          "name": "No",
+          "party": "Nonpartisan",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "86910",
+      "name": "Alabama Attorney General",
+      "group": "Statewide",
+      "office": "Attorney General",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": null,
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "219744",
+          "name": "Katherine Robertson",
+          "party": "Republican",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        },
+        {
+          "id": "219745",
+          "name": "Jeff McLaughlin",
+          "party": "Democratic",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "86914",
+      "name": "Alabama Commissioner of Agriculture and Industries",
+      "group": "Statewide",
+      "office": "Commissioner of Agriculture and Industries",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": null,
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "219752",
+          "name": "Corey Hill",
+          "party": "Republican",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        },
+        {
+          "id": "219753",
+          "name": "Ron Sparks",
+          "party": "Democratic",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "86908",
+      "name": "Alabama Governor",
+      "group": "Statewide",
+      "office": "Governor",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": null,
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "219740",
+          "name": "Tommy Tuberville",
+          "party": "Republican",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        },
+        {
+          "id": "219741",
+          "name": "Doug Jones",
+          "party": "Democratic",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "86909",
+      "name": "Alabama Lieutenant Governor",
+      "group": "Statewide",
+      "office": "Lieutenant Governor",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": null,
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "219742",
+          "name": "John Wahl",
+          "party": "Republican",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        },
+        {
+          "id": "219743",
+          "name": "Phillip Ensler",
+          "party": "Democratic",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "86911",
+      "name": "Alabama Secretary of State",
+      "group": "Statewide",
+      "office": "Secretary of State",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": null,
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "219746",
+          "name": "Caroleene Dobson",
+          "party": "Republican",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        },
+        {
+          "id": "219747",
+          "name": "Wayne Rogers",
+          "party": "Democratic",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "86913",
+      "name": "Alabama State Auditor",
+      "group": "Statewide",
+      "office": "State Auditor",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": null,
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "219750",
+          "name": "Andrew Sorrell",
+          "party": "Republican",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        },
+        {
+          "id": "219751",
+          "name": "Violet Edwards",
+          "party": "Democratic",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176500",
+      "name": "Alabama State House 1",
+      "group": "Legislature",
+      "office": "State House",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-HD-001",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566631",
+          "name": "Maurice McCaney",
+          "party": "Republican",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176501",
+      "name": "Alabama State House 2",
+      "group": "Legislature",
+      "office": "State House",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-HD-002",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566632",
+          "name": "Rick Pressnell",
+          "party": "Democratic",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        },
+        {
+          "id": "21566633",
+          "name": "Ben Harrison",
+          "party": "Republican",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176502",
+      "name": "Alabama State House 3",
+      "group": "Legislature",
+      "office": "State House",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-HD-003",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566634",
+          "name": "Kerry Bubba Underwood",
+          "party": "Republican",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176503",
+      "name": "Alabama State House 4",
+      "group": "Legislature",
+      "office": "State House",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-HD-004",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566635",
+          "name": "Hanu Karlapalem",
+          "party": "Democratic",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        },
+        {
+          "id": "21566636",
+          "name": "Parker Duncan Moore",
+          "party": "Republican",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176504",
+      "name": "Alabama State House 5",
+      "group": "Legislature",
+      "office": "State House",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-HD-005",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566637",
+          "name": "Jessie Barcala",
+          "party": "Democratic",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        },
+        {
+          "id": "21566638",
+          "name": "Danny F. Crawford",
+          "party": "Republican",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176505",
+      "name": "Alabama State House 6",
+      "group": "Legislature",
+      "office": "State House",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-HD-006",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566639",
+          "name": "Andy Whitt",
+          "party": "Republican",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176506",
+      "name": "Alabama State House 7",
+      "group": "Legislature",
+      "office": "State House",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-HD-007",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566640",
+          "name": "Ernie Yarbrough",
+          "party": "Republican",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        },
+        {
+          "id": "21566641",
+          "name": "Angelo \"Doc\" Mancuso",
+          "party": "Independent",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        },
+        {
+          "id": "21566642",
+          "name": "Trent Ford",
+          "party": "Independent",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176507",
+      "name": "Alabama State House 8",
+      "group": "Legislature",
+      "office": "State House",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-HD-008",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566643",
+          "name": "Janine Maria Jordan",
+          "party": "Democratic",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        },
+        {
+          "id": "21566644",
+          "name": "Patrick Johnson",
+          "party": "Republican",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176508",
+      "name": "Alabama State House 9",
+      "group": "Legislature",
+      "office": "State House",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-HD-009",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566645",
+          "name": "Scott Stadthagen",
+          "party": "Republican",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176509",
+      "name": "Alabama State House 10",
+      "group": "Legislature",
+      "office": "State House",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-HD-010",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566646",
+          "name": "Marilyn Lands",
+          "party": "Democratic",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        },
+        {
+          "id": "21566647",
+          "name": "Aaron Thomas",
+          "party": "Republican",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176510",
+      "name": "Alabama State House 11",
+      "group": "Legislature",
+      "office": "State House",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-HD-011",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566648",
+          "name": "Heath Allbright",
+          "party": "Republican",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176511",
+      "name": "Alabama State House 12",
+      "group": "Legislature",
+      "office": "State House",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-HD-012",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566649",
+          "name": "Cindy Myrex",
+          "party": "Republican",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176512",
+      "name": "Alabama State House 13",
+      "group": "Legislature",
+      "office": "State House",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-HD-013",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566650",
+          "name": "Mike Elliott",
+          "party": "Republican",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176513",
+      "name": "Alabama State House 14",
+      "group": "Legislature",
+      "office": "State House",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-HD-014",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566651",
+          "name": "Tim R. Wadsworth",
+          "party": "Republican",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176514",
+      "name": "Alabama State House 15",
+      "group": "Legislature",
+      "office": "State House",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-HD-015",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566652",
+          "name": "Nell Brown",
+          "party": "Democratic",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        },
+        {
+          "id": "21566653",
+          "name": "Leigh Hulsey",
+          "party": "Republican",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176515",
+      "name": "Alabama State House 16",
+      "group": "Legislature",
+      "office": "State House",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-HD-016",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566654",
+          "name": "Christian Martin",
+          "party": "Democratic",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        },
+        {
+          "id": "21566655",
+          "name": "Bryan Brinyark",
+          "party": "Republican",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176516",
+      "name": "Alabama State House 17",
+      "group": "Legislature",
+      "office": "State House",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-HD-017",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566656",
+          "name": "Phil Segraves",
+          "party": "Republican",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176517",
+      "name": "Alabama State House 18",
+      "group": "Legislature",
+      "office": "State House",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-HD-018",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566657",
+          "name": "Jamie Kiel",
+          "party": "Republican",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176518",
+      "name": "Alabama State House 19",
+      "group": "Legislature",
+      "office": "State House",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-HD-019",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566658",
+          "name": "Laura Hall",
+          "party": "Democratic",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        },
+        {
+          "id": "21566659",
+          "name": "Donald Barnes",
+          "party": "Republican",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176519",
+      "name": "Alabama State House 20",
+      "group": "Legislature",
+      "office": "State House",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-HD-020",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566660",
+          "name": "James Linderholm",
+          "party": "Democratic",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        },
+        {
+          "id": "21566661",
+          "name": "James Lomax",
+          "party": "Republican",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176520",
+      "name": "Alabama State House 21",
+      "group": "Legislature",
+      "office": "State House",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-HD-021",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566662",
+          "name": "Forrest Satterfield",
+          "party": "Democratic",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        },
+        {
+          "id": "21566663",
+          "name": "Rex Reynolds",
+          "party": "Republican",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176521",
+      "name": "Alabama State House 22",
+      "group": "Legislature",
+      "office": "State House",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-HD-022",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566664",
+          "name": "Ritchie Whorton",
+          "party": "Republican",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176522",
+      "name": "Alabama State House 23",
+      "group": "Legislature",
+      "office": "State House",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-HD-023",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566665",
+          "name": "Mike Kirkland",
+          "party": "Republican",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176523",
+      "name": "Alabama State House 24",
+      "group": "Legislature",
+      "office": "State House",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-HD-024",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566666",
+          "name": "Nathaniel Ledbetter",
+          "party": "Republican",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176524",
+      "name": "Alabama State House 25",
+      "group": "Legislature",
+      "office": "State House",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-HD-025",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566667",
+          "name": "Allison T Montgomery",
+          "party": "Democratic",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        },
+        {
+          "id": "21566668",
+          "name": "Phillip K. Rigsby",
+          "party": "Republican",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176525",
+      "name": "Alabama State House 26",
+      "group": "Legislature",
+      "office": "State House",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-HD-026",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566669",
+          "name": "Brock Colvin",
+          "party": "Republican",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176526",
+      "name": "Alabama State House 27",
+      "group": "Legislature",
+      "office": "State House",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-HD-027",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566670",
+          "name": "Jeana Ross",
+          "party": "Republican",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176527",
+      "name": "Alabama State House 28",
+      "group": "Legislature",
+      "office": "State House",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-HD-028",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566671",
+          "name": "Robert Louis Hunter",
+          "party": "Democratic",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        },
+        {
+          "id": "21566672",
+          "name": "Mack N Butler",
+          "party": "Republican",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176528",
+      "name": "Alabama State House 29",
+      "group": "Legislature",
+      "office": "State House",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-HD-029",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566673",
+          "name": "Mark A. Gidley",
+          "party": "Republican",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176529",
+      "name": "Alabama State House 30",
+      "group": "Legislature",
+      "office": "State House",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-HD-030",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566674",
+          "name": "Craig Lipscomb",
+          "party": "Republican",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176530",
+      "name": "Alabama State House 31",
+      "group": "Legislature",
+      "office": "State House",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-HD-031",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566675",
+          "name": "Troy B. Stubbs",
+          "party": "Republican",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176531",
+      "name": "Alabama State House 32",
+      "group": "Legislature",
+      "office": "State House",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-HD-032",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566676",
+          "name": "Debra D Foster",
+          "party": "Democratic",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        },
+        {
+          "id": "21566677",
+          "name": "Joey Callahan",
+          "party": "Republican",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176532",
+      "name": "Alabama State House 33",
+      "group": "Legislature",
+      "office": "State House",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-HD-033",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566678",
+          "name": "Ben Robbins",
+          "party": "Republican",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176533",
+      "name": "Alabama State House 34",
+      "group": "Legislature",
+      "office": "State House",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-HD-034",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566679",
+          "name": "David Standridge",
+          "party": "Republican",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176534",
+      "name": "Alabama State House 35",
+      "group": "Legislature",
+      "office": "State House",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-HD-035",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566680",
+          "name": "Steve Hurst",
+          "party": "Republican",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        },
+        {
+          "id": "21566681",
+          "name": "Joseph Cleveland",
+          "party": "Independent",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176535",
+      "name": "Alabama State House 36",
+      "group": "Legislature",
+      "office": "State House",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-HD-036",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566682",
+          "name": "Randy Wood",
+          "party": "Republican",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176536",
+      "name": "Alabama State House 37",
+      "group": "Legislature",
+      "office": "State House",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-HD-037",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566683",
+          "name": "Michelle French",
+          "party": "Democratic",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        },
+        {
+          "id": "21566684",
+          "name": "Jeff Monroe",
+          "party": "Republican",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176537",
+      "name": "Alabama State House 38",
+      "group": "Legislature",
+      "office": "State House",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-HD-038",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566685",
+          "name": "Hazel Floyd",
+          "party": "Democratic",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        },
+        {
+          "id": "21566686",
+          "name": "Kristin Nelson",
+          "party": "Republican",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176538",
+      "name": "Alabama State House 39",
+      "group": "Legislature",
+      "office": "State House",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-HD-039",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566687",
+          "name": "Ginny Shaver",
+          "party": "Republican",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176539",
+      "name": "Alabama State House 40",
+      "group": "Legislature",
+      "office": "State House",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-HD-040",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566688",
+          "name": "Pam Howard",
+          "party": "Democratic",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        },
+        {
+          "id": "21566689",
+          "name": "Chad Robertson",
+          "party": "Republican",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176540",
+      "name": "Alabama State House 41",
+      "group": "Legislature",
+      "office": "State House",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-HD-041",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566690",
+          "name": "David J.A. Morgan",
+          "party": "Democratic",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        },
+        {
+          "id": "21566691",
+          "name": "Corley Ellis",
+          "party": "Republican",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176541",
+      "name": "Alabama State House 42",
+      "group": "Legislature",
+      "office": "State House",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-HD-042",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566692",
+          "name": "Van Smith",
+          "party": "Republican",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176542",
+      "name": "Alabama State House 43",
+      "group": "Legislature",
+      "office": "State House",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-HD-043",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566693",
+          "name": "Taylor Cook",
+          "party": "Democratic",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        },
+        {
+          "id": "21566694",
+          "name": "Arnold Mooney",
+          "party": "Republican",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176543",
+      "name": "Alabama State House 44",
+      "group": "Legislature",
+      "office": "State House",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-HD-044",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566695",
+          "name": "Danny Garrett",
+          "party": "Republican",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176544",
+      "name": "Alabama State House 45",
+      "group": "Legislature",
+      "office": "State House",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-HD-045",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566696",
+          "name": "Toni Kornegay Vaughn",
+          "party": "Democratic",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        },
+        {
+          "id": "21566697",
+          "name": "Susan DuBose",
+          "party": "Republican",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176545",
+      "name": "Alabama State House 46",
+      "group": "Legislature",
+      "office": "State House",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-HD-046",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566698",
+          "name": "David L. Faulkner",
+          "party": "Republican",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176546",
+      "name": "Alabama State House 47",
+      "group": "Legislature",
+      "office": "State House",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-HD-047",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566699",
+          "name": "Jim Toomey",
+          "party": "Democratic",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        },
+        {
+          "id": "21566700",
+          "name": "Mike Shaw",
+          "party": "Republican",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176547",
+      "name": "Alabama State House 48",
+      "group": "Legislature",
+      "office": "State House",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-HD-048",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566701",
+          "name": "Lloyd Peeples",
+          "party": "Republican",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176548",
+      "name": "Alabama State House 49",
+      "group": "Legislature",
+      "office": "State House",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-HD-049",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566702",
+          "name": "Russell Bedsole",
+          "party": "Republican",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176549",
+      "name": "Alabama State House 50",
+      "group": "Legislature",
+      "office": "State House",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-HD-050",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566703",
+          "name": "Alan Thomas",
+          "party": "Democratic",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        },
+        {
+          "id": "21566704",
+          "name": "Bill Morris",
+          "party": "Republican",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176550",
+      "name": "Alabama State House 51",
+      "group": "Legislature",
+      "office": "State House",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-HD-051",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566705",
+          "name": "Allen Treadaway",
+          "party": "Republican",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176551",
+      "name": "Alabama State House 52",
+      "group": "Legislature",
+      "office": "State House",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-HD-052",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566706",
+          "name": "GiGi Hayes",
+          "party": "Democratic",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176552",
+      "name": "Alabama State House 53",
+      "group": "Legislature",
+      "office": "State House",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-HD-053",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566707",
+          "name": "Anthony Daniels",
+          "party": "Democratic",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176553",
+      "name": "Alabama State House 54",
+      "group": "Legislature",
+      "office": "State House",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-HD-054",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566708",
+          "name": "Neil Rafferty",
+          "party": "Democratic",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176554",
+      "name": "Alabama State House 55",
+      "group": "Legislature",
+      "office": "State House",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-HD-055",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566709",
+          "name": "Travis Hendrix",
+          "party": "Democratic",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176555",
+      "name": "Alabama State House 56",
+      "group": "Legislature",
+      "office": "State House",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-HD-056",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566710",
+          "name": "Ontario J Tillman",
+          "party": "Democratic",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176556",
+      "name": "Alabama State House 57",
+      "group": "Legislature",
+      "office": "State House",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-HD-057",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566711",
+          "name": "Patrick Sellers",
+          "party": "Democratic",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176557",
+      "name": "Alabama State House 58",
+      "group": "Legislature",
+      "office": "State House",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-HD-058",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566712",
+          "name": "Rolanda Hollis",
+          "party": "Democratic",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176558",
+      "name": "Alabama State House 59",
+      "group": "Legislature",
+      "office": "State House",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-HD-059",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566713",
+          "name": "Mary Moore",
+          "party": "Democratic",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176559",
+      "name": "Alabama State House 60",
+      "group": "Legislature",
+      "office": "State House",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-HD-060",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566714",
+          "name": "Alicia Escott Lumpkin",
+          "party": "Democratic",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176560",
+      "name": "Alabama State House 61",
+      "group": "Legislature",
+      "office": "State House",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-HD-061",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566715",
+          "name": "Ron Bolton",
+          "party": "Republican",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176561",
+      "name": "Alabama State House 62",
+      "group": "Legislature",
+      "office": "State House",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-HD-062",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566716",
+          "name": "Bill Lamb",
+          "party": "Republican",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176562",
+      "name": "Alabama State House 63",
+      "group": "Legislature",
+      "office": "State House",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-HD-063",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566717",
+          "name": "Judith Taylor",
+          "party": "Democratic",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        },
+        {
+          "id": "21566718",
+          "name": "Norman Crow",
+          "party": "Republican",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176563",
+      "name": "Alabama State House 64",
+      "group": "Legislature",
+      "office": "State House",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-HD-064",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566719",
+          "name": "Donna Givens",
+          "party": "Republican",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176564",
+      "name": "Alabama State House 65",
+      "group": "Legislature",
+      "office": "State House",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-HD-065",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566720",
+          "name": "John Knapp",
+          "party": "Republican",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        },
+        {
+          "id": "21566721",
+          "name": "Elaine Beech",
+          "party": "Independent",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176565",
+      "name": "Alabama State House 66",
+      "group": "Legislature",
+      "office": "State House",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-HD-066",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566722",
+          "name": "Alan Baker",
+          "party": "Republican",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176566",
+      "name": "Alabama State House 67",
+      "group": "Legislature",
+      "office": "State House",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-HD-067",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566723",
+          "name": "Prince Chestnut",
+          "party": "Democratic",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176567",
+      "name": "Alabama State House 68",
+      "group": "Legislature",
+      "office": "State House",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-HD-068",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566724",
+          "name": "Thomas E \"Action\" Jackson",
+          "party": "Democratic",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        },
+        {
+          "id": "21566725",
+          "name": "Fred Kelley",
+          "party": "Republican",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176568",
+      "name": "Alabama State House 69",
+      "group": "Legislature",
+      "office": "State House",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-HD-069",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566726",
+          "name": "Kelvin J Lawrence",
+          "party": "Democratic",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        },
+        {
+          "id": "21566727",
+          "name": "Josh Pendergrass",
+          "party": "Republican",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176569",
+      "name": "Alabama State House 70",
+      "group": "Legislature",
+      "office": "State House",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-HD-070",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566728",
+          "name": "Christopher John England",
+          "party": "Democratic",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        },
+        {
+          "id": "21566729",
+          "name": "Ian M. Chwatuk",
+          "party": "Republican",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176570",
+      "name": "Alabama State House 71",
+      "group": "Legislature",
+      "office": "State House",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-HD-071",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566730",
+          "name": "Artis \"A.J.\" McCampbell",
+          "party": "Democratic",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176571",
+      "name": "Alabama State House 72",
+      "group": "Legislature",
+      "office": "State House",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-HD-072",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566731",
+          "name": "Curtis L Travis",
+          "party": "Democratic",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176572",
+      "name": "Alabama State House 73",
+      "group": "Legislature",
+      "office": "State House",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-HD-073",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566732",
+          "name": "Kenneth Paschal",
+          "party": "Republican",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176573",
+      "name": "Alabama State House 74",
+      "group": "Legislature",
+      "office": "State House",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-HD-074",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566733",
+          "name": "Jasmyne Crimiel",
+          "party": "Democratic",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        },
+        {
+          "id": "21566734",
+          "name": "Alva Lambert",
+          "party": "Republican",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176574",
+      "name": "Alabama State House 75",
+      "group": "Legislature",
+      "office": "State House",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-HD-075",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566735",
+          "name": "Tisha Dickson Nickson",
+          "party": "Democratic",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        },
+        {
+          "id": "21566736",
+          "name": "Reed Ingram",
+          "party": "Republican",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176575",
+      "name": "Alabama State House 76",
+      "group": "Legislature",
+      "office": "State House",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-HD-076",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566737",
+          "name": "Patrice \"Penni\" McClammy",
+          "party": "Democratic",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176576",
+      "name": "Alabama State House 77",
+      "group": "Legislature",
+      "office": "State House",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-HD-077",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566738",
+          "name": "TaShina Morris",
+          "party": "Democratic",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176577",
+      "name": "Alabama State House 78",
+      "group": "Legislature",
+      "office": "State House",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-HD-078",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566739",
+          "name": "Kenyatt\u00e9 Hassell",
+          "party": "Democratic",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176578",
+      "name": "Alabama State House 79",
+      "group": "Legislature",
+      "office": "State House",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-HD-079",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566740",
+          "name": "Joe Lovvorn",
+          "party": "Republican",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176579",
+      "name": "Alabama State House 80",
+      "group": "Legislature",
+      "office": "State House",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-HD-080",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566741",
+          "name": "Manfred Malone",
+          "party": "Democratic",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        },
+        {
+          "id": "21566742",
+          "name": "Chris Blackshear",
+          "party": "Republican",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176580",
+      "name": "Alabama State House 81",
+      "group": "Legislature",
+      "office": "State House",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-HD-081",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566743",
+          "name": "Ed Oliver",
+          "party": "Republican",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176581",
+      "name": "Alabama State House 82",
+      "group": "Legislature",
+      "office": "State House",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-HD-082",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566744",
+          "name": "Pebblin W. Warren",
+          "party": "Democratic",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        },
+        {
+          "id": "21566745",
+          "name": "Kinsley Hammons",
+          "party": "Republican",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176582",
+      "name": "Alabama State House 83",
+      "group": "Legislature",
+      "office": "State House",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-HD-083",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566746",
+          "name": "Jeremy A. Gray",
+          "party": "Democratic",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176583",
+      "name": "Alabama State House 84",
+      "group": "Legislature",
+      "office": "State House",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-HD-084",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566747",
+          "name": "Berry Forte",
+          "party": "Democratic",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176584",
+      "name": "Alabama State House 85",
+      "group": "Legislature",
+      "office": "State House",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-HD-085",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566748",
+          "name": "Aristotle Onassis Kirkland",
+          "party": "Democratic",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        },
+        {
+          "id": "21566749",
+          "name": "Rick Rehm",
+          "party": "Republican",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176585",
+      "name": "Alabama State House 86",
+      "group": "Legislature",
+      "office": "State House",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-HD-086",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566750",
+          "name": "Paul Lee",
+          "party": "Republican",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176586",
+      "name": "Alabama State House 87",
+      "group": "Legislature",
+      "office": "State House",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-HD-087",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566751",
+          "name": "Jeff Sorrells",
+          "party": "Republican",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176587",
+      "name": "Alabama State House 88",
+      "group": "Legislature",
+      "office": "State House",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-HD-088",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566752",
+          "name": "Jerry Starnes",
+          "party": "Republican",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176588",
+      "name": "Alabama State House 89",
+      "group": "Legislature",
+      "office": "State House",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-HD-089",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566753",
+          "name": "Marcus B. Paramore",
+          "party": "Republican",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176589",
+      "name": "Alabama State House 90",
+      "group": "Legislature",
+      "office": "State House",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-HD-090",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566754",
+          "name": "Chris Sells",
+          "party": "Republican",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176590",
+      "name": "Alabama State House 91",
+      "group": "Legislature",
+      "office": "State House",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-HD-091",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566755",
+          "name": "Jody Linton",
+          "party": "Republican",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176591",
+      "name": "Alabama State House 92",
+      "group": "Legislature",
+      "office": "State House",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-HD-092",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566756",
+          "name": "Matthew Hammett",
+          "party": "Republican",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176592",
+      "name": "Alabama State House 93",
+      "group": "Legislature",
+      "office": "State House",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-HD-093",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566757",
+          "name": "Steve Clouse",
+          "party": "Republican",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176593",
+      "name": "Alabama State House 94",
+      "group": "Legislature",
+      "office": "State House",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-HD-094",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566758",
+          "name": "Jennifer Fidler",
+          "party": "Republican",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176594",
+      "name": "Alabama State House 95",
+      "group": "Legislature",
+      "office": "State House",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-HD-095",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566759",
+          "name": "Frances Holk-Jones",
+          "party": "Republican",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176595",
+      "name": "Alabama State House 96",
+      "group": "Legislature",
+      "office": "State House",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-HD-096",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566760",
+          "name": "Terri Osborne",
+          "party": "Democratic",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        },
+        {
+          "id": "21566761",
+          "name": "Danielle Duggar",
+          "party": "Republican",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176596",
+      "name": "Alabama State House 97",
+      "group": "Legislature",
+      "office": "State House",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-HD-097",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566762",
+          "name": "Adline C. Clarke",
+          "party": "Democratic",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176597",
+      "name": "Alabama State House 98",
+      "group": "Legislature",
+      "office": "State House",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-HD-098",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566763",
+          "name": "Napoleon Bracy, Jr.",
+          "party": "Democratic",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176598",
+      "name": "Alabama State House 99",
+      "group": "Legislature",
+      "office": "State House",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-HD-099",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566764",
+          "name": "Sam Jones",
+          "party": "Democratic",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        },
+        {
+          "id": "21566765",
+          "name": "Charlie Watts",
+          "party": "Republican",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176599",
+      "name": "Alabama State House 100",
+      "group": "Legislature",
+      "office": "State House",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-HD-100",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566766",
+          "name": "Mark Shirey",
+          "party": "Republican",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176600",
+      "name": "Alabama State House 101",
+      "group": "Legislature",
+      "office": "State House",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-HD-101",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566767",
+          "name": "Joan Friedlander",
+          "party": "Democratic",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        },
+        {
+          "id": "21566768",
+          "name": "Chris Pringle",
+          "party": "Republican",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176601",
+      "name": "Alabama State House 102",
+      "group": "Legislature",
+      "office": "State House",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-HD-102",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566769",
+          "name": "Shane Stringer",
+          "party": "Republican",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176602",
+      "name": "Alabama State House 103",
+      "group": "Legislature",
+      "office": "State House",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-HD-103",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566770",
+          "name": "Barbara Drummond",
+          "party": "Democratic",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176603",
+      "name": "Alabama State House 104",
+      "group": "Legislature",
+      "office": "State House",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-HD-104",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566771",
+          "name": "Margie Wilcox",
+          "party": "Republican",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176604",
+      "name": "Alabama State House 105",
+      "group": "Legislature",
+      "office": "State House",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-HD-105",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566772",
+          "name": "Chip Brown",
+          "party": "Republican",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176605",
+      "name": "Alabama State Senate 1",
+      "group": "Legislature",
+      "office": "State Senate",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-SD-001",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566773",
+          "name": "Tim Melson",
+          "party": "Republican",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176606",
+      "name": "Alabama State Senate 2",
+      "group": "Legislature",
+      "office": "State Senate",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-SD-002",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566774",
+          "name": "Rudolph Valentino Drake",
+          "party": "Democratic",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        },
+        {
+          "id": "21566775",
+          "name": "John Roberts",
+          "party": "Republican",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176607",
+      "name": "Alabama State Senate 3",
+      "group": "Legislature",
+      "office": "State Senate",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-SD-003",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566776",
+          "name": "John Dickey",
+          "party": "Democratic",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        },
+        {
+          "id": "21566777",
+          "name": "Arthur Orr",
+          "party": "Republican",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176608",
+      "name": "Alabama State Senate 4",
+      "group": "Legislature",
+      "office": "State Senate",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-SD-004",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566778",
+          "name": "Garlan Gudger",
+          "party": "Republican",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176609",
+      "name": "Alabama State Senate 5",
+      "group": "Legislature",
+      "office": "State Senate",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-SD-005",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566779",
+          "name": "Matt Woods",
+          "party": "Republican",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176610",
+      "name": "Alabama State Senate 6",
+      "group": "Legislature",
+      "office": "State Senate",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-SD-006",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566780",
+          "name": "Bobby Martin",
+          "party": "Democratic",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        },
+        {
+          "id": "21566781",
+          "name": "Larry Stutts",
+          "party": "Republican",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176611",
+      "name": "Alabama State Senate 7",
+      "group": "Legislature",
+      "office": "State Senate",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-SD-007",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566782",
+          "name": "Jared Sluss",
+          "party": "Democratic",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        },
+        {
+          "id": "21566783",
+          "name": "Sam Givhan",
+          "party": "Republican",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176612",
+      "name": "Alabama State Senate 8",
+      "group": "Legislature",
+      "office": "State Senate",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-SD-008",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566784",
+          "name": "Katie Kramer",
+          "party": "Democratic",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        },
+        {
+          "id": "21566785",
+          "name": "Steve Livingston",
+          "party": "Republican",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176613",
+      "name": "Alabama State Senate 9",
+      "group": "Legislature",
+      "office": "State Senate",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-SD-009",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566786",
+          "name": "Wes Kitchens",
+          "party": "Republican",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176614",
+      "name": "Alabama State Senate 10",
+      "group": "Legislature",
+      "office": "State Senate",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-SD-010",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566787",
+          "name": "Andrew Jones",
+          "party": "Republican",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        },
+        {
+          "id": "21566788",
+          "name": "Jesse Battles",
+          "party": "Independent",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176615",
+      "name": "Alabama State Senate 11",
+      "group": "Legislature",
+      "office": "State Senate",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-SD-011",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566789",
+          "name": "Donald J. Mottern",
+          "party": "Democratic",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        },
+        {
+          "id": "21566790",
+          "name": "Lance Bell",
+          "party": "Republican",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176616",
+      "name": "Alabama State Senate 12",
+      "group": "Legislature",
+      "office": "State Senate",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-SD-012",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566791",
+          "name": "Keith Kelley",
+          "party": "Republican",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176617",
+      "name": "Alabama State Senate 13",
+      "group": "Legislature",
+      "office": "State Senate",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-SD-013",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566792",
+          "name": "Jamie Forsyth",
+          "party": "Democratic",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        },
+        {
+          "id": "21566793",
+          "name": "Randy Price",
+          "party": "Republican",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176618",
+      "name": "Alabama State Senate 14",
+      "group": "Legislature",
+      "office": "State Senate",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-SD-014",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566794",
+          "name": "Mandie Ledkins",
+          "party": "Democratic",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        },
+        {
+          "id": "21566795",
+          "name": "April Weaver",
+          "party": "Republican",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176619",
+      "name": "Alabama State Senate 15",
+      "group": "Legislature",
+      "office": "State Senate",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-SD-015",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566796",
+          "name": "Scott Ortis",
+          "party": "Republican",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176620",
+      "name": "Alabama State Senate 16",
+      "group": "Legislature",
+      "office": "State Senate",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-SD-016",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566797",
+          "name": "Spencer Stone",
+          "party": "Democratic",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        },
+        {
+          "id": "21566798",
+          "name": "J.T. \"Jabo\" Waggoner",
+          "party": "Republican",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176621",
+      "name": "Alabama State Senate 17",
+      "group": "Legislature",
+      "office": "State Senate",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-SD-017",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566799",
+          "name": "Shay Shelnutt",
+          "party": "Republican",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176622",
+      "name": "Alabama State Senate 18",
+      "group": "Legislature",
+      "office": "State Senate",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-SD-018",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566800",
+          "name": "Rodger M. Smitherman",
+          "party": "Democratic",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176623",
+      "name": "Alabama State Senate 19",
+      "group": "Legislature",
+      "office": "State Senate",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-SD-019",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566801",
+          "name": "Merika Coleman",
+          "party": "Democratic",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176624",
+      "name": "Alabama State Senate 20",
+      "group": "Legislature",
+      "office": "State Senate",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-SD-020",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566802",
+          "name": "Linda Coleman-Madison",
+          "party": "Democratic",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176625",
+      "name": "Alabama State Senate 21",
+      "group": "Legislature",
+      "office": "State Senate",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-SD-021",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566803",
+          "name": "Gerald Allen",
+          "party": "Republican",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        },
+        {
+          "id": "21566804",
+          "name": "Jodie Woodrow Minor, Jr.",
+          "party": "Independent",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176626",
+      "name": "Alabama State Senate 22",
+      "group": "Legislature",
+      "office": "State Senate",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-SD-022",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566805",
+          "name": "Ashley Sharpe",
+          "party": "Democratic",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        },
+        {
+          "id": "21566806",
+          "name": "Terry L. Waters",
+          "party": "Republican",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176627",
+      "name": "Alabama State Senate 23",
+      "group": "Legislature",
+      "office": "State Senate",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-SD-023",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566807",
+          "name": "Robert Stewart",
+          "party": "Democratic",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        },
+        {
+          "id": "21566808",
+          "name": "Thayer \"Bear\" Havard Spencer",
+          "party": "Republican",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176628",
+      "name": "Alabama State Senate 24",
+      "group": "Legislature",
+      "office": "State Senate",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-SD-024",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566809",
+          "name": "Bobby Singleton",
+          "party": "Democratic",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176629",
+      "name": "Alabama State Senate 25",
+      "group": "Legislature",
+      "office": "State Senate",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-SD-025",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566810",
+          "name": "Phadra Carson Foster",
+          "party": "Democratic",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        },
+        {
+          "id": "21566811",
+          "name": "Will Barfoot",
+          "party": "Republican",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176630",
+      "name": "Alabama State Senate 26",
+      "group": "Legislature",
+      "office": "State Senate",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-SD-026",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566812",
+          "name": "Kirk Hatcher",
+          "party": "Democratic",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176631",
+      "name": "Alabama State Senate 27",
+      "group": "Legislature",
+      "office": "State Senate",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-SD-027",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566813",
+          "name": "Jay Hovey",
+          "party": "Republican",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176632",
+      "name": "Alabama State Senate 28",
+      "group": "Legislature",
+      "office": "State Senate",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-SD-028",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566814",
+          "name": "Billy Beasley",
+          "party": "Democratic",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        },
+        {
+          "id": "21566815",
+          "name": "Brent Comer",
+          "party": "Republican",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176633",
+      "name": "Alabama State Senate 29",
+      "group": "Legislature",
+      "office": "State Senate",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-SD-029",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566816",
+          "name": "Donnie Chesteen",
+          "party": "Republican",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176634",
+      "name": "Alabama State Senate 30",
+      "group": "Legislature",
+      "office": "State Senate",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-SD-030",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566817",
+          "name": "Clyde Chambliss, Jr.",
+          "party": "Republican",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176635",
+      "name": "Alabama State Senate 31",
+      "group": "Legislature",
+      "office": "State Senate",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-SD-031",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566818",
+          "name": "Josh Carnley",
+          "party": "Republican",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176636",
+      "name": "Alabama State Senate 32",
+      "group": "Legislature",
+      "office": "State Senate",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-SD-032",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566819",
+          "name": "Janet Appleby",
+          "party": "Democratic",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        },
+        {
+          "id": "21566820",
+          "name": "Chris Elliott",
+          "party": "Republican",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176637",
+      "name": "Alabama State Senate 33",
+      "group": "Legislature",
+      "office": "State Senate",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-SD-033",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566821",
+          "name": "Vivian Davis Figures",
+          "party": "Democratic",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176638",
+      "name": "Alabama State Senate 34",
+      "group": "Legislature",
+      "office": "State Senate",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-SD-034",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566822",
+          "name": "Rusty Glover",
+          "party": "Republican",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "176639",
+      "name": "Alabama State Senate 35",
+      "group": "Legislature",
+      "office": "State Senate",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-SD-035",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "21566823",
+          "name": "David Sessions",
+          "party": "Republican",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "86912",
+      "name": "Alabama State Treasurer",
+      "group": "Statewide",
+      "office": "State Treasurer",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": null,
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "219748",
+          "name": "Young Boozer",
+          "party": "Republican",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        },
+        {
+          "id": "219749",
+          "name": "Rosilyn Houston",
+          "party": "Democratic",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "86900",
+      "name": "Alabama US House 1",
+      "group": "Congress",
+      "office": "House of Representatives",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-01",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "219724",
+          "name": "Jerry Carl",
+          "party": "Republican",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        },
+        {
+          "id": "219725",
+          "name": "Clyde Jones",
+          "party": "Democratic",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "86901",
+      "name": "Alabama US House 2",
+      "group": "Congress",
+      "office": "House of Representatives",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-02",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "219726",
+          "name": "Shomari Figures",
+          "party": "Democratic",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        },
+        {
+          "id": "219727",
+          "name": "Rhett Marques",
+          "party": "Republican",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "86902",
+      "name": "Alabama US House 3",
+      "group": "Congress",
+      "office": "House of Representatives",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-03",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "219728",
+          "name": "Mike Rogers",
+          "party": "Republican",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        },
+        {
+          "id": "219729",
+          "name": "Lee McInnis",
+          "party": "Democratic",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "86903",
+      "name": "Alabama US House 4",
+      "group": "Congress",
+      "office": "House of Representatives",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-04",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "219730",
+          "name": "Robert Aderholt",
+          "party": "Republican",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        },
+        {
+          "id": "219731",
+          "name": "Amanda Pusczek",
+          "party": "Democratic",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "86904",
+      "name": "Alabama US House 5",
+      "group": "Congress",
+      "office": "House of Representatives",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-05",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "219732",
+          "name": "Dale Strong",
+          "party": "Republican",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        },
+        {
+          "id": "219733",
+          "name": "Andrew Sneed",
+          "party": "Democratic",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "86905",
+      "name": "Alabama US House 6",
+      "group": "Congress",
+      "office": "House of Representatives",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-06",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "219734",
+          "name": "Gary Palmer",
+          "party": "Republican",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        },
+        {
+          "id": "219735",
+          "name": "Maurice Mercer",
+          "party": "Democratic",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "86906",
+      "name": "Alabama US House 7",
+      "group": "Congress",
+      "office": "House of Representatives",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": "AL-07",
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "219736",
+          "name": "Terri Sewell",
+          "party": "Democratic",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        },
+        {
+          "id": "219737",
+          "name": "Ammie Akin",
+          "party": "Republican",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    },
+    {
+      "id": "86907",
+      "name": "Alabama US Senate",
+      "group": "Congress",
+      "office": "US Senate",
+      "regions": [],
+      "summary": true,
+      "disputed": false,
+      "district": null,
+      "reporting": 0,
+      "updatedAt": null,
+      "candidates": [
+        {
+          "id": "219738",
+          "name": "Barry Moore",
+          "party": "Republican",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        },
+        {
+          "id": "219739",
+          "name": "Everett Wess",
+          "party": "Democratic",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    }
+  ],
+  "featuredIds": [
+    "86908",
+    "86907",
+    "86901",
+    "86909"
+  ],
+  "historical": false,
+  "electionKey": "2026",
+  "electionLabel": "2026",
+  "query": "",
+  "resultsHref": "/election-results",
+  "refreshFailed": false,
+  "publicRaceIds": [
+    "179834",
+    "179835",
+    "179836",
+    "179837",
+    "86910",
+    "86914",
+    "86908",
+    "86909",
+    "86911",
+    "86913",
+    "176500",
+    "176501",
+    "176502",
+    "176503",
+    "176504",
+    "176505",
+    "176506",
+    "176507",
+    "176508",
+    "176509",
+    "176510",
+    "176511",
+    "176512",
+    "176513",
+    "176514",
+    "176515",
+    "176516",
+    "176517",
+    "176518",
+    "176519",
+    "176520",
+    "176521",
+    "176522",
+    "176523",
+    "176524",
+    "176525",
+    "176526",
+    "176527",
+    "176528",
+    "176529",
+    "176530",
+    "176531",
+    "176532",
+    "176533",
+    "176534",
+    "176535",
+    "176536",
+    "176537",
+    "176538",
+    "176539",
+    "176540",
+    "176541",
+    "176542",
+    "176543",
+    "176544",
+    "176545",
+    "176546",
+    "176547",
+    "176548",
+    "176549",
+    "176550",
+    "176551",
+    "176552",
+    "176553",
+    "176554",
+    "176555",
+    "176556",
+    "176557",
+    "176558",
+    "176559",
+    "176560",
+    "176561",
+    "176562",
+    "176563",
+    "176564",
+    "176565",
+    "176566",
+    "176567",
+    "176568",
+    "176569",
+    "176570",
+    "176571",
+    "176572",
+    "176573",
+    "176574",
+    "176575",
+    "176576",
+    "176577",
+    "176578",
+    "176579",
+    "176580",
+    "176581",
+    "176582",
+    "176583",
+    "176584",
+    "176585",
+    "176586",
+    "176587",
+    "176588",
+    "176589",
+    "176590",
+    "176591",
+    "176592",
+    "176593",
+    "176594",
+    "176595",
+    "176596",
+    "176597",
+    "176598",
+    "176599",
+    "176600",
+    "176601",
+    "176602",
+    "176603",
+    "176604",
+    "176605",
+    "176606",
+    "176607",
+    "176608",
+    "176609",
+    "176610",
+    "176611",
+    "176612",
+    "176613",
+    "176614",
+    "176615",
+    "176616",
+    "176617",
+    "176618",
+    "176619",
+    "176620",
+    "176621",
+    "176622",
+    "176623",
+    "176624",
+    "176625",
+    "176626",
+    "176627",
+    "176628",
+    "176629",
+    "176630",
+    "176631",
+    "176632",
+    "176633",
+    "176634",
+    "176635",
+    "176636",
+    "176637",
+    "176638",
+    "176639",
+    "86912",
+    "86900",
+    "86901",
+    "86902",
+    "86903",
+    "86904",
+    "86905",
+    "86906",
+    "86907"
+  ],
+  "comparisons": {
+    "86900": {
+      "raceId": "4482",
+      "label": "2024",
+      "date": "2024-11-05",
+      "margin": 56.96
+    },
+    "86901": {
+      "raceId": "4588",
+      "label": "2024",
+      "date": "2024-11-05",
+      "margin": -9.2
+    },
+    "86908": {
+      "raceId": "43924",
+      "label": "2022",
+      "date": "2022-11-08",
+      "margin": 37.73,
+      "regions": {
+        "autauga": 55.64,
+        "baldwin": 66.3,
+        "barbour": 20.45,
+        "bibb": 63.74,
+        "blount": 84.1,
+        "bullock": -37.84,
+        "butler": 32.35,
+        "calhoun": 50.61,
+        "chambers": 33.57,
+        "cherokee": 80.61,
+        "chilton": 75.9,
+        "choctaw": 27.82,
+        "clarke": 19.93,
+        "clay": 74.39,
+        "cleburne": 84.99,
+        "coffee": 64.6,
+        "colbert": 53.61,
+        "conecuh": 18.68,
+        "coosa": 43.98,
+        "covington": 75.77,
+        "crenshaw": 60.35,
+        "cullman": 82.58,
+        "dale": 59.48,
+        "dallas": -27.35,
+        "dekalb": 80.29,
+        "elmore": 60.84,
+        "escambia": 52.87,
+        "etowah": 61.61,
+        "fayette": 74.01,
+        "franklin": 79.79,
+        "geneva": 79.59,
+        "greene": -57.86,
+        "hale": -10.18,
+        "henry": 53.5,
+        "houston": 56.13,
+        "jackson": 76.54,
+        "jefferson": -1.82,
+        "lamar": 78.05,
+        "lauderdale": 59.74,
+        "lawrence": 64.1,
+        "lee": 38.03,
+        "limestone": 55.72,
+        "lowndes": -34.19,
+        "macon": -51.22,
+        "madison": 24.82,
+        "marengo": 7.32,
+        "marion": 84.4,
+        "marshall": 79.49,
+        "mobile": 23.04,
+        "monroe": 24.19,
+        "montgomery": -15.5,
+        "morgan": 62.61,
+        "perry": -39.09,
+        "pickens": 29.7,
+        "pike": 34.46,
+        "randolph": 68.88,
+        "russell": 8.63,
+        "shelby": 51.88,
+        "stclair": 69.66,
+        "sumter": -38.1,
+        "talladega": 35.25,
+        "tallapoosa": 56.68,
+        "tuscaloosa": 26.95,
+        "walker": 74.64,
+        "washington": 56.97,
+        "wilcox": -28.64,
+        "winston": 86.41
+      }
+    },
+    "86910": {
+      "raceId": "44041",
+      "label": "2022",
+      "date": "2022-11-08",
+      "margin": 35.88
+    },
+    "86911": {
+      "raceId": "44076",
+      "label": "2022",
+      "date": "2022-11-08",
+      "margin": 34.77
+    },
+    "176502": {
+      "raceId": "53957",
+      "label": "2022",
+      "date": "2022-11-08",
+      "margin": 30.78
+    },
+    "176506": {
+      "raceId": "53961",
+      "label": "2022",
+      "date": "2022-11-08",
+      "margin": 55.13
+    },
+    "176509": {
+      "raceId": "53964",
+      "label": "2022",
+      "date": "2022-11-08",
+      "margin": 6.63
+    },
+    "176511": {
+      "raceId": "53966",
+      "label": "2022",
+      "date": "2022-11-08",
+      "margin": 70.86
+    },
+    "176514": {
+      "raceId": "53969",
+      "label": "2022",
+      "date": "2022-11-08",
+      "margin": 27.37
+    },
+    "176524": {
+      "raceId": "53979",
+      "label": "2022",
+      "date": "2022-11-08",
+      "margin": 15.93
+    },
+    "176525": {
+      "raceId": "53980",
+      "label": "2022",
+      "date": "2022-11-08",
+      "margin": 76.83
+    },
+    "176526": {
+      "raceId": "53981",
+      "label": "2022",
+      "date": "2022-11-08",
+      "margin": 78.44
+    },
+    "176531": {
+      "raceId": "53986",
+      "label": "2022",
+      "date": "2022-11-08",
+      "margin": -11.41
+    },
+    "176532": {
+      "raceId": "53987",
+      "label": "2022",
+      "date": "2022-11-08",
+      "margin": 45.46
+    },
+    "176539": {
+      "raceId": "53994",
+      "label": "2022",
+      "date": "2022-11-08",
+      "margin": 65.76
+    },
+    "176540": {
+      "raceId": "53995",
+      "label": "2022",
+      "date": "2022-11-08",
+      "margin": 52.95
+    },
+    "176542": {
+      "raceId": "53997",
+      "label": "2022",
+      "date": "2022-11-08",
+      "margin": 52.37
+    },
+    "176546": {
+      "raceId": "54001",
+      "label": "2022",
+      "date": "2022-11-08",
+      "margin": 28.13
+    },
+    "176556": {
+      "raceId": "54011",
+      "label": "2022",
+      "date": "2022-11-08",
+      "margin": -31.44
+    },
+    "176561": {
+      "raceId": "54016",
+      "label": "2022",
+      "date": "2022-11-08",
+      "margin": 47.95
+    },
+    "176562": {
+      "raceId": "54017",
+      "label": "2022",
+      "date": "2022-11-08",
+      "margin": 32.4
+    },
+    "176564": {
+      "raceId": "54019",
+      "label": "2022",
+      "date": "2022-11-08",
+      "margin": 45.45
+    },
+    "176567": {
+      "raceId": "54022",
+      "label": "2022",
+      "date": "2022-11-08",
+      "margin": -3
+    },
+    "176568": {
+      "raceId": "54023",
+      "label": "2022",
+      "date": "2022-11-08",
+      "margin": -10.49
+    },
+    "176573": {
+      "raceId": "54028",
+      "label": "2022",
+      "date": "2022-11-08",
+      "margin": -20.34
+    },
+    "176581": {
+      "raceId": "54036",
+      "label": "2022",
+      "date": "2022-11-08",
+      "margin": -42.37
+    },
+    "176584": {
+      "raceId": "54039",
+      "label": "2022",
+      "date": "2022-11-08",
+      "margin": 8.08
+    },
+    "176591": {
+      "raceId": "54046",
+      "label": "2022",
+      "date": "2022-11-08",
+      "margin": 73.58
+    },
+    "176594": {
+      "raceId": "54049",
+      "label": "2022",
+      "date": "2022-11-08",
+      "margin": 70.35
+    },
+    "176606": {
+      "raceId": "45613",
+      "label": "2022",
+      "date": "2022-11-08",
+      "margin": 11.13
+    },
+    "176611": {
+      "raceId": "45618",
+      "label": "2022",
+      "date": "2022-11-08",
+      "margin": 25.41
+    },
+    "176616": {
+      "raceId": "45623",
+      "label": "2022",
+      "date": "2022-11-08",
+      "margin": 47.35
+    },
+    "176625": {
+      "raceId": "45632",
+      "label": "2022",
+      "date": "2022-11-08",
+      "margin": 32.33
+    },
+    "176627": {
+      "raceId": "45634",
+      "label": "2022",
+      "date": "2022-11-08",
+      "margin": -8.79
+    },
+    "176631": {
+      "raceId": "45638",
+      "label": "2022",
+      "date": "2022-11-08",
+      "margin": 40.51
+    },
+    "176633": {
+      "raceId": "45640",
+      "label": "2022",
+      "date": "2022-11-08",
+      "margin": 64.67
+    },
+    "176637": {
+      "raceId": "45644",
+      "label": "2022",
+      "date": "2022-11-08",
+      "margin": -34.05
+    }
+  },
+  "spotlight": {
+    "id": "86908",
+    "name": "Alabama Governor",
+    "group": "Statewide",
+    "office": "Governor",
+    "regions": [
+      {
+        "id": "autauga",
+        "fips": "01001",
+        "name": "Autauga",
+        "reporting": 0,
+        "candidates": [
+          {
+            "id": "0-Tommy Tuberville",
+            "name": "Tommy Tuberville",
+            "party": "Republican",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          },
+          {
+            "id": "1-Doug Jones",
+            "name": "Doug Jones",
+            "party": "Democratic",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          }
+        ]
+      },
+      {
+        "id": "baldwin",
+        "fips": "01003",
+        "name": "Baldwin",
+        "reporting": 0,
+        "candidates": [
+          {
+            "id": "0-Tommy Tuberville",
+            "name": "Tommy Tuberville",
+            "party": "Republican",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          },
+          {
+            "id": "1-Doug Jones",
+            "name": "Doug Jones",
+            "party": "Democratic",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          }
+        ]
+      },
+      {
+        "id": "barbour",
+        "fips": "01005",
+        "name": "Barbour",
+        "reporting": 0,
+        "candidates": [
+          {
+            "id": "0-Tommy Tuberville",
+            "name": "Tommy Tuberville",
+            "party": "Republican",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          },
+          {
+            "id": "1-Doug Jones",
+            "name": "Doug Jones",
+            "party": "Democratic",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          }
+        ]
+      },
+      {
+        "id": "bibb",
+        "fips": "01007",
+        "name": "Bibb",
+        "reporting": 0,
+        "candidates": [
+          {
+            "id": "0-Tommy Tuberville",
+            "name": "Tommy Tuberville",
+            "party": "Republican",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          },
+          {
+            "id": "1-Doug Jones",
+            "name": "Doug Jones",
+            "party": "Democratic",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          }
+        ]
+      },
+      {
+        "id": "blount",
+        "fips": "01009",
+        "name": "Blount",
+        "reporting": 0,
+        "candidates": [
+          {
+            "id": "0-Tommy Tuberville",
+            "name": "Tommy Tuberville",
+            "party": "Republican",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          },
+          {
+            "id": "1-Doug Jones",
+            "name": "Doug Jones",
+            "party": "Democratic",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          }
+        ]
+      },
+      {
+        "id": "bullock",
+        "fips": "01011",
+        "name": "Bullock",
+        "reporting": 0,
+        "candidates": [
+          {
+            "id": "0-Tommy Tuberville",
+            "name": "Tommy Tuberville",
+            "party": "Republican",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          },
+          {
+            "id": "1-Doug Jones",
+            "name": "Doug Jones",
+            "party": "Democratic",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          }
+        ]
+      },
+      {
+        "id": "butler",
+        "fips": "01013",
+        "name": "Butler",
+        "reporting": 0,
+        "candidates": [
+          {
+            "id": "0-Tommy Tuberville",
+            "name": "Tommy Tuberville",
+            "party": "Republican",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          },
+          {
+            "id": "1-Doug Jones",
+            "name": "Doug Jones",
+            "party": "Democratic",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          }
+        ]
+      },
+      {
+        "id": "calhoun",
+        "fips": "01015",
+        "name": "Calhoun",
+        "reporting": 0,
+        "candidates": [
+          {
+            "id": "0-Tommy Tuberville",
+            "name": "Tommy Tuberville",
+            "party": "Republican",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          },
+          {
+            "id": "1-Doug Jones",
+            "name": "Doug Jones",
+            "party": "Democratic",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          }
+        ]
+      },
+      {
+        "id": "chambers",
+        "fips": "01017",
+        "name": "Chambers",
+        "reporting": 0,
+        "candidates": [
+          {
+            "id": "0-Tommy Tuberville",
+            "name": "Tommy Tuberville",
+            "party": "Republican",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          },
+          {
+            "id": "1-Doug Jones",
+            "name": "Doug Jones",
+            "party": "Democratic",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          }
+        ]
+      },
+      {
+        "id": "cherokee",
+        "fips": "01019",
+        "name": "Cherokee",
+        "reporting": 0,
+        "candidates": [
+          {
+            "id": "0-Tommy Tuberville",
+            "name": "Tommy Tuberville",
+            "party": "Republican",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          },
+          {
+            "id": "1-Doug Jones",
+            "name": "Doug Jones",
+            "party": "Democratic",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          }
+        ]
+      },
+      {
+        "id": "chilton",
+        "fips": "01021",
+        "name": "Chilton",
+        "reporting": 0,
+        "candidates": [
+          {
+            "id": "0-Tommy Tuberville",
+            "name": "Tommy Tuberville",
+            "party": "Republican",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          },
+          {
+            "id": "1-Doug Jones",
+            "name": "Doug Jones",
+            "party": "Democratic",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          }
+        ]
+      },
+      {
+        "id": "choctaw",
+        "fips": "01023",
+        "name": "Choctaw",
+        "reporting": 0,
+        "candidates": [
+          {
+            "id": "0-Tommy Tuberville",
+            "name": "Tommy Tuberville",
+            "party": "Republican",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          },
+          {
+            "id": "1-Doug Jones",
+            "name": "Doug Jones",
+            "party": "Democratic",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          }
+        ]
+      },
+      {
+        "id": "clarke",
+        "fips": "01025",
+        "name": "Clarke",
+        "reporting": 0,
+        "candidates": [
+          {
+            "id": "0-Tommy Tuberville",
+            "name": "Tommy Tuberville",
+            "party": "Republican",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          },
+          {
+            "id": "1-Doug Jones",
+            "name": "Doug Jones",
+            "party": "Democratic",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          }
+        ]
+      },
+      {
+        "id": "clay",
+        "fips": "01027",
+        "name": "Clay",
+        "reporting": 0,
+        "candidates": [
+          {
+            "id": "0-Tommy Tuberville",
+            "name": "Tommy Tuberville",
+            "party": "Republican",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          },
+          {
+            "id": "1-Doug Jones",
+            "name": "Doug Jones",
+            "party": "Democratic",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          }
+        ]
+      },
+      {
+        "id": "cleburne",
+        "fips": "01029",
+        "name": "Cleburne",
+        "reporting": 0,
+        "candidates": [
+          {
+            "id": "0-Tommy Tuberville",
+            "name": "Tommy Tuberville",
+            "party": "Republican",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          },
+          {
+            "id": "1-Doug Jones",
+            "name": "Doug Jones",
+            "party": "Democratic",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          }
+        ]
+      },
+      {
+        "id": "coffee",
+        "fips": "01031",
+        "name": "Coffee",
+        "reporting": 0,
+        "candidates": [
+          {
+            "id": "0-Tommy Tuberville",
+            "name": "Tommy Tuberville",
+            "party": "Republican",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          },
+          {
+            "id": "1-Doug Jones",
+            "name": "Doug Jones",
+            "party": "Democratic",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          }
+        ]
+      },
+      {
+        "id": "colbert",
+        "fips": "01033",
+        "name": "Colbert",
+        "reporting": 0,
+        "candidates": [
+          {
+            "id": "0-Tommy Tuberville",
+            "name": "Tommy Tuberville",
+            "party": "Republican",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          },
+          {
+            "id": "1-Doug Jones",
+            "name": "Doug Jones",
+            "party": "Democratic",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          }
+        ]
+      },
+      {
+        "id": "conecuh",
+        "fips": "01035",
+        "name": "Conecuh",
+        "reporting": 0,
+        "candidates": [
+          {
+            "id": "0-Tommy Tuberville",
+            "name": "Tommy Tuberville",
+            "party": "Republican",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          },
+          {
+            "id": "1-Doug Jones",
+            "name": "Doug Jones",
+            "party": "Democratic",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          }
+        ]
+      },
+      {
+        "id": "coosa",
+        "fips": "01037",
+        "name": "Coosa",
+        "reporting": 0,
+        "candidates": [
+          {
+            "id": "0-Tommy Tuberville",
+            "name": "Tommy Tuberville",
+            "party": "Republican",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          },
+          {
+            "id": "1-Doug Jones",
+            "name": "Doug Jones",
+            "party": "Democratic",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          }
+        ]
+      },
+      {
+        "id": "covington",
+        "fips": "01039",
+        "name": "Covington",
+        "reporting": 0,
+        "candidates": [
+          {
+            "id": "0-Tommy Tuberville",
+            "name": "Tommy Tuberville",
+            "party": "Republican",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          },
+          {
+            "id": "1-Doug Jones",
+            "name": "Doug Jones",
+            "party": "Democratic",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          }
+        ]
+      },
+      {
+        "id": "crenshaw",
+        "fips": "01041",
+        "name": "Crenshaw",
+        "reporting": 0,
+        "candidates": [
+          {
+            "id": "0-Tommy Tuberville",
+            "name": "Tommy Tuberville",
+            "party": "Republican",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          },
+          {
+            "id": "1-Doug Jones",
+            "name": "Doug Jones",
+            "party": "Democratic",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          }
+        ]
+      },
+      {
+        "id": "cullman",
+        "fips": "01043",
+        "name": "Cullman",
+        "reporting": 0,
+        "candidates": [
+          {
+            "id": "0-Tommy Tuberville",
+            "name": "Tommy Tuberville",
+            "party": "Republican",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          },
+          {
+            "id": "1-Doug Jones",
+            "name": "Doug Jones",
+            "party": "Democratic",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          }
+        ]
+      },
+      {
+        "id": "dale",
+        "fips": "01045",
+        "name": "Dale",
+        "reporting": 0,
+        "candidates": [
+          {
+            "id": "0-Tommy Tuberville",
+            "name": "Tommy Tuberville",
+            "party": "Republican",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          },
+          {
+            "id": "1-Doug Jones",
+            "name": "Doug Jones",
+            "party": "Democratic",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          }
+        ]
+      },
+      {
+        "id": "dallas",
+        "fips": "01047",
+        "name": "Dallas",
+        "reporting": 0,
+        "candidates": [
+          {
+            "id": "0-Tommy Tuberville",
+            "name": "Tommy Tuberville",
+            "party": "Republican",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          },
+          {
+            "id": "1-Doug Jones",
+            "name": "Doug Jones",
+            "party": "Democratic",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          }
+        ]
+      },
+      {
+        "id": "dekalb",
+        "fips": "01049",
+        "name": "DeKalb",
+        "reporting": 0,
+        "candidates": [
+          {
+            "id": "0-Tommy Tuberville",
+            "name": "Tommy Tuberville",
+            "party": "Republican",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          },
+          {
+            "id": "1-Doug Jones",
+            "name": "Doug Jones",
+            "party": "Democratic",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          }
+        ]
+      },
+      {
+        "id": "elmore",
+        "fips": "01051",
+        "name": "Elmore",
+        "reporting": 0,
+        "candidates": [
+          {
+            "id": "0-Tommy Tuberville",
+            "name": "Tommy Tuberville",
+            "party": "Republican",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          },
+          {
+            "id": "1-Doug Jones",
+            "name": "Doug Jones",
+            "party": "Democratic",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          }
+        ]
+      },
+      {
+        "id": "escambia",
+        "fips": "01053",
+        "name": "Escambia",
+        "reporting": 0,
+        "candidates": [
+          {
+            "id": "0-Tommy Tuberville",
+            "name": "Tommy Tuberville",
+            "party": "Republican",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          },
+          {
+            "id": "1-Doug Jones",
+            "name": "Doug Jones",
+            "party": "Democratic",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          }
+        ]
+      },
+      {
+        "id": "etowah",
+        "fips": "01055",
+        "name": "Etowah",
+        "reporting": 0,
+        "candidates": [
+          {
+            "id": "0-Tommy Tuberville",
+            "name": "Tommy Tuberville",
+            "party": "Republican",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          },
+          {
+            "id": "1-Doug Jones",
+            "name": "Doug Jones",
+            "party": "Democratic",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          }
+        ]
+      },
+      {
+        "id": "fayette",
+        "fips": "01057",
+        "name": "Fayette",
+        "reporting": 0,
+        "candidates": [
+          {
+            "id": "0-Tommy Tuberville",
+            "name": "Tommy Tuberville",
+            "party": "Republican",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          },
+          {
+            "id": "1-Doug Jones",
+            "name": "Doug Jones",
+            "party": "Democratic",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          }
+        ]
+      },
+      {
+        "id": "franklin",
+        "fips": "01059",
+        "name": "Franklin",
+        "reporting": 0,
+        "candidates": [
+          {
+            "id": "0-Tommy Tuberville",
+            "name": "Tommy Tuberville",
+            "party": "Republican",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          },
+          {
+            "id": "1-Doug Jones",
+            "name": "Doug Jones",
+            "party": "Democratic",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          }
+        ]
+      },
+      {
+        "id": "geneva",
+        "fips": "01061",
+        "name": "Geneva",
+        "reporting": 0,
+        "candidates": [
+          {
+            "id": "0-Tommy Tuberville",
+            "name": "Tommy Tuberville",
+            "party": "Republican",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          },
+          {
+            "id": "1-Doug Jones",
+            "name": "Doug Jones",
+            "party": "Democratic",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          }
+        ]
+      },
+      {
+        "id": "greene",
+        "fips": "01063",
+        "name": "Greene",
+        "reporting": 0,
+        "candidates": [
+          {
+            "id": "0-Tommy Tuberville",
+            "name": "Tommy Tuberville",
+            "party": "Republican",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          },
+          {
+            "id": "1-Doug Jones",
+            "name": "Doug Jones",
+            "party": "Democratic",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          }
+        ]
+      },
+      {
+        "id": "hale",
+        "fips": "01065",
+        "name": "Hale",
+        "reporting": 0,
+        "candidates": [
+          {
+            "id": "0-Tommy Tuberville",
+            "name": "Tommy Tuberville",
+            "party": "Republican",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          },
+          {
+            "id": "1-Doug Jones",
+            "name": "Doug Jones",
+            "party": "Democratic",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          }
+        ]
+      },
+      {
+        "id": "henry",
+        "fips": "01067",
+        "name": "Henry",
+        "reporting": 0,
+        "candidates": [
+          {
+            "id": "0-Tommy Tuberville",
+            "name": "Tommy Tuberville",
+            "party": "Republican",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          },
+          {
+            "id": "1-Doug Jones",
+            "name": "Doug Jones",
+            "party": "Democratic",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          }
+        ]
+      },
+      {
+        "id": "houston",
+        "fips": "01069",
+        "name": "Houston",
+        "reporting": 0,
+        "candidates": [
+          {
+            "id": "0-Tommy Tuberville",
+            "name": "Tommy Tuberville",
+            "party": "Republican",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          },
+          {
+            "id": "1-Doug Jones",
+            "name": "Doug Jones",
+            "party": "Democratic",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          }
+        ]
+      },
+      {
+        "id": "jackson",
+        "fips": "01071",
+        "name": "Jackson",
+        "reporting": 0,
+        "candidates": [
+          {
+            "id": "0-Tommy Tuberville",
+            "name": "Tommy Tuberville",
+            "party": "Republican",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          },
+          {
+            "id": "1-Doug Jones",
+            "name": "Doug Jones",
+            "party": "Democratic",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          }
+        ]
+      },
+      {
+        "id": "jefferson",
+        "fips": "01073",
+        "name": "Jefferson",
+        "reporting": 0,
+        "candidates": [
+          {
+            "id": "0-Tommy Tuberville",
+            "name": "Tommy Tuberville",
+            "party": "Republican",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          },
+          {
+            "id": "1-Doug Jones",
+            "name": "Doug Jones",
+            "party": "Democratic",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          }
+        ]
+      },
+      {
+        "id": "lamar",
+        "fips": "01075",
+        "name": "Lamar",
+        "reporting": 0,
+        "candidates": [
+          {
+            "id": "0-Tommy Tuberville",
+            "name": "Tommy Tuberville",
+            "party": "Republican",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          },
+          {
+            "id": "1-Doug Jones",
+            "name": "Doug Jones",
+            "party": "Democratic",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          }
+        ]
+      },
+      {
+        "id": "lauderdale",
+        "fips": "01077",
+        "name": "Lauderdale",
+        "reporting": 0,
+        "candidates": [
+          {
+            "id": "0-Tommy Tuberville",
+            "name": "Tommy Tuberville",
+            "party": "Republican",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          },
+          {
+            "id": "1-Doug Jones",
+            "name": "Doug Jones",
+            "party": "Democratic",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          }
+        ]
+      },
+      {
+        "id": "lawrence",
+        "fips": "01079",
+        "name": "Lawrence",
+        "reporting": 0,
+        "candidates": [
+          {
+            "id": "0-Tommy Tuberville",
+            "name": "Tommy Tuberville",
+            "party": "Republican",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          },
+          {
+            "id": "1-Doug Jones",
+            "name": "Doug Jones",
+            "party": "Democratic",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          }
+        ]
+      },
+      {
+        "id": "lee",
+        "fips": "01081",
+        "name": "Lee",
+        "reporting": 0,
+        "candidates": [
+          {
+            "id": "0-Tommy Tuberville",
+            "name": "Tommy Tuberville",
+            "party": "Republican",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          },
+          {
+            "id": "1-Doug Jones",
+            "name": "Doug Jones",
+            "party": "Democratic",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          }
+        ]
+      },
+      {
+        "id": "limestone",
+        "fips": "01083",
+        "name": "Limestone",
+        "reporting": 0,
+        "candidates": [
+          {
+            "id": "0-Tommy Tuberville",
+            "name": "Tommy Tuberville",
+            "party": "Republican",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          },
+          {
+            "id": "1-Doug Jones",
+            "name": "Doug Jones",
+            "party": "Democratic",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          }
+        ]
+      },
+      {
+        "id": "lowndes",
+        "fips": "01085",
+        "name": "Lowndes",
+        "reporting": 0,
+        "candidates": [
+          {
+            "id": "0-Tommy Tuberville",
+            "name": "Tommy Tuberville",
+            "party": "Republican",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          },
+          {
+            "id": "1-Doug Jones",
+            "name": "Doug Jones",
+            "party": "Democratic",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          }
+        ]
+      },
+      {
+        "id": "macon",
+        "fips": "01087",
+        "name": "Macon",
+        "reporting": 0,
+        "candidates": [
+          {
+            "id": "0-Tommy Tuberville",
+            "name": "Tommy Tuberville",
+            "party": "Republican",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          },
+          {
+            "id": "1-Doug Jones",
+            "name": "Doug Jones",
+            "party": "Democratic",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          }
+        ]
+      },
+      {
+        "id": "madison",
+        "fips": "01089",
+        "name": "Madison",
+        "reporting": 0,
+        "candidates": [
+          {
+            "id": "0-Tommy Tuberville",
+            "name": "Tommy Tuberville",
+            "party": "Republican",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          },
+          {
+            "id": "1-Doug Jones",
+            "name": "Doug Jones",
+            "party": "Democratic",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          }
+        ]
+      },
+      {
+        "id": "marengo",
+        "fips": "01091",
+        "name": "Marengo",
+        "reporting": 0,
+        "candidates": [
+          {
+            "id": "0-Tommy Tuberville",
+            "name": "Tommy Tuberville",
+            "party": "Republican",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          },
+          {
+            "id": "1-Doug Jones",
+            "name": "Doug Jones",
+            "party": "Democratic",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          }
+        ]
+      },
+      {
+        "id": "marion",
+        "fips": "01093",
+        "name": "Marion",
+        "reporting": 0,
+        "candidates": [
+          {
+            "id": "0-Tommy Tuberville",
+            "name": "Tommy Tuberville",
+            "party": "Republican",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          },
+          {
+            "id": "1-Doug Jones",
+            "name": "Doug Jones",
+            "party": "Democratic",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          }
+        ]
+      },
+      {
+        "id": "marshall",
+        "fips": "01095",
+        "name": "Marshall",
+        "reporting": 0,
+        "candidates": [
+          {
+            "id": "0-Tommy Tuberville",
+            "name": "Tommy Tuberville",
+            "party": "Republican",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          },
+          {
+            "id": "1-Doug Jones",
+            "name": "Doug Jones",
+            "party": "Democratic",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          }
+        ]
+      },
+      {
+        "id": "mobile",
+        "fips": "01097",
+        "name": "Mobile",
+        "reporting": 0,
+        "candidates": [
+          {
+            "id": "0-Tommy Tuberville",
+            "name": "Tommy Tuberville",
+            "party": "Republican",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          },
+          {
+            "id": "1-Doug Jones",
+            "name": "Doug Jones",
+            "party": "Democratic",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          }
+        ]
+      },
+      {
+        "id": "monroe",
+        "fips": "01099",
+        "name": "Monroe",
+        "reporting": 0,
+        "candidates": [
+          {
+            "id": "0-Tommy Tuberville",
+            "name": "Tommy Tuberville",
+            "party": "Republican",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          },
+          {
+            "id": "1-Doug Jones",
+            "name": "Doug Jones",
+            "party": "Democratic",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          }
+        ]
+      },
+      {
+        "id": "montgomery",
+        "fips": "01101",
+        "name": "Montgomery",
+        "reporting": 0,
+        "candidates": [
+          {
+            "id": "0-Tommy Tuberville",
+            "name": "Tommy Tuberville",
+            "party": "Republican",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          },
+          {
+            "id": "1-Doug Jones",
+            "name": "Doug Jones",
+            "party": "Democratic",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          }
+        ]
+      },
+      {
+        "id": "morgan",
+        "fips": "01103",
+        "name": "Morgan",
+        "reporting": 0,
+        "candidates": [
+          {
+            "id": "0-Tommy Tuberville",
+            "name": "Tommy Tuberville",
+            "party": "Republican",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          },
+          {
+            "id": "1-Doug Jones",
+            "name": "Doug Jones",
+            "party": "Democratic",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          }
+        ]
+      },
+      {
+        "id": "perry",
+        "fips": "01105",
+        "name": "Perry",
+        "reporting": 0,
+        "candidates": [
+          {
+            "id": "0-Tommy Tuberville",
+            "name": "Tommy Tuberville",
+            "party": "Republican",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          },
+          {
+            "id": "1-Doug Jones",
+            "name": "Doug Jones",
+            "party": "Democratic",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          }
+        ]
+      },
+      {
+        "id": "pickens",
+        "fips": "01107",
+        "name": "Pickens",
+        "reporting": 0,
+        "candidates": [
+          {
+            "id": "0-Tommy Tuberville",
+            "name": "Tommy Tuberville",
+            "party": "Republican",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          },
+          {
+            "id": "1-Doug Jones",
+            "name": "Doug Jones",
+            "party": "Democratic",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          }
+        ]
+      },
+      {
+        "id": "pike",
+        "fips": "01109",
+        "name": "Pike",
+        "reporting": 0,
+        "candidates": [
+          {
+            "id": "0-Tommy Tuberville",
+            "name": "Tommy Tuberville",
+            "party": "Republican",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          },
+          {
+            "id": "1-Doug Jones",
+            "name": "Doug Jones",
+            "party": "Democratic",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          }
+        ]
+      },
+      {
+        "id": "randolph",
+        "fips": "01111",
+        "name": "Randolph",
+        "reporting": 0,
+        "candidates": [
+          {
+            "id": "0-Tommy Tuberville",
+            "name": "Tommy Tuberville",
+            "party": "Republican",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          },
+          {
+            "id": "1-Doug Jones",
+            "name": "Doug Jones",
+            "party": "Democratic",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          }
+        ]
+      },
+      {
+        "id": "russell",
+        "fips": "01113",
+        "name": "Russell",
+        "reporting": 0,
+        "candidates": [
+          {
+            "id": "0-Tommy Tuberville",
+            "name": "Tommy Tuberville",
+            "party": "Republican",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          },
+          {
+            "id": "1-Doug Jones",
+            "name": "Doug Jones",
+            "party": "Democratic",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          }
+        ]
+      },
+      {
+        "id": "shelby",
+        "fips": "01117",
+        "name": "Shelby",
+        "reporting": 0,
+        "candidates": [
+          {
+            "id": "0-Tommy Tuberville",
+            "name": "Tommy Tuberville",
+            "party": "Republican",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          },
+          {
+            "id": "1-Doug Jones",
+            "name": "Doug Jones",
+            "party": "Democratic",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          }
+        ]
+      },
+      {
+        "id": "st_clair",
+        "fips": "01115",
+        "name": "St. Clair",
+        "reporting": 0,
+        "candidates": [
+          {
+            "id": "0-Tommy Tuberville",
+            "name": "Tommy Tuberville",
+            "party": "Republican",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          },
+          {
+            "id": "1-Doug Jones",
+            "name": "Doug Jones",
+            "party": "Democratic",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          }
+        ]
+      },
+      {
+        "id": "sumter",
+        "fips": "01119",
+        "name": "Sumter",
+        "reporting": 0,
+        "candidates": [
+          {
+            "id": "0-Tommy Tuberville",
+            "name": "Tommy Tuberville",
+            "party": "Republican",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          },
+          {
+            "id": "1-Doug Jones",
+            "name": "Doug Jones",
+            "party": "Democratic",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          }
+        ]
+      },
+      {
+        "id": "talladega",
+        "fips": "01121",
+        "name": "Talladega",
+        "reporting": 0,
+        "candidates": [
+          {
+            "id": "0-Tommy Tuberville",
+            "name": "Tommy Tuberville",
+            "party": "Republican",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          },
+          {
+            "id": "1-Doug Jones",
+            "name": "Doug Jones",
+            "party": "Democratic",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          }
+        ]
+      },
+      {
+        "id": "tallapoosa",
+        "fips": "01123",
+        "name": "Tallapoosa",
+        "reporting": 0,
+        "candidates": [
+          {
+            "id": "0-Tommy Tuberville",
+            "name": "Tommy Tuberville",
+            "party": "Republican",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          },
+          {
+            "id": "1-Doug Jones",
+            "name": "Doug Jones",
+            "party": "Democratic",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          }
+        ]
+      },
+      {
+        "id": "tuscaloosa",
+        "fips": "01125",
+        "name": "Tuscaloosa",
+        "reporting": 0,
+        "candidates": [
+          {
+            "id": "0-Tommy Tuberville",
+            "name": "Tommy Tuberville",
+            "party": "Republican",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          },
+          {
+            "id": "1-Doug Jones",
+            "name": "Doug Jones",
+            "party": "Democratic",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          }
+        ]
+      },
+      {
+        "id": "walker",
+        "fips": "01127",
+        "name": "Walker",
+        "reporting": 0,
+        "candidates": [
+          {
+            "id": "0-Tommy Tuberville",
+            "name": "Tommy Tuberville",
+            "party": "Republican",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          },
+          {
+            "id": "1-Doug Jones",
+            "name": "Doug Jones",
+            "party": "Democratic",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          }
+        ]
+      },
+      {
+        "id": "washington",
+        "fips": "01129",
+        "name": "Washington",
+        "reporting": 0,
+        "candidates": [
+          {
+            "id": "0-Tommy Tuberville",
+            "name": "Tommy Tuberville",
+            "party": "Republican",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          },
+          {
+            "id": "1-Doug Jones",
+            "name": "Doug Jones",
+            "party": "Democratic",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          }
+        ]
+      },
+      {
+        "id": "wilcox",
+        "fips": "01131",
+        "name": "Wilcox",
+        "reporting": 0,
+        "candidates": [
+          {
+            "id": "0-Tommy Tuberville",
+            "name": "Tommy Tuberville",
+            "party": "Republican",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          },
+          {
+            "id": "1-Doug Jones",
+            "name": "Doug Jones",
+            "party": "Democratic",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          }
+        ]
+      },
+      {
+        "id": "winston",
+        "fips": "01133",
+        "name": "Winston",
+        "reporting": 0,
+        "candidates": [
+          {
+            "id": "0-Tommy Tuberville",
+            "name": "Tommy Tuberville",
+            "party": "Republican",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          },
+          {
+            "id": "1-Doug Jones",
+            "name": "Doug Jones",
+            "party": "Democratic",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          }
+        ]
+      }
+    ],
+    "summary": false,
+    "disputed": false,
+    "district": null,
+    "reporting": 0,
+    "updatedAt": "2026-10-30T18:52:47.153Z",
+    "candidates": [
+      {
+        "id": "219740",
+        "name": "Tommy Tuberville",
+        "party": "Republican",
+        "votes": 0,
+        "winner": false,
+        "percent": 0
+      },
+      {
+        "id": "219741",
+        "name": "Doug Jones",
+        "party": "Democratic",
+        "votes": 0,
+        "winner": false,
+        "percent": 0
+      }
+    ]
+  }
+}

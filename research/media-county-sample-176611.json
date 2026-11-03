@@ -1,0 +1,83 @@
+{
+  "date": "2026-11-03",
+  "checkedAt": "2026-11-03T20:54:46.829Z",
+  "status": "ready",
+  "races": [
+    {
+      "id": "176611",
+      "name": "Alabama State Senate 7",
+      "group": "Legislature",
+      "office": "State Senate",
+      "regions": [
+        {
+          "id": "madison",
+          "fips": "01089",
+          "name": "Madison",
+          "reporting": 0,
+          "candidates": [
+            {
+              "id": "0-Jared Sluss",
+              "name": "Jared Sluss",
+              "party": "Democratic",
+              "votes": 0,
+              "winner": false,
+              "percent": 0
+            },
+            {
+              "id": "1-Sam Givhan",
+              "name": "Sam Givhan",
+              "party": "Republican",
+              "votes": 0,
+              "winner": false,
+              "percent": 0
+            }
+          ]
+        }
+      ],
+      "summary": false,
+      "disputed": false,
+      "district": "AL-SD-007",
+      "reporting": 0,
+      "updatedAt": "2026-10-30T18:52:56.171Z",
+      "candidates": [
+        {
+          "id": "21566782",
+          "name": "Jared Sluss",
+          "party": "Democratic",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        },
+        {
+          "id": "21566783",
+          "name": "Sam Givhan",
+          "party": "Republican",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    }
+  ],
+  "featuredIds": [
+    "176611"
+  ],
+  "historical": false,
+  "electionKey": "2026",
+  "electionLabel": "2026",
+  "query": "",
+  "resultsHref": "/election-results",
+  "refreshFailed": false,
+  "publicRaceIds": [
+    "176611"
+  ],
+  "comparisons": {
+    "176611": {
+      "raceId": "45618",
+      "label": "2022",
+      "date": "2022-11-08",
+      "margin": 25.41,
+      "regions": {}
+    }
+  }
+}

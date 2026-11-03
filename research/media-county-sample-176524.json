@@ -1,0 +1,110 @@
+{
+  "date": "2026-11-03",
+  "checkedAt": "2026-11-03T20:55:37.314Z",
+  "status": "ready",
+  "races": [
+    {
+      "id": "176524",
+      "name": "Alabama State House 25",
+      "group": "Legislature",
+      "office": "State House",
+      "regions": [
+        {
+          "id": "limestone",
+          "fips": "01083",
+          "name": "Limestone",
+          "reporting": 0,
+          "candidates": [
+            {
+              "id": "0-Allison T Montgomery",
+              "name": "Allison T Montgomery",
+              "party": "Democratic",
+              "votes": 0,
+              "winner": false,
+              "percent": 0
+            },
+            {
+              "id": "1-Phillip K. Rigsby",
+              "name": "Phillip K. Rigsby",
+              "party": "Republican",
+              "votes": 0,
+              "winner": false,
+              "percent": 0
+            }
+          ]
+        },
+        {
+          "id": "madison",
+          "fips": "01089",
+          "name": "Madison",
+          "reporting": 0,
+          "candidates": [
+            {
+              "id": "0-Allison T Montgomery",
+              "name": "Allison T Montgomery",
+              "party": "Democratic",
+              "votes": 0,
+              "winner": false,
+              "percent": 0
+            },
+            {
+              "id": "1-Phillip K. Rigsby",
+              "name": "Phillip K. Rigsby",
+              "party": "Republican",
+              "votes": 0,
+              "winner": false,
+              "percent": 0
+            }
+          ]
+        }
+      ],
+      "summary": false,
+      "disputed": false,
+      "district": "AL-HD-025",
+      "reporting": 0,
+      "updatedAt": "2026-10-30T18:52:49.178Z",
+      "candidates": [
+        {
+          "id": "21566667",
+          "name": "Allison T Montgomery",
+          "party": "Democratic",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        },
+        {
+          "id": "21566668",
+          "name": "Phillip K. Rigsby",
+          "party": "Republican",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    }
+  ],
+  "featuredIds": [
+    "176524"
+  ],
+  "historical": false,
+  "electionKey": "2026",
+  "electionLabel": "2026",
+  "query": "",
+  "resultsHref": "/election-results",
+  "refreshFailed": false,
+  "publicRaceIds": [
+    "176524"
+  ],
+  "comparisons": {
+    "176524": {
+      "raceId": "53979",
+      "label": "2022",
+      "date": "2022-11-08",
+      "margin": 15.93,
+      "regions": {
+        "limestone": 22.2,
+        "madison": 15.54
+      }
+    }
+  }
+}

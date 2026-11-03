@@ -1,0 +1,74 @@
+{
+  "date": "2026-11-03",
+  "checkedAt": "2026-11-03T20:55:29.305Z",
+  "status": "ready",
+  "races": [
+    {
+      "id": "176520",
+      "name": "Alabama State House 21",
+      "group": "Legislature",
+      "office": "State House",
+      "regions": [
+        {
+          "id": "madison",
+          "fips": "01089",
+          "name": "Madison",
+          "reporting": 0,
+          "candidates": [
+            {
+              "id": "0-Forrest Satterfield",
+              "name": "Forrest Satterfield",
+              "party": "Democratic",
+              "votes": 0,
+              "winner": false,
+              "percent": 0
+            },
+            {
+              "id": "1-Rex Reynolds",
+              "name": "Rex Reynolds",
+              "party": "Republican",
+              "votes": 0,
+              "winner": false,
+              "percent": 0
+            }
+          ]
+        }
+      ],
+      "summary": false,
+      "disputed": false,
+      "district": "AL-HD-021",
+      "reporting": 0,
+      "updatedAt": "2026-10-30T18:52:48.991Z",
+      "candidates": [
+        {
+          "id": "21566662",
+          "name": "Forrest Satterfield",
+          "party": "Democratic",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        },
+        {
+          "id": "21566663",
+          "name": "Rex Reynolds",
+          "party": "Republican",
+          "votes": 0,
+          "winner": false,
+          "percent": 0
+        }
+      ]
+    }
+  ],
+  "featuredIds": [
+    "176520"
+  ],
+  "historical": false,
+  "electionKey": "2026",
+  "electionLabel": "2026",
+  "query": "",
+  "resultsHref": "/election-results",
+  "refreshFailed": false,
+  "publicRaceIds": [
+    "176520"
+  ]
+}

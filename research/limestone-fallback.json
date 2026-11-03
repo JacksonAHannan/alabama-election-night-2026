@@ -1,0 +1,173 @@
+{
+  "checked_at": "2026-11-03T20:58:16.182948+00:00",
+  "county": "Limestone",
+  "fips": "01083",
+  "election_date": "2026-11-03",
+  "automatic_county_fallback_verified": true,
+  "precinct_feed_verified": false,
+  "publisher": "Alabama Political Reporter",
+  "publisher_page": "https://www.alreporter.com/election-results/",
+  "official_county_page": "https://www.limestonecounty-al.gov/Departments/Elections",
+  "official_county_route": "live_video_only",
+  "limits": [
+    "Only pre-poll-close setup zeros have been observed; real election-night updates not yet demonstrated.",
+    "County reporting is publisher-estimated reporting, not precinct reporting.",
+    "APR is media fallback, not official Limestone tabulation.",
+    "Do not add full-district totals and county totals; select one county source per race.",
+    "Candidate region IDs are separate from race candidate IDs; match known roster/name and party explicitly."
+  ],
+  "feeds": [
+    {
+      "contest": "cd5",
+      "url": "https://www.alreporter.com/api/election-results?race=86904",
+      "http_status": 200,
+      "race_id": "86904",
+      "race_name": "Alabama US House 5",
+      "district": "AL-05",
+      "checkedAt": "2026-11-03T20:55:22.333Z",
+      "updatedAt": "2026-10-30T18:52:46.878Z",
+      "county_region": {
+        "id": "limestone",
+        "fips": "01083",
+        "name": "Limestone",
+        "reporting": 0,
+        "candidates": [
+          {
+            "id": "0-Dale Strong",
+            "name": "Dale Strong",
+            "party": "Republican",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          },
+          {
+            "id": "1-Andrew Sneed",
+            "name": "Andrew Sneed",
+            "party": "Democratic",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          }
+        ]
+      },
+      "raw_file": ".firecrawl/fallback-limestone-apr-cd5.json",
+      "sha256": "95ffdb169526dd0214ce7b1dd1de0ff76d961d581fae8fa393b73375baa78e62",
+      "readiness": "county_setup_awaiting_results",
+      "schema": {
+        "date": "date",
+        "historical": "historical",
+        "stale": "refreshFailed",
+        "race": "races[]",
+        "county": "races[].regions[] identified by fips01083",
+        "candidates": "races[].regions[].candidates[] name,party,votes,percent,winner",
+        "reporting": "races[].regions[].reporting"
+      }
+    },
+    {
+      "contest": "sd2",
+      "url": "https://www.alreporter.com/api/election-results?race=176606",
+      "http_status": 200,
+      "race_id": "176606",
+      "race_name": "Alabama State Senate 2",
+      "district": "AL-SD-002",
+      "checkedAt": "2026-11-03T20:57:19.160Z",
+      "updatedAt": "2026-10-30T18:52:55.830Z",
+      "county_region": {
+        "id": "limestone",
+        "fips": "01083",
+        "name": "Limestone",
+        "reporting": 0,
+        "candidates": [
+          {
+            "id": "0-Rudolph Valentino Drake",
+            "name": "Rudolph Valentino Drake",
+            "party": "Democratic",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          },
+          {
+            "id": "1-John Roberts",
+            "name": "John Roberts",
+            "party": "Republican",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          }
+        ]
+      },
+      "raw_file": ".firecrawl/fallback-limestone-apr-176606.json",
+      "sha256": "a75ef34dd7623db9cc451a1f53562d5871e5b4e4f83cabd7c8ab464b8196bb9f",
+      "readiness": "county_setup_awaiting_results",
+      "schema": {
+        "date": "date",
+        "historical": "historical",
+        "stale": "refreshFailed",
+        "race": "races[]",
+        "county": "races[].regions[] identified by fips01083",
+        "candidates": "races[].regions[].candidates[] name,party,votes,percent,winner",
+        "reporting": "races[].regions[].reporting"
+      }
+    },
+    {
+      "contest": "hd25",
+      "url": "https://www.alreporter.com/api/election-results?race=176524",
+      "http_status": 200,
+      "race_id": "176524",
+      "race_name": "Alabama State House 25",
+      "district": "AL-HD-025",
+      "checkedAt": "2026-11-03T20:55:37.314Z",
+      "updatedAt": "2026-10-30T18:52:49.178Z",
+      "county_region": {
+        "id": "limestone",
+        "fips": "01083",
+        "name": "Limestone",
+        "reporting": 0,
+        "candidates": [
+          {
+            "id": "0-Allison T Montgomery",
+            "name": "Allison T Montgomery",
+            "party": "Democratic",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          },
+          {
+            "id": "1-Phillip K. Rigsby",
+            "name": "Phillip K. Rigsby",
+            "party": "Republican",
+            "votes": 0,
+            "winner": false,
+            "percent": 0
+          }
+        ]
+      },
+      "raw_file": ".firecrawl/fallback-limestone-apr-176524.json",
+      "sha256": "c6ef76c06e6f451ae02f91ff6b6386dc77610074888d6ed990c9ea7a7b02ccfe",
+      "readiness": "county_setup_awaiting_results",
+      "schema": {
+        "date": "date",
+        "historical": "historical",
+        "stale": "refreshFailed",
+        "race": "races[]",
+        "county": "races[].regions[] identified by fips01083",
+        "candidates": "races[].regions[].candidates[] name,party,votes,percent,winner",
+        "reporting": "races[].regions[].reporting"
+      }
+    }
+  ],
+  "rejected_or_unusable": [
+    {
+      "url": "https://votes.decisiondeskhq.com/elections/2026-11-03/alabama/limestone",
+      "reason": "Current county/race index verified via web retrieval, direct collector requests HTTP429 challenge; no collector integration verified."
+    },
+    {
+      "url": "https://interactives.apelections.org/election-results/customers/layouts/organization-layouts/published/110246/32468.html",
+      "reason": "WAFF-linked AP layout direct HTTP403; no payload verified."
+    },
+    {
+      "url": "https://interactives.apelections.org/election-results/customers/layouts/organization-layouts/published/110246/32403.html",
+      "reason": "WAFF-linked AP layout direct HTTP403; no payload verified."
+    }
+  ]
+}

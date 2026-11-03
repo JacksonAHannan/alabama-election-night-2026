@@ -1,0 +1,366 @@
+{
+  "checked_at": "2026-11-03T21:47:00.946536+00:00",
+  "publisher": "civicAPI",
+  "publisher_is_election_authority": false,
+  "attribution_required": true,
+  "attribution_url": "https://civicapi.org/",
+  "discovery_url": "https://civicapi.org/api/v2/race/search?province=AL&startDate=2026-11-03&endDate=2026-11-03&limit=1000",
+  "discovery_path": ".firecrawl/statewide-civic-all-al-index.json",
+  "url": "https://civicapi.org/api/v2/race/86901",
+  "raw_path": ".firecrawl/al02-civic-race.json",
+  "fixture_path": "tests/fixtures/al02-civic-cd2-2026-setup.json",
+  "sha256": "633df27e41ba84a661fedce643fcc4c42e4d0ab3aebabe57961c69b401940634",
+  "source_entry": {
+    "id": "civic-cd2",
+    "county": "CD-2 county fallback",
+    "county_id": "AL",
+    "url": "https://civicapi.org/results",
+    "endpoint": "https://civicapi.org/api/v2/race/86901",
+    "election_id": "86901",
+    "enabled": true,
+    "format": "civic_county",
+    "priority": 100,
+    "status": "civicAPI county totals; setup zeros",
+    "note": "Public publisher feed, attributed to civicAPI. County candidate totals for AL-02 only; no precinct or write-in counts supplied. Reporting percentage is an estimate. The 2026 district includes all or portions of 16 counties; Covington and Elmore are partial counties.",
+    "interval_seconds": 120,
+    "contest_map": {
+      "86901": "cd2"
+    },
+    "expected": {
+      "name": "Alabama US House 2",
+      "district": "AL-02",
+      "office": "House of Representatives",
+      "election_scope": "General",
+      "group": "Federal",
+      "counties": [
+        {
+          "id": "barbour",
+          "name": "Barbour",
+          "type": "County",
+          "fips": "01005"
+        },
+        {
+          "id": "bullock",
+          "name": "Bullock",
+          "type": "County",
+          "fips": "01011"
+        },
+        {
+          "id": "butler",
+          "name": "Butler",
+          "type": "County",
+          "fips": "01013"
+        },
+        {
+          "id": "coffee",
+          "name": "Coffee",
+          "type": "County",
+          "fips": "01031"
+        },
+        {
+          "id": "covington",
+          "name": "Covington",
+          "type": "County",
+          "fips": "01039"
+        },
+        {
+          "id": "crenshaw",
+          "name": "Crenshaw",
+          "type": "County",
+          "fips": "01041"
+        },
+        {
+          "id": "dale",
+          "name": "Dale",
+          "type": "County",
+          "fips": "01045"
+        },
+        {
+          "id": "elmore",
+          "name": "Elmore",
+          "type": "County",
+          "fips": "01051"
+        },
+        {
+          "id": "geneva",
+          "name": "Geneva",
+          "type": "County",
+          "fips": "01061"
+        },
+        {
+          "id": "henry",
+          "name": "Henry",
+          "type": "County",
+          "fips": "01067"
+        },
+        {
+          "id": "houston",
+          "name": "Houston",
+          "type": "County",
+          "fips": "01069"
+        },
+        {
+          "id": "lowndes",
+          "name": "Lowndes",
+          "type": "County",
+          "fips": "01085"
+        },
+        {
+          "id": "macon",
+          "name": "Macon",
+          "type": "County",
+          "fips": "01087"
+        },
+        {
+          "id": "montgomery",
+          "name": "Montgomery",
+          "type": "County",
+          "fips": "01101"
+        },
+        {
+          "id": "pike",
+          "name": "Pike",
+          "type": "County",
+          "fips": "01109"
+        },
+        {
+          "id": "russell",
+          "name": "Russell",
+          "type": "County",
+          "fips": "01113"
+        }
+      ],
+      "candidates": [
+        {
+          "id": "219726",
+          "source_name": "Shomari Figures",
+          "name": "Shomari C. Figures",
+          "party": "DEM"
+        },
+        {
+          "id": "219727",
+          "source_name": "Rhett Marques",
+          "name": "Rhett Marques",
+          "party": "REP"
+        }
+      ]
+    }
+  },
+  "ballot_entry": {
+    "id": "cd2",
+    "name": "U.S. House District 2",
+    "provider_name": "UNITED STATES REPRESENTATIVE, 2ND CONGRESSIONAL DISTRICT",
+    "group": "Federal",
+    "scope": "cd2",
+    "candidates": [
+      {
+        "name": "Shomari C. Figures",
+        "party": "DEM"
+      },
+      {
+        "name": "Rhett Marques",
+        "party": "REP"
+      },
+      {
+        "name": "Write-in",
+        "party": "WRITEIN"
+      }
+    ],
+    "ballot_source": "https://www.sos.alabama.gov/sites/default/files/sample-ballots/2026/gen/Houston-Sample.pdf"
+  },
+  "county_count": 16,
+  "partial_counties": [
+    "01039",
+    "01051"
+  ],
+  "candidate_total_reconciliation": [
+    {
+      "candidate_id": "219726",
+      "name": "Shomari Figures",
+      "top_level_votes": 0,
+      "county_sum": 0,
+      "matches": true
+    },
+    {
+      "candidate_id": "219727",
+      "name": "Rhett Marques",
+      "top_level_votes": 0,
+      "county_sum": 0,
+      "matches": true
+    }
+  ],
+  "official_precinct_checks": [
+    {
+      "county": "Barbour",
+      "county_fips": "01005",
+      "official_url": "https://www.barbourcountyal.gov/172/Probate-Office",
+      "status": "current-precinct-feed-not-found",
+      "notes": [
+        "Official Probate Office page provides office and service information; no current results or machine-readable precinct link on inspected page."
+      ],
+      "eligible_precinct_feed": false
+    },
+    {
+      "county": "Bullock",
+      "county_fips": "01011",
+      "official_url": "https://bullockal.com/probate-office/",
+      "status": "current-precinct-feed-not-found",
+      "notes": [
+        "Official Probate Office page provides contacts and hours; no election result or precinct feed link on inspected page."
+      ],
+      "eligible_precinct_feed": false
+    },
+    {
+      "county": "Butler",
+      "county_fips": "01013",
+      "official_url": "https://www.butlercogov.com/probate",
+      "status": "current-precinct-feed-not-found",
+      "notes": [
+        "Direct HTTP returned403; ordinary browser read the Probate Office page successfully. Office/service resources have no current result or precinct link."
+      ],
+      "eligible_precinct_feed": false
+    },
+    {
+      "county": "Coffee",
+      "county_fips": "01031",
+      "official_url": "https://www.coffeecoprobate-al.org/elections--7aca0d40-008c-471f-af5c-b8e2c0686bfe",
+      "status": "current-precinct-feed-not-found",
+      "notes": [
+        "Official Elections page lists May19 primary sample ballots and commission/BOE district maps, not Nov3 precinct returns."
+      ],
+      "eligible_precinct_feed": false
+    },
+    {
+      "county": "Covington",
+      "county_fips": "01039",
+      "official_url": "https://www.covingtonprobateoffice.com/elections-2",
+      "status": "current-precinct-feed-not-found",
+      "notes": [
+        "Official Elections page has voter registration, GIS and statewide election-information links; no current results or precinct data link."
+      ],
+      "eligible_precinct_feed": false
+    },
+    {
+      "county": "Crenshaw",
+      "county_fips": "01041",
+      "official_url": "https://crenshawcountyalonline.com/#/ProbateJudge",
+      "status": "current-precinct-feed-not-found",
+      "notes": [
+        "Official county site needs JavaScript. Ordinary browser followed the published Probate Judge navigation link. Rendered office page provides registration, records, tag and service information; no current election results or precinct feed link."
+      ],
+      "eligible_precinct_feed": false
+    },
+    {
+      "county": "Dale",
+      "county_fips": "01045",
+      "official_url": "https://www.probate.dalecountyal.gov/upcoming-elections/",
+      "status": "current-precinct-feed-not-found",
+      "notes": [
+        "Official page lists November3 general election and sample ballots. Its Precincts page lists polling places, not returns; no current result endpoint found."
+      ],
+      "eligible_precinct_feed": false
+    },
+    {
+      "county": "Elmore",
+      "county_fips": "01051",
+      "official_url": "https://www.elmoreco.org/elmore-county-elections",
+      "status": "current-precinct-feed-not-found",
+      "notes": [
+        "Official election page lists current sample ballot and precinct map/list. Direct request403; web retrieval readable. No November3 precinct results endpoint found."
+      ],
+      "eligible_precinct_feed": false
+    },
+    {
+      "county": "Geneva",
+      "county_fips": "01061",
+      "official_url": "https://genevacountyal.gov/",
+      "status": "current-precinct-feed-not-found",
+      "notes": [
+        "Official Election Info & Results link goes to the SOS election-information index, not a county precinct feed."
+      ],
+      "eligible_precinct_feed": false
+    },
+    {
+      "county": "Henry",
+      "county_fips": "01067",
+      "official_url": "https://www.henrycountyal.com/election-results",
+      "status": "historical-results-only-current-feed-not-found",
+      "notes": [
+        "Official result page promises results as received but currently links June16 runoff and August11 special election PDFs, not November3 general returns. An unrelated Henry County Tennessee page discovered in search was rejected."
+      ],
+      "eligible_precinct_feed": false
+    },
+    {
+      "county": "Houston",
+      "county_fips": "01069",
+      "official_url": "https://houstoncountyal.gov/probate/election_results/",
+      "status": "historical-precinct-only-current-feed-not-found",
+      "notes": [
+        "Official results archive latest verified report is August11,2026 special primary; its historical precinct detail is not November3 general data. No current automatic precinct endpoint verified."
+      ],
+      "eligible_precinct_feed": false
+    },
+    {
+      "county": "Lowndes",
+      "county_fips": "01085",
+      "official_url": "https://www.lowndes-al.gov/government/departments/probate_office/index.php",
+      "status": "current-precinct-feed-not-found",
+      "notes": [
+        "Official Probate Office page lists election responsibilities and voter-information resources; no current results feed. An outdated2022 CNN primary link is not accepted."
+      ],
+      "eligible_precinct_feed": false
+    },
+    {
+      "county": "Macon",
+      "county_fips": "01087",
+      "official_url": "https://maconalabama.com/services/probate_court/elections.php",
+      "status": "historical-information-only-current-feed-not-found",
+      "notes": [
+        "Official election-information page still discusses2024 dates; no current November2026 result link."
+      ],
+      "eligible_precinct_feed": false
+    },
+    {
+      "county": "Montgomery",
+      "county_fips": "01101",
+      "official_url": "https://www.montgomeryvotesal.gov/elections-information/election-results",
+      "status": "access-limited-current-precinct-feed-unverified",
+      "notes": [
+        "Official results page blocks direct retrieval403; indexed archive shows2026year but no verified current precinct endpoint. No current candidate rows can be reconciled."
+      ],
+      "eligible_precinct_feed": false
+    },
+    {
+      "county": "Pike",
+      "county_fips": "01109",
+      "official_url": "https://pikeprobate.com/elections/",
+      "status": "current-precinct-feed-not-found",
+      "notes": [
+        "Official Elections page provides poll hours, voter-ID and SOS Election Information link; no current result endpoint. Search result pikecountyelectionresults.org concerns Mississippi primary calendar, so it is not accepted as Alabama evidence."
+      ],
+      "eligible_precinct_feed": false
+    },
+    {
+      "county": "Russell",
+      "county_fips": "01113",
+      "official_url": "https://www.russellcountyprobate.us/elections/election-results",
+      "status": "historical-precinct-only-current-feed-not-found",
+      "notes": [
+        "Official result page embeds public Google Drive folders. Current folder lists June2026 runoff and August2026 special-primary PDFs; archive explicitly NOT CURRENT includes2018 precinct-by-precinct reports and2024 general results. No November3 general precinct feed."
+      ],
+      "eligible_precinct_feed": false
+    }
+  ],
+  "county_candidate_identity_complete": true,
+  "county_fips_complete": true,
+  "official_ballot_index": "https://www.sos.alabama.gov/alabama-votes/2026-general-election-sample-ballots",
+  "official_ballot_url": "https://www.sos.alabama.gov/sites/default/files/sample-ballots/2026/gen/Houston-Sample.pdf",
+  "official_plan_url": "https://www.sos.alabama.gov/sites/default/files/06-03-2026/2023%20Congressional%20Plan_Map.pdf",
+  "official_plan_publication_date": "2026-06-03",
+  "official_plan_release_url": "https://governor.alabama.gov/newsroom/2026/05/governor-ivey-celebrates-major-court-victory-in-states-redistricting-battle-calls-special-election-for-alabama-drawn-congressional-map/",
+  "research_result": "No eligible current November 3 general-election precinct feed verified among all 16 district county official pages inspected. Use civicAPI county fallback; historical precinct PDFs do not qualify.",
+  "limitations": "Not found on inspected public pages is not proof that a feed will never appear. No current precinct candidate rows or maps were available to reconcile. CivicAPI totals are setup zeros; positive election-night latency is unproven. County reporting is estimated and write-ins are not supplied.",
+  "retrieval": "Prior Firecrawl HTTP 402; ordinary public web search, direct HTTP and normal headless browser. No election IDs guessed or challenge bypass.",
+  "evidence_manifest": ".firecrawl/al02-evidence-manifest.json",
+  "official_plan_publication_date_basis": "Directory date 06-03-2026; not independently verified as a publication timestamp."
+}

@@ -1,0 +1,1123 @@
+{
+  "metadata": {
+    "url": "https://www.sos.alabama.gov/sites/default/files/sample-ballots/2026/gen/Madison-Sample.pdf",
+    "sha256": "5b45f5b61184ab739be5b39cd6e363acbb420fbedc56af94ab97d170e6580670",
+    "notes": "Official county common ballot; different offices apply to different precincts. Dashboard IDs are local navigation slugs. Provider contest IDs/titles were independently verified against Clarity election127483 and are retained separately."
+  },
+  "contests": [
+    {
+      "id": "governor",
+      "name": "Governor",
+      "provider_name": "GOVERNOR",
+      "scope": "alabama",
+      "group": "Statewide & other",
+      "candidates": [
+        {
+          "name": "Doug Jones",
+          "party": "DEM"
+        },
+        {
+          "name": "Tommy Tuberville",
+          "party": "REP"
+        },
+        {
+          "name": "Write-in",
+          "party": "WRITEIN"
+        }
+      ],
+      "ballot_source": "https://www.sos.alabama.gov/sites/default/files/sample-ballots/2026/gen/Madison-Sample.pdf",
+      "provider_id": "0302",
+      "statewide": true,
+      "statewide_feed_available": true
+    },
+    {
+      "id": "lieutenant-governor",
+      "name": "Lieutenant Governor",
+      "provider_name": "LIEUTENANT GOVERNOR",
+      "scope": "alabama",
+      "group": "Statewide & other",
+      "candidates": [
+        {
+          "name": "Phillip Ensler",
+          "party": "DEM"
+        },
+        {
+          "name": "John Wahl",
+          "party": "REP"
+        },
+        {
+          "name": "Write-in",
+          "party": "WRITEIN"
+        }
+      ],
+      "ballot_source": "https://www.sos.alabama.gov/sites/default/files/sample-ballots/2026/gen/Madison-Sample.pdf",
+      "provider_id": "0303",
+      "statewide": true,
+      "statewide_feed_available": true
+    },
+    {
+      "id": "us-senate",
+      "name": "U.S. Senate",
+      "provider_name": "UNITED STATES SENATOR",
+      "scope": "alabama",
+      "group": "Federal",
+      "candidates": [
+        {
+          "name": "Everett Wess",
+          "party": "DEM"
+        },
+        {
+          "name": "Barry Moore",
+          "party": "REP"
+        },
+        {
+          "name": "Write-in",
+          "party": "WRITEIN"
+        }
+      ],
+      "ballot_source": "https://www.sos.alabama.gov/sites/default/files/sample-ballots/2026/gen/Madison-Sample.pdf",
+      "provider_id": "0304",
+      "statewide": true,
+      "statewide_feed_available": true
+    },
+    {
+      "id": "cd5",
+      "name": "U.S. House District 5",
+      "provider_name": "UNITED STATES REPRESENTATIVE, 5TH CONGRESSIONAL DISTRI",
+      "scope": "cd5",
+      "group": "Federal",
+      "candidates": [
+        {
+          "name": "Andrew Sneed",
+          "party": "DEM"
+        },
+        {
+          "name": "Dale W. Strong",
+          "party": "REP"
+        },
+        {
+          "name": "Write-in",
+          "party": "WRITEIN"
+        }
+      ],
+      "ballot_source": "https://www.sos.alabama.gov/sites/default/files/sample-ballots/2026/gen/Madison-Sample.pdf",
+      "provider_id": "0305"
+    },
+    {
+      "id": "attorney-general",
+      "name": "Attorney General",
+      "provider_name": "ATTORNEY GENERAL",
+      "scope": "alabama",
+      "group": "Statewide & other",
+      "candidates": [
+        {
+          "name": "Jeff McLaughlin",
+          "party": "DEM"
+        },
+        {
+          "name": "Katherine Robertson",
+          "party": "REP"
+        },
+        {
+          "name": "Write-in",
+          "party": "WRITEIN"
+        }
+      ],
+      "ballot_source": "https://www.sos.alabama.gov/sites/default/files/sample-ballots/2026/gen/Madison-Sample.pdf",
+      "provider_id": "0306",
+      "statewide": true,
+      "statewide_feed_available": true
+    },
+    {
+      "id": "secretary-of-state",
+      "name": "Secretary of State",
+      "provider_name": "SECRETARY OF STATE",
+      "scope": "alabama",
+      "group": "Statewide & other",
+      "candidates": [
+        {
+          "name": "Wayne Rogers",
+          "party": "DEM"
+        },
+        {
+          "name": "Caroleene Dobson",
+          "party": "REP"
+        },
+        {
+          "name": "Write-in",
+          "party": "WRITEIN"
+        }
+      ],
+      "ballot_source": "https://www.sos.alabama.gov/sites/default/files/sample-ballots/2026/gen/Madison-Sample.pdf",
+      "provider_id": "0327",
+      "statewide": true,
+      "statewide_feed_available": true
+    },
+    {
+      "id": "treasurer",
+      "name": "State Treasurer",
+      "provider_name": "STATE TREASURER",
+      "scope": "alabama",
+      "group": "Statewide & other",
+      "candidates": [
+        {
+          "name": "Rosilyn Houston",
+          "party": "DEM"
+        },
+        {
+          "name": "Young Boozer",
+          "party": "REP"
+        },
+        {
+          "name": "Write-in",
+          "party": "WRITEIN"
+        }
+      ],
+      "ballot_source": "https://www.sos.alabama.gov/sites/default/files/sample-ballots/2026/gen/Madison-Sample.pdf",
+      "provider_id": "0328",
+      "statewide": true,
+      "statewide_feed_available": true
+    },
+    {
+      "id": "auditor",
+      "name": "State Auditor",
+      "provider_name": "STATE AUDITOR",
+      "scope": "alabama",
+      "group": "Statewide & other",
+      "candidates": [
+        {
+          "name": "Violet Edwards",
+          "party": "DEM"
+        },
+        {
+          "name": "Andrew Sorrell",
+          "party": "REP"
+        },
+        {
+          "name": "Write-in",
+          "party": "WRITEIN"
+        }
+      ],
+      "ballot_source": "https://www.sos.alabama.gov/sites/default/files/sample-ballots/2026/gen/Madison-Sample.pdf",
+      "provider_id": "0329",
+      "statewide": true,
+      "statewide_feed_available": true
+    },
+    {
+      "id": "agriculture",
+      "name": "Commissioner of Agriculture and Industries",
+      "provider_name": "COMMISSIONER OF AGRICULTURE AND INDUSTRIES",
+      "scope": "alabama",
+      "group": "Statewide & other",
+      "candidates": [
+        {
+          "name": "Ron Sparks",
+          "party": "DEM"
+        },
+        {
+          "name": "Corey Hill",
+          "party": "REP"
+        },
+        {
+          "name": "Write-in",
+          "party": "WRITEIN"
+        }
+      ],
+      "ballot_source": "https://www.sos.alabama.gov/sites/default/files/sample-ballots/2026/gen/Madison-Sample.pdf",
+      "provider_id": "0330",
+      "statewide": true,
+      "statewide_feed_available": true
+    },
+    {
+      "id": "psc-1",
+      "name": "Public Service Commission Place 1",
+      "provider_name": "PUBLIC SERVICE COMMISSION, PLACE NO. 1",
+      "scope": "alabama",
+      "group": "Statewide & other",
+      "candidates": [
+        {
+          "name": "James O. Gordon",
+          "party": "DEM"
+        },
+        {
+          "name": "Matt Gentry",
+          "party": "REP"
+        },
+        {
+          "name": "Write-in",
+          "party": "WRITEIN"
+        }
+      ],
+      "ballot_source": "https://www.sos.alabama.gov/sites/default/files/sample-ballots/2026/gen/Madison-Sample.pdf",
+      "provider_id": "0331",
+      "statewide": true,
+      "statewide_feed_available": false
+    },
+    {
+      "id": "psc-2",
+      "name": "Public Service Commission Place 2",
+      "provider_name": "PUBLIC SERVICE COMMISSION, PLACE NO. 2",
+      "scope": "alabama",
+      "group": "Statewide & other",
+      "candidates": [
+        {
+          "name": "Sheila D. McNeil",
+          "party": "DEM"
+        },
+        {
+          "name": "Jim Zig Zeigler",
+          "party": "REP"
+        },
+        {
+          "name": "Write-in",
+          "party": "WRITEIN"
+        }
+      ],
+      "ballot_source": "https://www.sos.alabama.gov/sites/default/files/sample-ballots/2026/gen/Madison-Sample.pdf",
+      "provider_id": "0332",
+      "statewide": true,
+      "statewide_feed_available": false
+    },
+    {
+      "id": "sd2",
+      "name": "State Senate District 2",
+      "provider_name": "STATE SENATOR, DISTRICT NO. 2",
+      "scope": "sd2",
+      "group": "Legislature",
+      "candidates": [
+        {
+          "name": "Rudolph Valentino Drake",
+          "party": "DEM"
+        },
+        {
+          "name": "John Roberts",
+          "party": "REP"
+        },
+        {
+          "name": "Write-in",
+          "party": "WRITEIN"
+        }
+      ],
+      "ballot_source": "https://www.sos.alabama.gov/sites/default/files/sample-ballots/2026/gen/Madison-Sample.pdf",
+      "provider_id": "0307"
+    },
+    {
+      "id": "state-senate-3",
+      "name": "State Senate District 3",
+      "provider_name": "STATE SENATOR, DISTRICT NO. 3",
+      "scope": "madison",
+      "group": "Legislature",
+      "candidates": [
+        {
+          "name": "John Dickey",
+          "party": "DEM"
+        },
+        {
+          "name": "Arthur Orr",
+          "party": "REP"
+        },
+        {
+          "name": "Write-in",
+          "party": "WRITEIN"
+        }
+      ],
+      "ballot_source": "https://www.sos.alabama.gov/sites/default/files/sample-ballots/2026/gen/Madison-Sample.pdf",
+      "provider_id": "0308"
+    },
+    {
+      "id": "sd7",
+      "name": "State Senate District 7",
+      "provider_name": "STATE SENATOR, DISTRICT NO. 7",
+      "scope": "sd7",
+      "group": "Legislature",
+      "candidates": [
+        {
+          "name": "Jared Sluss",
+          "party": "DEM"
+        },
+        {
+          "name": "Sam Givhan",
+          "party": "REP"
+        },
+        {
+          "name": "Write-in",
+          "party": "WRITEIN"
+        }
+      ],
+      "ballot_source": "https://www.sos.alabama.gov/sites/default/files/sample-ballots/2026/gen/Madison-Sample.pdf",
+      "provider_id": "0309"
+    },
+    {
+      "id": "state-senate-8",
+      "name": "State Senate District 8",
+      "provider_name": "STATE SENATOR, DISTRICT NO. 8",
+      "scope": "madison",
+      "group": "Legislature",
+      "candidates": [
+        {
+          "name": "Katie Kramer",
+          "party": "DEM"
+        },
+        {
+          "name": "Steve Livingston",
+          "party": "REP"
+        },
+        {
+          "name": "Write-in",
+          "party": "WRITEIN"
+        }
+      ],
+      "ballot_source": "https://www.sos.alabama.gov/sites/default/files/sample-ballots/2026/gen/Madison-Sample.pdf",
+      "provider_id": "0310"
+    },
+    {
+      "id": "state-senate-9",
+      "name": "State Senate District 9",
+      "provider_name": "STATE SENATOR, DISTRICT NO. 9",
+      "scope": "madison",
+      "group": "Legislature",
+      "candidates": [
+        {
+          "name": "Wes Kitchens",
+          "party": "REP"
+        },
+        {
+          "name": "Write-in",
+          "party": "WRITEIN"
+        }
+      ],
+      "ballot_source": "https://www.sos.alabama.gov/sites/default/files/sample-ballots/2026/gen/Madison-Sample.pdf",
+      "provider_id": "0311"
+    },
+    {
+      "id": "state-house-4",
+      "name": "State House District 4",
+      "provider_name": "STATE REPRESENTATIVE, DISTRICT NO. 4",
+      "scope": "madison",
+      "group": "Legislature",
+      "candidates": [
+        {
+          "name": "Hanu Karlapalem",
+          "party": "DEM"
+        },
+        {
+          "name": "Parker Duncan Moore",
+          "party": "REP"
+        },
+        {
+          "name": "Write-in",
+          "party": "WRITEIN"
+        }
+      ],
+      "ballot_source": "https://www.sos.alabama.gov/sites/default/files/sample-ballots/2026/gen/Madison-Sample.pdf",
+      "provider_id": "0312"
+    },
+    {
+      "id": "state-house-6",
+      "name": "State House District 6",
+      "provider_name": "STATE REPRESENTATIVE, DISTRICT NO. 6",
+      "scope": "madison",
+      "group": "Legislature",
+      "candidates": [
+        {
+          "name": "Andy Whitt",
+          "party": "REP"
+        },
+        {
+          "name": "Write-in",
+          "party": "WRITEIN"
+        }
+      ],
+      "ballot_source": "https://www.sos.alabama.gov/sites/default/files/sample-ballots/2026/gen/Madison-Sample.pdf",
+      "provider_id": "0313"
+    },
+    {
+      "id": "hd10",
+      "name": "State House District 10",
+      "provider_name": "STATE REPRESENTATIVE, DISTRICT NO. 10",
+      "scope": "hd10",
+      "group": "Legislature",
+      "candidates": [
+        {
+          "name": "Marilyn Lands",
+          "party": "DEM"
+        },
+        {
+          "name": "Aaron Thomas",
+          "party": "REP"
+        },
+        {
+          "name": "Write-in",
+          "party": "WRITEIN"
+        }
+      ],
+      "ballot_source": "https://www.sos.alabama.gov/sites/default/files/sample-ballots/2026/gen/Madison-Sample.pdf",
+      "provider_id": "0314"
+    },
+    {
+      "id": "state-house-19",
+      "name": "State House District 19",
+      "provider_name": "STATE REPRESENTATIVE, DISTRICT NO. 19",
+      "scope": "madison",
+      "group": "Legislature",
+      "candidates": [
+        {
+          "name": "Laura Hall",
+          "party": "DEM"
+        },
+        {
+          "name": "Donald Barnes",
+          "party": "REP"
+        },
+        {
+          "name": "Write-in",
+          "party": "WRITEIN"
+        }
+      ],
+      "ballot_source": "https://www.sos.alabama.gov/sites/default/files/sample-ballots/2026/gen/Madison-Sample.pdf",
+      "provider_id": "0315"
+    },
+    {
+      "id": "hd20",
+      "name": "State House District 20",
+      "provider_name": "STATE REPRESENTATIVE, DISTRICT NO. 20",
+      "scope": "hd20",
+      "group": "Legislature",
+      "candidates": [
+        {
+          "name": "James Linderholm",
+          "party": "DEM"
+        },
+        {
+          "name": "James Lomax",
+          "party": "REP"
+        },
+        {
+          "name": "Write-in",
+          "party": "WRITEIN"
+        }
+      ],
+      "ballot_source": "https://www.sos.alabama.gov/sites/default/files/sample-ballots/2026/gen/Madison-Sample.pdf",
+      "provider_id": "0316"
+    },
+    {
+      "id": "hd21",
+      "name": "State House District 21",
+      "provider_name": "STATE REPRESENTATIVE, DISTRICT NO. 21",
+      "scope": "hd21",
+      "group": "Legislature",
+      "candidates": [
+        {
+          "name": "Forrest Satterfield",
+          "party": "DEM"
+        },
+        {
+          "name": "Rex Reynolds",
+          "party": "REP"
+        },
+        {
+          "name": "Write-in",
+          "party": "WRITEIN"
+        }
+      ],
+      "ballot_source": "https://www.sos.alabama.gov/sites/default/files/sample-ballots/2026/gen/Madison-Sample.pdf",
+      "provider_id": "0317"
+    },
+    {
+      "id": "state-house-22",
+      "name": "State House District 22",
+      "provider_name": "STATE REPRESENTATIVE, DISTRICT NO. 22",
+      "scope": "madison",
+      "group": "Legislature",
+      "candidates": [
+        {
+          "name": "Ritchie Whorton",
+          "party": "REP"
+        },
+        {
+          "name": "Write-in",
+          "party": "WRITEIN"
+        }
+      ],
+      "ballot_source": "https://www.sos.alabama.gov/sites/default/files/sample-ballots/2026/gen/Madison-Sample.pdf",
+      "provider_id": "0318"
+    },
+    {
+      "id": "hd25",
+      "name": "State House District 25",
+      "provider_name": "STATE REPRESENTATIVE, DISTRICT NO. 25",
+      "scope": "hd25",
+      "group": "Legislature",
+      "candidates": [
+        {
+          "name": "Allison T Montgomery",
+          "party": "DEM"
+        },
+        {
+          "name": "Phillip K. Rigsby",
+          "party": "REP"
+        },
+        {
+          "name": "Write-in",
+          "party": "WRITEIN"
+        }
+      ],
+      "ballot_source": "https://www.sos.alabama.gov/sites/default/files/sample-ballots/2026/gen/Madison-Sample.pdf",
+      "provider_id": "0319"
+    },
+    {
+      "id": "state-house-53",
+      "name": "State House District 53",
+      "provider_name": "STATE REPRESENTATIVE, DISTRICT NO. 53",
+      "scope": "madison",
+      "group": "Legislature",
+      "candidates": [
+        {
+          "name": "Anthony Daniels",
+          "party": "DEM"
+        },
+        {
+          "name": "Write-in",
+          "party": "WRITEIN"
+        }
+      ],
+      "ballot_source": "https://www.sos.alabama.gov/sites/default/files/sample-ballots/2026/gen/Madison-Sample.pdf",
+      "provider_id": "0320"
+    },
+    {
+      "id": "supreme-court-7",
+      "name": "Associate Justice Supreme Court Place 7",
+      "provider_name": "ASSOCIATE JUSTICE OF THE SUPREME COURT, PLACE 7",
+      "scope": "alabama",
+      "group": "Statewide & other",
+      "candidates": [
+        {
+          "name": "Brad Mendheim",
+          "party": "REP"
+        },
+        {
+          "name": "Write-in",
+          "party": "WRITEIN"
+        }
+      ],
+      "ballot_source": "https://www.sos.alabama.gov/sites/default/files/sample-ballots/2026/gen/Madison-Sample.pdf",
+      "provider_id": "0321",
+      "statewide": true,
+      "statewide_feed_available": false
+    },
+    {
+      "id": "supreme-court-8",
+      "name": "Associate Justice Supreme Court Place 8",
+      "provider_name": "ASSOCIATE JUSTICE OF THE SUPREME COURT, PLACE 8",
+      "scope": "alabama",
+      "group": "Statewide & other",
+      "candidates": [
+        {
+          "name": "Ashleigh Meyer Dunham",
+          "party": "DEM"
+        },
+        {
+          "name": "Greg Shaw",
+          "party": "REP"
+        },
+        {
+          "name": "Write-in",
+          "party": "WRITEIN"
+        }
+      ],
+      "ballot_source": "https://www.sos.alabama.gov/sites/default/files/sample-ballots/2026/gen/Madison-Sample.pdf",
+      "provider_id": "0322",
+      "statewide": true,
+      "statewide_feed_available": false
+    },
+    {
+      "id": "civil-appeals-4",
+      "name": "Court of Civil Appeals Place 4",
+      "provider_name": "COURT OF CIVIL APPEALS JUDGE, PLACE 4",
+      "scope": "alabama",
+      "group": "Statewide & other",
+      "candidates": [
+        {
+          "name": "Benjamin M. Bowden",
+          "party": "REP"
+        },
+        {
+          "name": "Write-in",
+          "party": "WRITEIN"
+        }
+      ],
+      "ballot_source": "https://www.sos.alabama.gov/sites/default/files/sample-ballots/2026/gen/Madison-Sample.pdf",
+      "provider_id": "0323",
+      "statewide": true,
+      "statewide_feed_available": false
+    },
+    {
+      "id": "civil-appeals-5",
+      "name": "Court of Civil Appeals Place 5",
+      "provider_name": "COURT OF CIVIL APPEALS JUDGE, PLACE 5",
+      "scope": "alabama",
+      "group": "Statewide & other",
+      "candidates": [
+        {
+          "name": "Matt Fridy",
+          "party": "REP"
+        },
+        {
+          "name": "Write-in",
+          "party": "WRITEIN"
+        }
+      ],
+      "ballot_source": "https://www.sos.alabama.gov/sites/default/files/sample-ballots/2026/gen/Madison-Sample.pdf",
+      "provider_id": "0324",
+      "statewide": true,
+      "statewide_feed_available": false
+    },
+    {
+      "id": "criminal-appeals-4",
+      "name": "Court of Criminal Appeals Place 4",
+      "provider_name": "COURT OF CRIMINAL APPEALS JUDGE, PLACE 4",
+      "scope": "alabama",
+      "group": "Statewide & other",
+      "candidates": [
+        {
+          "name": "Mary Windom",
+          "party": "REP"
+        },
+        {
+          "name": "Write-in",
+          "party": "WRITEIN"
+        }
+      ],
+      "ballot_source": "https://www.sos.alabama.gov/sites/default/files/sample-ballots/2026/gen/Madison-Sample.pdf",
+      "provider_id": "0325",
+      "statewide": true,
+      "statewide_feed_available": false
+    },
+    {
+      "id": "criminal-appeals-5",
+      "name": "Court of Criminal Appeals Place 5",
+      "provider_name": "COURT OF CRIMINAL APPEALS JUDGE, PLACE 5",
+      "scope": "alabama",
+      "group": "Statewide & other",
+      "candidates": [
+        {
+          "name": "Riggs Walker",
+          "party": "REP"
+        },
+        {
+          "name": "Write-in",
+          "party": "WRITEIN"
+        }
+      ],
+      "ballot_source": "https://www.sos.alabama.gov/sites/default/files/sample-ballots/2026/gen/Madison-Sample.pdf",
+      "provider_id": "0326",
+      "statewide": true,
+      "statewide_feed_available": false
+    },
+    {
+      "id": "state-boe-8",
+      "name": "State Board of Education District 8",
+      "provider_name": "MEMBER, STATE BOARD OF EDUCATION, DISTRICT NO. 8",
+      "scope": "madison",
+      "group": "Statewide & other",
+      "candidates": [
+        {
+          "name": "Shatika Armstrong",
+          "party": "DEM"
+        },
+        {
+          "name": "Emily Jones",
+          "party": "REP"
+        },
+        {
+          "name": "Write-in",
+          "party": "WRITEIN"
+        }
+      ],
+      "ballot_source": "https://www.sos.alabama.gov/sites/default/files/sample-ballots/2026/gen/Madison-Sample.pdf",
+      "provider_id": "0333"
+    },
+    {
+      "id": "circuit-court-23-2",
+      "name": "Circuit Court 23rd Judicial Circuit Place 2",
+      "provider_name": "CIRCUIT COURT JUDGE, 23RD JUDICIAL CIRCUIT, PLACE NO",
+      "scope": "madison",
+      "group": "Local",
+      "candidates": [
+        {
+          "name": "Alison Strickland Austin",
+          "party": "REP"
+        },
+        {
+          "name": "Write-in",
+          "party": "WRITEIN"
+        }
+      ],
+      "ballot_source": "https://www.sos.alabama.gov/sites/default/files/sample-ballots/2026/gen/Madison-Sample.pdf",
+      "provider_id": "0334"
+    },
+    {
+      "id": "circuit-court-23-4",
+      "name": "Circuit Court 23rd Judicial Circuit Place 4",
+      "provider_name": "CIRCUIT COURT JUDGE, 23RD JUDICIAL CIRCUIT, PLACE NO",
+      "scope": "madison",
+      "group": "Local",
+      "candidates": [
+        {
+          "name": "Claude E. Hundley III",
+          "party": "REP"
+        },
+        {
+          "name": "Write-in",
+          "party": "WRITEIN"
+        }
+      ],
+      "ballot_source": "https://www.sos.alabama.gov/sites/default/files/sample-ballots/2026/gen/Madison-Sample.pdf",
+      "provider_id": "0335"
+    },
+    {
+      "id": "district-court-1",
+      "name": "Madison District Court Place 1",
+      "provider_name": "DISTRICT COURT JUDGE, MADISON COUNTY, PLACE NO. 1",
+      "scope": "madison",
+      "group": "Local",
+      "candidates": [
+        {
+          "name": "Kimberly Kelley Rucker",
+          "party": "DEM"
+        },
+        {
+          "name": "Tim Douthit",
+          "party": "REP"
+        },
+        {
+          "name": "Write-in",
+          "party": "WRITEIN"
+        }
+      ],
+      "ballot_source": "https://www.sos.alabama.gov/sites/default/files/sample-ballots/2026/gen/Madison-Sample.pdf",
+      "provider_id": "0336"
+    },
+    {
+      "id": "district-court-4",
+      "name": "Madison District Court Place 4",
+      "provider_name": "DISTRICT COURT JUDGE, MADISON COUNTY, PLACE NO. 4",
+      "scope": "madison",
+      "group": "Local",
+      "candidates": [
+        {
+          "name": "Jason M. Jones",
+          "party": "DEM"
+        },
+        {
+          "name": "John R. Allen",
+          "party": "REP"
+        },
+        {
+          "name": "Write-in",
+          "party": "WRITEIN"
+        }
+      ],
+      "ballot_source": "https://www.sos.alabama.gov/sites/default/files/sample-ballots/2026/gen/Madison-Sample.pdf",
+      "provider_id": "0337"
+    },
+    {
+      "id": "district-court-5",
+      "name": "Madison District Court Place 5",
+      "provider_name": "DISTRICT COURT JUDGE, MADISON COUNTY, PLACE NO. 5",
+      "scope": "madison",
+      "group": "Local",
+      "candidates": [
+        {
+          "name": "Raven Beach",
+          "party": "DEM"
+        },
+        {
+          "name": "Jeanne Dowdle Rizzardi",
+          "party": "REP"
+        },
+        {
+          "name": "Write-in",
+          "party": "WRITEIN"
+        }
+      ],
+      "ballot_source": "https://www.sos.alabama.gov/sites/default/files/sample-ballots/2026/gen/Madison-Sample.pdf",
+      "provider_id": "0338"
+    },
+    {
+      "id": "sheriff",
+      "name": "Madison County Sheriff",
+      "provider_name": "MADISON COUNTY SHERIFF",
+      "scope": "madison",
+      "group": "Local",
+      "candidates": [
+        {
+          "name": "Brett Jones",
+          "party": "DEM"
+        },
+        {
+          "name": "Kevin H. Turner",
+          "party": "REP"
+        },
+        {
+          "name": "Write-in",
+          "party": "WRITEIN"
+        }
+      ],
+      "ballot_source": "https://www.sos.alabama.gov/sites/default/files/sample-ballots/2026/gen/Madison-Sample.pdf",
+      "provider_id": "0339"
+    },
+    {
+      "id": "tax-assessor",
+      "name": "Madison County Tax Assessor",
+      "provider_name": "MADISON COUNTY TAX ASSESSOR",
+      "scope": "madison",
+      "group": "Local",
+      "candidates": [
+        {
+          "name": "Cliff Mann",
+          "party": "REP"
+        },
+        {
+          "name": "Write-in",
+          "party": "WRITEIN"
+        }
+      ],
+      "ballot_source": "https://www.sos.alabama.gov/sites/default/files/sample-ballots/2026/gen/Madison-Sample.pdf",
+      "provider_id": "0340"
+    },
+    {
+      "id": "tax-collector",
+      "name": "Madison County Tax Collector",
+      "provider_name": "MADISON COUNTY TAX COLLECTOR",
+      "scope": "madison",
+      "group": "Local",
+      "candidates": [
+        {
+          "name": "Jeff Taylor",
+          "party": "DEM"
+        },
+        {
+          "name": "Valerie D. Miles",
+          "party": "REP"
+        },
+        {
+          "name": "Write-in",
+          "party": "WRITEIN"
+        }
+      ],
+      "ballot_source": "https://www.sos.alabama.gov/sites/default/files/sample-ballots/2026/gen/Madison-Sample.pdf",
+      "provider_id": "0341"
+    },
+    {
+      "id": "coroner",
+      "name": "Madison County Coroner",
+      "provider_name": "MADISON COUNTY CORONER",
+      "scope": "madison",
+      "group": "Local",
+      "candidates": [
+        {
+          "name": "Tyler Berryhill",
+          "party": "REP"
+        },
+        {
+          "name": "Write-in",
+          "party": "WRITEIN"
+        }
+      ],
+      "ballot_source": "https://www.sos.alabama.gov/sites/default/files/sample-ballots/2026/gen/Madison-Sample.pdf",
+      "provider_id": "0342"
+    },
+    {
+      "id": "license-director",
+      "name": "Madison County License Director",
+      "provider_name": "MADISON COUNTY LICENSE DIRECTOR",
+      "scope": "madison",
+      "group": "Local",
+      "candidates": [
+        {
+          "name": "Mark Craig",
+          "party": "REP"
+        },
+        {
+          "name": "Write-in",
+          "party": "WRITEIN"
+        }
+      ],
+      "ballot_source": "https://www.sos.alabama.gov/sites/default/files/sample-ballots/2026/gen/Madison-Sample.pdf",
+      "provider_id": "0343"
+    },
+    {
+      "id": "school-superintendent",
+      "name": "Madison County Superintendent of Education",
+      "provider_name": "SUPERINTENDENT, MADISON COUNTY BOARD OF EDUCATION",
+      "scope": "madison",
+      "group": "Local",
+      "candidates": [
+        {
+          "name": "E. Quinn Headen",
+          "party": "DEM"
+        },
+        {
+          "name": "Keith Trawick",
+          "party": "REP"
+        },
+        {
+          "name": "Write-in",
+          "party": "WRITEIN"
+        }
+      ],
+      "ballot_source": "https://www.sos.alabama.gov/sites/default/files/sample-ballots/2026/gen/Madison-Sample.pdf",
+      "provider_id": "0344"
+    },
+    {
+      "id": "county-boe-3",
+      "name": "Madison County Board of Education District 3",
+      "provider_name": "MEMBER, MADISON COUNTY BOARD OF EDUCATION,",
+      "scope": "madison",
+      "group": "Local",
+      "candidates": [
+        {
+          "name": "Austin Jones",
+          "party": "DEM"
+        },
+        {
+          "name": "Brian Brooks",
+          "party": "REP"
+        },
+        {
+          "name": "Write-in",
+          "party": "WRITEIN"
+        }
+      ],
+      "ballot_source": "https://www.sos.alabama.gov/sites/default/files/sample-ballots/2026/gen/Madison-Sample.pdf",
+      "provider_id": "0345"
+    },
+    {
+      "id": "amendment-1",
+      "name": "Statewide Amendment 1",
+      "provider_name": "STATEWIDE AMENDMENT 1",
+      "scope": "alabama",
+      "group": "Ballot measures",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "YES"
+        },
+        {
+          "name": "No",
+          "party": "NO"
+        }
+      ],
+      "ballot_source": "https://www.sos.alabama.gov/sites/default/files/sample-ballots/2026/gen/Madison-Sample.pdf",
+      "provider_id": "0346",
+      "statewide": true,
+      "statewide_feed_available": true
+    },
+    {
+      "id": "amendment-2",
+      "name": "Statewide Amendment 2",
+      "provider_name": "STATEWIDE AMENDMENT 2",
+      "scope": "alabama",
+      "group": "Ballot measures",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "YES"
+        },
+        {
+          "name": "No",
+          "party": "NO"
+        }
+      ],
+      "ballot_source": "https://www.sos.alabama.gov/sites/default/files/sample-ballots/2026/gen/Madison-Sample.pdf",
+      "provider_id": "0347",
+      "statewide": true,
+      "statewide_feed_available": true
+    },
+    {
+      "id": "amendment-3",
+      "name": "Statewide Amendment 3",
+      "provider_name": "STATEWIDE AMENDMENT 3",
+      "scope": "alabama",
+      "group": "Ballot measures",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "YES"
+        },
+        {
+          "name": "No",
+          "party": "NO"
+        }
+      ],
+      "ballot_source": "https://www.sos.alabama.gov/sites/default/files/sample-ballots/2026/gen/Madison-Sample.pdf",
+      "provider_id": "0348",
+      "statewide": true,
+      "statewide_feed_available": true
+    },
+    {
+      "id": "amendment-4",
+      "name": "Statewide Amendment 4",
+      "provider_name": "STATEWIDE AMENDMENT 4",
+      "scope": "alabama",
+      "group": "Ballot measures",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "YES"
+        },
+        {
+          "name": "No",
+          "party": "NO"
+        }
+      ],
+      "ballot_source": "https://www.sos.alabama.gov/sites/default/files/sample-ballots/2026/gen/Madison-Sample.pdf",
+      "provider_id": "0349",
+      "statewide": true,
+      "statewide_feed_available": true
+    },
+    {
+      "id": "madison-local-amendment",
+      "name": "Madison County Local Amendment \u2014 Private sewer systems",
+      "provider_name": "LOCAL AMENDMENT",
+      "scope": "madison",
+      "group": "Ballot measures",
+      "candidates": [
+        {
+          "name": "Yes",
+          "party": "YES"
+        },
+        {
+          "name": "No",
+          "party": "NO"
+        }
+      ],
+      "ballot_source": "https://www.sos.alabama.gov/sites/default/files/sample-ballots/2026/gen/Madison-Sample.pdf",
+      "provider_id": "0350"
+    },
+    {
+      "id": "cd2",
+      "name": "U.S. House District 2",
+      "provider_name": "UNITED STATES REPRESENTATIVE, 2ND CONGRESSIONAL DISTRICT",
+      "group": "Federal",
+      "scope": "cd2",
+      "candidates": [
+        {
+          "name": "Shomari C. Figures",
+          "party": "DEM"
+        },
+        {
+          "name": "Rhett Marques",
+          "party": "REP"
+        },
+        {
+          "name": "Write-in",
+          "party": "WRITEIN"
+        }
+      ],
+      "expected_county_count": 16,
+      "ballot_source": "https://www.sos.alabama.gov/sites/default/files/sample-ballots/2026/gen/Houston-Sample.pdf"
+    }
+  ]
+}

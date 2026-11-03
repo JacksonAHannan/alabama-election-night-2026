@@ -1,0 +1,164 @@
+{
+  "publisher": "Alabama Political Reporter",
+  "provider_claim": "Alabama Secretary of State via civicAPI, as displayed on publisher page",
+  "landing_url": "https://www.alreporter.com/election-results",
+  "public_endpoint": "https://www.alreporter.com/api/election-results?race={race_id}",
+  "election_date": "2026-11-03",
+  "races": [
+    {
+      "id": "176509",
+      "name": "Alabama State House 10",
+      "url": "https://www.alreporter.com/api/election-results?race=176509",
+      "date": "2026-11-03",
+      "historical": false,
+      "status": "ready",
+      "office": "State House",
+      "district": "AL-HD-010",
+      "checked_at": "2026-11-03T20:55:21.030Z",
+      "updated_at": "2026-10-30T18:52:48.454Z",
+      "counties": [
+        {
+          "name": "Madison",
+          "fips": "01089"
+        }
+      ],
+      "candidate_names": [
+        "Marilyn Lands",
+        "Aaron Thomas"
+      ]
+    },
+    {
+      "id": "176519",
+      "name": "Alabama State House 20",
+      "url": "https://www.alreporter.com/api/election-results?race=176519",
+      "date": "2026-11-03",
+      "historical": false,
+      "status": "ready",
+      "office": "State House",
+      "district": "AL-HD-020",
+      "checked_at": "2026-11-03T20:55:21.808Z",
+      "updated_at": "2026-10-30T18:52:48.944Z",
+      "counties": [
+        {
+          "name": "Madison",
+          "fips": "01089"
+        }
+      ],
+      "candidate_names": [
+        "James Linderholm",
+        "James Lomax"
+      ]
+    },
+    {
+      "id": "176520",
+      "name": "Alabama State House 21",
+      "url": "https://www.alreporter.com/api/election-results?race=176520",
+      "date": "2026-11-03",
+      "historical": false,
+      "status": "ready",
+      "office": "State House",
+      "district": "AL-HD-021",
+      "checked_at": "2026-11-03T20:55:29.305Z",
+      "updated_at": "2026-10-30T18:52:48.991Z",
+      "counties": [
+        {
+          "name": "Madison",
+          "fips": "01089"
+        }
+      ],
+      "candidate_names": [
+        "Forrest Satterfield",
+        "Rex Reynolds"
+      ]
+    },
+    {
+      "id": "176524",
+      "name": "Alabama State House 25",
+      "url": "https://www.alreporter.com/api/election-results?race=176524",
+      "date": "2026-11-03",
+      "historical": false,
+      "status": "ready",
+      "office": "State House",
+      "district": "AL-HD-025",
+      "checked_at": "2026-11-03T20:55:37.314Z",
+      "updated_at": "2026-10-30T18:52:49.178Z",
+      "counties": [
+        {
+          "name": "Limestone",
+          "fips": "01083"
+        },
+        {
+          "name": "Madison",
+          "fips": "01089"
+        }
+      ],
+      "candidate_names": [
+        "Allison T Montgomery",
+        "Phillip K. Rigsby"
+      ]
+    },
+    {
+      "id": "176606",
+      "name": "Alabama State Senate 2",
+      "url": "https://www.alreporter.com/api/election-results?race=176606",
+      "date": "2026-11-03",
+      "historical": false,
+      "status": "ready",
+      "office": "State Senate",
+      "district": "AL-SD-002",
+      "checked_at": "2026-11-03T20:57:19.160Z",
+      "updated_at": "2026-10-30T18:52:55.830Z",
+      "counties": [
+        {
+          "name": "Limestone",
+          "fips": "01083"
+        },
+        {
+          "name": "Madison",
+          "fips": "01089"
+        }
+      ],
+      "candidate_names": [
+        "Rudolph Valentino Drake",
+        "John Roberts"
+      ]
+    },
+    {
+      "id": "176611",
+      "name": "Alabama State Senate 7",
+      "url": "https://www.alreporter.com/api/election-results?race=176611",
+      "date": "2026-11-03",
+      "historical": false,
+      "status": "ready",
+      "office": "State Senate",
+      "district": "AL-SD-007",
+      "checked_at": "2026-11-03T20:54:46.829Z",
+      "updated_at": "2026-10-30T18:52:56.171Z",
+      "counties": [
+        {
+          "name": "Madison",
+          "fips": "01089"
+        }
+      ],
+      "candidate_names": [
+        "Jared Sluss",
+        "Sam Givhan"
+      ]
+    }
+  ],
+  "guards": [
+    "date equals2026-11-03",
+    "historical isfalse",
+    "status equalsready",
+    "refreshFailed isfalse",
+    "exactrace id, office, district, name",
+    "summary isfalse",
+    "countyfips andcandidateidentitymatchexpectedballot"
+  ],
+  "limitations": [
+    "All observed votes and reporting valueswere0setupvalues.",
+    "County granularity, notprecinct.",
+    "CheckedAt describesfetchcheck; updatedAt is raceupdate andmustnotbeimpliedasa recentvotereport.",
+    "APR attributesdata via civicAPI; directcountyprovenancenot independentlyverified."
+  ]
+}
