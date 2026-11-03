@@ -572,22 +572,14 @@ async fn collect_one(client: &reqwest::Client, root: &PathBuf, source: &Source) 
         s.election_id = Some(id);
         let attempt: Result<Batch> = async {
             let version = String::from_utf8(
-                raw(
-                    client,
-                    root,
-                    &s,
-                    &format!(
-                        "{endpoint}/current_ver.txt?t={}",
-                        Utc::now().timestamp() / 120
-                    ),
-                )
-                .await?,
+                raw(client, root, &s, &format!("{endpoint}/current_ver.txt")).await?,
             )?
             .trim()
             .to_owned();
             ensure!(
                 version.chars().all(|c| c.is_ascii_digit()) && !version.is_empty(),
-                "Invalid version endpoint"
+                "Invalid version endpoint response: {:?}",
+                version.chars().take(96).collect::<String>()
             );
             let base = format!("{endpoint}/{version}/json");
             let settings: Value = serde_json::from_slice(
