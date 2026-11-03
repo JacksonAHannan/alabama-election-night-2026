@@ -58,10 +58,18 @@ jobs:
           rustup default stable
           cargo test --locked
           cargo build --release --locked
-          target/release/alabama-election-night collect-once
+          # The public data branch contains only source files uploaded by the local relay.
+          # A missing branch never prevents independent cloud county collection.
+          if git fetch --depth=1 origin observations && git show FETCH_HEAD:madison.json > runtime/madison-relay.json; then
+            echo 'Downloaded local Madison source relay'
+          else
+            rm -f runtime/madison-relay.json
+          fi
+          target/release/alabama-election-night collect-once --relay runtime/madison-relay.json
           target/release/alabama-election-night export-site --output site
           node --check site/app.js
           node --test tests/benchmarks.cjs
+          python3 tests/relay_publisher.py
       - name: Preserve accepted observations for the next collection
         if: always() && steps.window.outputs.publish == 'true'
         uses: actions/cache/save@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
