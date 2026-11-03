@@ -101,7 +101,10 @@ fn validate(snapshot: &Snapshot, source: &Source) -> Result<Batch> {
     let settings =
         read("settings", "en/electionsettings.json")?.context("Missing relay settings")?;
     let summary = read("summary", "en/summary.json")?.context("Missing relay summary")?;
-    let detail = read("details", "details.json")?;
+    // Validate transport identity before allowing the same optional-file degradation
+    // used by direct collection (e.g. a publisher's empty/unavailable detail file).
+    let detail_doc = document(snapshot, "details", &format!("{base}/details.json"))?;
+    let detail = detail_doc.and_then(|doc| serde_json::from_str::<Value>(&doc.body).ok());
     let mut batch = parse(
         source,
         &snapshot.version,
@@ -116,11 +119,13 @@ fn validate(snapshot: &Snapshot, source: &Source) -> Result<Batch> {
         }
     }
     // Missing/invalid completion metadata never implies completion, just as in direct collection.
-    let status = read("status", "status.json")?;
+    let status = document(snapshot, "status", &format!("{base}/status.json"))?;
     let completion = status
-        .as_ref()
         .context("No relayed precinct status")
-        .and_then(|s| alabama_election_night::apply_precinct_status(&mut batch, s));
+        .and_then(|doc| {
+            serde_json::from_str::<Value>(&doc.body).context("Invalid relayed precinct status JSON")
+        })
+        .and_then(|s| alabama_election_night::apply_precinct_status(&mut batch, &s));
     if let Err(error) = completion {
         for unit in batch.contests.iter_mut().flat_map(|c| &mut c.units) {
             unit.reporting_complete = None;
@@ -489,5 +494,40 @@ mod tests {
             .unwrap();
         assert!(export(&root, &sources, &root.join("runtime/missing.json")).is_err());
         fs::remove_dir_all(root).unwrap();
+    }
+
+    #[test]
+    fn unavailable_optional_source_files_keep_valid_votes_without_claiming_completion() {
+        let (sources, mut snapshot) = fixture();
+        let s = source(&sources).unwrap();
+        let status = snapshot.documents.get_mut("status").unwrap();
+        status.body.clear();
+        status.sha256 = format!("{:x}", Sha256::digest(status.body.as_bytes()));
+        let batch = validate(&snapshot, s).unwrap();
+        assert_eq!(
+            batch.contests.iter().map(|c| c.units.len()).sum::<usize>(),
+            3012
+        );
+        assert!(
+            batch
+                .contests
+                .iter()
+                .flat_map(|c| &c.units)
+                .all(|u| u.reporting_complete.is_none())
+        );
+        let detail = snapshot.documents.get_mut("details").unwrap();
+        detail.body = "temporarily unavailable".into();
+        detail.sha256 = format!("{:x}", Sha256::digest(detail.body.as_bytes()));
+        let batch = validate(&snapshot, s).unwrap();
+        assert_eq!(batch.contests.len(), 49);
+        assert!(
+            batch
+                .contests
+                .iter()
+                .all(|c| c.units.is_empty() && !c.precinct_detail && c.detail_note.is_some())
+        );
+        // An altered transported body still fails, even for optional source files.
+        snapshot.documents.get_mut("status").unwrap().body.push('x');
+        assert!(validate(&snapshot, s).is_err());
     }
 }
