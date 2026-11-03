@@ -45,6 +45,10 @@ The export contains frontend assets, prepared public references and cached accep
 
 Pinned official checkout/cache/Pages actions build and deploy the `site/` artifact. Source code and the workflow are public in GitHub; the CLI OAuth login cannot write workflow files, so the connected GitHub app created that file successfully. [Deployment evidence and GitHub documentation](research/github-pages-deployment.md).
 
+### Current hosted source limitation
+
+Madison’s Clarity site currently returns an AWS WAF browser challenge to GitHub-hosted runners (HTTP202, empty body, `x-amzn-waf-action: challenge`). Ordinary canonical requests from both Rust and curl were checked. The shared edition therefore retains the last accepted official precinct observations, displays the source issue/staleness, and prefers fresh civicAPI county fallbacks for covered races. All20 civicAPI feeds are collecting successfully from GitHub. Official-only Madison races remain cached until that source becomes accessible to the hosted collector. The existing local collector continues to reach Madison successfully. No challenge bypass or weaker election validation is used. [Diagnostic evidence](research/github-pages-deployment.md#observed-madison-access-limitation).
+
 ## Source coverage and Limestone
 
 **Limestone updates automatically** for CD-5, HD-25 and SD-2 through the public [civicAPI feed](https://civicapi.org/). Manual entry is unnecessary while that feed is available. Precinct detail remains unavailable there, so the dashboard uses explicitly labeled county totals.

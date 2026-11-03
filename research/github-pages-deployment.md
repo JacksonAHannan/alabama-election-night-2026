@@ -59,3 +59,10 @@ Caches are not archival storage: unaccessed entries expire after seven days and 
 ## Acceptance checks before sharing
 
 Implementation recommendations: test the generated site under a non-root repository prefix; confirm no browser request uses localhost or root `/api` routes; verify all exported JSON/CSV requests and source links; show retained data as stale when collection fails; ensure Refresh is a static GET rather than an unavailable server POST; check the successful Actions deployment and the actual public HTTPS page before claiming deployment is complete.
+
+
+## Observed Madison access limitation
+
+The hosted Pages deployments succeeded, including repeated independent source collection, cache restoration, artifact upload and public browser checks. However, Madison’s official Clarity origin currently challenges GitHub’s runners. The [manual diagnostic run](https://github.com/JacksonAHannan/alabama-election-night-2026/actions/runs/41730767650) made ordinary requests to the canonical public `current_ver.txt` and the previously verified revision’s election settings. Both returned HTTP202 with empty bodies and `x-amzn-waf-action: challenge` from CloudFront. Rust and curl exhibited the same restriction. The local workstation still retrieves revision382270 successfully; this is an observed hosted-origin access limitation, not an election-ID or parser mismatch.
+
+The collector keeps strict numeric/date/election/test/precinct reconciliation guards. Failed official reads retain accepted cached observations and their original retrieval times; healthy civicAPI county fallbacks contribute once per county. Twenty civicAPI feeds succeeded on the hosted collector. Official-only Madison races remain cached while the challenge persists. Browser freshness is recalculated from the actual observation times and cannot be reset merely by publishing a newer snapshot. No browser challenge, login or access-control bypass was attempted. This is a material limitation of hosting the collector on GitHub and is explicitly documented in the README and handoff.
