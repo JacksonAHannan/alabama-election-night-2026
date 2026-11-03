@@ -1,0 +1,13 @@
+[Unit]
+Description=Alabama election local official-source collector
+
+[Service]
+Type=simple
+WorkingDirectory=%h/Workspace/Projects/alabama-election-night-2026
+ExecStart=%h/Workspace/Projects/alabama-election-night-2026/target/debug/alabama-election-night serve --port 8052
+Restart=always
+RestartSec=10
+TimeoutStopSec=15
+
+[Install]
+WantedBy=default.target

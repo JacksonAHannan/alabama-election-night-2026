@@ -1,0 +1,11 @@
+[Unit]
+Description=Send Madison election observations to GitHub every two minutes
+
+[Timer]
+OnStartupSec=30
+OnUnitInactiveSec=120
+AccuracySec=5
+Unit=alabama-election-relay.service
+
+[Install]
+WantedBy=timers.target

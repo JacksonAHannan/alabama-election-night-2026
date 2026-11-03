@@ -45,9 +45,33 @@ The export contains frontend assets, prepared public references and cached accep
 
 Pinned official checkout/cache/Pages actions build and deploy the `site/` artifact. Source code and the workflow are public in GitHub; the CLI OAuth login cannot write workflow files, so the connected GitHub app created that file successfully. [Deployment evidence and GitHub documentation](research/github-pages-deployment.md).
 
-### Current hosted source limitation
+### Local Madison relay
 
-Madison’s Clarity site currently returns an AWS WAF browser challenge to GitHub-hosted runners (HTTP202, empty body, `x-amzn-waf-action: challenge`). Ordinary canonical requests from both Rust and curl were checked. The shared edition therefore retains the last accepted official precinct observations, displays the source issue/staleness, and prefers fresh civicAPI county fallbacks for covered races. All20 civicAPI feeds are collecting successfully from GitHub. Official-only Madison races remain cached until that source becomes accessible to the hosted collector. The existing local collector continues to reach Madison successfully. No challenge bypass or weaker election validation is used. [Diagnostic evidence](research/github-pages-deployment.md#observed-madison-access-limitation).
+Madison’s Clarity site returns an AWS WAF browser challenge to GitHub runners, while the collector on this workstation can fetch its public feed normally. A local relay bridges that access difference: the existing collector polls Madison every two minutes, and `deployment/publish-relay.py` uploads accepted raw source files to the public `observations` branch every two minutes. Each upload requests a Pages rebuild; the independent five-minute cloud schedule is a backup. Collection, queue and deployment delays can add several minutes. [Original access diagnostic](research/github-pages-deployment.md#observed-madison-access-limitation).
+
+The Pages job imports the relay and runs the existing election, candidate/precinct reconciliation, completion-status and map checks again. Exact configured URLs and SHA-256 hashes identify each transported document. Original observation and attempt times survive every import; older observations cannot replace newer data. GitHub continues collecting the 20 county feeds independently. Missing or invalid relay data falls back to normal source collection and last-good observations; stale or failing precinct data allows healthy county fallbacks where available. Sources & coverage identifies relayed observations and their delivery time separately from their actual retrieval time.
+
+**Keep this computer awake, online and logged in for automatic precinct updates.** The user services restart failed processes and start at login. They do not change sleep, lid-close or power settings. If the computer sleeps, disconnects or shuts down, the public site stays available and county feeds continue; Madison precinct observations become visibly stale after ten minutes. The existing GitHub login supplies upload credentials locally; tokens never enter Git, the relay file or the public site. No browser-challenge bypass is used.
+
+The checked-in user-unit templates are installed under `~/.config/systemd/user/` on this workstation:
+
+```bash
+# Inspect the local collector and two-minute publisher
+systemctl --user status alabama-election-collector.service alabama-election-relay.timer
+journalctl --user -u alabama-election-relay.service -n 25
+# Send the latest accepted observation now
+systemctl --user start alabama-election-relay.service
+# Stop automatic local collection and uploads after election night
+systemctl --user disable --now alabama-election-relay.timer alabama-election-collector.service
+```
+
+The local dashboard remains at port 8052. When the service is running, use `systemctl --user restart alabama-election-collector.service` after rebuilding instead of starting a second collector. Source code changes use `main`; the publisher commits only public source documents in a separate repository under ignored `runtime/relay-publisher`, leaving the working tree untouched. Relay operation additionally requires Python 3, Git and the existing authenticated GitHub CLI. Rust export/import commands can also be run directly:
+
+```bash
+target/debug/alabama-election-night export-relay --output runtime/madison-relay.json
+target/debug/alabama-election-night collect-once --relay runtime/madison-relay.json
+```
+
 
 ## Source coverage and Limestone
 

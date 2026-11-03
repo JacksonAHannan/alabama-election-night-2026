@@ -15,6 +15,7 @@ use std::{
 };
 use tokio::sync::RwLock;
 use tower_http::{compression::CompressionLayer, services::ServeDir};
+mod relay;
 
 #[derive(Clone)]
 struct App {
@@ -26,7 +27,7 @@ fn now() -> String {
 }
 fn db(root: &PathBuf) -> Result<Connection> {
     let c = Connection::open(root.join("runtime/results.sqlite"))?;
-    c.execute_batch("PRAGMA journal_mode=WAL; CREATE TABLE IF NOT EXISTS source_state(source TEXT PRIMARY KEY,batch TEXT,fetched_at TEXT,attempted_at TEXT,error TEXT); CREATE TABLE IF NOT EXISTS history(id INTEGER PRIMARY KEY,source TEXT,at TEXT,version TEXT,payload TEXT); CREATE TABLE IF NOT EXISTS evidence(id INTEGER PRIMARY KEY,source TEXT,at TEXT,url TEXT,sha256 TEXT,path TEXT);")?;
+    c.execute_batch("PRAGMA journal_mode=WAL; CREATE TABLE IF NOT EXISTS source_state(source TEXT PRIMARY KEY,batch TEXT,fetched_at TEXT,attempted_at TEXT,error TEXT); CREATE TABLE IF NOT EXISTS history(id INTEGER PRIMARY KEY,source TEXT,at TEXT,version TEXT,payload TEXT); CREATE TABLE IF NOT EXISTS evidence(id INTEGER PRIMARY KEY,source TEXT,at TEXT,url TEXT,sha256 TEXT,path TEXT); CREATE TABLE IF NOT EXISTS relay_state(source TEXT PRIMARY KEY,observed_at TEXT,received_at TEXT);")?;
     Ok(c)
 }
 fn load_json(path: PathBuf) -> Result<Value> {
@@ -188,7 +189,8 @@ fn compose(root: &PathBuf, sources: &[Source]) -> Result<Value> {
             .as_ref()
             .and_then(|s| chrono::DateTime::parse_from_rfc3339(s).ok())
             .is_some_and(|t| Utc::now().signed_duration_since(t).num_seconds() > 600);
-        reports.push(json!({"source":source,"fetched_at":fetched,"attempted_at":attempted,"published_at":published,"error":error,"stale":stale}));
+        let relay = c.query_row("SELECT observed_at,received_at FROM relay_state WHERE source=?1", [&source.id], |r| Ok(json!({"observed_at":r.get::<_,String>(0)?,"received_at":r.get::<_,String>(1)?}))).ok().filter(|r| r["observed_at"].as_str() == fetched.as_deref());
+        reports.push(json!({"source":source,"fetched_at":fetched,"attempted_at":attempted,"published_at":published,"error":error,"stale":stale,"relay":relay}));
     }
     let ballot = load_json(root.join("data/ballot.json")).unwrap_or(json!({"contests":[]}));
     let mut races: BTreeMap<String, Value> = BTreeMap::new();
@@ -654,8 +656,10 @@ async fn collect_one(client: &reqwest::Client, root: &PathBuf, source: &Source) 
     anyhow::bail!("Published feed candidates rejected: {}", errors.join("; "))
 }
 fn retain(root: &PathBuf, source: &str, result: Result<Batch>) -> Result<()> {
+    retain_at(root, source, result, &now())
+}
+fn retain_at(root: &PathBuf, source: &str, result: Result<Batch>, at: &str) -> Result<()> {
     let mut c = db(root)?;
-    let at = now();
     let tx = c.transaction()?;
     match result {
         Ok(batch) => {
@@ -693,6 +697,7 @@ fn retain(root: &PathBuf, source: &str, result: Result<Batch>) -> Result<()> {
                 )?;
             }
             tx.execute("INSERT INTO source_state(source,batch,fetched_at,attempted_at,error) VALUES(?1,?2,?3,?3,NULL) ON CONFLICT(source) DO UPDATE SET batch=excluded.batch,fetched_at=excluded.fetched_at,attempted_at=excluded.attempted_at,error=NULL",params![source,serialized,at])?;
+            tx.execute("DELETE FROM relay_state WHERE source=?1", [source])?;
         }
         Err(e) => {
             tx.execute("INSERT INTO source_state(source,attempted_at,error) VALUES(?1,?2,?3) ON CONFLICT(source) DO UPDATE SET attempted_at=excluded.attempted_at,error=excluded.error",params![source,at,e.to_string()])?;
@@ -706,7 +711,7 @@ async fn main() -> Result<()> {
     let args: Vec<String> = std::env::args().collect();
     if args.iter().any(|s| s == "--help") {
         println!(
-            "alabama-election-night [serve|collect-once|export-site --output PATH] [--root PATH] [--port 8052] [--no-collector]\nCentral official-source collection; browsers read cached results. Default root: project directory."
+            "alabama-election-night [serve|collect-once [--relay PATH]|export-site --output PATH|export-relay --output PATH] [--root PATH] [--port 8052] [--no-collector]\nCentral official-source collection; browsers read cached results. Default root: project directory."
         );
         return Ok(());
     }
@@ -719,6 +724,11 @@ async fn main() -> Result<()> {
     let root = PathBuf::from(option("--root").unwrap_or_else(|| env!("CARGO_MANIFEST_DIR").into()));
     fs::create_dir_all(root.join("runtime/raw"))?;
     let sources: Vec<Source> = serde_json::from_slice(&fs::read(root.join("data/sources.json"))?)?;
+    if args.get(1).is_some_and(|s| s == "export-relay") {
+        let output =
+            PathBuf::from(option("--output").context("export-relay requires --output PATH")?);
+        return relay::export(&root, &sources, &output);
+    }
     if args.get(1).is_some_and(|s| s == "export-site") {
         let output =
             PathBuf::from(option("--output").context("export-site requires --output PATH")?);
@@ -743,7 +753,24 @@ async fn main() -> Result<()> {
         None
     };
     if args.get(1).is_some_and(|s| s == "collect-once") {
+        let relayed = option("--relay").is_some_and(|path| {
+            match relay::import(&root, &sources, &PathBuf::from(path)) {
+                Ok(()) => {
+                    println!("Validated local Madison relay; original observation times retained.");
+                    true
+                }
+                Err(e) => {
+                    eprintln!(
+                        "Madison relay unavailable/rejected; using normal source collection: {e:#}"
+                    );
+                    false
+                }
+            }
+        });
         for source in sources.iter().filter(|s| s.enabled) {
+            if relayed && source.id == "madison" {
+                continue;
+            }
             retain(&root, &source.id, collect_one(&client, &root, source).await)?;
         }
         println!(

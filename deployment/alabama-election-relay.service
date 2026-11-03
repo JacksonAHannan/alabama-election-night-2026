@@ -1,0 +1,10 @@
+[Unit]
+Description=Publish accepted Madison election source files to GitHub
+Wants=alabama-election-collector.service
+After=alabama-election-collector.service
+
+[Service]
+Type=oneshot
+WorkingDirectory=%h/Workspace/Projects/alabama-election-night-2026
+ExecStart=/usr/bin/python %h/Workspace/Projects/alabama-election-night-2026/deployment/publish-relay.py
+TimeoutStartSec=180
