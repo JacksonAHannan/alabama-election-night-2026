@@ -1,5 +1,7 @@
 # Alabama Election Night 2026
 
+[Open the shared dashboard](https://jacksonahannan.github.io/alabama-election-night-2026/) · [GitHub repository](https://github.com/JacksonAHannan/alabama-election-night-2026)
+
 A Rust/Axum dashboard with a local collector and a GitHub Pages edition following the national dashboard’s Libre Caslon/Libre Franklin design. Covers all **49 Madison sample-ballot contests**, including uncontested offices and ballot measures, plus dedicated AL-02, CD-5, HD-10/20/21/25 and SD-2/7 views. Senate, Governor and all 20 statewide ballot contests also have Alabama county views, with a Coverage switch back to Madison precinct detail. Statewide and district totals are explicitly geographic subtotals where coverage is incomplete.
 
 ## Run
@@ -41,7 +43,7 @@ The export contains frontend assets, prepared public references and cached accep
 
 `deployment/github-pages.yml` is the verified workflow template, installed at `.github/workflows/pages.yml` in GitHub. It runs on main-branch changes, manual dispatch and an offset five-minute schedule during November 3–5 UTC. Scheduled runs are limited to the 2026 election year. GitHub schedules can be delayed; check the displayed source retrieval times. The job caches the last accepted SQLite state with a unique key and uses `deployment/initial-results.sqlite` only as an initial fallback. This seed contains accepted public aggregate election observations, not synthetic test results. Source failures retain last-good returns. The seed and cache never enter the public Pages bundle.
 
-Pinned official checkout/cache/Pages actions build and deploy the `site/` artifact. Source code and the workflow are public in GitHub; the CLI OAuth login cannot write workflow files, so the connected GitHub app is used for that file when available. [Deployment evidence and GitHub documentation](research/github-pages-deployment.md).
+Pinned official checkout/cache/Pages actions build and deploy the `site/` artifact. Source code and the workflow are public in GitHub; the CLI OAuth login cannot write workflow files, so the connected GitHub app created that file successfully. [Deployment evidence and GitHub documentation](research/github-pages-deployment.md).
 
 ## Source coverage and Limestone
 
