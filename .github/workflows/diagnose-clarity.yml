@@ -1,0 +1,21 @@
+name: Diagnose public Clarity transport
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  diagnose:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - name: Inspect public response transport
+        run: |
+          curl --max-time 25 --silent --show-error --location --dump-header version.headers --output version.body --user-agent 'Alabama-election-night/0.1 (public official results; central cache)' --header 'Cache-Control: no-cache' 'https://results.enr.clarityelections.com/AL/Madison/127483/current_ver.txt'
+          curl --max-time 25 --silent --show-error --location --dump-header settings.headers --output settings.body --user-agent 'Alabama-election-night/0.1 (public official results; central cache)' --header 'Cache-Control: no-cache' 'https://results.enr.clarityelections.com/AL/Madison/127483/382270/json/en/electionsettings.json'
+          python - <<'PY'
+          from pathlib import Path
+          for name in ['version','settings']:
+              body=Path(name+'.body').read_bytes()
+              print(name,'bytes',len(body),'preview',repr(body[:140]))
+              print(Path(name+'.headers').read_text())
+          PY
