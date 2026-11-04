@@ -27,6 +27,10 @@ target/debug/alabama-election-night collect-once
 
 The launcher builds the debug executable for fast local iteration. All commands accept `--root PATH`; the default is the project directory. Only one collector may own a runtime; its advisory file lock is released when the process exits. Stop the foreground server with Ctrl-C. To use another port, invoke the binary directly.
 
+## Results update alerts
+
+The dashboard checks for a new snapshot every 30 seconds, with its interval shown beside Refresh view. A Results alerts strip announces changed race votes, first positive returns, corrections and changed precinct/county vote observations while the page stays open. New alerts stay visible as you scroll and link to the affected race; expand or collapse Recent updates, or use Dismiss alerts. The open tab retains the latest 20 events. Initial page load, unchanged snapshots, retrieval-time changes and setup zeros do not create alerts. Browser polling does not change the source collection or GitHub publication intervals; new results depend on the publisher and delivery pipeline.
+
 ## GitHub Pages
 
 The public edition uses the same frontend and prepared references, with accepted JSON/CSV snapshots exported by the Rust collector. County names are omitted from map polygons at all zoom levels; hover, keyboard inspection, selected details and tables retain county identities.
