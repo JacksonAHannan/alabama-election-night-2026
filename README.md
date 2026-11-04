@@ -49,11 +49,11 @@ The export contains frontend assets, prepared public references and cached accep
 
 Pinned official checkout/cache/Pages actions build and deploy the `site/` artifact. Source code and the workflow are public in GitHub; the CLI OAuth login cannot write workflow files, so the connected GitHub app created that file successfully. [Deployment evidence and GitHub documentation](research/github-pages-deployment.md).
 
-### Local Madison relay
+### Local precinct and county relay
 
-Madison’s Clarity site returns an AWS WAF browser challenge to GitHub runners, while the collector on this workstation can fetch its public feed normally. A local relay bridges that access difference: the existing collector polls Madison every two minutes, and `deployment/publish-relay.py` uploads accepted raw source files to the public `observations` branch every two minutes. Each upload requests a Pages rebuild; the independent five-minute cloud schedule is a backup. Collection, queue and deployment delays can add several minutes. [Original access diagnostic](research/github-pages-deployment.md#observed-madison-access-limitation).
+Madison’s Clarity site returns an AWS WAF browser challenge to GitHub runners, while the collector on this workstation can fetch its public feed normally. A local relay bridges that access difference and cloud county-source failures: the existing collector polls Madison every two minutes, and `deployment/publish-relay.py` uploads accepted raw Madison source files and all configured civicAPI county-feed snapshots to the public `observations` branch every two minutes. `madison.json` retains the precinct transport format; `county-feeds.json` carries independently validated county-source observations. Each upload requests a Pages rebuild; the independent five-minute cloud schedule is a backup. Collection, queue and deployment delays can add several minutes. [Original access diagnostic](research/github-pages-deployment.md#observed-madison-access-limitation).
 
-The Pages job imports the relay and runs the existing election, candidate/precinct reconciliation, completion-status and map checks again. Exact configured URLs and SHA-256 hashes identify each transported document. Original observation and attempt times survive every import; older observations cannot replace newer data. GitHub continues collecting the 20 county feeds independently. Missing or invalid relay data falls back to normal source collection and last-good observations; stale or failing precinct data allows healthy county fallbacks where available. Sources & coverage identifies relayed observations and their delivery time separately from their actual retrieval time.
+The Pages job imports both relay files and runs the existing election, candidate/county/precinct reconciliation, completion-status and map checks again. Each county feed is validated separately, so one rejected source cannot block the others. Exact configured URLs and SHA-256 hashes identify each transported document. Original observation and attempt times survive every import; older observations cannot replace newer data. Civic feeds also reject a publication timestamp older than their last accepted publication, including a cached setup response retrieved later. A genuine correction with a newer publication time remains eligible. GitHub continues collecting the 20 county feeds independently. Missing or invalid relay data falls back to normal source collection and last-good observations; stale or failing precinct data allows healthy county fallbacks where available. Sources & coverage identifies relayed observations and their delivery time separately from their actual retrieval time.
 
 **Keep this computer awake, online and logged in for automatic precinct updates.** The user services restart failed processes and start at login. They do not change sleep, lid-close or power settings. If the computer sleeps, disconnects or shuts down, the public site stays available and county feeds continue; Madison precinct observations become visibly stale after ten minutes. The existing GitHub login supplies upload credentials locally; tokens never enter Git, the relay file or the public site. No browser-challenge bypass is used.
 
@@ -69,11 +69,11 @@ systemctl --user start alabama-election-relay.service
 systemctl --user disable --now alabama-election-relay.timer alabama-election-collector.service
 ```
 
-The local dashboard remains at port 8052. When the service is running, use `systemctl --user restart alabama-election-collector.service` after rebuilding instead of starting a second collector. Source code changes use `main`; the publisher commits only public source documents in a separate repository under ignored `runtime/relay-publisher`, leaving the working tree untouched. Relay operation additionally requires Python 3, Git and the existing authenticated GitHub CLI. Rust export/import commands can also be run directly:
+The local dashboard remains at port 8052. When the service is running, use `systemctl --user restart alabama-election-collector.service` after rebuilding instead of starting a second collector. Source code changes use `main`; the publisher commits only the two public source-document files in a separate repository under ignored `runtime/relay-publisher`, leaving the working tree untouched. Relay operation additionally requires Python 3, Git and the existing authenticated GitHub CLI. Rust export/import commands can also be run directly:
 
 ```bash
-target/debug/alabama-election-night export-relay --output runtime/madison-relay.json
-target/debug/alabama-election-night collect-once --relay runtime/madison-relay.json
+target/debug/alabama-election-night export-relay --output runtime/madison-relay.json --county-output runtime/county-relay.json
+target/debug/alabama-election-night collect-once --relay runtime/madison-relay.json --county-relay runtime/county-relay.json
 ```
 
 

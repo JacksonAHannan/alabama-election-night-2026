@@ -65,7 +65,12 @@ jobs:
           else
             rm -f runtime/madison-relay.json
           fi
-          target/release/alabama-election-night collect-once --relay runtime/madison-relay.json
+          if git show FETCH_HEAD:county-feeds.json > runtime/county-relay.json; then
+            echo 'Downloaded local county source observations'
+          else
+            rm -f runtime/county-relay.json
+          fi
+          target/release/alabama-election-night collect-once --relay runtime/madison-relay.json --county-relay runtime/county-relay.json
           target/release/alabama-election-night export-site --output site
           node --check site/app.js
           node --test tests/*.cjs

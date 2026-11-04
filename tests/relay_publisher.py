@@ -19,7 +19,7 @@ class RelayPublisher(unittest.TestCase):
             (root / "target/debug").mkdir(parents=True)
             (root / "sentinel").write_text("Unrelated working-tree content")
             binary = root / "target/debug/alabama-election-night"
-            binary.write_text("#!/usr/bin/env python3\nimport pathlib,sys\npathlib.Path(sys.argv[sys.argv.index('--output')+1]).write_text('{\"public\":true}')\n")
+            binary.write_text("#!/usr/bin/env python3\nimport pathlib,sys\npathlib.Path(sys.argv[sys.argv.index('--output')+1]).write_text('{\"public\":true}')\npathlib.Path(sys.argv[sys.argv.index('--county-output')+1]).write_text('{\"public_counties\":true}')\n")
             binary.chmod(0o755)
             remote = base / "remote.git"
             subprocess.run(["git", "init", "--bare", str(remote)], check=True, capture_output=True)
@@ -44,7 +44,7 @@ class RelayPublisher(unittest.TestCase):
             self.assertEqual(len(dispatches), 2)
             self.assertEqual((root / "runtime/relay-dispatched-commit").read_text(), first)
             files = real_command("git", "ls-tree", "--name-only", "observations", cwd=remote)
-            self.assertEqual(files, "madison.json")
+            self.assertEqual(files.splitlines(), ["county-feeds.json", "madison.json"])
             self.assertEqual(real_command("git", "rev-list", "--count", "observations", cwd=remote), "1")
             self.assertEqual((root / "sentinel").read_text(), "Unrelated working-tree content")
             self.assertFalse((root / ".git").exists())

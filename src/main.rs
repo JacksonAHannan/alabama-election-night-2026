@@ -540,7 +540,9 @@ async fn collect_one(client: &reqwest::Client, root: &PathBuf, source: &Source) 
             .as_ref()
             .context("Missing civicAPI endpoint")?;
         let payload: Value = serde_json::from_slice(&raw(client, root, source, endpoint).await?)?;
-        return alabama_election_night::civic::parse(source, &payload);
+        let batch = alabama_election_night::civic::parse(source, &payload)?;
+        ensure_current_publication(root, source, &batch)?;
+        return Ok(batch);
     }
     if source.id == "morgan" {
         let authority = String::from_utf8(raw(client, root, source, &source.url).await?)?;
@@ -655,6 +657,31 @@ async fn collect_one(client: &reqwest::Client, root: &PathBuf, source: &Source) 
     }
     anyhow::bail!("Published feed candidates rejected: {}", errors.join("; "))
 }
+fn ensure_current_publication(root: &PathBuf, source: &Source, batch: &Batch) -> Result<()> {
+    if source.format != "civic_county" {
+        return Ok(());
+    }
+    let prior = db(root)?
+        .query_row(
+            "SELECT batch FROM source_state WHERE source=?1",
+            [&source.id],
+            |r| r.get::<_, Option<String>>(0),
+        )
+        .ok()
+        .flatten();
+    if let Some(prior) = prior {
+        let prior: Batch = serde_json::from_str(&prior)?;
+        if let (Some(before), Some(after)) = (&prior.published_at, &batch.published_at) {
+            let before = chrono::DateTime::parse_from_rfc3339(before)?;
+            let after = chrono::DateTime::parse_from_rfc3339(after)?;
+            ensure!(
+                after >= before,
+                "Publisher returned an older publication than the accepted county results ({after} < {before})"
+            );
+        }
+    }
+    Ok(())
+}
 fn retain(root: &PathBuf, source: &str, result: Result<Batch>) -> Result<()> {
     retain_at(root, source, result, &now())
 }
@@ -711,7 +738,7 @@ async fn main() -> Result<()> {
     let args: Vec<String> = std::env::args().collect();
     if args.iter().any(|s| s == "--help") {
         println!(
-            "alabama-election-night [serve|collect-once [--relay PATH]|export-site --output PATH|export-relay --output PATH] [--root PATH] [--port 8052] [--no-collector]\nCentral official-source collection; browsers read cached results. Default root: project directory."
+            "alabama-election-night [serve|collect-once [--relay PATH] [--county-relay PATH]|export-site --output PATH|export-relay --output PATH [--county-output PATH]] [--root PATH] [--port 8052] [--no-collector]\nCentral official-source collection; browsers read cached results. Default root: project directory."
         );
         return Ok(());
     }
@@ -727,7 +754,11 @@ async fn main() -> Result<()> {
     if args.get(1).is_some_and(|s| s == "export-relay") {
         let output =
             PathBuf::from(option("--output").context("export-relay requires --output PATH")?);
-        return relay::export(&root, &sources, &output);
+        relay::export(&root, &sources, &output)?;
+        if let Some(path) = option("--county-output") {
+            relay::export_counties(&root, &sources, &PathBuf::from(path))?;
+        }
+        return Ok(());
     }
     if args.get(1).is_some_and(|s| s == "export-site") {
         let output =
@@ -753,6 +784,16 @@ async fn main() -> Result<()> {
         None
     };
     if args.get(1).is_some_and(|s| s == "collect-once") {
+        if let Some(path) = option("--county-relay") {
+            match relay::import_counties(&root, &sources, &PathBuf::from(path)) {
+                Ok(count) => println!(
+                    "Validated {count} local county source observations; original times retained."
+                ),
+                Err(e) => eprintln!(
+                    "County relay unavailable/rejected; independent collection continues: {e:#}"
+                ),
+            }
+        }
         let relayed = option("--relay").is_some_and(|path| {
             match relay::import(&root, &sources, &PathBuf::from(path)) {
                 Ok(()) => {

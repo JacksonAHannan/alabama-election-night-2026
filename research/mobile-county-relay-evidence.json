@@ -1,0 +1,42 @@
+{
+  "url": "https://civicapi.org/api/v2/race/86908",
+  "sha256": "b3419077336f9b8ae87591b876ff9756780bb805a4c3304e74a75ba1e4d27a2b",
+  "observed_at": "2026-11-04T01:18:02.544202917+00:00",
+  "published_at": "2026-11-04T01:17:09.451Z",
+  "raw_fixture": "tests/fixtures/civic-governor-mobile-2026-early.json",
+  "Mobile": {
+    "id": "civic-statewide-governor:01097:86908",
+    "source_id": "civic-statewide-governor",
+    "provider_id": "86908",
+    "name": "Alabama Governor",
+    "group": "Statewide & other",
+    "scope": "governor",
+    "county": "Mobile",
+    "candidates": [
+      {
+        "id": "219741",
+        "name": "Doug Jones",
+        "party": "DEM",
+        "votes": 2346,
+        "source_name": "Doug Jones"
+      },
+      {
+        "id": "219740",
+        "name": "Tommy Tuberville",
+        "party": "REP",
+        "votes": 1186,
+        "source_name": "Tommy Tuberville"
+      }
+    ],
+    "units": [],
+    "precincts_reporting": null,
+    "precincts_total": null,
+    "precinct_detail": false,
+    "detail_note": "civicAPI county candidate totals only; no precinct breakdown or write-in counts supplied. Reporting percentage is a publisher estimate.",
+    "total": 3532,
+    "estimated_reporting": 2.7,
+    "reporting_complete": false,
+    "reporting_basis": "civicAPI estimated reporting"
+  },
+  "diagnosis": "The workstation accepted this positive snapshot while hosted civicAPI requests failed. The original relay transported Madison only, leaving public Governor county returns at setup zeros. A validated county-feed sidecar now shares local last-good data with the cloud collector. Later source snapshots with nonreconciling statewide/county totals remain rejected."
+}

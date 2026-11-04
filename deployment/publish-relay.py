@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Publish only public Madison source documents; credentials stay in gh's store."""
+"""Publish accepted public election source documents; credentials stay in gh's store."""
 import fcntl
 import os
 from pathlib import Path
@@ -41,10 +41,10 @@ def publish(root=ROOT, remote=REMOTE, dispatch=True):
             else:
                 command("git", "merge", "--ff-only", "FETCH_HEAD", cwd=repo)
         command(root / "target/debug/alabama-election-night", "export-relay", "--root", root,
-                "--output", repo / "madison.json", cwd=root)
-        command("git", "add", "--", "madison.json", cwd=repo)
+                "--output", repo / "madison.json", "--county-output", repo / "county-feeds.json", cwd=root)
+        command("git", "add", "--", "madison.json", "county-feeds.json", cwd=repo)
         if command("git", "diff", "--cached", "--name-only", cwd=repo):
-            command("git", "commit", "-m", "Update accepted Madison source observation", cwd=repo)
+            command("git", "commit", "-m", "Update accepted precinct and county source observations", cwd=repo)
         command("git", "push", "origin", f"HEAD:refs/heads/{BRANCH}", cwd=repo)
         revision = command("git", "rev-parse", "HEAD", cwd=repo)
         marker = runtime / "relay-dispatched-commit"
@@ -53,7 +53,7 @@ def publish(root=ROOT, remote=REMOTE, dispatch=True):
             command("gh", "workflow", "run", "pages.yml", "--repo",
                     "JacksonAHannan/alabama-election-night-2026", "--ref", "main", cwd=root)
             marker.write_text(revision + "\n")
-        print(f"Public Madison relay uploaded: {revision}", flush=True)
+        print(f"Public precinct/county relay uploaded: {revision}", flush=True)
 
 
 if __name__ == "__main__":

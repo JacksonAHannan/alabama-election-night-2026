@@ -27,6 +27,14 @@ struct Snapshot {
     documents: BTreeMap<String, Document>,
 }
 
+#[derive(Serialize, Deserialize)]
+#[serde(deny_unknown_fields)]
+struct CountySnapshots {
+    schema_version: u8,
+    election: String,
+    observations: Vec<Snapshot>,
+}
+
 fn source(sources: &[Source]) -> Result<&Source> {
     sources
         .iter()
@@ -71,6 +79,29 @@ fn validate(snapshot: &Snapshot, source: &Source) -> Result<Batch> {
         snapshot.error.as_ref().is_none_or(|e| e.len() <= 4096),
         "Oversized relay error"
     );
+    if source.format == "civic_county" {
+        ensure!(
+            snapshot.documents.len() == 1,
+            "Unexpected county relay documents"
+        );
+        let doc = document(
+            snapshot,
+            "civic",
+            source
+                .endpoint
+                .as_deref()
+                .context("Missing county endpoint")?,
+        )?
+        .context("Missing county source document")?;
+        let batch =
+            alabama_election_night::civic::parse(source, &serde_json::from_str(&doc.body)?)?;
+        ensure!(
+            batch.version == snapshot.version,
+            "County relay revision mismatch"
+        );
+        return Ok(batch);
+    }
+    ensure!(source.id == "madison", "Unsupported relay source");
     ensure!(
         !snapshot.version.is_empty()
             && snapshot.version.len() <= 32
@@ -152,14 +183,13 @@ fn validate(snapshot: &Snapshot, source: &Source) -> Result<Batch> {
     Ok(batch)
 }
 
-pub(super) fn export(root: &PathBuf, sources: &[Source], output: &Path) -> Result<()> {
-    let source = source(sources)?;
+fn snapshot_for(root: &PathBuf, source: &Source) -> Result<Snapshot> {
     let mut c = db(root)?;
     let tx = c.transaction()?;
     let (batch, observed_at, attempted_at, error): (String, String, String, Option<String>) = tx.query_row(
         "SELECT batch,fetched_at,attempted_at,error FROM source_state WHERE source=?1 AND batch IS NOT NULL", [&source.id],
         |r| Ok((r.get(0)?, r.get(1)?, r.get(2)?, r.get(3)?)),
-    ).context("No accepted local Madison observation")?;
+    ).context("No accepted local source observation")?;
     let batch: Batch = serde_json::from_str(&batch)?;
     let base = format!(
         "{}/{}/json",
@@ -176,9 +206,19 @@ pub(super) fn export(root: &PathBuf, sources: &[Source], output: &Path) -> Resul
     if let Some(map) = &batch.map_id {
         paths.push(("map", map.clone()));
     }
+    let paths: Vec<(&str, String)> = if source.format == "civic_county" {
+        vec![(
+            "civic",
+            source.endpoint.clone().context("Missing civic endpoint")?,
+        )]
+    } else {
+        paths
+            .into_iter()
+            .map(|(key, suffix)| (key, format!("{base}/{suffix}")))
+            .collect()
+    };
     let earliest = (date(&observed_at)? - chrono::Duration::minutes(5)).to_rfc3339();
-    for (key, suffix) in paths {
-        let url = format!("{base}/{suffix}");
+    for (key, url) in paths {
         let evidence = tx.query_row("SELECT sha256,path FROM evidence WHERE source=?1 AND url=?2 AND at<=?3 AND at>=?4 ORDER BY id DESC LIMIT 1", params![source.id, url, observed_at, earliest], |r| Ok((r.get::<_,String>(0)?,r.get::<_,String>(1)?))).ok();
         if let Some((sha256, path)) = evidence {
             let raw_dir = root.join("runtime/raw").canonicalize()?;
@@ -222,7 +262,11 @@ pub(super) fn export(root: &PathBuf, sources: &[Source], output: &Path) -> Resul
         verified.map_sha256 == batch.map_sha256,
         "Relay lacks accepted map evidence"
     );
-    let bytes = serde_json::to_vec(&snapshot)?;
+    Ok(snapshot)
+}
+
+fn write_package(output: &Path, package: &impl Serialize) -> Result<()> {
+    let bytes = serde_json::to_vec(package)?;
     ensure!(
         bytes.len() as u64 <= MAX_PACKAGE,
         "Relay package exceeds size limit"
@@ -233,6 +277,31 @@ pub(super) fn export(root: &PathBuf, sources: &[Source], output: &Path) -> Resul
     Ok(())
 }
 
+pub(super) fn export(root: &PathBuf, sources: &[Source], output: &Path) -> Result<()> {
+    write_package(output, &snapshot_for(root, source(sources)?)?)
+}
+
+pub(super) fn export_counties(root: &PathBuf, sources: &[Source], output: &Path) -> Result<()> {
+    let mut observations = Vec::new();
+    for source in sources
+        .iter()
+        .filter(|s| s.enabled && s.format == "civic_county")
+    {
+        match snapshot_for(root, source) {
+            Ok(snapshot) => observations.push(snapshot),
+            Err(e) => eprintln!("Omitting unavailable county relay {}: {e:#}", source.id),
+        }
+    }
+    write_package(
+        output,
+        &CountySnapshots {
+            schema_version: 1,
+            election: ELECTION.into(),
+            observations,
+        },
+    )
+}
+
 pub(super) fn import(root: &PathBuf, sources: &[Source], input: &Path) -> Result<()> {
     ensure!(
         fs::metadata(input)?.len() <= MAX_PACKAGE,
@@ -240,6 +309,52 @@ pub(super) fn import(root: &PathBuf, sources: &[Source], input: &Path) -> Result
     );
     let snapshot: Snapshot = serde_json::from_slice(&fs::read(input)?)?;
     let source = source(sources)?;
+    import_snapshot(root, source, &snapshot)
+}
+
+pub(super) fn import_counties(root: &PathBuf, sources: &[Source], input: &Path) -> Result<usize> {
+    ensure!(
+        fs::metadata(input)?.len() <= MAX_PACKAGE,
+        "County relay exceeds size limit"
+    );
+    let package: CountySnapshots = serde_json::from_slice(&fs::read(input)?)?;
+    ensure!(
+        package.schema_version == 1 && package.election == ELECTION,
+        "Wrong county relay schema/election"
+    );
+    ensure!(
+        package.observations.len() <= sources.len(),
+        "Too many county relay observations"
+    );
+    let mut seen = std::collections::HashSet::new();
+    ensure!(
+        package
+            .observations
+            .iter()
+            .all(|s| seen.insert(s.source_id.clone())),
+        "Duplicate county relay source"
+    );
+    let mut accepted = 0;
+    for snapshot in package.observations {
+        let Some(source) = sources
+            .iter()
+            .find(|s| s.id == snapshot.source_id && s.enabled && s.format == "civic_county")
+        else {
+            eprintln!(
+                "Rejected unconfigured county relay source {}",
+                snapshot.source_id
+            );
+            continue;
+        };
+        match import_snapshot(root, source, &snapshot) {
+            Ok(()) => accepted += 1,
+            Err(e) => eprintln!("Rejected county relay {}: {e:#}", source.id),
+        }
+    }
+    Ok(accepted)
+}
+
+fn import_snapshot(root: &PathBuf, source: &Source, snapshot: &Snapshot) -> Result<()> {
     let batch = validate(&snapshot, source)?;
     let c = db(root)?;
     let previous = c
@@ -261,9 +376,13 @@ pub(super) fn import(root: &PathBuf, sources: &[Source], input: &Path) -> Result
         .transpose()?;
     let observed = date(&snapshot.observed_at)?;
     if prior_observed.is_some_and(|p| p > observed) {
-        println!("Ignored older Madison relay; newer accepted data retained.");
+        println!(
+            "Ignored older {} relay; newer accepted data retained.",
+            source.id
+        );
         return Ok(());
     }
+    ensure_current_publication(root, source, &batch)?;
     if prior_observed.is_none_or(|p| p < observed) {
         for doc in snapshot.documents.values() {
             let path = format!("runtime/raw/{}-{}.body", source.id, doc.sha256);
@@ -529,5 +648,156 @@ mod tests {
         // An altered transported body still fails, even for optional source files.
         snapshot.documents.get_mut("status").unwrap().body.push('x');
         assert!(validate(&snapshot, s).is_err());
+    }
+
+    fn county_fixture() -> (Vec<Source>, Snapshot) {
+        let sources: Vec<Source> =
+            serde_json::from_str(include_str!("../data/sources.json")).unwrap();
+        let source = sources
+            .iter()
+            .find(|s| s.id == "civic-statewide-governor")
+            .unwrap();
+        let body = include_str!("../tests/fixtures/civic-governor-mobile-2026-early.json");
+        let batch =
+            alabama_election_night::civic::parse(source, &serde_json::from_str(body).unwrap())
+                .unwrap();
+        let observed_at = "2026-11-04T01:18:02.544202917+00:00".to_owned();
+        let snapshot = Snapshot {
+            schema_version: 1,
+            election: ELECTION.into(),
+            source_id: source.id.clone(),
+            version: batch.version,
+            observed_at: observed_at.clone(),
+            attempted_at: observed_at,
+            error: Some("HTTP502 after last accepted observation".into()),
+            documents: BTreeMap::from([(
+                "civic".into(),
+                Document {
+                    url: source.endpoint.clone().unwrap(),
+                    sha256: format!("{:x}", Sha256::digest(body.as_bytes())),
+                    body: body.into(),
+                },
+            )]),
+        };
+        (sources, snapshot)
+    }
+
+    #[test]
+    fn actual_mobile_votes_roundtrip_without_false_freshness_and_bad_sibling_is_isolated() {
+        let (sources, snapshot) = county_fixture();
+        let source = sources.iter().find(|s| s.id == snapshot.source_id).unwrap();
+        let batch = validate(&snapshot, source).unwrap();
+        let mobile = batch
+            .contests
+            .iter()
+            .find(|c| c.county == "Mobile")
+            .unwrap();
+        assert_eq!(mobile.total, 3532);
+        assert_eq!(
+            mobile
+                .candidates
+                .iter()
+                .find(|c| c.name == "Doug Jones")
+                .unwrap()
+                .votes,
+            2346
+        );
+        assert_eq!(
+            mobile
+                .candidates
+                .iter()
+                .find(|c| c.name == "Tommy Tuberville")
+                .unwrap()
+                .votes,
+            1186
+        );
+        assert!(
+            mobile.units.is_empty()
+                && !mobile.precinct_detail
+                && mobile.reporting_complete == Some(false)
+        );
+        let root = temp_root();
+        let mut bad = snapshot.clone();
+        bad.source_id = "civic-statewide-us-senate".into(); // A configured ID does not validate wrong raw content.
+        let path = root.join("runtime/counties.json");
+        write_package(
+            &path,
+            &CountySnapshots {
+                schema_version: 1,
+                election: ELECTION.into(),
+                observations: vec![bad, snapshot.clone()],
+            },
+        )
+        .unwrap();
+        assert_eq!(import_counties(&root, &sources, &path).unwrap(), 1);
+        let row: (String, String, Option<String>) = db(&root)
+            .unwrap()
+            .query_row(
+                "SELECT batch,fetched_at,error FROM source_state WHERE source=?1",
+                [&source.id],
+                |r| Ok((r.get(0)?, r.get(1)?, r.get(2)?)),
+            )
+            .unwrap();
+        assert_eq!(row.1, snapshot.observed_at);
+        assert_eq!(row.2, snapshot.error);
+        let accepted: Batch = serde_json::from_str(&row.0).unwrap();
+        assert_eq!(
+            accepted
+                .contests
+                .iter()
+                .find(|c| c.county == "Mobile")
+                .unwrap()
+                .total,
+            3532
+        );
+        let out = root.join("runtime/reexport.json");
+        export_counties(&root, &sources, &out).unwrap();
+        let exported: CountySnapshots = serde_json::from_slice(&fs::read(out).unwrap()).unwrap();
+        assert_eq!(exported.observations.len(), 1);
+        assert_eq!(exported.observations[0].observed_at, snapshot.observed_at);
+        assert_eq!(exported.observations[0].error, snapshot.error);
+        let mut bad_hash = snapshot.clone();
+        bad_hash.documents.get_mut("civic").unwrap().sha256 = "bad".into();
+        assert!(validate(&bad_hash, source).is_err());
+        let mut wrong_election = snapshot.clone();
+        let doc = wrong_election.documents.get_mut("civic").unwrap();
+        doc.body = doc
+            .body
+            .replace("\"test_data\":false", "\"test_data\":true");
+        doc.sha256 = format!("{:x}", Sha256::digest(doc.body.as_bytes()));
+        assert!(validate(&wrong_election, source).is_err());
+        fs::remove_dir_all(root).unwrap();
+    }
+
+    #[test]
+    fn county_relay_never_replaces_newer_observations_or_publications() {
+        let (sources, snapshot) = county_fixture();
+        let source = sources.iter().find(|s| s.id == snapshot.source_id).unwrap();
+        let root = temp_root();
+        import_snapshot(&root, source, &snapshot).unwrap();
+        let mut older = snapshot.clone();
+        older.observed_at =
+            (date(&snapshot.observed_at).unwrap() - chrono::Duration::minutes(1)).to_rfc3339();
+        import_snapshot(&root, source, &older).unwrap();
+        let c = db(&root).unwrap();
+        let observed: String = c
+            .query_row(
+                "SELECT fetched_at FROM source_state WHERE source=?1",
+                [&source.id],
+                |r| r.get(0),
+            )
+            .unwrap();
+        assert_eq!(observed, snapshot.observed_at);
+        let mut stale_publication = validate(&snapshot, source).unwrap();
+        stale_publication.published_at = Some("2026-10-30T18:52:47Z".into());
+        assert!(ensure_current_publication(&root, source, &stale_publication).is_err());
+        // A newer publication with lower counts may be a real correction and stays eligible.
+        stale_publication.published_at = Some("2026-11-04T01:18:00Z".into());
+        stale_publication
+            .contests
+            .iter_mut()
+            .for_each(|c| c.total = 0);
+        assert!(ensure_current_publication(&root, source, &stale_publication).is_ok());
+        fs::remove_dir_all(root).unwrap();
     }
 }
