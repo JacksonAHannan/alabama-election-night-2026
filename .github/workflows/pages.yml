@@ -68,7 +68,7 @@ jobs:
           target/release/alabama-election-night collect-once --relay runtime/madison-relay.json
           target/release/alabama-election-night export-site --output site
           node --check site/app.js
-          node --test tests/benchmarks.cjs
+          node --test tests/*.cjs
           python3 tests/relay_publisher.py
       - name: Preserve accepted observations for the next collection
         if: always() && steps.window.outputs.publish == 'true'
