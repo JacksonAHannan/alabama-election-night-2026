@@ -145,6 +145,7 @@ fn compose(root: &PathBuf, sources: &[Source]) -> Result<Value> {
     let c = db(root)?;
     let mut reports = Vec::new();
     let mut contests = Vec::new();
+    let mut statewide_reports = Vec::new();
     let mut latest = None;
     let current_map = load_json(root.join("data/current-geography.json")).unwrap_or(Value::Null);
     let mut current_map_compatible = false;
@@ -180,7 +181,11 @@ fn compose(root: &PathBuf, sources: &[Source]) -> Result<Value> {
                     && b.map_sha256.is_some();
             }
             published = b.published_at.clone();
-            contests.extend(b.contests);
+            if source.format == "gray_statewide" {
+                statewide_reports.extend(b.contests);
+            } else {
+                contests.extend(b.contests);
+            }
         }
         if fetched > latest {
             latest = fetched.clone();
@@ -310,6 +315,29 @@ fn compose(root: &PathBuf, sources: &[Source]) -> Result<Value> {
     }
     for r in races.values_mut() {
         r["county_results"] = r["contributions"].clone();
+    }
+    for contest in statewide_reports {
+        if let Some(race) = races.get_mut(&contest.scope) {
+            let source = sources
+                .iter()
+                .find(|s| s.id == contest.source_id)
+                .context("Unknown statewide publisher")?;
+            let report = reports
+                .iter()
+                .find(|r| r["source"]["id"] == contest.source_id)
+                .context("Missing statewide source health")?;
+            let county_ready = race["county_results"].as_array().is_some_and(|cs| {
+                cs.iter().any(|c| {
+                    c["source_id"] == "civic-statewide-us-senate"
+                        && c["total"].as_u64().is_some_and(|n| n > 0)
+                })
+            }) && reports.iter().any(|r| {
+                r["source"]["id"] == "civic-statewide-us-senate"
+                    && r["error"].is_null()
+                    && r["stale"] == false
+            });
+            race["statewide_report"] = json!({"source_id":source.id,"publisher":"WAFF / Gray","preferred":!county_ready,"url":source.url,"granularity":"statewide","candidates":contest.candidates,"total":contest.total,"published_at":report["published_at"],"fetched_at":report["fetched_at"],"error":report["error"],"stale":report["stale"],"write_ins_supplied":false,"reporting_complete":null});
+        }
     }
     let mut history = Vec::new();
     let mut stmt =
@@ -534,6 +562,34 @@ fn clarity_links(html: &str, county: &str) -> Vec<(String, String)> {
     found
 }
 async fn collect_one(client: &reqwest::Client, root: &PathBuf, source: &Source) -> Result<Batch> {
+    if source.format == "gray_statewide" {
+        let menu: Value = serde_json::from_slice(
+            &raw(
+                client,
+                root,
+                source,
+                source.expected["menu_url"]
+                    .as_str()
+                    .context("No publisher menu")?,
+            )
+            .await?,
+        )?;
+        let data: Value = serde_json::from_slice(
+            &raw(
+                client,
+                root,
+                source,
+                source
+                    .endpoint
+                    .as_deref()
+                    .context("No publisher endpoint")?,
+            )
+            .await?,
+        )?;
+        let batch = alabama_election_night::gray::parse(source, &menu, &data)?;
+        ensure_current_publication(root, source, &batch)?;
+        return Ok(batch);
+    }
     if source.format == "civic_county" {
         let endpoint = source
             .endpoint
@@ -658,7 +714,7 @@ async fn collect_one(client: &reqwest::Client, root: &PathBuf, source: &Source) 
     anyhow::bail!("Published feed candidates rejected: {}", errors.join("; "))
 }
 fn ensure_current_publication(root: &PathBuf, source: &Source, batch: &Batch) -> Result<()> {
-    if source.format != "civic_county" {
+    if !matches!(source.format.as_str(), "civic_county" | "gray_statewide") {
         return Ok(());
     }
     let prior = db(root)?
@@ -877,6 +933,89 @@ async fn main() -> Result<()> {
 #[cfg(test)]
 mod tests {
     use super::*;
+    #[test]
+    fn statewide_publisher_report_never_enters_county_or_precinct_totals() {
+        let sources: Vec<Source> =
+            serde_json::from_str(include_str!("../data/sources.json")).unwrap();
+        let publisher = sources
+            .iter()
+            .find(|s| s.format == "gray_statewide")
+            .unwrap();
+        let county = sources
+            .iter()
+            .find(|s| s.id == "civic-statewide-us-senate")
+            .unwrap();
+        let batch = alabama_election_night::gray::parse(
+            publisher,
+            &serde_json::from_str(include_str!("../tests/fixtures/waff-menu-2026.json")).unwrap(),
+            &serde_json::from_str(include_str!("../tests/fixtures/waff-senate-2026-live.json"))
+                .unwrap(),
+        )
+        .unwrap();
+        let root = std::env::temp_dir().join(format!(
+            "senate-isolation-{}-{}",
+            std::process::id(),
+            Utc::now().timestamp_nanos_opt().unwrap()
+        ));
+        fs::create_dir_all(root.join("runtime")).unwrap();
+        fs::create_dir_all(root.join("data")).unwrap();
+        fs::write(
+            root.join("data/ballot.json"),
+            include_str!("../data/ballot.json"),
+        )
+        .unwrap();
+        retain(&root, &publisher.id, Ok(batch)).unwrap();
+        let county_batch = alabama_election_night::civic::parse(
+            county,
+            &serde_json::from_str(include_str!(
+                "../tests/fixtures/civic-statewide-us-senate-2026-setup.json"
+            ))
+            .unwrap(),
+        )
+        .unwrap();
+        retain(&root, &county.id, Ok(county_batch)).unwrap();
+        let data = compose(&root, &[publisher.clone(), county.clone()]).unwrap();
+        let race = data["races"]
+            .as_array()
+            .unwrap()
+            .iter()
+            .find(|r| r["id"] == "us-senate")
+            .unwrap();
+        assert_eq!(race["statewide_report"]["total"], 10506);
+        assert_eq!(race["total"], 0);
+        assert_eq!(race["county_results"].as_array().unwrap().len(), 67);
+        assert!(
+            race["county_results"]
+                .as_array()
+                .unwrap()
+                .iter()
+                .all(|c| c["total"] == 0 && c["county_id"] != "AL")
+        );
+        assert!(race["units"].as_array().unwrap().is_empty());
+        let mut positive: Value = serde_json::from_str(include_str!(
+            "../tests/fixtures/civic-statewide-us-senate-2026-setup.json"
+        ))
+        .unwrap();
+        positive["candidates"][0]["votes"] = 5.into();
+        positive["region_results"]["autauga"]["candidates"][0]["votes"] = 5.into();
+        retain(
+            &root,
+            &county.id,
+            Ok(alabama_election_night::civic::parse(county, &positive).unwrap()),
+        )
+        .unwrap();
+        let data = compose(&root, &[publisher.clone(), county.clone()]).unwrap();
+        let race = data["races"]
+            .as_array()
+            .unwrap()
+            .iter()
+            .find(|r| r["id"] == "us-senate")
+            .unwrap();
+        assert_eq!(race["total"], 5);
+        assert_eq!(race["statewide_report"]["preferred"], false);
+
+        fs::remove_dir_all(root).unwrap();
+    }
     #[test]
     fn static_export_is_project_relative_and_excludes_private_runtime() {
         let base = std::env::temp_dir().join(format!(

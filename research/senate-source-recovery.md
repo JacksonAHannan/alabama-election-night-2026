@@ -1,0 +1,11 @@
+# Senate feed recovery
+
+Observed November3,2026 evening. The configured civicAPI USSenate feed86907 fails on local and GitHub collectors with HTTP502/timeouts; only its October30setup snapshot is accepted. Ordinary canonical and cache-busted diagnostic requests timed out. The official Alabama election-night statewide page still says results coming soon. APR API returns403. DDHQ's public Senate page has positive totals, but its unavailable paid county detail is not accessed.
+
+The previously published WAFF menu points to configuration2797, title Alabama Nov.3GeneralElection, fileWAFF_2797. Its public JSON now has a2026election-night publication time and race59124 (U.S.Senate-ClassII), with candidates BarryMoore147545/R and EverettWess147544/D. The captured01:46:37UTC snapshot reports5,539and4,967votes. Full raw responses are preserved in tests/fixtures/waff-menu-2026.json and waff-senate-2026-live.json. The feed does not provide county detail for this race.
+
+Integration accepts only this configured statewide race after menu/config/title/publication-year/roster/count validation. It is exposed as a separate statewide_report, never county_results, units or r.total (which remains the geographic subtotal). The UI prominently labels source/time/limitations; county maps and CSVs retain their actual county/precinct observations. Existing alerts compare the displayed statewide report as well as county-area changes.
+
+Sources: https://s3.amazonaws.com/grayfilestore-waff/electionData/WAFF_Menu.json ; https://s3.amazonaws.com/grayfilestore-waff/electionData/WAFF_2797_Web.json ; https://www.waff.com/alabama-election-results/ ; https://www2.alabamavotes.gov/electionnight/statewideresultsbycontest.aspx ; https://votes.decisiondeskhq.com/races/2026-11-03/alabama-us-senate-general-election .
+
+During implementation the primary county feed recovered around01:52UTC. A separate first-party observation and its local/cloud relay restored positive county returns publicly: at01:53:59UTC, the public geographic subtotal was11,879votes from8counties (Moore5,915;Wess5,962;2write-ins). These figures are observations at that time, not fixed final results. WAFF is displayed only while the primary county feed has no healthy positive observations; its existence never overrides healthy county returns. Provider headline switches are qualified by the alert model.

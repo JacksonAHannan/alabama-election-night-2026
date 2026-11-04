@@ -63,6 +63,50 @@
     }
   },
   {
+    "id": "waff-statewide-us-senate",
+    "county": "WAFF statewide Senate report",
+    "county_id": "AL",
+    "url": "https://www.waff.com/alabama-election-results/",
+    "endpoint": "https://s3.amazonaws.com/grayfilestore-waff/electionData/WAFF_2797_Web.json",
+    "election_id": "2797",
+    "enabled": true,
+    "format": "gray_statewide",
+    "status": "Statewide publisher report; county detail unavailable",
+    "note": "WAFF/Gray public November3 general-election feed. US Senate named-candidate statewide totals only. Kept separate from county/precinct observations and never allocated to counties; write-ins and reporting completeness are not supplied.",
+    "interval_seconds": 120,
+    "priority": 10,
+    "contest_map": {
+      "59124": "us-senate"
+    },
+    "expected": {
+      "election": "2026-11-03",
+      "config_id": "2797",
+      "file_id": "WAFF_2797",
+      "title": "Alabama Nov. 3 General Election",
+      "menu_url": "https://s3.amazonaws.com/grayfilestore-waff/electionData/WAFF_Menu.json",
+      "race_id": "59124",
+      "race_title": "U.S. Senate - Class II",
+      "candidates": [
+        {
+          "id": "147545",
+          "name": "Barry Moore",
+          "first": "Barry",
+          "last": "Moore",
+          "source_party": "R",
+          "party": "REP"
+        },
+        {
+          "id": "147544",
+          "name": "Everett Wess",
+          "first": "Everett",
+          "last": "Wess",
+          "source_party": "D",
+          "party": "DEM"
+        }
+      ]
+    }
+  },
+  {
     "id": "lauderdale",
     "county": "Lauderdale",
     "county_id": "01077",

@@ -3,6 +3,14 @@ const assert=require('node:assert/strict');
 const {changes}=require('../web/result-alerts.js');
 const race=(total=100)=>({id:'cd5',name:'U.S. House District 5',total,candidates:[{name:'Example A',votes:60},{name:'Example B',votes:total-60}],units:[],county_results:[]});
 const snapshot=r=>({prepared_at:'2026-11-04T01:00:00Z',races:[r]});
+test('statewide publisher updates alert without changing underlying county observations',()=>{
+ const before=snapshot({...race(),total:0,candidates:[]});
+ const after=structuredClone(before);after.races[0].statewide_report={total:10506,candidates:[{name:'Barry Moore',votes:5539},{name:'Everett Wess',votes:4967}]};
+ assert.equal(changes(before,after)[0].after,10506);
+ const next=structuredClone(after);next.races[0].statewide_report.fetched_at='2026-11-04T01:02:00Z';assert.deepEqual(changes(after,next),[]);
+ next.races[0].statewide_report.total+=10;next.races[0].statewide_report.candidates[0].votes+=10;
+ assert.equal(changes(after,next)[0].delta,10);assert.equal(after.races[0].total,0);
+});
 test('initial load, repeated snapshots, timestamps, ordering and setup zeros are quiet',()=>{
  const r=race();const before=snapshot(r);const after=structuredClone(before);
  after.prepared_at='2026-11-04T01:02:00Z';after.races[0].fetched_at=after.prepared_at;after.races[0].candidates.reverse();

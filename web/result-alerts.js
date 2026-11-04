@@ -7,14 +7,16 @@
  const positive=x=>count(x?.total)>0||[...votes(x).values()].some(n=>n>0);
  const changed=(a,b)=>a.size!==b.size||[...a].some(([k,v])=>b.get(k)!==v);
  const decreased=(a,b)=>[...a].some(([k,v])=>b.has(k)&&b.get(k)<v);
- const coverage=r=>new Map((r.county_results||[]).map(c=>[c.county_id||c.county,c.source_id||'']));
+ const coverage=r=>new Map([...(r.county_results||[]).map(c=>[c.county_id||c.county,c.source_id||'']),['@headline',r.statewide_report&&r.statewide_report.preferred!==false?r.statewide_report.source_id||'statewide':'counties']]);
  function areas(r){
   return new Map([...(r.units||[]).map(x=>['precinct:'+x.county+':'+x.name,x]),...(r.county_results||[]).map(x=>['county:'+(x.county_id||x.county),x])]);
  }
  function changes(previous,next){
   if(!previous||!next)return [];
-  const prior=new Map((previous.races||[]).map(r=>[r.id,r]));
-  return(next.races||[]).flatMap(r=>{
+  const observation=r=>r.statewide_report&&r.statewide_report.preferred!==false?{...r,total:r.statewide_report.total,candidates:r.statewide_report.candidates}:r;
+  const prior=new Map((previous.races||[]).map(r=>[r.id,observation(r)]));
+  return(next.races||[]).flatMap(raw=>{
+   const r=observation(raw);
    const old=prior.get(r.id),before=count(old?.total),after=count(r.total);
    if(!old||before==null){return positive(r)?[{id:r.id,name:r.name,before,after,delta:null,kind:'new'}]:[];}
    if(after==null)return []; // A lost feed is covered by source-health warnings.

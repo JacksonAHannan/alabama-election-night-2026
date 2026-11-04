@@ -1,4 +1,5 @@
 pub mod civic;
+pub mod gray;
 pub mod morgan;
 use anyhow::{Context, Result, bail, ensure};
 use serde::{Deserialize, Serialize};

@@ -101,6 +101,36 @@ fn validate(snapshot: &Snapshot, source: &Source) -> Result<Batch> {
         );
         return Ok(batch);
     }
+    if source.format == "gray_statewide" {
+        ensure!(
+            snapshot.documents.len() == 2,
+            "Unexpected statewide relay documents"
+        );
+        let menu = document(
+            snapshot,
+            "menu",
+            source.expected["menu_url"]
+                .as_str()
+                .context("No publisher menu URL")?,
+        )?
+        .context("No relayed publisher menu")?;
+        let data = document(
+            snapshot,
+            "gray",
+            source.endpoint.as_deref().context("No publisher URL")?,
+        )?
+        .context("No relayed statewide data")?;
+        let batch = alabama_election_night::gray::parse(
+            source,
+            &serde_json::from_str(&menu.body)?,
+            &serde_json::from_str(&data.body)?,
+        )?;
+        ensure!(
+            batch.version == snapshot.version,
+            "Statewide relay revision mismatch"
+        );
+        return Ok(batch);
+    }
     ensure!(source.id == "madison", "Unsupported relay source");
     ensure!(
         !snapshot.version.is_empty()
@@ -217,6 +247,23 @@ fn snapshot_for(root: &PathBuf, source: &Source) -> Result<Snapshot> {
             .map(|(key, suffix)| (key, format!("{base}/{suffix}")))
             .collect()
     };
+    let paths = if source.format == "gray_statewide" {
+        vec![
+            (
+                "menu",
+                source.expected["menu_url"]
+                    .as_str()
+                    .context("Missing publisher menu")?
+                    .into(),
+            ),
+            (
+                "gray",
+                source.endpoint.clone().context("Missing publisher URL")?,
+            ),
+        ]
+    } else {
+        paths
+    };
     let earliest = (date(&observed_at)? - chrono::Duration::minutes(5)).to_rfc3339();
     for (key, url) in paths {
         let evidence = tx.query_row("SELECT sha256,path FROM evidence WHERE source=?1 AND url=?2 AND at<=?3 AND at>=?4 ORDER BY id DESC LIMIT 1", params![source.id, url, observed_at, earliest], |r| Ok((r.get::<_,String>(0)?,r.get::<_,String>(1)?))).ok();
@@ -285,7 +332,7 @@ pub(super) fn export_counties(root: &PathBuf, sources: &[Source], output: &Path)
     let mut observations = Vec::new();
     for source in sources
         .iter()
-        .filter(|s| s.enabled && s.format == "civic_county")
+        .filter(|s| s.enabled && matches!(s.format.as_str(), "civic_county" | "gray_statewide"))
     {
         match snapshot_for(root, source) {
             Ok(snapshot) => observations.push(snapshot),
@@ -336,10 +383,11 @@ pub(super) fn import_counties(root: &PathBuf, sources: &[Source], input: &Path) 
     );
     let mut accepted = 0;
     for snapshot in package.observations {
-        let Some(source) = sources
-            .iter()
-            .find(|s| s.id == snapshot.source_id && s.enabled && s.format == "civic_county")
-        else {
+        let Some(source) = sources.iter().find(|s| {
+            s.id == snapshot.source_id
+                && s.enabled
+                && matches!(s.format.as_str(), "civic_county" | "gray_statewide")
+        }) else {
             eprintln!(
                 "Rejected unconfigured county relay source {}",
                 snapshot.source_id

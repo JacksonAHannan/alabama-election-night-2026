@@ -77,6 +77,10 @@ target/debug/alabama-election-night collect-once --relay runtime/madison-relay.j
 ```
 
 
+## Senate statewide fallback
+
+The primary civicAPI Senate feed can fail independently of other offices. A verified WAFF/Gray public statewide Senate report is retained separately as `statewide_report` and shown prominently when the county feed has no healthy positive observations. Healthy positive county data remains preferred. The report identifies its source and publication/retrieval times, includes named candidates only, and supplies no county/precinct counts or completion estimate. It is never added to geographic totals, allocated to counties or used in county CSVs/turnout benchmarks. Statewide-report changes also trigger the existing alert display. [Source verification](research/senate-source-recovery.md).
+
 ## Source coverage and Limestone
 
 **Limestone updates automatically** for CD-5, HD-25 and SD-2 through the public [civicAPI feed](https://civicapi.org/). Manual entry is unnecessary while that feed is available. Precinct detail remains unavailable there, so the dashboard uses explicitly labeled county totals.
