@@ -118,7 +118,10 @@ fn selected_contributions(
             .find(|s| s.id == c.source_id)
             .map(|s| s.priority)
             .unwrap_or(u32::MAX);
-        (unhealthy, !c.precinct_detail, priority)
+        // A fetch failure does not invalidate already accepted precinct returns.
+        // Keep that detail (and its original timestamp/health warning) instead of
+        // oscillating to a county-only source that erases map/table coverage.
+        (!c.precinct_detail, unhealthy, priority)
     };
     let observed = |c: &alabama_election_night::Contest| {
         reports
@@ -1075,7 +1078,7 @@ mod tests {
         assert!(clarity_links("123 or 124", "Madison").is_empty());
     }
     #[test]
-    fn county_fallback_never_duplicates_a_healthy_precinct_contribution() {
+    fn county_fallback_preserves_last_good_precincts_without_double_counting() {
         let sources: Vec<Source> =
             serde_json::from_str(include_str!("../data/sources.json")).unwrap();
         let official = sources.iter().find(|s| s.id == "madison").unwrap();
@@ -1136,9 +1139,9 @@ mod tests {
             "madison"
         );
         reports[0]["error"] = json!("network unavailable");
-        let selected = selected_contributions(entries, &sources, &reports);
+        let selected = selected_contributions(entries.clone(), &sources, &reports);
         assert_eq!(selected.len(), 2);
-        assert_eq!(selected.iter().map(|(_, c)| c.total).sum::<u64>(), 130);
+        assert_eq!(selected.iter().map(|(_, c)| c.total).sum::<u64>(), 40);
         assert_eq!(
             selected
                 .iter()
@@ -1146,9 +1149,26 @@ mod tests {
                 .unwrap()
                 .1
                 .source_id,
-            "civic-cd5"
+            "madison"
         );
+        assert!(selected.iter().any(|(_, c)| !c.units.is_empty()));
+        reports[0]["error"] = Value::Null;
+        reports[0]["stale"] = json!(true);
+        let selected = selected_contributions(entries.clone(), &sources, &reports);
+        assert_eq!(selected.iter().map(|(_, c)| c.total).sum::<u64>(), 40);
+        assert!(selected.iter().any(|(_, c)| !c.units.is_empty()));
+        // County-only returns remain available when no precinct detail was accepted.
+        let mut missing_detail = entries.clone();
+        missing_detail[0].1.precinct_detail = false;
+        missing_detail[0].1.units.clear();
+        let selected = selected_contributions(missing_detail, &sources, &reports);
+        assert_eq!(selected.len(), 2);
+        assert_eq!(selected.iter().map(|(_, c)| c.total).sum::<u64>(), 130);
         assert!(selected.iter().all(|(_, c)| c.units.is_empty()));
+        // An absent official observation also uses the automatic county fallback.
+        let selected =
+            selected_contributions(entries.into_iter().skip(1).collect(), &sources, &reports);
+        assert_eq!(selected.iter().map(|(_, c)| c.total).sum::<u64>(), 130);
     }
     #[test]
     fn failure_preserves_last_good_and_records_corrections() {
